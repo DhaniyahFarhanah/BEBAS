@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 226270367
+    locked: 0
+  - name: Background Assets
+    uniqueID: 3610882879
+    locked: 0
+  - name: Interactable Items
+    uniqueID: 3629908271
+    locked: 0
+  - name: Flooring
+    uniqueID: 351255253
+    locked: 0
+  - name: Player
+    uniqueID: 2618662941
+    locked: 0
+  - name: Foreground
+    uniqueID: 3284961539
+    locked: 0
