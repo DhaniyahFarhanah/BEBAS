@@ -12,7 +12,6 @@ public class Boltcutter : MonoBehaviour
     public TMP_Text dialogueText;
     public Image preview;
 
-
     public string[] dialogue;
     private int index;
     
