@@ -50,6 +50,9 @@ TagManager:
   - name: Interactable Items
     uniqueID: 3629908271
     locked: 0
+  - name: Background Front
+    uniqueID: 2177618239
+    locked: 0
   - name: Flooring
     uniqueID: 351255253
     locked: 0
