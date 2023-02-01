@@ -14,12 +14,19 @@ public class DialogueScript : MonoBehaviour
 
     public string[] dialogue;
     private int index;
-    
 
     public float wordSpeed;
     public bool playerIsClose;
     public bool start = true;
 
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip dialogueTypingSoundClip;
+    [SerializeField] private bool stopAudioSource;
+
+    private void Awake()
+    {
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -62,6 +69,11 @@ public class DialogueScript : MonoBehaviour
         foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
+            if (stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+            audioSource.PlayOneShot(dialogueTypingSoundClip);
             yield return new WaitForSeconds(wordSpeed);
         }
     }
