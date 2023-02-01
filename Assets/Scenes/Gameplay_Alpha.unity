@@ -3243,8 +3243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399cf1596cdb6495bbb208a5e21940d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2107903314}
-  characterDialogue: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
 --- !u!1 &1334223556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,9 +4949,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf2848bcfe9cf46bdb31bcc524ec34c9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.605
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.461
+  m_Pitch: 2
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
