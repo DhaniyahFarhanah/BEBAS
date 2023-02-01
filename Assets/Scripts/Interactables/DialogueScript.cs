@@ -8,7 +8,7 @@ public class DialogueScript : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject Z;
-    public GameObject boltcutter;
+    public GameObject gameObj;
     public TMP_Text dialogueText;
     public Image preview;
 
