@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Boltcutter : MonoBehaviour
+public class DialogueScript : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject Z;
@@ -46,8 +46,6 @@ public class Boltcutter : MonoBehaviour
             NextLine();
         }
 
-       
-        
     }
 
     public void zeroText()
