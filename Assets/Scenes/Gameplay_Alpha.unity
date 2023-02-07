@@ -2176,7 +2176,7 @@ MonoBehaviour:
   breath: {fileID: 21300000, guid: cfd06debde69d4a4581d827ba9b62464, type: 3}
   crouch: {fileID: 21300000, guid: ad7191b1bf48890449536dcc9f5de96e, type: 3}
   timerBar: {fileID: 0}
-  maxTime: 1
+  maxTime: 10
 --- !u!70 &705463102
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5091,13 +5091,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 70b382121a48140b2beb6eeac8a2d99d, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1400807979
@@ -7289,7 +7289,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983761776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7360,8 +7360,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -1010005757
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1992745750
 GameObject:
