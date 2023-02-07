@@ -3,16 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStateManager : MonoBehaviour
 {
     PlayerBaseState currentState;
 
+
+    //float playerScale;
     public SpriteRenderer spriteRenderer;
-    public CapsuleCollider2D Stand;
-    public BoxCollider2D crouching;
     public Rigidbody2D playerRB;
     public GameObject dialogueBox;
+    public PlayerManager PManager;
 
     public float charSpeed;
     public float dirX;
@@ -35,10 +37,19 @@ public class PlayerStateManager : MonoBehaviour
     internal PlayerBaseState twerkState;
     internal PlayerBaseState killState;
 
+    public Image timerBar;
+    public float maxTime = 1f;
+    float remainingTime;
+
+
+
     void Start()
     {
         currentState = idleState;
         currentState.EnterState(this);
+        timerBar = GetComponentInChildren<Image>();
+        timerBar.enabled = false;
+        remainingTime = maxTime;
     }
 
     // Update is called once per frame
@@ -47,23 +58,35 @@ public class PlayerStateManager : MonoBehaviour
         if (dialogueBox.activeInHierarchy)
         {
             charSpeed = 0f;
-    
+
         }
 
         else
         {
-            input = Input.GetAxisRaw("Horizontal");
-
-            if (input < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (input > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
             currentState.UpdateState(this);
+        }
 
+        if (remainingTime > 0 && Input.GetKey(KeyCode.X))
+        {
+            timerBar.enabled = true;
+            remainingTime -= Time.deltaTime;
+            Debug.Log(remainingTime);
+            timerBar.fillAmount = remainingTime / maxTime;
+        }
+
+        if (remainingTime > 0 && remainingTime < 10 && Input.GetKey(KeyCode.X) == false)
+        {
+            remainingTime += Time.deltaTime;
+            Debug.Log($"{remainingTime}");
+            timerBar.enabled = false;
+            timerBar.fillAmount = maxTime;
+        }
+
+        else if (remainingTime <= 0 && Input.GetKey(KeyCode.X))
+        {
+            timerBar.enabled = false;
+            PManager.gameOverScreen.SetActive(true);
+            Time.timeScale = 0;
         }
 
     }
@@ -80,36 +103,31 @@ public class PlayerStateManager : MonoBehaviour
 
         switch (currentState)
         {
-                case PlayerWalkState:
-                Stand.enabled = true;
+            case PlayerWalkState:
                 spriteRenderer.sprite = walking;
-                charSpeed = 15f;
+                charSpeed = 6f;
                 break;
 
-                case PlayerCrouchState:
-                Stand.enabled = false;
+            case PlayerCrouchState:
                 spriteRenderer.sprite = crouch;
                 charSpeed = 3f;
                 break;
 
-                case PlayerHoldBreathState:
-                Stand.enabled = true;
+            case PlayerHoldBreathState:
                 spriteRenderer.sprite = breath;
                 charSpeed = 2f;
                 break;
 
-                case PlayerEyesState:
-                Stand.enabled = true;
+            case PlayerEyesState:
                 spriteRenderer.sprite = closedEyes;
                 charSpeed = 1f;
                 break;
 
-                case PlayerIdleState:
-                Stand.enabled = true;
+            case PlayerIdleState:
                 spriteRenderer.sprite = idle;
                 charSpeed = 0f;
                 break;
-               
+
 
         }
 
