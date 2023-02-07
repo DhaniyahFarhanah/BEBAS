@@ -33,15 +33,13 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerEyesState eyesState = new PlayerEyesState();
     public PlayerIdleState idleState = new PlayerIdleState();
 
-    internal PlayerBaseState yeetState;
-    internal PlayerBaseState twerkState;
-    internal PlayerBaseState killState;
+    //internal PlayerBaseState yeetState;
+    //internal PlayerBaseState twerkState;
+    //internal PlayerBaseState killState;
 
     public Image timerBar;
     public float maxTime = 1f;
     float remainingTime;
-
-
 
     void Start()
     {
