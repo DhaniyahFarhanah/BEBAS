@@ -13,6 +13,8 @@ public class PlayerStateManager : MonoBehaviour
     //float playerScale;
     public SpriteRenderer spriteRenderer;
     public Rigidbody2D playerRB;
+    public CapsuleCollider2D standingCollider;
+    public BoxCollider2D crouchCollider;
     public GameObject dialogueBox;
     public PlayerManager PManager;
 
@@ -58,10 +60,21 @@ public class PlayerStateManager : MonoBehaviour
             charSpeed = 0f;
 
         }
-
+        // =============Player Movement (flip & speed) ================
         else
         {
+            input = Input.GetAxisRaw("Horizontal");
+
+            if (input < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (input > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
             currentState.UpdateState(this);
+
         }
 
         if (remainingTime > 0 && Input.GetKey(KeyCode.X))
@@ -102,26 +115,36 @@ public class PlayerStateManager : MonoBehaviour
         switch (currentState)
         {
             case PlayerWalkState:
+                crouchCollider.enabled = false;
+                standingCollider.enabled = true;
                 spriteRenderer.sprite = walking;
-                charSpeed = 6f;
+                charSpeed = 8f;
                 break;
 
             case PlayerCrouchState:
+                crouchCollider.enabled = true;
+                standingCollider.enabled = false;
                 spriteRenderer.sprite = crouch;
                 charSpeed = 3f;
                 break;
 
             case PlayerHoldBreathState:
+                crouchCollider.enabled = false;
+                standingCollider.enabled = true;
                 spriteRenderer.sprite = breath;
                 charSpeed = 2f;
                 break;
 
             case PlayerEyesState:
+                crouchCollider.enabled = false;
+                standingCollider.enabled = true;
                 spriteRenderer.sprite = closedEyes;
                 charSpeed = 1f;
                 break;
 
             case PlayerIdleState:
+                crouchCollider.enabled = false;
+                standingCollider.enabled = true;
                 spriteRenderer.sprite = idle;
                 charSpeed = 0f;
                 break;
