@@ -2163,6 +2163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 705463104}
   playerRB: {fileID: 705463103}
+  standingCollider: {fileID: 705463102}
+  crouchCollider: {fileID: 705463106}
   dialogueBox: {fileID: 1307237298}
   PManager: {fileID: 0}
   charSpeed: 15
