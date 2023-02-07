@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerCrouchState : PlayerBaseState
 {
+
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I am crouching");

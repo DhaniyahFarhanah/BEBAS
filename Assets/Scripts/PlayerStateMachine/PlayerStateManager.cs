@@ -9,6 +9,8 @@ public class PlayerStateManager : MonoBehaviour
     PlayerBaseState currentState;
 
     public SpriteRenderer spriteRenderer;
+    public CapsuleCollider2D Stand;
+    public BoxCollider2D crouching;
     public Rigidbody2D playerRB;
     public GameObject dialogueBox;
 
@@ -79,26 +81,31 @@ public class PlayerStateManager : MonoBehaviour
         switch (currentState)
         {
                 case PlayerWalkState:
+                Stand.enabled = true;
                 spriteRenderer.sprite = walking;
                 charSpeed = 15f;
                 break;
 
                 case PlayerCrouchState:
+                Stand.enabled = false;
                 spriteRenderer.sprite = crouch;
                 charSpeed = 3f;
                 break;
 
                 case PlayerHoldBreathState:
+                Stand.enabled = true;
                 spriteRenderer.sprite = breath;
                 charSpeed = 2f;
                 break;
 
                 case PlayerEyesState:
+                Stand.enabled = true;
                 spriteRenderer.sprite = closedEyes;
                 charSpeed = 1f;
                 break;
 
                 case PlayerIdleState:
+                Stand.enabled = true;
                 spriteRenderer.sprite = idle;
                 charSpeed = 0f;
                 break;

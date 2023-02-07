@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 549ed7aab9c04bd41b255748f9487b61
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dialoguePanel: {instanceID: 0}
+  - Z: {instanceID: 0}
+  - boltcutter: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - preview: {instanceID: 0}
+  - src: {instanceID: 0}
+  - voiceAzri: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
