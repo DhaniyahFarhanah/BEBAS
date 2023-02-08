@@ -11,8 +11,10 @@ public class PuzzleDialogueScript : MonoBehaviour
     public GameObject gameObject_this;
     public GameObject puzzle;
     public GameObject player;
+
+    public Image display;
+    public Sprite newImage;
     public TMP_Text dialogueText;
-    public Image preview;
 
     public string[] dialogue;
     private int index;
@@ -109,6 +111,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
             playerIsClose = true;
             Z.SetActive(true) ;
+            display.sprite = newImage;
             Debug.Log("Player is in range");
         }
     }

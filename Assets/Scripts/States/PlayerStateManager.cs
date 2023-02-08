@@ -146,7 +146,7 @@ public class PlayerStateManager : MonoBehaviour
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = closedEyes;
-                charSpeed = 1f;
+                charSpeed = 2f;
                 break;
 
             case PlayerIdleState:
