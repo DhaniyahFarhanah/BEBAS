@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 082ed6dcb28e7a14091d4a00e0d86798
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90de8b80ad3d7249b90e1ec3a995863
+      internalID: 1459887073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3ec7575d2ee264da03975ec08144f1
+      internalID: 931725710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0346b9367213f8e498f3e4b90a1f2534
+      internalID: 1123206234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a594208b72dcc41a4f01b8955b9de0
+      internalID: 279325489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503043948a65bec4db713f3ae9d1ea64
+      internalID: 1326151638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e852a59cfd9b1b42929ebc29d314b2b
+      internalID: 1357009782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a46a4dc3690c8419f198ac83e768ac
+      internalID: -1288036891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e55b2e66d73cd48bc86895fd320f0d
+      internalID: -860916210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01da8596e32af134fb9d46a95bde9fad
+      internalID: -1071808864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db605ba93d581974ab7b5bd8df8b2367
+      internalID: 413153381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe111c1729c710a4482e34893a221b16
+      internalID: -425420538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d4b8e501096144f81f662aada72a6a
+      internalID: 425856372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8dff5ae9257f2408f8832670105691
+      internalID: -1130475329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb77987e052bc74fab5e4ea0cb75d38
+      internalID: 961632464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1e1bfa897b5ac469b16e86d9305d42
+      internalID: 592753081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5dbf4b7ce15a24b899f173d1d722df
+      internalID: -75424571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95d49a2d65711f43844d535bf958368
+      internalID: 1368483463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc628dbb2b4f92d418cb44eafdda510f
+      internalID: 336891097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26487e487d2d3c6448e019b805964588
+      internalID: 834814521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41f578b132a4e54ea1a5c26b60e9b74
+      internalID: 1889072451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb9fb45e5447974ba2254f3b90866d5
+      internalID: -2078999475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cb7c13783bb1f43ad91631fe58c547
+      internalID: 291671625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2f465f9ad89f6429e82af3bd065d27
+      internalID: -978201934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68397f2ad3b67f240a24058a9d6dd2b5
+      internalID: 1366362450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84e64f00e0f5094d91c9a8ea03b6a5f
+      internalID: -1161143571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c966eb3c65e20c146b7c594715a4ac2e
+      internalID: -285733979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4361190865f952f40b07d672b0a024d4
+      internalID: -205718087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5719a6ec84fae843a559af781db296a
+      internalID: -1801736974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Azri_CloseEyes01_Spritesheet_23: 1366362450
+      Azri_CloseEyes01_Spritesheet_9: 413153381
+      Azri_CloseEyes01_Spritesheet_1: 931725710
+      Azri_CloseEyes01_Spritesheet_24: -1161143571
+      Azri_CloseEyes01_Spritesheet_5: 1357009782
+      Azri_CloseEyes01_Spritesheet_12: -1130475329
+      Azri_CloseEyes01_Spritesheet_15: -75424571
+      Azri_CloseEyes01_Spritesheet_11: 425856372
+      Azri_CloseEyes01_Spritesheet_8: -1071808864
+      Azri_CloseEyes01_Spritesheet_10: -425420538
+      Azri_CloseEyes01_Spritesheet_14: 592753081
+      Azri_CloseEyes01_Spritesheet_27: -1801736974
+      Azri_CloseEyes01_Spritesheet_4: 1326151638
+      Azri_CloseEyes01_Spritesheet_18: 834814521
+      Azri_CloseEyes01_Spritesheet_0: 1459887073
+      Azri_CloseEyes01_Spritesheet_19: 1889072451
+      Azri_CloseEyes01_Spritesheet_17: 336891097
+      Azri_CloseEyes01_Spritesheet_2: 1123206234
+      Azri_CloseEyes01_Spritesheet_6: -1288036891
+      Azri_CloseEyes01_Spritesheet_21: 291671625
+      Azri_CloseEyes01_Spritesheet_16: 1368483463
+      Azri_CloseEyes01_Spritesheet_22: -978201934
+      Azri_CloseEyes01_Spritesheet_26: -205718087
+      Azri_CloseEyes01_Spritesheet_3: 279325489
+      Azri_CloseEyes01_Spritesheet_25: -285733979
+      Azri_CloseEyes01_Spritesheet_20: -2078999475
+      Azri_CloseEyes01_Spritesheet_7: -860916210
+      Azri_CloseEyes01_Spritesheet_13: 961632464
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
