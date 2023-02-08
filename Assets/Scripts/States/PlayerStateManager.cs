@@ -15,7 +15,10 @@ public class PlayerStateManager : MonoBehaviour
     public Rigidbody2D playerRB;
     public CapsuleCollider2D standingCollider;
     public BoxCollider2D crouchCollider;
+
+    public GameObject darkness;
     public GameObject dialogueBox;
+
     public PlayerManager PManager;
 
     public float charSpeed;
@@ -115,6 +118,7 @@ public class PlayerStateManager : MonoBehaviour
         switch (currentState)
         {
             case PlayerWalkState:
+                darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = walking;
@@ -122,6 +126,7 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerCrouchState:
+                darkness.SetActive(false);
                 crouchCollider.enabled = true;
                 standingCollider.enabled = false;
                 spriteRenderer.sprite = crouch;
@@ -129,6 +134,7 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerHoldBreathState:
+                darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = breath;
@@ -136,13 +142,15 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerEyesState:
+                darkness.SetActive(true);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = closedEyes;
-                charSpeed = 1f;
+                charSpeed = 2f;
                 break;
 
             case PlayerIdleState:
+                darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = idle;

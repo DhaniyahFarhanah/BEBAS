@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Load : MonoBehaviour
 {
-    public float delay;
 
     //awake
     private void Awake()
@@ -16,16 +15,27 @@ public class Load : MonoBehaviour
         InitObj();
 
         //start loading process
-        StartCoroutine(LoadApp());
     }
+
+    private void Update()
+    {
+
+    }
+
+    
 
     private IEnumerator LoadApp()
     {
         //delay
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(3);
 
         //load main menu scene
-        StateManager.Instance.SwitchSceneTo("Menu");
+        StateManager.Instance.SwitchSceneTo("Gameplay_Alpha");
+    }
+    
+    public void startTransition()
+    {
+        StartCoroutine("LoadApp");
     }
 
     //init objects that persist trhoughout scenes

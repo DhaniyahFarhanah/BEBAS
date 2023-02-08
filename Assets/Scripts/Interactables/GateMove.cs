@@ -9,6 +9,13 @@ public class GateMove : MonoBehaviour
 
     public Button[] gateArray;
 
+    public GameObject player;
+    public GameObject gateClosed;
+    public GameObject gateOpened;
+    public GameObject Puzzle;
+
+    public SpriteRenderer Background;
+
     public RawImage image;
 
     int count;
@@ -50,7 +57,11 @@ public class GateMove : MonoBehaviour
     IEnumerator ReturnGameplayScene()
     {
         yield return new WaitForSeconds(1f);
-        StateManager.Instance.SwitchSceneTo("Gameplay_Alpha");
+        
+        Puzzle.SetActive(false);
+        player.SetActive(true);
+        gateClosed.SetActive(false);
+        gateOpened.SetActive(true);
     }
 
     

@@ -8,9 +8,13 @@ public class PuzzleDialogueScript : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject Z;
-    public GameObject gameObj;
+    public GameObject gameObject_this;
+    public GameObject puzzle;
+    public GameObject player;
+
+    public Image display;
+    public Sprite newImage;
     public TMP_Text dialogueText;
-    public Image preview;
 
     public string[] dialogue;
     private int index;
@@ -96,7 +100,9 @@ public class PuzzleDialogueScript : MonoBehaviour
     IEnumerator SwitchPuzzleScene()
     {
         yield return new WaitForSeconds(0.05f);
-        StateManager.Instance.SwitchSceneTo("Gate Scene");
+        puzzle.SetActive(true);
+        player.SetActive(false);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D interact)
@@ -105,6 +111,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
             playerIsClose = true;
             Z.SetActive(true) ;
+            display.sprite = newImage;
             Debug.Log("Player is in range");
         }
     }
