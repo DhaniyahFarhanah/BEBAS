@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 181d36412f7377c459bbcacea0669a01
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69273c2e595b1a246b33c229fcc971fd
+      internalID: -1646891734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e254b057887cdd43aeec93c4a0c894e
+      internalID: -1094787869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adf4e313a6a4984d87c158140b53606
+      internalID: -1003502271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d8c40121163bb48bfe602ff7fb09ad
+      internalID: 1893403717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de0d378fb4d29f469faec1008d18dc0
+      internalID: -784730394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbf07af12155704a9ec172687515829
+      internalID: -1729439243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3750
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61306a852a9168840abb91ca2d6189d0
+      internalID: -416630034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8779ce5d923c2084995ef17b91d873a5
+      internalID: -1194178035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce3e1308f4c6b4daadaf9949ca2427
+      internalID: -1760202488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe17def161ffa1a439dd51d44fff1075
+      internalID: -459744690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e54f833e3992d440969eca7e7869f79
+      internalID: 608249578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fa0d5d2aeee864ea97605ee4d70b1d
+      internalID: 1991569349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f6ff6dadfd6324994216212347474b
+      internalID: -913439970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2500
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7107f905dd3540b48b2f951bdea2394d
+      internalID: 1891191395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399938a570ae32a4baf11f16f315f2a0
+      internalID: -1739006880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1397fa20580de5d469c72bdfaea63d7a
+      internalID: -1758945060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236aa2adc0ad7094d9674abb81d12864
+      internalID: 99901359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6872866ec73896f4a9cc8776449fed14
+      internalID: -1673897708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eafb06baa6b7b3469cd5313973ff5fa
+      internalID: -383510870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2a6db5807f4bf449441179fe442065
+      internalID: -1996703346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1250
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2d0304a55da97449e4cf8d78ebd354
+      internalID: 2082375689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69c2c6fddac06a4a8b898d0fb7142c7
+      internalID: 435205466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f29d01d6ffbe2418bf4f63c20d9339
+      internalID: 1204112579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708ab4b91888eb24c9150cbace5e1bd6
+      internalID: 1940378714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57068567a684d04086f17c82295d268
+      internalID: -556532565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff0acbe2f84e4e4293e7c2a0bf360b8
+      internalID: -1121404145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c3d2becbf3d274d94b79eba0ee32f7
+      internalID: 399909000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_CloseEyes01_walk_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eb8769ffb53e54c8644b6c5142f3fd
+      internalID: 577211078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Azri_CloseEyes01_walk_Spritesheet_1: -1094787869
+      Azri_CloseEyes01_walk_Spritesheet_2: -1003502271
+      Azri_CloseEyes01_walk_Spritesheet_7: -1194178035
+      Azri_CloseEyes01_walk_Spritesheet_6: -416630034
+      Azri_CloseEyes01_walk_Spritesheet_26: 399909000
+      Azri_CloseEyes01_walk_Spritesheet_10: 608249578
+      Azri_CloseEyes01_walk_Spritesheet_16: 99901359
+      Azri_CloseEyes01_walk_Spritesheet_27: 577211078
+      Azri_CloseEyes01_walk_Spritesheet_12: -913439970
+      Azri_CloseEyes01_walk_Spritesheet_17: -1673897708
+      Azri_CloseEyes01_walk_Spritesheet_11: 1991569349
+      Azri_CloseEyes01_walk_Spritesheet_22: 1204112579
+      Azri_CloseEyes01_walk_Spritesheet_13: 1891191395
+      Azri_CloseEyes01_walk_Spritesheet_8: -1760202488
+      Azri_CloseEyes01_walk_Spritesheet_4: -784730394
+      Azri_CloseEyes01_walk_Spritesheet_24: -556532565
+      Azri_CloseEyes01_walk_Spritesheet_0: -1646891734
+      Azri_CloseEyes01_walk_Spritesheet_3: 1893403717
+      Azri_CloseEyes01_walk_Spritesheet_21: 435205466
+      Azri_CloseEyes01_walk_Spritesheet_14: -1739006880
+      Azri_CloseEyes01_walk_Spritesheet_18: -383510870
+      Azri_CloseEyes01_walk_Spritesheet_23: 1940378714
+      Azri_CloseEyes01_walk_Spritesheet_9: -459744690
+      Azri_CloseEyes01_walk_Spritesheet_20: 2082375689
+      Azri_CloseEyes01_walk_Spritesheet_5: -1729439243
+      Azri_CloseEyes01_walk_Spritesheet_25: -1121404145
+      Azri_CloseEyes01_walk_Spritesheet_15: -1758945060
+      Azri_CloseEyes01_walk_Spritesheet_19: -1996703346
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

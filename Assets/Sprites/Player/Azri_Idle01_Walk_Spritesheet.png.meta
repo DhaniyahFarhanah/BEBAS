@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 8645664f389c0694b8ac630a1843b89c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ef09866c4151d4dae545be24f8a2a6
+      internalID: 1179852299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20e1d35fed4ee4478ee9f48ba5a2ffa
+      internalID: 666503249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2778ea9dfd21e6a40bf5b9a97fef30a9
+      internalID: 1350589402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8a95531fa4ba24f908c5e726734f4b
+      internalID: -1811278858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b1cc81e6991ce4583a6bfb7c58124a
+      internalID: -160341565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 3750
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a36eb811c379f40a1be39937e84d1a
+      internalID: -211811234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcb70de9aace9a459910a41d298d935
+      internalID: -1645571957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294a5ece45d93ea4182325709c55f786
+      internalID: -73445838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97f9f62ec30c3d4abeb299b7f75f64e
+      internalID: 1811758749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00c8390228e5014cbc42180cdc3760a
+      internalID: 940335021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a688494768e7ed34a81db09f11b420be
+      internalID: 392768407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 2500
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679e15b5c87eeb34bb86101e5a9a0ea8
+      internalID: -759559528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e828c24ae8e7ad543a4cb7656ed03d19
+      internalID: 1075011545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753c740b132e17f4ca3f6a1c14f63d2f
+      internalID: 841890791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f43de16dad561429603dc3df1bcc06
+      internalID: -257959704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa49b71bc22c37946b55bf0b1f956df1
+      internalID: 760177521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbd9b6f170ee2b4791b8d2d426f0479
+      internalID: -1676192603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 1250
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7309b6381bc213647812e30978c942b2
+      internalID: 1818905526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2f5cfbf53bd35409f0e8aec5128aa8
+      internalID: -1867836184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43c53c6faf4b2d44a8024c7f4b829c8
+      internalID: -760999493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5630eb4318e7f4c8de736d52e4efdf
+      internalID: -1609590834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d904d3c2ba5940458aedbda1ba3a3ff
+      internalID: -1980686934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495417ac66de1b54bac9506c780a405d
+      internalID: -1239047782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 0
+        width: 601
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edbd23ef827d0548b30f546272aa5a3
+      internalID: -1099410334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Azri_Idle01_Walk_Spritesheet_22: -1239047782
+      Azri_Idle01_Walk_Spritesheet_13: 841890791
+      Azri_Idle01_Walk_Spritesheet_12: 1075011545
+      Azri_Idle01_Walk_Spritesheet_15: 760177521
+      Azri_Idle01_Walk_Spritesheet_9: 940335021
+      Azri_Idle01_Walk_Spritesheet_3: -1811278858
+      Azri_Idle01_Walk_Spritesheet_8: 1811758749
+      Azri_Idle01_Walk_Spritesheet_6: -1645571957
+      Azri_Idle01_Walk_Spritesheet_2: 1350589402
+      Azri_Idle01_Walk_Spritesheet_10: 392768407
+      Azri_Idle01_Walk_Spritesheet_18: -1867836184
+      Azri_Idle01_Walk_Spritesheet_0: 1179852299
+      Azri_Idle01_Walk_Spritesheet_14: -257959704
+      Azri_Idle01_Walk_Spritesheet_16: -1676192603
+      Azri_Idle01_Walk_Spritesheet_5: -211811234
+      Azri_Idle01_Walk_Spritesheet_20: -1609590834
+      Azri_Idle01_Walk_Spritesheet_17: 1818905526
+      Azri_Idle01_Walk_Spritesheet_19: -760999493
+      Azri_Idle01_Walk_Spritesheet_4: -160341565
+      Azri_Idle01_Walk_Spritesheet_23: -1099410334
+      Azri_Idle01_Walk_Spritesheet_21: -1980686934
+      Azri_Idle01_Walk_Spritesheet_1: 666503249
+      Azri_Idle01_Walk_Spritesheet_7: -73445838
+      Azri_Idle01_Walk_Spritesheet_11: -759559528
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
