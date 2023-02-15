@@ -20,7 +20,7 @@ public class pausemenu : MonoBehaviour
         {
             if (isPaused)
             {
-                ResumeGame(); 
+                ResumeGame();
             }
             else
             {
@@ -35,7 +35,7 @@ public class pausemenu : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
     }
-    
+
     public void ResumeGame()
     {
         PauseMenu.SetActive(false); //menu is active when button is pressed
