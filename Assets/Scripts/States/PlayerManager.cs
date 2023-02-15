@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isGameOver)
+        if (isGameOver == true)
         {
             gameOverScreen.SetActive(true); //game over screen will show up when game is over
         }
