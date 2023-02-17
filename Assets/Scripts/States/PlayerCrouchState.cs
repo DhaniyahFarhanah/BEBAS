@@ -11,7 +11,7 @@ public class PlayerCrouchState : PlayerBaseState
     public override void UpdateState(PlayerStateManager player)
     {
         
-        if (Input.GetKeyUp(KeyCode.C)) //if no longer pressing
+        if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
         {
             if (Input.GetAxisRaw("Horizontal") == 0) //idle
             {
@@ -23,7 +23,11 @@ public class PlayerCrouchState : PlayerBaseState
             }
 
         }
- 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            player.SwitchState(player.eyesState);
+        }
+
 
     }
 

@@ -80,7 +80,9 @@ public class PlayerStateManager : MonoBehaviour
 
         }
 
-        if (remainingTime > 0 && Input.GetKey(KeyCode.X))
+        //=========BREATH BAR===========
+
+        if (remainingTime > 0 && Input.GetKey(KeyCode.Space))
         {
             timerBar.enabled = true;
             remainingTime -= Time.deltaTime;
@@ -88,7 +90,7 @@ public class PlayerStateManager : MonoBehaviour
             timerBar.fillAmount = remainingTime / maxTime;
         }
 
-        if (remainingTime > 0 && remainingTime < 10 && Input.GetKey(KeyCode.X) == false)
+        if (remainingTime > 0 && remainingTime < 10 && Input.GetKey(KeyCode.Space) == false)
         {
             remainingTime += Time.deltaTime;
             Debug.Log($"{remainingTime}");
@@ -96,7 +98,7 @@ public class PlayerStateManager : MonoBehaviour
             timerBar.fillAmount = maxTime;
         }
 
-        else if (remainingTime <= 0 && Input.GetKey(KeyCode.X))
+        else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space))
         {
             timerBar.enabled = false;
             PManager.gameOverScreen.SetActive(true);
@@ -111,6 +113,7 @@ public class PlayerStateManager : MonoBehaviour
 
     }
 
+    //============STATE PROPERTIES HERE=================
     public void SwitchState(PlayerBaseState state)
     {
         currentState = state;

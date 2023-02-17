@@ -19,8 +19,8 @@ public class PlayerEyesState : PlayerBaseState
             {
                 player.SwitchState(player.walkState);
             }
-
         }
+       
     }
 
     public override void OnCollisionEnter(PlayerStateManager player)

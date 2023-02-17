@@ -35,7 +35,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
 
@@ -52,7 +52,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Z) && start == false)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
         {
             NextLine();
         }
