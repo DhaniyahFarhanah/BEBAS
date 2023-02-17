@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GhostTest : MonoBehaviour
+public class ghostOpacity : MonoBehaviour
 {
     private SpriteRenderer ghostRenderer;
     public Color oldColor;
