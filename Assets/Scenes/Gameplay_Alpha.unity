@@ -7242,7 +7242,9 @@ MonoBehaviour:
   preview: {fileID: 0}
   dialogue:
   - ...
+  - you're not supposed to be here.
   - go away.
+  - before I kill you.
   wordSpeed: 0.05
   playerIsClose: 0
   start: 1
