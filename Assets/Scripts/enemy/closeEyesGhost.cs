@@ -7,16 +7,13 @@ public class closeEyesGhost : MonoBehaviour
 
     public float range = 3; //variable for enemy range (default)
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (collision.transform.tag == "closeEyesGhost") //if the player collides with objects with the tag "ghost"
+        {
+            PlayerManager.isGameOver = true; //game is over is true
+            gameObject.SetActive(false); //destroys the player object 
+        }
     }
 }
 
