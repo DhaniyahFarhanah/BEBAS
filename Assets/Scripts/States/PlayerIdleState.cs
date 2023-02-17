@@ -15,22 +15,31 @@ public class PlayerIdleState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
+        player.animator.SetBool("Idle", true);
 
         if (Input.GetKeyDown(KeyCode.Space)) //Holding Breath
         {
-             player.SwitchState(player.breathState);
+            player.animator.SetBool("Idle", false);
+
+            player.SwitchState(player.breathState);
         }
         if (Input.GetKeyDown(KeyCode.S)) //Crouching
         {
+            player.animator.SetBool("Idle", false);
+
             player.SwitchState(player.crouchState);
         }
         if (Input.GetKeyDown(KeyCode.LeftShift)) //covering eyes
         {
-             player.SwitchState(player.eyesState);
+            player.animator.SetBool("Idle", false);
+
+            player.SwitchState(player.eyesState);
         }
 
-        if (Input.GetAxisRaw("Horizontal") != 0) //idle
+        if (Input.GetAxisRaw("Horizontal") != 0) //not idle
         {
+            player.animator.SetBool("Idle", false);
+
             player.SwitchState(player.walkState);
         }
     }

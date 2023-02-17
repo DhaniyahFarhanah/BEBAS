@@ -9,9 +9,12 @@ public class PlayerHoldBreathState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
+        player.animator.SetBool("Breath", true);
 
         if (Input.GetKeyUp(KeyCode.Space)) //if no longer pressing
         {
+            player.animator.SetBool("Breath", false);
+
             if (Input.GetAxisRaw("Horizontal") == 0) //idle
             {
                 player.SwitchState(player.idleState);

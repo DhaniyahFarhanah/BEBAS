@@ -25,6 +25,7 @@ public class PlayerStateManager : MonoBehaviour
     public float dirX;
     public float input;
 
+    public Animator animator;
 
     public Sprite idle;
     public Sprite walking;
@@ -70,13 +71,17 @@ public class PlayerStateManager : MonoBehaviour
 
             if (input < 0)
             {
+                
                 spriteRenderer.flipX = true;
             }
             else if (input > 0)
             {
+               
+
                 spriteRenderer.flipX = false;
             }
             currentState.UpdateState(this);
+            animator.SetFloat("Speed", Math.Abs(input));
 
         }
 
@@ -121,14 +126,26 @@ public class PlayerStateManager : MonoBehaviour
         switch (currentState)
         {
             case PlayerWalkState:
+                //anim states
+               // animator.SetBool("Idle", false);
+               // animator.SetBool("Moving", true);
+               // animator.SetBool("Crouch", false);
+               // animator.SetBool("Breath", false);
+
+
+                //code
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = walking;
-                charSpeed = 8f;
+                charSpeed = 4.5f;
                 break;
 
             case PlayerCrouchState:
+                //anim states
+               
+
+                //code
                 darkness.SetActive(false);
                 crouchCollider.enabled = true;
                 standingCollider.enabled = false;
@@ -137,6 +154,9 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerHoldBreathState:
+                //anim states
+
+                //code
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
@@ -145,6 +165,9 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerEyesState:
+                //anim states
+
+                //code
                 darkness.SetActive(true);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
@@ -153,6 +176,8 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerIdleState:
+                //anim states
+                //code
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;

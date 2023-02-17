@@ -9,8 +9,12 @@ public class PlayerEyesState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
+        player.animator.SetBool("Eyes", true);
+
         if (Input.GetKeyUp(KeyCode.LeftShift)) //if no longer pressing
         {
+            player.animator.SetBool("Eyes", false);
+
             if (Input.GetAxisRaw("Horizontal") == 0) //idle
             {
                 player.SwitchState(player.idleState);

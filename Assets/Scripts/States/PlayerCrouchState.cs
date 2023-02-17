@@ -10,9 +10,12 @@ public class PlayerCrouchState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
-        
+        player.animator.SetBool("Crouch", true);
+
         if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
         {
+            player.animator.SetBool("Crouch", false);
+
             if (Input.GetAxisRaw("Horizontal") == 0) //idle
             {
                 player.SwitchState(player.idleState);
@@ -23,8 +26,11 @@ public class PlayerCrouchState : PlayerBaseState
             }
 
         }
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            player.animator.SetBool("Crouch", false);
+
             player.SwitchState(player.eyesState);
         }
 
