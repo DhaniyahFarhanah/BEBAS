@@ -165,7 +165,7 @@ public class DigitalDisplay : MonoBehaviour
         yield return new WaitForSeconds(1f);
         door.SetActive(true);
         puzzle.SetActive(false);
-        GetComponent<Collider>().SetActive(false);
+        display.SetActive(false);
         player.SetActive(true);
 
     }
