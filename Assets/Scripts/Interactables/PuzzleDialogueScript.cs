@@ -35,27 +35,34 @@ public class PuzzleDialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
-        {
-            Debug.Log("Interact");
 
-            if (dialoguePanel.activeInHierarchy)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
             {
-                zeroText();
+
+                Debug.Log("Interact");
+                if(dialogue.Length == 0)
+            {
+                StartCoroutine(SwitchPuzzleImmediate());
             }
+
+                if (dialoguePanel.activeInHierarchy)
+                {
+                    zeroText();
+                }
             
-            else
-            {
-                start = false;
-                dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                else
+                {
+                    start = false;
+                    dialoguePanel.SetActive(true);
+                    StartCoroutine(Typing());
+                }
             }
-        }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
-        {
-            NextLine();
-        }
+            else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
+            {
+                NextLine();
+            }
+
 
     }
 
@@ -97,6 +104,13 @@ public class PuzzleDialogueScript : MonoBehaviour
         }
     }
 
+    IEnumerator SwitchPuzzleImmediate()
+    {
+        yield return new WaitForSeconds(0f);
+
+        puzzle.SetActive(true);
+        player.SetActive(false);
+    }
     IEnumerator SwitchPuzzleScene()
     {
         yield return new WaitForSeconds(0.05f);

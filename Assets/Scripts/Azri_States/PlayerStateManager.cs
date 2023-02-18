@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerStateManager : MonoBehaviour
 {
-    PlayerBaseState currentState;
-
+    public PlayerBaseState currentState;
 
     //float playerScale;
     public SpriteRenderer spriteRenderer;
@@ -38,6 +37,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerHoldBreathState breathState = new PlayerHoldBreathState();
     public PlayerEyesState eyesState = new PlayerEyesState();
     public PlayerIdleState idleState = new PlayerIdleState();
+    public PlayerDeadState deadState = new PlayerDeadState();
 
     //internal PlayerBaseState yeetState;
     //internal PlayerBaseState twerkState;
@@ -183,6 +183,11 @@ public class PlayerStateManager : MonoBehaviour
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = idle;
                 charSpeed = 0f;
+                break;
+
+            case PlayerDeadState:
+                darkness.SetActive(false);
+                this.enabled = false;
                 break;
 
 
