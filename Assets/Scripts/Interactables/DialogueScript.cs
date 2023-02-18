@@ -99,7 +99,7 @@ public class DialogueScript : MonoBehaviour
         if (interact.CompareTag("Player"))
         {
             playerIsClose = true;
-            Z.SetActive(true) ;
+            Z.SetActive(true);
             display.sprite = newImage;
             
             Debug.Log("Player is in range");

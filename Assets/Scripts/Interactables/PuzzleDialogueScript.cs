@@ -45,7 +45,7 @@ public class PuzzleDialogueScript : MonoBehaviour
                 StartCoroutine(SwitchPuzzleImmediate());
             }
 
-                if (dialoguePanel.activeInHierarchy)
+                else if (dialoguePanel.activeInHierarchy)
                 {
                     zeroText();
                 }
