@@ -17,6 +17,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public GameObject darkness;
     public GameObject dialogueBox;
+    public GameObject gameOverScreen;
 
     public PlayerManager PManager;
 
@@ -106,7 +107,7 @@ public class PlayerStateManager : MonoBehaviour
         else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space))
         {
             timerBar.enabled = false;
-            PManager.gameOverScreen.SetActive(true);
+            gameOverScreen.SetActive(true);
             Time.timeScale = 0;
         }
 
