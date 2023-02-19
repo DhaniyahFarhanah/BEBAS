@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeyPadPuzzleScript : MonoBehaviour
+public class FuseBoxPuzzleScript : MonoBehaviour
 {
     //pseudocode time
     // get bool of the switches 
@@ -28,6 +28,8 @@ public class KeyPadPuzzleScript : MonoBehaviour
     [SerializeField] bool Switch4_On;
 
     [SerializeField] Animator anim;
+
+    public bool lightsOn;
 
     [SerializeField] Image statusBar;
 
@@ -76,11 +78,13 @@ public class KeyPadPuzzleScript : MonoBehaviour
 
         if(enteredValue == correctValue)
         {
+            lightsOn = true;
             StartCoroutine(LightsOn());
             Debug.Log("Right amount");
         }
         else
         {
+            lightsOn = false;
             anim.SetBool("On", false);
             Debug.Log("Wrong Amount");
         }
@@ -181,6 +185,7 @@ public class KeyPadPuzzleScript : MonoBehaviour
        
         player.SetActive(true);
         gameObject.SetActive(false);
+
 
 
     }
