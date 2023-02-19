@@ -33,7 +33,7 @@ public class DialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
 
@@ -50,7 +50,7 @@ public class DialogueScript : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Z) && start == false)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
         {
             NextLine();
         }
@@ -99,7 +99,7 @@ public class DialogueScript : MonoBehaviour
         if (interact.CompareTag("Player"))
         {
             playerIsClose = true;
-            Z.SetActive(true) ;
+            Z.SetActive(true);
             display.sprite = newImage;
             
             Debug.Log("Player is in range");

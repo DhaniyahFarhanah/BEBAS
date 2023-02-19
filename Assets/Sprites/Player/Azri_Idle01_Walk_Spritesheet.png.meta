@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -122,7 +122,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,9 +141,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 601
+        x: 600
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1202
+        x: 1200
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -183,9 +183,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1803
+        x: 1800
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,9 +204,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 2404
+        x: 2400
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 3005
+        x: 3000
         y: 3750
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,9 +246,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2500
-        width: 601
+        x: 3600
+        y: 3750
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -267,9 +267,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 601
+        x: 0
         y: 2500
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,9 +288,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 1202
+        x: 600
         y: 2500
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -309,9 +309,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_9
       rect:
         serializedVersion: 2
-        x: 1803
+        x: 1200
         y: 2500
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,9 +330,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 2404
+        x: 1800
         y: 2500
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -351,9 +351,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 3005
+        x: 2400
         y: 2500
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -372,9 +372,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1250
-        width: 601
+        x: 3000
+        y: 2500
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -393,9 +393,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 601
-        y: 1250
-        width: 601
+        x: 3600
+        y: 2500
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -414,9 +414,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_14
       rect:
         serializedVersion: 2
-        x: 1202
+        x: 0
         y: 1250
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -435,9 +435,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_15
       rect:
         serializedVersion: 2
-        x: 1803
+        x: 600
         y: 1250
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -456,9 +456,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_16
       rect:
         serializedVersion: 2
-        x: 2404
+        x: 1200
         y: 1250
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -477,9 +477,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_17
       rect:
         serializedVersion: 2
-        x: 3005
+        x: 1800
         y: 1250
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -498,9 +498,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 601
+        x: 2400
+        y: 1250
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -519,9 +519,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_19
       rect:
         serializedVersion: 2
-        x: 601
-        y: 0
-        width: 601
+        x: 3000
+        y: 1250
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -540,9 +540,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_20
       rect:
         serializedVersion: 2
-        x: 1202
-        y: 0
-        width: 601
+        x: 3600
+        y: 1250
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -561,9 +561,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_21
       rect:
         serializedVersion: 2
-        x: 1803
+        x: 0
         y: 0
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -582,9 +582,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_22
       rect:
         serializedVersion: 2
-        x: 2404
+        x: 600
         y: 0
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -603,9 +603,9 @@ TextureImporter:
       name: Azri_Idle01_Walk_Spritesheet_23
       rect:
         serializedVersion: 2
-        x: 3005
+        x: 1200
         y: 0
-        width: 601
+        width: 600
         height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -616,6 +616,90 @@ TextureImporter:
       bones: []
       spriteID: 3edbd23ef827d0548b30f546272aa5a3
       internalID: -1099410334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d617accffdec5546b862f1f46144d4f
+      internalID: 43035088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6566354264fb5b488605d7182b2606e
+      internalID: 1874511145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b422e1d7d179fb4e9e156b6677c0c19
+      internalID: -122184388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Idle01_Walk_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91de218f9affc9d45a318f59bf34728f
+      internalID: 1290266494
       vertices: []
       indices: 
       edges: []
@@ -642,7 +726,9 @@ TextureImporter:
       Azri_Idle01_Walk_Spritesheet_2: 1350589402
       Azri_Idle01_Walk_Spritesheet_10: 392768407
       Azri_Idle01_Walk_Spritesheet_18: -1867836184
+      Azri_Idle01_Walk_Spritesheet_25: 1874511145
       Azri_Idle01_Walk_Spritesheet_0: 1179852299
+      Azri_Idle01_Walk_Spritesheet_26: -122184388
       Azri_Idle01_Walk_Spritesheet_14: -257959704
       Azri_Idle01_Walk_Spritesheet_16: -1676192603
       Azri_Idle01_Walk_Spritesheet_5: -211811234
@@ -651,7 +737,9 @@ TextureImporter:
       Azri_Idle01_Walk_Spritesheet_19: -760999493
       Azri_Idle01_Walk_Spritesheet_4: -160341565
       Azri_Idle01_Walk_Spritesheet_23: -1099410334
+      Azri_Idle01_Walk_Spritesheet_24: 43035088
       Azri_Idle01_Walk_Spritesheet_21: -1980686934
+      Azri_Idle01_Walk_Spritesheet_27: 1290266494
       Azri_Idle01_Walk_Spritesheet_1: 666503249
       Azri_Idle01_Walk_Spritesheet_7: -73445838
       Azri_Idle01_Walk_Spritesheet_11: -759559528
