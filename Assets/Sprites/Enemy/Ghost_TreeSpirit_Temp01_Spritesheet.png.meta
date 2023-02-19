@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 66cebabce3e0315488dd3abfe415cb3b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1075
+        width: 347
+        height: 807
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1506dccb357ca1840bbde54ae4dcbe67
+      internalID: -2144880576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1075
+        width: 348
+        height: 809
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ae1a238b53f2741b08db5f3ce7fe3e
+      internalID: -1728011065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1075
+        width: 348
+        height: 809
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1813f452b2ca8443bb365f2388cf013
+      internalID: -557094542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1075
+        width: 348
+        height: 809
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ee4622fb151d54badb9f7b80840ddb
+      internalID: 1679663945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 1075
+        width: 357
+        height: 816
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effc52fb4f3967f4aba57be1b28fcd7a
+      internalID: 28219451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1646
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff447d5197612d428c8d716932aada5
+      internalID: -771700029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 185
+        width: 357
+        height: 814
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a4266e7a38a004a81b47c14670cb1f
+      internalID: -253214943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 185
+        width: 357
+        height: 816
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cede6dfd10a19e64796ed7b29b97b054
+      internalID: -1404092209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 183
+        width: 361
+        height: 818
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70c34d6f4ccfb9418a95d30a2a1da92
+      internalID: 238347577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 183
+        width: 361
+        height: 818
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c0b355e8a436f4ba6b4bb42c9aff72
+      internalID: 527549127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost_TreeSpirit_Temp01_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 182
+        width: 366
+        height: 819
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea8df69c6336584293c1d0f69d04162
+      internalID: -2056984680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ghost_TreeSpirit_Temp01_Spritesheet_14: -2144880576
+      Ghost_TreeSpirit_Temp01_Spritesheet_13: -237071977
+      Ghost_TreeSpirit_Temp01_Spritesheet_3: -1728011065
+      Ghost_TreeSpirit_Temp01_Spritesheet_2: -557094542
+      Ghost_TreeSpirit_Temp01_Spritesheet_8: 1679663945
+      Ghost_TreeSpirit_Temp01_Spritesheet_5: 28219451
+      Ghost_TreeSpirit_Temp01_Spritesheet_19: 1518175582
+      Ghost_TreeSpirit_Temp01_Spritesheet_0: 2123047818
+      Ghost_TreeSpirit_Temp01_Spritesheet_21: 1342496999
+      Ghost_TreeSpirit_Temp01_Spritesheet_20: 1804958204
+      Ghost_TreeSpirit_Temp01_Spritesheet_4: -2088478226
+      Ghost_TreeSpirit_Temp01_Spritesheet_16: -771700029
+      Ghost_TreeSpirit_Temp01_Spritesheet_17: -1211788870
+      Ghost_TreeSpirit_Temp01_Spritesheet_18: -1810741182
+      Ghost_TreeSpirit_Temp01_Spritesheet_6: -308030624
+      Ghost_TreeSpirit_Temp01_Spritesheet_10: -253214943
+      Ghost_TreeSpirit_Temp01_Spritesheet_7: 1268050343
+      Ghost_TreeSpirit_Temp01_Spritesheet_15: -1404092209
+      Ghost_TreeSpirit_Temp01_Spritesheet_1: 238347577
+      Ghost_TreeSpirit_Temp01_Spritesheet_9: 527549127
+      Ghost_TreeSpirit_Temp01_Spritesheet_11: -2056984680
+      Ghost_TreeSpirit_Temp01_Spritesheet_12: -1241703952
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

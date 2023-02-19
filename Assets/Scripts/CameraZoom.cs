@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraZoom : MonoBehaviour
@@ -21,7 +22,8 @@ public class CameraZoom : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        player = GameObject.Find("PlayerStateTest");
+        gameObject.transform.position = cam.transform.position;
+        player = GameObject.Find("Player");
 
     }
 
@@ -34,7 +36,7 @@ public class CameraZoom : MonoBehaviour
     void zoomCamera()
     {
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize,zoomSize, zoomSpeed);
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, setY , gameObject.transform.position.z);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + setY , gameObject.transform.position.z);
     }
     void zoomOut()
     {

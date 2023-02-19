@@ -6,28 +6,42 @@ public class DoorEnterScript : MonoBehaviour
 {
     public Transform player;
 
+    EnemyAgro crawlingGhost;
+
+    public GameObject ghost;
+
     public float x;
     public float y;
     public float z;
 
-    void Start()
+    void Awake()
     {
-
+        crawlingGhost = ghost.GetComponent<EnemyAgro>();    
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                player.position = new Vector3(x, y, z);
+                crawlingGhost.triggerAgro = false;
+                
+                Debug.Log("Enter");
+            }
+
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Can enter");
 
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 player.position = new Vector3(x, y, z);
                 Debug.Log("Enter");
