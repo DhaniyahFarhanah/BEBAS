@@ -178,15 +178,9 @@ public class KeyPadPuzzleScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("On", true);
         yield return new WaitForSeconds(2f);
-        if(enteredValue == correctValue)
-        {
-            Switch1.enabled = false;
-            Switch2.enabled = false;
-            Switch3.enabled = false;
-            Switch4.enabled = false;
-            player.SetActive(true);
-            gameObject.SetActive(false);
-        }
+       
+        player.SetActive(true);
+        gameObject.SetActive(false);
 
 
     }
