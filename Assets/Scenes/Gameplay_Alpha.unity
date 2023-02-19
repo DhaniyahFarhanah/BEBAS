@@ -3042,6 +3042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
+  ghost: {fileID: 0}
   x: 1.1
   y: 47
   z: 10
@@ -8620,8 +8621,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
   agroRange: 8
-  movespeed: 8
-  killmovespeed: 10
+  movespeed: 7
+  killmovespeed: 8
   triggerAgro: 0
   playerGO: {fileID: 705463099}
   Waypoints:
@@ -8698,7 +8699,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970061715}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 938e04028e227de42b2916d0877f2d0e, type: 2}
   m_CullingMode: 0
@@ -14520,6 +14521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
+  ghost: {fileID: 0}
   x: 0
   y: 0
   z: 0
@@ -14848,6 +14850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
+  ghost: {fileID: 0}
   x: 0
   y: 0
   z: 0
@@ -17284,6 +17287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
+  ghost: {fileID: 0}
   x: 11
   y: 19
   z: 10
@@ -18680,6 +18684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463105}
+  ghost: {fileID: 970061715}
   x: 44
   y: 19
   z: 0
