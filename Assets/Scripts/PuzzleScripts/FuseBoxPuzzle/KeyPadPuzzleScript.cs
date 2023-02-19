@@ -15,6 +15,7 @@ public class KeyPadPuzzleScript : MonoBehaviour
     SwitchChangeScript Switch4;
 
     [SerializeField] GameObject Darkness;
+    [SerializeField] GameObject player;
     [SerializeField] GameObject spark;
     [SerializeField] GameObject Switch_1;
     [SerializeField] GameObject Switch_2;
@@ -177,7 +178,16 @@ public class KeyPadPuzzleScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("On", true);
         yield return new WaitForSeconds(2f);
-        gameObject.SetActive(false);
+        if(enteredValue == correctValue)
+        {
+            Switch1.enabled = false;
+            Switch2.enabled = false;
+            Switch3.enabled = false;
+            Switch4.enabled = false;
+            player.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
 
     }
 
