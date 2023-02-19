@@ -6601,6 +6601,9 @@ CapsuleCollider2D:
   m_Direction: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 4c4d7d3 (errrr)
 --- !u!50 &1118881239
 Rigidbody2D:
   serializedVersion: 4
@@ -6622,10 +6625,13 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 7
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 05bff78 (Fusebox Puzzle Layout done)
 =======
 >>>>>>> parent of 05bff78 (Fusebox Puzzle Layout done)
+=======
+>>>>>>> parent of 4c4d7d3 (errrr)
 --- !u!1 &1175467748
 GameObject:
   m_ObjectHideFlags: 0
@@ -9412,6 +9418,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: e82a0b3ed60f6ce4995325de92a03daf, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 0.99607843}
@@ -9419,6 +9426,9 @@ SpriteRenderer:
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 0.99607843}
 >>>>>>> parent of 05bff78 (Fusebox Puzzle Layout done)
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+>>>>>>> parent of 4c4d7d3 (errrr)
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11847,6 +11857,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: e82a0b3ed60f6ce4995325de92a03daf, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 0.8745098}
@@ -11854,6 +11865,9 @@ SpriteRenderer:
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 0.8745098}
 >>>>>>> parent of 05bff78 (Fusebox Puzzle Layout done)
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+>>>>>>> parent of 4c4d7d3 (errrr)
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
