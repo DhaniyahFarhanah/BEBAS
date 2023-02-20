@@ -182,7 +182,7 @@ MonoBehaviour:
   - 'Oh! There is a door here.  '
   - "Hmm, there is a keypad here. I don\u2019t have any clue to open this door."
   - 'Maybe I should walk forward more to see if I can find any clue. '
-  wordSpeed: 0.2
+  wordSpeed: 0.02
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
@@ -2925,7 +2925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &386587436
 Transform:
   m_ObjectHideFlags: 0
@@ -5773,7 +5773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 47.14, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -7873,7 +7873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &913229661
 Transform:
   m_ObjectHideFlags: 0
@@ -8029,9 +8029,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 914814052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332a84fb0dc59824bb15929d022b0cab, type: 3}
+  m_Script: {fileID: 11500000, guid: 3865f1de87cfe4814b0a1a96c2ec817e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Darkness: {fileID: 1031481392}
+  player: {fileID: 705463099}
+  spark: {fileID: 586815042}
+  Switch_1: {fileID: 1205662717}
+  Switch_2: {fileID: 525171138}
+  Switch_3: {fileID: 1374825647}
+  Switch_4: {fileID: 1222592476}
+  Switch1_On: 0
+  Switch2_On: 0
+  Switch3_On: 0
+  Switch4_On: 0
+  anim: {fileID: 914814058}
+  lightsOn: 0
+  statusBar: {fileID: 275174482}
+  correctValue: 80
+  enteredValue: 0
 --- !u!95 &914814058
 Animator:
   serializedVersion: 5
@@ -8061,9 +8077,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 914814052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80929b01c36fdca4fadc4b8a9d30da41, type: 3}
+  m_Script: {fileID: 11500000, guid: 87b44e7fc62b248719ae28fbb66f94a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
 --- !u!1 &918576237
 GameObject:
   m_ObjectHideFlags: 0
@@ -12814,7 +12831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1327455317
 Transform:
   m_ObjectHideFlags: 0
@@ -21187,6 +21204,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
@@ -21200,6 +21221,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+      propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234857, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
