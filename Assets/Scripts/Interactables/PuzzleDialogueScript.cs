@@ -18,6 +18,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     public string[] dialogue;
     private int index;
+    [SerializeField] private bool hasCompletedLine = false;
 
     public float wordSpeed;
     public bool playerIsClose;
@@ -54,11 +55,12 @@ public class PuzzleDialogueScript : MonoBehaviour
                 {
                     start = false;
                     dialoguePanel.SetActive(true);
+                    index = 0;
                     StartCoroutine(Typing());
                 }
             }
 
-            else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
+            else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
             {
                 NextLine();
             }
@@ -79,6 +81,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     {
         foreach(char letter in dialogue[index].ToCharArray())
         {
+            hasCompletedLine = false;
             dialogueText.text += letter;
             if (stopAudioSource)
             {
@@ -87,6 +90,8 @@ public class PuzzleDialogueScript : MonoBehaviour
             audioSource.PlayOneShot(dialogueTypingSoundClip);
             yield return new WaitForSeconds(wordSpeed);
         }
+
+        hasCompletedLine = true;
     }
 
     public void NextLine()
