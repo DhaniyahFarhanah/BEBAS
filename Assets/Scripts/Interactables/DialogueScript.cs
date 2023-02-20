@@ -14,12 +14,16 @@ public class DialogueScript : MonoBehaviour
     public TMP_Text dialogueText;
     public Image preview;
 
+    GameObject player;
+
     public string[] dialogue;
     private int index;
+    [SerializeField] private bool hasCompletedLine = false;
 
     public float wordSpeed;
     public bool playerIsClose;
     public bool start = true;
+    
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -46,6 +50,7 @@ public class DialogueScript : MonoBehaviour
             {
                 start = false;
                 dialoguePanel.SetActive(true);
+                index = 0;
                 StartCoroutine(Typing());
 
                 if (player != null)
@@ -57,7 +62,7 @@ public class DialogueScript : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
             NextLine();
         }
@@ -77,6 +82,7 @@ public class DialogueScript : MonoBehaviour
     {
         foreach(char letter in dialogue[index].ToCharArray())
         {
+            hasCompletedLine = false;
             dialogueText.text += letter;
             if (stopAudioSource)
             {
@@ -84,7 +90,10 @@ public class DialogueScript : MonoBehaviour
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
             yield return new WaitForSeconds(wordSpeed);
+            
         }
+        // TLDR: Dont allow skipping of text, player must read finish all the letters then can go to next line of dialogue
+        hasCompletedLine = true;
     }
 
     public void NextLine()
@@ -100,7 +109,7 @@ public class DialogueScript : MonoBehaviour
             zeroText();
         }
     }
-    GameObject player;
+    
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
@@ -109,10 +118,7 @@ public class DialogueScript : MonoBehaviour
             Z.SetActive(true);
             display.sprite = newImage;
             player = interact.gameObject;
-            //// Add to inventory
-            //Inventory playerInventory = interact.GetComponentInChildren<Inventory>();
-            //playerInventory.AddToInventory(newImage);
-            
+                       
             Debug.Log("Player is in range");
         }
     }
