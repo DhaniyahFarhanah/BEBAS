@@ -172,8 +172,8 @@ public class EnemyAgro : MonoBehaviour
     IEnumerator WaitForCrawl()
     {
         anim.SetTrigger("Agro");
+        yield return new WaitForSeconds(0.5f);
         anim.SetInteger("Index", 0);
-        yield return new WaitForSeconds(1f);
         triggerAgro = true;
         
     }
