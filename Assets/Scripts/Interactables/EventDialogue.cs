@@ -20,6 +20,8 @@ public class EventDialogue : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
 
+    [SerializeField] private bool hasCompletedLine = false;
+
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
@@ -49,7 +51,7 @@ public class EventDialogue : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
             NextLine();
         }
@@ -77,6 +79,8 @@ public class EventDialogue : MonoBehaviour
             audioSource.PlayOneShot(dialogueTypingSoundClip);
             yield return new WaitForSeconds(wordSpeed);
         }
+
+        hasCompletedLine = true;
     }
 
     public void NextLine()
