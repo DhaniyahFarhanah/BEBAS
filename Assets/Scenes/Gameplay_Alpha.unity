@@ -178,7 +178,10 @@ MonoBehaviour:
   display: {fileID: 576505571}
   newImage: {fileID: 21300000, guid: 51be56e05bc03f54fa3f41ee42c720e0, type: 3}
   dialogueText: {fileID: 612804699}
-  dialogue: []
+  dialogue:
+  - 'Oh! There is a door here.  '
+  - "Hmm, there is a keypad here. I don\u2019t have any clue to open this door."
+  - 'Maybe I should walk forward more to see if I can find any clue. '
   wordSpeed: 0.2
   playerIsClose: 0
   start: 1
@@ -2441,8 +2444,8 @@ MonoBehaviour:
   dialogueText: {fileID: 612804699}
   preview: {fileID: 0}
   dialogue:
-  - There we go
-  - I can crawl under it now
+  - Phew! That was tiring. There we go.
+  - I can crawl under it now!
   wordSpeed: 0.03
   playerIsClose: 0
   start: 1
@@ -2745,7 +2748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80929b01c36fdca4fadc4b8a9d30da41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 705463099}
 --- !u!1 &373888978
 GameObject:
   m_ObjectHideFlags: 0
@@ -8030,22 +8032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 332a84fb0dc59824bb15929d022b0cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Darkness: {fileID: 1031481392}
-  player: {fileID: 705463099}
-  spark: {fileID: 586815042}
-  Switch_1: {fileID: 1205662717}
-  Switch_2: {fileID: 525171138}
-  Switch_3: {fileID: 1374825647}
-  Switch_4: {fileID: 1222592476}
-  Switch1_On: 0
-  Switch2_On: 0
-  Switch3_On: 0
-  Switch4_On: 0
-  anim: {fileID: 914814058}
-  lightsOn: 0
-  statusBar: {fileID: 275174482}
-  correctValue: 80
-  enteredValue: 0
 --- !u!95 &914814058
 Animator:
   serializedVersion: 5
@@ -8078,7 +8064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80929b01c36fdca4fadc4b8a9d30da41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 705463099}
 --- !u!1 &918576237
 GameObject:
   m_ObjectHideFlags: 0
@@ -12814,7 +12799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80929b01c36fdca4fadc4b8a9d30da41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 705463099}
 --- !u!1 &1327455316
 GameObject:
   m_ObjectHideFlags: 0
@@ -14172,10 +14156,9 @@ MonoBehaviour:
   dialogueText: {fileID: 612804699}
   preview: {fileID: 0}
   dialogue:
-  - boltcutters?
-  - why is it here ah
-  - aiya never mind
-  - later can use
+  - "Hmm\u2026? Why are there bolt cutters on the bicycle? "
+  - "Let's pick it up\u2026  "
+  - 'I think it might be helpful later. '
   wordSpeed: 0.05
   playerIsClose: 0
   start: 1
@@ -16547,7 +16530,9 @@ MonoBehaviour:
   newImage: {fileID: 21300000, guid: 31c747f69dce62a449ce28d616357b33, type: 3}
   dialogueText: {fileID: 612804699}
   dialogue:
-  - Breaking the law time
+  - 'There is a wire fence here. '
+  - Oh right! I can cut out a square using the bolt cutters that I picked up earlier!
+  - 'I should cut a square at the bottom and try to crawl in to enter the hospital. '
   wordSpeed: 0.03
   playerIsClose: 0
   start: 1
