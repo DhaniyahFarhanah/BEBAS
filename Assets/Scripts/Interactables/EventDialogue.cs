@@ -21,6 +21,7 @@ public class EventDialogue : MonoBehaviour
     public bool start = true;
 
     [SerializeField] private bool hasCompletedLine = false;
+    [SerializeField] bool SetActiveAfterFinished;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -47,6 +48,7 @@ public class EventDialogue : MonoBehaviour
             {
                 start = false;
                 dialoguePanel.SetActive(true);
+                index = 0;
                 StartCoroutine(Typing());
             }
         }
@@ -56,6 +58,7 @@ public class EventDialogue : MonoBehaviour
             NextLine();
         }
 
+
     }
 
     public void zeroText()
@@ -64,6 +67,8 @@ public class EventDialogue : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
+
+        gameObj.SetActive(SetActiveAfterFinished);
         
     }
 
@@ -72,6 +77,7 @@ public class EventDialogue : MonoBehaviour
         foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
+            hasCompletedLine = false;
             if (stopAudioSource)
             {
                 audioSource.Stop();
