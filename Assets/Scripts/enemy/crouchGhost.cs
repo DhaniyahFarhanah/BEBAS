@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class crouchGhost : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
+        if (collision.transform.tag == "crouchGhost" && Input.GetKey(KeyCode.S) == true) //if the player collides with objects with the tag "ghost"
+        {
+            PlayerManager.isGameOver = false; //game is over is true
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        else if (collision.transform.tag == "crouchGhost" && Input.GetKey(KeyCode.S) == false)
+        {
+            PlayerManager.isGameOver = true; //game is over is true
+            gameObject.SetActive(false); //destroys the player object 
+        }
     }
 }
