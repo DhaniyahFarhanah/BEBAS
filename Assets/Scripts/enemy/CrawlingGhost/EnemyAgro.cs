@@ -18,9 +18,19 @@ public class EnemyAgro : MonoBehaviour
 
     [SerializeField] GameObject checkAgro;
     [SerializeField] public GameObject playerGO;
-    
 
     public GameObject[] Waypoints;
+    public int[] index; //index for ghost states
+    /* 0: crawling
+     * 1: backwall
+     * 2: ceiling
+     * 3: Death
+     * 4: idle trigger
+    */
+    public bool[] flip;
+
+    public SpriteRenderer spriteRenderer;
+    
     int nextWayPoint = 0;
     float distToWaypoint;
 
@@ -41,6 +51,7 @@ public class EnemyAgro : MonoBehaviour
     {
         triggerAgro = false;
         spawnPoint = gameObject.transform.position;
+        anim.SetInteger("Index", 4);
     }
 
     // Update is called once per frame
@@ -104,6 +115,7 @@ public class EnemyAgro : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, Waypoints[nextWayPoint].transform.position, movespeed * Time.deltaTime);
 
+
         if (distToWaypoint < 0.25)
         {
             TakeTurn();
@@ -123,9 +135,21 @@ public class EnemyAgro : MonoBehaviour
     {
         nextWayPoint++;
 
-        if(nextWayPoint == Waypoints.Length)
+        if (nextWayPoint == Waypoints.Length)
         {
             nextWayPoint = 0;
+        }
+
+        anim.SetInteger("Index", index[nextWayPoint]);
+        spriteRenderer.flipX = flip[nextWayPoint];
+
+        if (index[nextWayPoint] == 1)
+        {
+            spriteRenderer.sortingLayerName = "Interactable Items";
+        }
+        else
+        {
+            spriteRenderer.sortingLayerName = "Player";
         }
     }
 
@@ -148,7 +172,8 @@ public class EnemyAgro : MonoBehaviour
     IEnumerator WaitForCrawl()
     {
         anim.SetTrigger("Agro");
-        yield return new WaitForSeconds(2f);
+        anim.SetInteger("Index", 0);
+        yield return new WaitForSeconds(1f);
         triggerAgro = true;
         
     }
