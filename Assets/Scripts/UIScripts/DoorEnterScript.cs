@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DoorEnterScript : MonoBehaviour
 {
-    public Transform player;
+    [SerializeField] Transform player;
 
-    EnemyAgro crawlingGhost;
+    [SerializeField] GameObject roomToBeEnabled;
 
-    public GameObject ghost;
+    public GameObject ghost = null;
+
+    [SerializeField] bool checkEnter;
 
     public float x;
     public float y;
@@ -16,7 +18,17 @@ public class DoorEnterScript : MonoBehaviour
 
     void Awake()
     {
-        crawlingGhost = ghost.GetComponent<EnemyAgro>();    
+
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && checkEnter == true)
+        {
+            player.position = new Vector3(x, y, z);
+            Debug.Log("Enter");
+            roomToBeEnabled.SetActive(true);
+        }
     }
 
 
@@ -25,15 +37,14 @@ public class DoorEnterScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
 
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                player.position = new Vector3(x, y, z);
-                crawlingGhost.triggerAgro = false;
-                
-                Debug.Log("Enter");
-            }
+            checkEnter = true;
 
         }
+        else
+        {
+            checkEnter = false;
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -41,13 +52,22 @@ public class DoorEnterScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
 
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                player.position = new Vector3(x, y, z);
-                Debug.Log("Enter");
-            }
+            checkEnter = true;
             
         }
+        else
+        {
+            checkEnter = false;
+        }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            checkEnter = false;
+        }
+    }
+
 
 }

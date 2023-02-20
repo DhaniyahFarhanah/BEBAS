@@ -14,6 +14,9 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     SwitchChangeScript Switch3;
     SwitchChangeScript Switch4;
 
+    [SerializeField] GameObject Door1;
+    [SerializeField] GameObject Door2;
+    [SerializeField] GameObject Door3;
     [SerializeField] GameObject Darkness;
     [SerializeField] GameObject player;
     [SerializeField] GameObject spark;
@@ -40,7 +43,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     int Switch3Val;
     int Switch4Val;
 
-    [SerializeField] int correctValue;
+    [SerializeField] float correctValue;
     [SerializeField] float enteredValue;
 
     // int of the right number plus
@@ -58,6 +61,9 @@ public class FuseBoxPuzzleScript : MonoBehaviour
 
     void Start()
     {
+        Door1.SetActive(false);
+        Door2.SetActive(false);
+        Door3.SetActive(false);
        // barRect = statusBar.rectTransform.rect;
        // MaxBarSize = barRect.width;      
     }
@@ -76,10 +82,13 @@ public class FuseBoxPuzzleScript : MonoBehaviour
         AddValue();
         SetBar();
 
-        if(enteredValue == correctValue)
+        if (enteredValue == correctValue && (statusBar.fillAmount > enteredValue / 100 - 0.3) || (statusBar.fillAmount > enteredValue / 100))
         {
             lightsOn = true;
             StartCoroutine(LightsOn());
+            Door1.SetActive(true);
+            Door2.SetActive(true);
+            Door3.SetActive(true);
             Debug.Log("Right amount");
         }
         else
@@ -102,7 +111,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
 
     void Overload()
     {
-        if (statusBar.fillAmount > 0.8)
+        if (statusBar.fillAmount > 0.81f && enteredValue > correctValue)
         {
             StartCoroutine(AllowOverload());
             Switch1.OnOff = false;
@@ -185,7 +194,6 @@ public class FuseBoxPuzzleScript : MonoBehaviour
        
         player.SetActive(true);
         gameObject.SetActive(false);
-
 
 
     }
