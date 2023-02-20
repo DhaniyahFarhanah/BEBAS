@@ -14,11 +14,17 @@ public class EnemyAgro : MonoBehaviour
     public bool triggerAgro;
 
     PlayerStateManager playerState;
+    CheckAgroRange checkAgroRange;
+
+    [SerializeField] GameObject checkAgro;
     [SerializeField] public GameObject playerGO;
+    
 
     public GameObject[] Waypoints;
     int nextWayPoint = 0;
     float distToWaypoint;
+
+    Vector3 spawnPoint;
 
     public Animator anim;
     public Rigidbody2D rb2d;
@@ -26,47 +32,60 @@ public class EnemyAgro : MonoBehaviour
     private void Awake()
     {
         playerState = player.GetComponent<PlayerStateManager>();
+        checkAgroRange = checkAgro.GetComponent<CheckAgroRange>();
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
         triggerAgro = false;
+        spawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float dist2player = Vector2.Distance(transform.position, player.position);
-        Debug.Log("dist2player: " + dist2player);
 
-        if (dist2player < agroRange)
+        if(checkAgroRange.canAgro == false)
         {
-            //code to wake up
-            WakeUp();
+            //gameObject.transform.position = spawnPoint;
         }
 
-        /*if(dist2player < 6)
+        else if (checkAgroRange.canAgro == true)
         {
-            anim.SetTrigger("Triggered");
-        }*/
+            float dist2player = Vector2.Distance(transform.position, player.position);
+            Debug.Log("dist2player: " + dist2player);
 
-        if(dist2player < 4)
-        {
-            StartCoroutine(WaitForCrawl());
+            if (dist2player < agroRange)
+            {
+                //code to wake up
+                WakeUp();
+            }
 
+            /*if(dist2player < 6)
+            {
+                anim.SetTrigger("Triggered");
+            }*/
+
+            if (dist2player < 4)
+            {
+                StartCoroutine(WaitForCrawl());
+
+            }
+
+            if (triggerAgro == true)
+            {
+                WalkOnWall();
+                KillCheck();
+            }
+
+            else
+            {
+
+            }
         }
-
-        if(triggerAgro == true)
-        {
-            WalkOnWall();
-            KillCheck();
-        }
-
-        else
-        {
-            
-        }
+        
     }
 
     void WakeUp()
