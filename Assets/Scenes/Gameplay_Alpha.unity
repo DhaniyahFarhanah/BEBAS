@@ -5689,7 +5689,7 @@ GameObject:
   - component: {fileID: 611280148}
   - component: {fileID: 611280147}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: InvText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6972,9 +6972,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myInventory: []
-  inventoryPanel: {fileID: 1850355189}
-  contentHeight: 300
+  inventoryCanvas: {fileID: 2024182149}
+  inventoryPanel: {fileID: 434339190}
   addHeight: 180
+  xWidth: 0
 --- !u!1 &705463099
 GameObject:
   m_ObjectHideFlags: 0
@@ -22765,12 +22766,12 @@ GameObject:
   - component: {fileID: 2024182152}
   - component: {fileID: 2024182151}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: InventoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2024182150
 RectTransform:
   m_ObjectHideFlags: 0
