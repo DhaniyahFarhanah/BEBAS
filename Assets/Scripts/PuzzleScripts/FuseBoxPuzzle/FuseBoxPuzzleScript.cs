@@ -14,6 +14,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     SwitchChangeScript Switch3;
     SwitchChangeScript Switch4;
 
+    [SerializeField] GameObject fusebox;
     [SerializeField] GameObject Door1;
     [SerializeField] GameObject Door2;
     [SerializeField] GameObject Door3;
@@ -82,7 +83,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
         AddValue();
         SetBar();
 
-        if (enteredValue == correctValue && (statusBar.fillAmount > enteredValue / 100 - 0.3) || (statusBar.fillAmount > enteredValue / 100))
+        if (enteredValue == correctValue)
         {
             lightsOn = true;
             StartCoroutine(LightsOn());
@@ -194,7 +195,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
        
         player.SetActive(true);
         gameObject.SetActive(false);
-
+        fusebox.SetActive(false);
 
     }
 
