@@ -47,6 +47,13 @@ public class DialogueScript : MonoBehaviour
                 start = false;
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
+
+                if (player != null)
+                {
+                    // Add to inventory
+                    Inventory playerInventory = player.GetComponentInChildren<Inventory>();
+                    playerInventory.AddToInventory(newImage);
+                }
             }
         }
 
@@ -93,7 +100,7 @@ public class DialogueScript : MonoBehaviour
             zeroText();
         }
     }
-
+    GameObject player;
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
@@ -101,6 +108,10 @@ public class DialogueScript : MonoBehaviour
             playerIsClose = true;
             Z.SetActive(true);
             display.sprite = newImage;
+            player = interact.gameObject;
+            //// Add to inventory
+            //Inventory playerInventory = interact.GetComponentInChildren<Inventory>();
+            //playerInventory.AddToInventory(newImage);
             
             Debug.Log("Player is in range");
         }
