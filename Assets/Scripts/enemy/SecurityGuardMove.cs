@@ -18,6 +18,7 @@ public class SecurityGuardMove : MonoBehaviour
 
             if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
             {
+                transform.localScale = new Vector3(3, 3, 3);
                 patrolDestination = 1;
             }
         }
@@ -28,6 +29,7 @@ public class SecurityGuardMove : MonoBehaviour
 
             if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
             {
+                transform.localScale = new Vector3(-3, 3, 3);
                 patrolDestination = 0;
             }
         }
