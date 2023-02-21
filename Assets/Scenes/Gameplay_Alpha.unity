@@ -820,6 +820,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &68857672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68857673}
+  - component: {fileID: 68857675}
+  - component: {fileID: 68857674}
+  m_Layer: 0
+  m_Name: Security Ghost Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68857673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68857672}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 58.060005, y: -1.5, z: 0}
+  m_LocalScale: {x: 0.13875, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1346991876}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68857674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68857672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 0}
+  gameObj: {fileID: 68857672}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  name: Azri
+  dialogue:
+  - There seems to be lights flashing at the front...
+  - Why would anyone be here at this hour?
+  - I got to avoid the lights and find the passcode without getting caught!
+  newImage: {fileID: 0}
+  wordSpeed: 0.03
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 0
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 1
+--- !u!61 &68857675
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68857672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.5133982, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 34.0372, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &78062254
 GameObject:
   m_ObjectHideFlags: 0
@@ -14364,6 +14453,7 @@ Transform:
   - {fileID: 444206037}
   - {fileID: 3455327}
   - {fileID: 1761090687}
+  - {fileID: 68857673}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22579,19 +22669,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.4765931
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.4765931
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_PreserveAspect
