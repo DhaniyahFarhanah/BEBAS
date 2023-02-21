@@ -10,7 +10,9 @@ public class EventDialogue : MonoBehaviour
     public Image showcase;
     public GameObject gameObj;
     public TMP_Text dialogueText;
+    [SerializeField] TMP_Text nameTextBox;
 
+    public new string name;
     public string[] dialogue;
     private int index;
 
@@ -19,6 +21,7 @@ public class EventDialogue : MonoBehaviour
     public float wordSpeed;
     public bool playerIsClose;
     public bool start = true;
+
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
@@ -30,6 +33,11 @@ public class EventDialogue : MonoBehaviour
     private void Awake()
     {
         audioSource = this.gameObject.AddComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        
     }
 
     // Update is called once per frame
@@ -109,6 +117,7 @@ public class EventDialogue : MonoBehaviour
         {
             start = false;
             dialoguePanel.SetActive(true);
+            nameTextBox.text = name;
             StartCoroutine(Typing());
             playerIsClose = true;
             showcase.sprite = newImage;
