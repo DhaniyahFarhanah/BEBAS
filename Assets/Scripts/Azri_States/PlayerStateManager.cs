@@ -83,7 +83,6 @@ public class PlayerStateManager : MonoBehaviour
             }
             currentState.UpdateState(this);
             animator.SetFloat("Speed", Math.Abs(input));
-
         }
 
         //=========BREATH BAR===========

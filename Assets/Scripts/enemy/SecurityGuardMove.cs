@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class SecurityGuardMove : MonoBehaviour
 {
-    public float speed = 0.8f; //variable for enemy speed (default)
+    public Transform[] patrolPoints;
 
-    public float range = 3; //variable for enemy range (default)
+    public float moveSpeed;
 
-    float startingX; //starting point
+    public int patrolDestination;
 
-    int direction = 1; //direction where the enemy is headed
-
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        startingX = transform.position.x; //move left and right
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        transform.Translate(Vector2.left * speed * Time.deltaTime * direction); //for the enemy to start moving 
-
-        if (transform.position.x < startingX || transform.position.x > startingX + range) //if enemy moved to the point outside range, flip it and it goes in the other direction
+        if (patrolDestination == 0)
         {
-            direction *= -1; //flip
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position,moveSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
+            {
+                patrolDestination = 1;
+            }
+        }
+
+        if (patrolDestination == 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
+            {
+                patrolDestination = 0;
+            }
         }
     }
 }
