@@ -13,6 +13,10 @@ public class DialogueScript : MonoBehaviour
     public Sprite newImage;
     public TMP_Text dialogueText;
     public Image preview;
+    public bool pickUp;
+
+    public BoxCollider2D boxCollider;
+    public SpriteRenderer spriteRenderer;
 
     GameObject player;
 
@@ -65,6 +69,7 @@ public class DialogueScript : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
             NextLine();
+           
         }
 
     }
@@ -75,7 +80,9 @@ public class DialogueScript : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-        
+
+
+
     }
 
     IEnumerator Typing()
@@ -106,6 +113,12 @@ public class DialogueScript : MonoBehaviour
         }
         else
         {
+            if (pickUp == true)
+            {
+                spriteRenderer.enabled = false;
+                boxCollider.enabled = false;
+            }
+
             zeroText();
         }
     }
