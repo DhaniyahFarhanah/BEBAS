@@ -39,7 +39,7 @@ public class SecurityGuardMove : MonoBehaviour
                 }
             }
 
-            if (paceCounter >= 6)
+            if (paceCounter >= 16)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[2].position, moveSpeed * Time.deltaTime);
                 if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
