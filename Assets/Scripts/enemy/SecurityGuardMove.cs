@@ -10,7 +10,7 @@ public class SecurityGuardMove : MonoBehaviour
 
     public int patrolDestination;
 
-    int counter = 0;
+    int paceCounter = 0;
 
     void Update()
     {
@@ -23,7 +23,7 @@ public class SecurityGuardMove : MonoBehaviour
                 {
                     transform.localScale = new Vector3(3, 3, 3);
                     patrolDestination = 1;
-                    counter++;
+                    paceCounter++;
                 }
             }
 
@@ -35,16 +35,16 @@ public class SecurityGuardMove : MonoBehaviour
                 {
                     transform.localScale = new Vector3(-3, 3, 3);
                     patrolDestination = 0;
-                    counter++;
+                    paceCounter++;
                 }
             }
 
-            if (counter == 4)
+            if (paceCounter >= 6)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[2].position, moveSpeed * Time.deltaTime);
                 if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
                 {
-                    transform.localScale = new Vector3(-3, 3, 3);
+                    transform.localScale = new Vector3(3, 3, 3);
                     patrolDestination = 2;
                 }
         }

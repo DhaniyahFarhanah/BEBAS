@@ -21763,7 +21763,7 @@ MonoBehaviour:
   - {fileID: 881200140}
   - {fileID: 1733372668}
   - {fileID: 1909681745}
-  moveSpeed: 3
+  moveSpeed: 2
   patrolDestination: 0
 --- !u!1 &2063826390
 GameObject:
