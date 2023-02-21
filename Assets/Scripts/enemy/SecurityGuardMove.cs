@@ -10,28 +10,44 @@ public class SecurityGuardMove : MonoBehaviour
 
     public int patrolDestination;
 
+    int counter = 0;
+
     void Update()
     {
-        if (patrolDestination == 0)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position,moveSpeed * Time.deltaTime);
 
-            if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
+            if (patrolDestination == 0)
             {
-                transform.localScale = new Vector3(3, 3, 3);
-                patrolDestination = 1;
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
+
+                if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
+                {
+                    transform.localScale = new Vector3(3, 3, 3);
+                    patrolDestination = 1;
+                    counter++;
+                }
             }
-        }
 
-        if (patrolDestination == 1)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
-
-            if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
+            if (patrolDestination == 1)
             {
-                transform.localScale = new Vector3(-3, 3, 3);
-                patrolDestination = 0;
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
+
+                if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
+                {
+                    transform.localScale = new Vector3(-3, 3, 3);
+                    patrolDestination = 0;
+                    counter++;
+                }
             }
+
+            if (counter == 4)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[2].position, moveSpeed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
+                {
+                    transform.localScale = new Vector3(-3, 3, 3);
+                    patrolDestination = 2;
+                }
         }
     }
+
 }
