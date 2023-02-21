@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class SecurityGuardMove : MonoBehaviour
 {
     public float speed = 0.8f; //variable for enemy speed (default)
 
