@@ -10,12 +10,18 @@ public class EnemyAgro : MonoBehaviour
     [SerializeField] private float agroRange;
     [SerializeField] private float movespeed;
     [SerializeField] private float killmovespeed;
+    [SerializeField] private float checkpointXset;
+    [SerializeField] private float checkpointYset;
+    [SerializeField] private float checkpointZset;
 
     public bool triggerAgro;
 
     PlayerStateManager playerState;
     CheckAgroRange checkAgroRange;
+    PlayerManager setCheckpoint;
 
+    [SerializeField] GameObject playerManager;
+    [SerializeField] GameObject gameOver;
     [SerializeField] GameObject checkAgro;
     [SerializeField] public GameObject playerGO;
 
@@ -43,6 +49,7 @@ public class EnemyAgro : MonoBehaviour
     {
         playerState = player.GetComponent<PlayerStateManager>();
         checkAgroRange = checkAgro.GetComponent<CheckAgroRange>();
+        setCheckpoint = playerManager.GetComponent<PlayerManager>();
 
     }
 
@@ -66,7 +73,7 @@ public class EnemyAgro : MonoBehaviour
         else if (checkAgroRange.canAgro == true)
         {
             float dist2player = Vector2.Distance(transform.position, player.position);
-            Debug.Log("dist2player: " + dist2player);
+            //Debug.Log("dist2player: " + dist2player);
 
             if (dist2player < agroRange)
             {
@@ -161,6 +168,14 @@ public class EnemyAgro : MonoBehaviour
 
 
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, killmovespeed * agroRange * Time.deltaTime);
+
+            playerState.SwitchState(playerState.deadState);
+
+            gameOver.SetActive(true);
+            setCheckpoint.checkpointX = checkpointXset;
+            setCheckpoint.checkpointY = checkpointYset;
+            setCheckpoint.checkpointZ = checkpointZset;
+            
 
         }
         else

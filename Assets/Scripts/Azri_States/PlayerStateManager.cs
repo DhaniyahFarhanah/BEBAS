@@ -187,7 +187,8 @@ public class PlayerStateManager : MonoBehaviour
 
             case PlayerDeadState:
                 darkness.SetActive(false);
-                this.enabled = false;
+                crouchCollider.enabled = false;
+                standingCollider.enabled = true;
                 break;
 
 

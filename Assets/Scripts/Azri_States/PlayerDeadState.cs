@@ -11,7 +11,10 @@ public class PlayerDeadState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager player)
     {
-        
+        player.spriteRenderer.flipX = false;
+
+            player.SwitchState(player.idleState);
+
 
     }
 
