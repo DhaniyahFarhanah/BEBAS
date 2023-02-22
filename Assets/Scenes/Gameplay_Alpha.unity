@@ -6713,7 +6713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.6, y: -0.2, z: 0}
+  m_LocalPosition: {x: -11.8, y: -0.5, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17602,6 +17602,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1569921632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1675035400036454882, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+  m_PrefabInstance: {fileID: 3814229848283083339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1569921634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1861269170130452651, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+  m_PrefabInstance: {fileID: 3814229848283083339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569921632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1578142419
 GameObject:
   m_ObjectHideFlags: 0
@@ -19469,6 +19485,17 @@ Transform:
   m_Father: {fileID: 1859478497}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.714}
+--- !u!114 &1747605710 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 331588599812031209, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+  m_PrefabInstance: {fileID: 3814229848283083339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761090685
 GameObject:
   m_ObjectHideFlags: 0
@@ -19993,6 +20020,17 @@ Transform:
   m_Father: {fileID: 871492005}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841857537 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3382816341349326839, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+  m_PrefabInstance: {fileID: 3814229848283083339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844310164
 GameObject:
   m_ObjectHideFlags: 0
@@ -23207,6 +23245,7 @@ GameObject:
   - component: {fileID: 2045772589}
   - component: {fileID: 2045772590}
   - component: {fileID: 2045772591}
+  - component: {fileID: 2045772592}
   m_Layer: 0
   m_Name: NPC_spookyGirl
   m_TagString: Untagged
@@ -23294,7 +23333,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4213543, y: 0}
+  m_Offset: {x: -0.1552208, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23305,8 +23344,67 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8427086, y: 2}
+  m_Size: {x: 1.3104416, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &2045772592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045772588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee0b6b9a1df6e94892660482be71ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 2045772588}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  dialogueBoxImage: {fileID: 1747605710}
+  leftTalkingImage: {fileID: 1841857537}
+  rightTalkingImage: {fileID: 1569921634}
+  leftImage: {fileID: 21300000, guid: 975f783e9893337498e5a12d6887e8d0, type: 3}
+  rightImage: {fileID: 21300000, guid: 01d9c3b0e5b188445ba70254e878cd4d, type: 3}
+  NPCImageGO: {fileID: 1569921632}
+  nameOfPerson:
+  - Azri
+  - SpookyGirl
+  - Azri
+  - SpookyGirl
+  - Azri
+  - SpookyGirl
+  dialogue:
+  - Hello?
+  - Hehehe... hi
+  - You're not going to kill me are you?
+  - No I just want to play
+  - Um...Maybe not right now
+  - Aww :(
+  personShowcase:
+  - {fileID: 21300000, guid: 975f783e9893337498e5a12d6887e8d0, type: 3}
+  - {fileID: 21300000, guid: 737c1b4aa59a3264384843f235c0fbdb, type: 3}
+  - {fileID: 21300000, guid: 975f783e9893337498e5a12d6887e8d0, type: 3}
+  - {fileID: 21300000, guid: 737c1b4aa59a3264384843f235c0fbdb, type: 3}
+  - {fileID: 21300000, guid: 975f783e9893337498e5a12d6887e8d0, type: 3}
+  - {fileID: 21300000, guid: 737c1b4aa59a3264384843f235c0fbdb, type: 3}
+  dialogueBoxImageArray:
+  - {fileID: 21300000, guid: 726c1bb5e2023df4da372c176123d251, type: 3}
+  - {fileID: 21300000, guid: 9f3db871f1e45bf4c91b05776b030f03, type: 3}
+  - {fileID: 21300000, guid: 726c1bb5e2023df4da372c176123d251, type: 3}
+  - {fileID: 21300000, guid: 9f3db871f1e45bf4c91b05776b030f03, type: 3}
+  - {fileID: 21300000, guid: 726c1bb5e2023df4da372c176123d251, type: 3}
+  - {fileID: 21300000, guid: 9f3db871f1e45bf4c91b05776b030f03, type: 3}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
+  wordSpeed: 0.03
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 1
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 0
 --- !u!1 &2046415324
 GameObject:
   m_ObjectHideFlags: 0
@@ -24425,6 +24523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1675035400036454882, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3814229848344508923, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Name
       value: dialogueboxcanvas
