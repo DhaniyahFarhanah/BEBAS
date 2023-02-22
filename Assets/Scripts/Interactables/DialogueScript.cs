@@ -12,7 +12,6 @@ public class DialogueScript : MonoBehaviour
     public Image display;
     public Sprite newImage;
     public TMP_Text dialogueText;
-    public Image preview;
     public bool pickUp;
 
     public BoxCollider2D boxCollider;

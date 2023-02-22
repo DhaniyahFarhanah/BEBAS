@@ -8,8 +8,6 @@ public class DoorEnterScript : MonoBehaviour
 
     [SerializeField] GameObject roomToBeEnabled;
 
-    public GameObject ghost = null;
-
     [SerializeField] bool checkEnter;
 
     public float x;
