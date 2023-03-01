@@ -16,6 +16,8 @@ public class EventDialogue : MonoBehaviour
     public string[] dialogue;
     private int index;
 
+    [SerializeField] bool isPickUp;
+
     public Sprite newImage;
 
     public float wordSpeed;
@@ -115,6 +117,7 @@ public class EventDialogue : MonoBehaviour
     {
         if (interact.CompareTag("Player"))
         {
+
             start = false;
             dialoguePanel.SetActive(true);
             nameTextBox.text = name;
@@ -122,7 +125,7 @@ public class EventDialogue : MonoBehaviour
             playerIsClose = true;
             showcase.sprite = newImage;
             
-            Debug.Log("Scared as hell");
+
         }
     }
 

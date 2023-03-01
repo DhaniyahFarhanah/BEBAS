@@ -19,6 +19,12 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField]
     private Image[] characters;
 
+    [SerializeField]
+    private string correctCombi;
+
+    [SerializeField]
+    private bool enableplayer;
+
     private string codeSequence;
     void Start()
     {
@@ -129,7 +135,7 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
-        if (codeSequence == "1942")
+        if (codeSequence == correctCombi)
         {
             Debug.Log("Correct");
             characters[0].sprite = correct[0];
@@ -166,7 +172,11 @@ public class DigitalDisplay : MonoBehaviour
         door.SetActive(true);
         puzzle.SetActive(false);
         display.SetActive(false);
+        if (enableplayer)
+        {
         player.SetActive(true);
+
+        }
 
     }
 }

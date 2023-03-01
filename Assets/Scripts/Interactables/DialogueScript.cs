@@ -56,7 +56,7 @@ public class DialogueScript : MonoBehaviour
                 index = 0;
                 StartCoroutine(Typing());
 
-                if (player != null)
+                if (player != null && pickUp)
                 {
                     // Add to inventory
                     Inventory playerInventory = player.GetComponentInChildren<Inventory>();
