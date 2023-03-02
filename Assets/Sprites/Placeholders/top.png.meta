@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f71c10fa76ff0842a8153845d65b5a9
+guid: 61b69d4b72e33a24fb263ec039fd680c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,112 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: papers on wall_0
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 305
-        width: 226
-        height: 727
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2545647f681ddae4999596d49f1e11e3
-      internalID: 1537827736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: papers on wall_2
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 769
-        width: 176
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 309efa5e61bbd5e4aaf82c3b87f00fb3
-      internalID: -1944323309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: papers on wall_3
-      rect:
-        serializedVersion: 2
-        x: 1018
-        y: 769
-        width: 176
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1eca2623beb6894cbc1b4374765ae43
-      internalID: 1837988760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: papers on wall_1
-      rect:
-        serializedVersion: 2
-        x: 1231
-        y: 769
-        width: 176
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adaf5ce2bca331742abf7de6fb4613e8
-      internalID: 2038995612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: papers on wall_5
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 305
-        width: 226
-        height: 727
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc82e969b07f4f44b9d750ba665a713b
-      internalID: -525869391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -231,13 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      papers on wall_0: 1537827736
-      papers on wall_1: 2038995612
-      papers on wall_4: -1944323309
-      papers on wall_2: 1837988760
-      papers on wall_5: 139241310
-      papers on wall_3: 793248355
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
