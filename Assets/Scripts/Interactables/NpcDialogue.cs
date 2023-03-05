@@ -9,6 +9,7 @@ public class NpcDialogue : MonoBehaviour
     public Image showcase;
     public GameObject gameObj;
     public TMP_Text dialogueText;
+    [SerializeField] GameObject Z;
     [SerializeField] TMP_Text nameTextBox;
     [SerializeField] Image dialogueBoxImage;
     [SerializeField] Image leftTalkingImage;
@@ -117,8 +118,8 @@ public class NpcDialogue : MonoBehaviour
                 SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
             }
         }
-        completeLineNow = false;
         hasCompletedLine = true;
+        completeLineNow = false;
     }
 
     private void SkipLine()
@@ -133,6 +134,7 @@ public class NpcDialogue : MonoBehaviour
     {
         currentWordSpeed = newSpeed;
     }
+
     public void NextLine()
     {
         if (index < dialogue.Length - 1)
@@ -152,11 +154,9 @@ public class NpcDialogue : MonoBehaviour
         if (interact.CompareTag("Player"))
         {
             AssignItems();
-            start = false;
-            dialoguePanel.SetActive(true);
+            Z.SetActive(true);
             NPCImageGO.SetActive(true);
             nameTextBox.text = name;
-            StartCoroutine(Typing());
             playerIsClose = true;
             showcase.sprite = newImage;
 
