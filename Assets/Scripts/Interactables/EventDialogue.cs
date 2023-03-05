@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,12 +20,14 @@ public class EventDialogue : MonoBehaviour
     public Sprite newImage;
 
     public float wordSpeed;
+    public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
 
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
+    private bool completeLineNow = false;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -34,17 +35,19 @@ public class EventDialogue : MonoBehaviour
 
     private void Awake()
     {
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        currentWordSpeed = wordSpeed;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
@@ -53,7 +56,7 @@ public class EventDialogue : MonoBehaviour
             {
                 zeroText();
             }
-            
+
             else
             {
                 start = false;
@@ -79,13 +82,15 @@ public class EventDialogue : MonoBehaviour
         dialoguePanel.SetActive(false);
 
         gameObj.SetActive(SetActiveAfterFinished);
-        
+
     }
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
+            yield return new WaitForSeconds(currentWordSpeed);
+
             dialogueText.text += letter;
             hasCompletedLine = false;
             if (stopAudioSource)
@@ -93,10 +98,31 @@ public class EventDialogue : MonoBehaviour
                 audioSource.Stop();
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
-            yield return new WaitForSeconds(wordSpeed);
-        }
 
+            if (completeLineNow)
+            {
+                SetWordSpeed(0); // 0 means v fast
+            }
+            else
+            {
+                SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
+            }
+        }
+        completeLineNow = false;
         hasCompletedLine = true;
+    }
+
+    private void SkipLine()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        {
+            completeLineNow = true;
+        }
+    }
+
+    private void SetWordSpeed(float newSpeed)
+    {
+        currentWordSpeed = newSpeed;
     }
 
     public void NextLine()
@@ -124,7 +150,7 @@ public class EventDialogue : MonoBehaviour
             StartCoroutine(Typing());
             playerIsClose = true;
             showcase.sprite = newImage;
-            
+
 
         }
     }

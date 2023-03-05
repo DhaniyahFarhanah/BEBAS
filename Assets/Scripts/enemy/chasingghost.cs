@@ -19,6 +19,7 @@ public class chasingghost : MonoBehaviour
 
     // Player target
     private Transform Player;
+    private PlayerBaseState playerState;
 
     // Checks for ghost is showing or hiding and if its in contact with player
     private bool isActive;
@@ -142,7 +143,27 @@ public class chasingghost : MonoBehaviour
             StopAllCoroutines();                // Reset all coroutine
             StartCoroutine(HideGhost(0.0f));    // Start to hide ghost with 0 wait time
             curState = GhostState.IDLE;         // Change state to IDLE
-
+            CatchPlayer();
         }
+    }
+
+    private void CatchPlayer()
+    {
+        // If player close eyes, player lives, otherwise, dies
+        
+        PlayerStateManager playerState = Player.GetComponent<PlayerStateManager>();
+        
+        switch (playerState.currentState)
+        {
+            case PlayerEyesState:
+                Debug.Log("Let player live");
+                break;
+            default:
+                Debug.Log("Kill Player!");
+
+                PlayerManager.isGameOver = true;
+                break;
+        }
+       
     }
 }

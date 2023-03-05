@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,8 +18,10 @@ public class PuzzleDialogueScript : MonoBehaviour
     public string[] dialogue;
     private int index;
     [SerializeField] private bool hasCompletedLine = false;
+    private bool completeLineNow = false;
 
     public float wordSpeed;
+    public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
 
@@ -30,40 +31,47 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     private void Awake()
     {
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        currentWordSpeed = wordSpeed;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Otherwise player can keep on pressing and can hear that it is typing
+        if (puzzle.activeSelf == true)
+        {
+            return;
+        }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
-            {
+        SkipLine();
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
+        {
 
-                Debug.Log("Interact");
-                if(dialogue.Length == 0)
+            Debug.Log("Interact");
+            if (dialogue.Length == 0)
             {
                 StartCoroutine(SwitchPuzzleImmediate());
             }
 
-                else if (dialoguePanel.activeInHierarchy)
-                {
-                    zeroText();
-                }
-            
-                else
-                {
-                    start = false;
-                    dialoguePanel.SetActive(true);
-                    index = 0;
-                    StartCoroutine(Typing());
-                }
+            else if (dialoguePanel.activeInHierarchy)
+            {
+                zeroText();
             }
 
-            else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+            else
             {
-                NextLine();
+                start = false;
+                dialoguePanel.SetActive(true);
+                index = 0;
+                StartCoroutine(Typing());
             }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+        {
+            NextLine();
+        }
 
 
     }
@@ -74,13 +82,15 @@ public class PuzzleDialogueScript : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-        
+
     }
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
+            yield return new WaitForSeconds(currentWordSpeed);
+
             hasCompletedLine = false;
             dialogueText.text += letter;
             if (stopAudioSource)
@@ -88,12 +98,31 @@ public class PuzzleDialogueScript : MonoBehaviour
                 audioSource.Stop();
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
-            yield return new WaitForSeconds(wordSpeed);
-        }
 
+            if (completeLineNow)
+            {
+                SetWordSpeed(0); // 0 means v fast
+            }
+            else
+            {
+                SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
+            }
+        }
+        completeLineNow = false;
         hasCompletedLine = true;
     }
+    private void SkipLine()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        {
+            completeLineNow = true;
+        }
+    }
 
+    private void SetWordSpeed(float newSpeed)
+    {
+        currentWordSpeed = newSpeed;
+    }
     public void NextLine()
     {
         if (index < dialogue.Length - 1)
@@ -120,7 +149,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         puzzle.SetActive(true);
         player.SetActive(false);
         yield return null;
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D interact)
@@ -128,7 +157,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         if (interact.CompareTag("Player"))
         {
             playerIsClose = true;
-            Z.SetActive(true) ;
+            Z.SetActive(true);
             display.sprite = newImage;
             Debug.Log("Player is in range");
         }

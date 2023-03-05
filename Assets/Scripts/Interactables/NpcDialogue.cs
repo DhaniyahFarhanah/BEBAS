@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,12 +26,14 @@ public class NpcDialogue : MonoBehaviour
     public Sprite newImage;
 
     public float wordSpeed;
+    public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
 
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
+    private bool completeLineNow = false;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -40,7 +41,8 @@ public class NpcDialogue : MonoBehaviour
 
     private void Awake()
     {
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        currentWordSpeed = wordSpeed;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void Start()
@@ -51,6 +53,7 @@ public class NpcDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SkipLine();
         SpeechAssignment();
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
@@ -61,7 +64,7 @@ public class NpcDialogue : MonoBehaviour
             {
                 zeroText();
             }
-            
+
             else
             {
                 start = false;
@@ -88,26 +91,48 @@ public class NpcDialogue : MonoBehaviour
         NPCImageGO.SetActive(false);
 
         gameObj.SetActive(SetActiveAfterFinished);
-        
+
     }
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
-            dialogueText.text += letter;
+            yield return new WaitForSeconds(currentWordSpeed);
+
             hasCompletedLine = false;
+            dialogueText.text += letter;
             if (stopAudioSource)
             {
                 audioSource.Stop();
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
-            yield return new WaitForSeconds(wordSpeed);
-        }
 
+            if (completeLineNow)
+            {
+                SetWordSpeed(0); // 0 means v fast
+            }
+            else
+            {
+                SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
+            }
+        }
+        completeLineNow = false;
         hasCompletedLine = true;
     }
 
+    private void SkipLine()
+    {
+        if (Input.GetKey(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        {
+            completeLineNow = true;
+        }
+    }
+
+    private void SetWordSpeed(float newSpeed)
+    {
+        currentWordSpeed = newSpeed;
+    }
     public void NextLine()
     {
         if (index < dialogue.Length - 1)
@@ -134,7 +159,7 @@ public class NpcDialogue : MonoBehaviour
             StartCoroutine(Typing());
             playerIsClose = true;
             showcase.sprite = newImage;
-            
+
             Debug.Log("Scared as hell");
         }
     }

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,11 +21,13 @@ public class DialogueScript : MonoBehaviour
     public string[] dialogue;
     private int index;
     [SerializeField] private bool hasCompletedLine = false;
+    private bool completeLineNow = false;
 
     public float wordSpeed;
+    public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
-    
+
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -34,12 +35,14 @@ public class DialogueScript : MonoBehaviour
 
     private void Awake()
     {
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        currentWordSpeed = wordSpeed;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
@@ -48,7 +51,7 @@ public class DialogueScript : MonoBehaviour
             {
                 zeroText();
             }
-            
+
             else
             {
                 start = false;
@@ -68,7 +71,7 @@ public class DialogueScript : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
             NextLine();
-           
+
         }
 
     }
@@ -86,8 +89,10 @@ public class DialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
+            yield return new WaitForSeconds(currentWordSpeed);
+
             hasCompletedLine = false;
             dialogueText.text += letter;
             if (stopAudioSource)
@@ -95,13 +100,30 @@ public class DialogueScript : MonoBehaviour
                 audioSource.Stop();
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
-            yield return new WaitForSeconds(wordSpeed);
-            
+            if (completeLineNow)
+            {
+                SetWordSpeed(0); // 0 means v fast
+            }
+            else
+            {
+                SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
+            }
         }
-        // TLDR: Dont allow skipping of text, player must read finish all the letters then can go to next line of dialogue
+        completeLineNow = false;
         hasCompletedLine = true;
     }
+    private void SkipLine()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        {
+            completeLineNow = true;
+        }
+    }
 
+    private void SetWordSpeed(float newSpeed)
+    {
+        currentWordSpeed = newSpeed;
+    }
     public void NextLine()
     {
         if (index < dialogue.Length - 1)
@@ -121,7 +143,7 @@ public class DialogueScript : MonoBehaviour
             zeroText();
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
@@ -130,7 +152,7 @@ public class DialogueScript : MonoBehaviour
             Z.SetActive(true);
             display.sprite = newImage;
             player = interact.gameObject;
-                       
+
             Debug.Log("Player is in range");
         }
     }
