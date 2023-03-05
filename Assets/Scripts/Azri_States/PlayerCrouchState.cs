@@ -12,8 +12,19 @@ public class PlayerCrouchState : PlayerBaseState
     {
         player.animator.SetBool("Crouch", true);
 
+        if (player.isTalking)
+        {
+            player.charSpeed = 0f;
+        }
+
+        else
+        {
+            player.charSpeed = 3f;
+        }
+
         if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
         {
+
             player.animator.SetBool("Crouch", false);
 
             if (Input.GetAxisRaw("Horizontal") == 0) //idle

@@ -47,6 +47,7 @@ public class PlayerStateManager : MonoBehaviour
     public Image timerBar;
     public float maxTime = 1f;
     float remainingTime;
+    public bool isTalking;
 
     void Start()
     {
@@ -55,19 +56,37 @@ public class PlayerStateManager : MonoBehaviour
         timerBar = GetComponentInChildren<Image>();
         timerBar.enabled = false;
         remainingTime = maxTime;
+        isTalking = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (dialogueBox.activeInHierarchy)
         {
-            charSpeed = 0f;
+            isTalking = true;
+
+            if(currentState == crouchState)
+            {
+                SwitchState(crouchState);
+                
+            }
+            else
+            {
+                SwitchState(idleState);
+            }
+
+            animator.SetBool("Idle", true);
+            animator.SetBool("Moving", false);
+            animator.SetFloat("Speed", 0);
 
         }
         // =============Player Movement (flip & speed) ================
-        else
+        else if(!dialogueBox.activeInHierarchy)
         {
+            isTalking = false;
+
             input = Input.GetAxisRaw("Horizontal");
 
             if (input < 0)
@@ -83,6 +102,7 @@ public class PlayerStateManager : MonoBehaviour
             }
             currentState.UpdateState(this);
             animator.SetFloat("Speed", Math.Abs(input));
+
         }
 
         //=========BREATH BAR===========
@@ -150,7 +170,18 @@ public class PlayerStateManager : MonoBehaviour
                 crouchCollider.enabled = true;
                 standingCollider.enabled = false;
                 spriteRenderer.sprite = crouch;
-                charSpeed = 3f;
+
+                if (isTalking)
+                {
+                    charSpeed = 0f;
+                }
+
+                else
+                {
+                    charSpeed = 3f;
+                }
+
+
                 break;
 
             case PlayerHoldBreathState:
