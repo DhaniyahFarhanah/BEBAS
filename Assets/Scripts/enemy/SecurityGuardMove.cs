@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SecurityGuardMove : MonoBehaviour
@@ -12,43 +10,52 @@ public class SecurityGuardMove : MonoBehaviour
 
     int paceCounter = 0;
 
+    [SerializeField] private Collider2D myCollider;
+    private Transform Player;
+    private BoxCollider2D playerCollider;
+
+    private void Start()
+    {
+        if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform; if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerCollider = Player.gameObject.GetComponent<BoxCollider2D>();
+    }
     void Update()
     {
 
-            if (patrolDestination == 0)
+        if (patrolDestination == 0)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
             {
-                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
-
-                if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
-                {
-
+                Debug.Log("Go to first waypoint");
                 transform.Rotate(0, -180, 0);
-                    patrolDestination = 1;
-                    paceCounter++;
-                }
+                patrolDestination = 1;
+                paceCounter++;
             }
+        }
 
-            if (patrolDestination == 1)
+        if (patrolDestination == 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
             {
-                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
-
-                if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
-                {
+                Debug.Log("Go to second waypoint");
                 transform.Rotate(0, 180, 0);
                 patrolDestination = 0;
-                    paceCounter++;
-                }
+                paceCounter++;
             }
+        }
 
-            if (paceCounter >= 12)
+        if (paceCounter >= 12)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[2].position, moveSpeed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
             {
-                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[2].position, moveSpeed * Time.deltaTime);
-                if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
-                {
-                    transform.localScale = new Vector3(3, 3, 3);
-                    patrolDestination = 2;
-                }
+                transform.localScale = new Vector3(3, 3, 3);
+                patrolDestination = 2;
+            }
         }
     }
-
 }

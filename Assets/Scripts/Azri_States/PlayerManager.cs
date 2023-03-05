@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject player;
     public GameObject gameOverScreen; //game over screen
 
-    PlayerStateManager playerState;
+    public PlayerStateManager playerState;
 
     public float checkpointX;
     public float checkpointY;

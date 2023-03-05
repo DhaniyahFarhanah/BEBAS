@@ -13,8 +13,28 @@ public class holdBreathGhost : MonoBehaviour
 
         else if (collision.transform.tag == "holdBreathGhost" && Input.GetKey(KeyCode.Space) == false)
         {
-            PlayerManager.isGameOver = true; //game is over is true
-            gameObject.SetActive(false); //destroys the player object 
+            CatchPlayer();
         }
+    }
+    private void CatchPlayer()
+    {
+        // If player close eyes, player lives, otherwise, dies
+        //PlayerStateManager playerState = Player.GetComponent<PlayerStateManager>();
+        Transform Player = null;
+        if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform; if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform;
+        PlayerStateManager playerState = Player.gameObject.GetComponent<PlayerStateManager>();
+        switch (playerState.currentState)
+        {
+            case PlayerHoldBreathState:
+                Debug.Log("Let player live");
+                break;
+            default:
+                Debug.Log("Kill Player!");
+
+                PlayerManager.isGameOver = true;
+                gameObject.SetActive(false);
+                break;
+        }
+
     }
 }
