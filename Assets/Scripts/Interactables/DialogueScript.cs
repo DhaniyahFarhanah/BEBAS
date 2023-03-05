@@ -84,9 +84,6 @@ public class DialogueScript : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-
-
-
     }
 
     IEnumerator Typing()

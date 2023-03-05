@@ -106,8 +106,10 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
 
             Debug.Log("Interact");
-            if (dialogue.Length == 0 && interactable)
+            if (dialogue.Length == 0 && interactable && !puzzleCompleted)
             {
+                Debug.Log("puzzle1");
+
                 StartCoroutine(SwitchPuzzleImmediate());
 
             }
@@ -119,31 +121,31 @@ public class PuzzleDialogueScript : MonoBehaviour
             }
             else if (showAfterDialogue && !puzzleCompleted && interactable)
             {
+                Debug.Log("puzzle2");
+
                 StartCoroutine(SwitchPuzzleImmediate());
             }
 
             else
             {
-
-                start = false;
-                dialoguePanel.SetActive(true);
-                index = 0;
-                StartCoroutine(Typing());
-
+                if (interactable)
+                {
+                    start = false;
+                    dialoguePanel.SetActive(true);
+                    index = 0;
+                    StartCoroutine(Typing());
+                }
             }
         }
 
         else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
-
             NextLine();
-
-
         }
 
 
     }
-    
+
     private void ShowAfterPuzzleDialogue()
     {
         if (puzzleCompleted && !showingDialogueNow)
@@ -162,7 +164,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         start = true;
 
         dialoguePanel.SetActive(false);
-
+        StopAllCoroutines();
     }
 
     IEnumerator Typing()
@@ -219,7 +221,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         else
         {
             zeroText();
-            StartCoroutine(SwitchPuzzleScene());
+            //StartCoroutine(SwitchPuzzleScene());
         }
     }
 
