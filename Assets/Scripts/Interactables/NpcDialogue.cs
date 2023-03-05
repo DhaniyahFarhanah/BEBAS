@@ -170,6 +170,7 @@ public class NpcDialogue : MonoBehaviour
         if (interact.CompareTag("Player"))
         {
             playerIsClose = false;
+            Z.SetActive(false);
             Debug.Log("Player is out of range");
             zeroText();
         }

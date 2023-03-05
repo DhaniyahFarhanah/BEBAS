@@ -17,6 +17,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public GameObject darkness;
     public GameObject dialogueBox;
+    public GameObject loreOverlay;
     public GameObject gameOverScreen;
 
     public PlayerManager PManager;
@@ -63,7 +64,7 @@ public class PlayerStateManager : MonoBehaviour
     void Update()
     {
 
-        if (dialogueBox.activeInHierarchy)
+        if (dialogueBox.activeInHierarchy || loreOverlay.activeInHierarchy)
         {
             isTalking = true;
 
@@ -91,7 +92,7 @@ public class PlayerStateManager : MonoBehaviour
 
         }
         // =============Player Movement (flip & speed) ================
-        else if(!dialogueBox.activeInHierarchy)
+        else if(!dialogueBox.activeInHierarchy || !loreOverlay.activeInHierarchy)
         {
             isTalking = false;
 

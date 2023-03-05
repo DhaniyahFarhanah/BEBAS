@@ -8,6 +8,7 @@ TagManager:
   - holdBreathGhost
   - crouchGhost
   - ground
+  - loreItem
   layers:
   - Default
   - TransparentFX
