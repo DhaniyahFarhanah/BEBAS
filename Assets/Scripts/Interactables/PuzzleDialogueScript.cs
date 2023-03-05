@@ -111,16 +111,15 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     IEnumerator SwitchPuzzleImmediate()
     {
-        yield return new WaitForSeconds(0f);
-
         puzzle.SetActive(true);
         player.SetActive(false);
+        yield return null;
     }
     IEnumerator SwitchPuzzleScene()
     {
-        yield return new WaitForSeconds(0.05f);
         puzzle.SetActive(true);
         player.SetActive(false);
+        yield return null;
         
     }
 

@@ -12,8 +12,6 @@ public class CharmsPuzzle : MonoBehaviour
 
     KeyholeScript keyhole;
 
-    int index;
-
     void Awake()
     {
         keyhole = keyholeScript.GetComponent<KeyholeScript>();
@@ -22,7 +20,7 @@ public class CharmsPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        index = 0;
+
     }
 
     // Update is called once per frame

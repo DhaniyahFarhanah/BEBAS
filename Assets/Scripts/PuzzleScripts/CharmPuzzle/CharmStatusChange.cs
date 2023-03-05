@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class CharmStatusChange : MonoBehaviour
 {
     [SerializeField] int charmIndex;
-    [SerializeField] string status;
     [SerializeField] GameObject charmPuzzle;
     [SerializeField] GameObject charmCut;
     [SerializeField] GameObject clueDialogue;
@@ -25,7 +24,6 @@ public class CharmStatusChange : MonoBehaviour
     void Start()
     {
         charmImage.color = notSelectedColor;
-        status = "isNotSelected";
     }
 
     // Update is called once per frame
@@ -37,13 +35,11 @@ public class CharmStatusChange : MonoBehaviour
     public void isHover()
     {
         charmImage.color = selectedColor;
-        status = "isSelected";
     }
 
     public void isNotHover()
     {
         charmImage.color = notSelectedColor;
-        status = "isNotSelected";
     }
 
     public void Tear()

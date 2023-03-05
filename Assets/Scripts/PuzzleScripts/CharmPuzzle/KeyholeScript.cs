@@ -12,7 +12,6 @@ public class KeyholeScript : MonoBehaviour
     [SerializeField] GameObject eyeClue;
     [SerializeField] Color selected;
     [SerializeField] Color notSelected;
-    [SerializeField] string status;
 
     Image keyhole;
 
@@ -36,7 +35,6 @@ public class KeyholeScript : MonoBehaviour
     {
        keyhole.color = selected;
        eyeClue.SetActive(true);
-        status = "isSelected";
     }
 
     public void OnNotHover()

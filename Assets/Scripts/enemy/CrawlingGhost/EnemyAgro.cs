@@ -172,6 +172,7 @@ public class EnemyAgro : MonoBehaviour
             playerState.SwitchState(playerState.deadState);
 
             gameOver.SetActive(true);
+
             setCheckpoint.checkpointX = checkpointXset;
             setCheckpoint.checkpointY = checkpointYset;
             setCheckpoint.checkpointZ = checkpointZset;
