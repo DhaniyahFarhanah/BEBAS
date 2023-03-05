@@ -36,6 +36,7 @@ public class DialogueScript : MonoBehaviour
 
     private void Awake()
     {
+        wordSpeed = 0.1f;
         currentWordSpeed = wordSpeed;
         audioSource = this.gameObject.AddComponent<AudioSource>();
     }

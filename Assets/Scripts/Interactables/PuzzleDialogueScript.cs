@@ -27,7 +27,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     [SerializeField] private bool showAfterDialogue;
     private bool showingPreDialogueNow;
-    private int showAfterDialogueIndex;
+    [SerializeField] private int showAfterDialogueIndex;
     private bool showingDialogueNow = false;
 
     [SerializeField] private bool puzzleCompleted;
@@ -38,6 +38,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private bool interactable;
     private void Awake()
     {
+        wordSpeed = 0.1f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
         if (!showAfterDialogue)
@@ -68,7 +69,7 @@ public class PuzzleDialogueScript : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
                 {
-
+                    Debug.Log("CLickclc");
                     if (index + 1 == showAfterDialogueIndex)
                     {
                         zeroText();
@@ -94,7 +95,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         }
 
 
-        if (puzzle.activeSelf == false && showingPreDialogueNow)
+        if (puzzle.activeSelf == false && showingPreDialogueNow && !puzzleCompleted)
         {
             showingPreDialogueNow = false;
             zeroText();

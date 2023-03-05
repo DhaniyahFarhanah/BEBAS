@@ -188,7 +188,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -4589,7 +4588,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -6058,7 +6056,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -10736,6 +10733,7 @@ MonoBehaviour:
   crouch: {fileID: 21300000, guid: ad7191b1bf48890449536dcc9f5de96e, type: 3}
   timerBar: {fileID: 1400807978}
   maxTime: 10
+  isTalking: 0
 --- !u!70 &705463102
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12883,7 +12881,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -23780,11 +23777,10 @@ MonoBehaviour:
   - I should continue to walk to see what else can I find in here sia.
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0
+  wordSpeed: 0.1
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
@@ -29616,7 +29612,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -35671,7 +35666,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showingPreDialogueNow: 0
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
