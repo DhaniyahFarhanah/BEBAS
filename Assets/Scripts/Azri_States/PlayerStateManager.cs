@@ -72,6 +72,14 @@ public class PlayerStateManager : MonoBehaviour
                 SwitchState(crouchState);
                 
             }
+            else if(currentState == eyesState)
+            {
+                SwitchState(eyesState);
+            }
+            else if(currentState == breathState)
+            {
+                SwitchState(breathState);
+            }
             else
             {
                 SwitchState(idleState);
@@ -192,18 +200,40 @@ public class PlayerStateManager : MonoBehaviour
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = breath;
-                charSpeed = 2f;
+
+                if (isTalking)
+                {
+                    charSpeed = 0f;
+                }
+
+                else
+                {
+                    charSpeed = 2f;
+                }
+
                 break;
 
             case PlayerEyesState:
                 //anim states
 
                 //code
-                darkness.SetActive(true);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = closedEyes;
-                charSpeed = 2f;
+
+                if (isTalking)
+                {
+                    charSpeed = 0f;
+                    darkness.SetActive(false);
+
+                }
+
+                else
+                {
+                    charSpeed = 2f;
+                    darkness.SetActive(true);
+                }
+
                 break;
 
             case PlayerIdleState:

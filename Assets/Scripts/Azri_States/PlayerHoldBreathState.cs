@@ -11,6 +11,17 @@ public class PlayerHoldBreathState : PlayerBaseState
     {
         player.animator.SetBool("Breath", true);
 
+        if (player.isTalking)
+        {
+            player.charSpeed = 0f;
+            
+        }
+
+        else
+        {
+            player.charSpeed = 2f;
+        }
+
         if (Input.GetKeyUp(KeyCode.Space)) //if no longer pressing
         {
             player.animator.SetBool("Breath", false);

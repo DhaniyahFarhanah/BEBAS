@@ -11,6 +11,19 @@ public class PlayerEyesState : PlayerBaseState
     {
         player.animator.SetBool("Eyes", true);
 
+
+        if (player.isTalking)
+        {
+            player.charSpeed = 0f;
+            player.darkness.SetActive(false);
+        }
+
+        else
+        {
+            player.charSpeed = 2f;
+            player.darkness.SetActive(true);
+        }
+
         if (Input.GetKeyUp(KeyCode.LeftShift)) //if no longer pressing
         {
             player.animator.SetBool("Eyes", false);
