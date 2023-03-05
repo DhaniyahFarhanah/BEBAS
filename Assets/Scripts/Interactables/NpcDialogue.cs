@@ -34,7 +34,7 @@ public class NpcDialogue : MonoBehaviour
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
-    private bool completeLineNow = false;
+    [SerializeField]private bool completeLineNow = false;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -111,7 +111,7 @@ public class NpcDialogue : MonoBehaviour
 
             if (completeLineNow)
             {
-                SetWordSpeed(0); // 0 means v fast
+                SetWordSpeed(0.0f); // 0 means v fast
             }
             else
             {
@@ -124,7 +124,7 @@ public class NpcDialogue : MonoBehaviour
 
     private void SkipLine()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow)
         {
             completeLineNow = true;
         }

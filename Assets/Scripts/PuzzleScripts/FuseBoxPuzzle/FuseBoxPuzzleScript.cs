@@ -195,7 +195,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
        
         player.SetActive(true);
         gameObject.SetActive(false);
-        fusebox.SetActive(false);
+        //fusebox.SetActive(false); i need to remove this to show after-puzzle-dialogue
 
     }
 

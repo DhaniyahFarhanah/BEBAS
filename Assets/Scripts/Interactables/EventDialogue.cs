@@ -50,20 +50,20 @@ public class EventDialogue : MonoBehaviour
         SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
-            Debug.Log("Interact");
+            //Debug.Log("Interact");
 
-            if (dialoguePanel.activeInHierarchy)
-            {
-                zeroText();
-            }
+            //if (dialoguePanel.activeInHierarchy)
+            //{
+            //    zeroText();
+            //}
 
-            else
-            {
-                start = false;
-                dialoguePanel.SetActive(true);
-                index = 0;
-                StartCoroutine(Typing());
-            }
+            //else
+            //{
+            //start = false;
+            //dialoguePanel.SetActive(true);
+            //index = 0;
+            //StartCoroutine(Typing());
+            //}
         }
 
         else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
@@ -139,18 +139,23 @@ public class EventDialogue : MonoBehaviour
         }
     }
 
+    private bool dialogueAppearedBefore = false;
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
         {
-
-            start = false;
-            dialoguePanel.SetActive(true);
-            nameTextBox.text = name;
-            StartCoroutine(Typing());
-            playerIsClose = true;
-            showcase.sprite = newImage;
-
+            if (start && !dialogueAppearedBefore)
+            {
+                dialogueAppearedBefore = true;
+                start = false;
+                dialoguePanel.SetActive(true);
+                nameTextBox.text = name;
+                StartCoroutine(Typing());
+                playerIsClose = true;
+                showcase.sprite = newImage;
+                if (newImage == null)
+                    showcase.gameObject.SetActive(false);
+            }
 
         }
     }

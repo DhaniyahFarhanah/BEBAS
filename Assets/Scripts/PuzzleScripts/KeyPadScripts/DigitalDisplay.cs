@@ -29,7 +29,7 @@ public class DigitalDisplay : MonoBehaviour
     void Start()
     {
         codeSequence = "";
-
+        Debug.Log(this.gameObject.name + " is HAHAHAHA");
         for (int i = 0; i <= characters.Length -1; i++)
         {
             characters[i].sprite = digits[10];

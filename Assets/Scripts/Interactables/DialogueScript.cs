@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +28,7 @@ public class DialogueScript : MonoBehaviour
     public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
-
+    
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -36,7 +37,7 @@ public class DialogueScript : MonoBehaviour
     private void Awake()
     {
         currentWordSpeed = wordSpeed;
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = this.gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -51,7 +52,7 @@ public class DialogueScript : MonoBehaviour
             {
                 zeroText();
             }
-
+            
             else
             {
                 start = false;
@@ -71,7 +72,7 @@ public class DialogueScript : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
         {
             NextLine();
-
+           
         }
 
     }
@@ -89,7 +90,7 @@ public class DialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        foreach(char letter in dialogue[index].ToCharArray())
         {
             yield return new WaitForSeconds(currentWordSpeed);
 
@@ -101,13 +102,9 @@ public class DialogueScript : MonoBehaviour
             }
             audioSource.PlayOneShot(dialogueTypingSoundClip);
             if (completeLineNow)
-            {
                 SetWordSpeed(0); // 0 means v fast
-            }
             else
-            {
                 SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
-            }
         }
         completeLineNow = false;
         hasCompletedLine = true;
@@ -115,9 +112,7 @@ public class DialogueScript : MonoBehaviour
     private void SkipLine()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
-        {
             completeLineNow = true;
-        }
     }
 
     private void SetWordSpeed(float newSpeed)
@@ -143,7 +138,7 @@ public class DialogueScript : MonoBehaviour
             zeroText();
         }
     }
-
+    
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
@@ -152,7 +147,7 @@ public class DialogueScript : MonoBehaviour
             Z.SetActive(true);
             display.sprite = newImage;
             player = interact.gameObject;
-
+                       
             Debug.Log("Player is in range");
         }
     }
