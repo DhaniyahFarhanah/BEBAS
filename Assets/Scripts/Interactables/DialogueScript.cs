@@ -19,6 +19,11 @@ public class DialogueScript : MonoBehaviour
 
     GameObject player;
 
+    // Azri reactions
+    [SerializeField] Image AzriPreview;
+    [SerializeField] Sprite AzriDefault;
+    [SerializeField] Sprite[] AzriReactions;
+
     public string[] dialogue;
     private int index;
     [SerializeField] private bool hasCompletedLine = false;
@@ -83,11 +88,13 @@ public class DialogueScript : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         start = true;
+        AzriPreview.sprite = AzriDefault;
         dialoguePanel.SetActive(false);
     }
 
     IEnumerator Typing()
     {
+        AzriPreview.sprite = AzriReactions[index];
         foreach(char letter in dialogue[index].ToCharArray())
         {
             yield return new WaitForSeconds(currentWordSpeed);

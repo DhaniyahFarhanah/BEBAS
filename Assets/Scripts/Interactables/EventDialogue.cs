@@ -11,6 +11,11 @@ public class EventDialogue : MonoBehaviour
     public TMP_Text dialogueText;
     [SerializeField] TMP_Text nameTextBox;
 
+    //AzriReactions
+    [SerializeField] Image AzriPreview;
+    [SerializeField] Sprite AzriDefault;
+    [SerializeField] Sprite[] AzriReactions;
+
     public new string name;
     public string[] dialogue;
     private int index;
@@ -23,6 +28,7 @@ public class EventDialogue : MonoBehaviour
     public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
+
 
 
     [SerializeField] private bool hasCompletedLine = false;
@@ -81,13 +87,14 @@ public class EventDialogue : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-
+        AzriPreview.sprite = AzriDefault;
         gameObj.SetActive(SetActiveAfterFinished);
 
     }
 
     IEnumerator Typing()
     {
+        AzriPreview.sprite = AzriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {
             yield return new WaitForSeconds(currentWordSpeed);
