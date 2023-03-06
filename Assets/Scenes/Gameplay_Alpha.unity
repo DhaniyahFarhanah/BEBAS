@@ -31396,7 +31396,7 @@ MonoBehaviour:
   - 'I should cut a square at the bottom and try to crawl in to enter the hospital. '
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.03
+  wordSpeed: 0.05
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -32011,7 +32011,7 @@ MonoBehaviour:
   - "Let's pick it up\u2026  "
   - 'I think it might be helpful later. '
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.05
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
