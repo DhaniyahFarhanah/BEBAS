@@ -164,7 +164,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         start = true;
 
         dialoguePanel.SetActive(false);
-        StopAllCoroutines();
+        
     }
 
     IEnumerator Typing()
