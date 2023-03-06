@@ -9,6 +9,7 @@ TagManager:
   - crouchGhost
   - ground
   - loreItem
+  - Obstacle
   layers:
   - Default
   - TransparentFX

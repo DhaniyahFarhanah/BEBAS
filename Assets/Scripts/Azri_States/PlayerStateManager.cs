@@ -48,7 +48,10 @@ public class PlayerStateManager : MonoBehaviour
     public Image timerBar;
     public float maxTime = 1f;
     float remainingTime;
+
     public bool isTalking;
+    public bool isRun;
+    public bool isDead;
 
     void Start()
     {
@@ -57,6 +60,7 @@ public class PlayerStateManager : MonoBehaviour
         timerBar = GetComponentInChildren<Image>();
         timerBar.enabled = false;
         remainingTime = maxTime;
+        isRun = false;
         isTalking = false;
     }
 
@@ -156,10 +160,10 @@ public class PlayerStateManager : MonoBehaviour
         {
             case PlayerWalkState:
                 //anim states
-               // animator.SetBool("Idle", false);
-               // animator.SetBool("Moving", true);
-               // animator.SetBool("Crouch", false);
-               // animator.SetBool("Breath", false);
+                // animator.SetBool("Idle", false);
+                // animator.SetBool("Moving", true);
+                // animator.SetBool("Crouch", false);
+                // animator.SetBool("Breath", false);
 
 
                 //code
@@ -167,7 +171,15 @@ public class PlayerStateManager : MonoBehaviour
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = walking;
-                charSpeed = 4.5f;
+                
+                if (isRun)
+                {
+                    charSpeed = 7f;
+                }
+                else
+                {
+                    charSpeed = 4.5f;
+                }
                 break;
 
             case PlayerCrouchState:

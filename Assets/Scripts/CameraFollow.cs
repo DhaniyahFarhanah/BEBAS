@@ -19,8 +19,8 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Mathf.Clamp(player.transform.position.x, xMin, xMax); //mathclamp gets player position and allows player to be between xmin and xmax.
-        float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+        float x = Mathf.Clamp(player.transform.position.x, xMin , xMax); //mathclamp gets player position and allows player to be between xmin and xmax.
+        float y = Mathf.Clamp(player.transform.position.y + 1, yMin, yMax);
 
         gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z); //set default z
     }
