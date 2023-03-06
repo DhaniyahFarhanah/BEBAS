@@ -171,10 +171,11 @@ public class PlayerStateManager : MonoBehaviour
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
                 spriteRenderer.sprite = walking;
+                animator.SetBool("isRun", isRun);
                 
                 if (isRun)
                 {
-                    charSpeed = 7f;
+                    charSpeed = 9f;
                 }
                 else
                 {
