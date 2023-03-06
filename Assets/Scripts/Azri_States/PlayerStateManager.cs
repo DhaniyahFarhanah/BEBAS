@@ -175,7 +175,7 @@ public class PlayerStateManager : MonoBehaviour
                 
                 if (isRun)
                 {
-                    charSpeed = 9f;
+                    charSpeed = 11f;
                 }
                 else
                 {
