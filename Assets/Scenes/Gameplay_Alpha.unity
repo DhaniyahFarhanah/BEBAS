@@ -156,7 +156,7 @@ Transform:
   m_Children:
   - {fileID: 1844310165}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3455328
 MonoBehaviour:
@@ -191,7 +191,7 @@ MonoBehaviour:
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
 --- !u!61 &3455329
@@ -1207,7 +1207,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &68857674
 MonoBehaviour:
@@ -1788,6 +1788,7 @@ MonoBehaviour:
   AzriReactions: []
   dialogue:
   - What's this?
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -3027,6 +3028,7 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - Eh? Another finger in this room. I better pick this up la.
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
   currentWordSpeed: 0
@@ -4091,6 +4093,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &285658766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285658767}
+  m_Layer: 0
+  m_Name: FenceClosed_NoBoltcutter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285658767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285658766}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.052077, y: 0.48971152, z: -6.4747944}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1336105971}
+  - {fileID: 1803070717}
+  - {fileID: 891785294}
+  - {fileID: 1589647229}
+  m_Father: {fileID: 1346991876}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286512866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5014,6 +5051,7 @@ MonoBehaviour:
   dialogue:
   - Phew! That was tiring. There we go.
   - I can crawl under it now!
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -5559,6 +5597,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367846366}
   m_CullTransparentMesh: 1
+--- !u!1 &371450018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371450019}
+  - component: {fileID: 371450021}
+  - component: {fileID: 371450020}
+  m_Layer: 0
+  m_Name: BoundaryTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371450019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371450018}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -28.352077, y: 2.7904615, z: 7.2511377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1346991876}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &371450020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371450018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 476937917}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  name: Azri
+  dialogue:
+  - There's nothing but wilderness out there.
+  - I saw a building on the other side.
+  - I'm sure there's somebody there that can help me.
+  isPickUp: 0
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
+  wordSpeed: 0.03
+  currentWordSpeed: 0
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 1
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 1
+--- !u!61 &371450021
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371450018}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.028178692, y: -3.9872565}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9436426, y: 8.974513}
+  m_EdgeRadius: 0
 --- !u!1 &373888978
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,7 +6945,7 @@ MonoBehaviour:
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 0}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
 --- !u!61 &440907374
@@ -6869,7 +7004,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &444206038
 SpriteRenderer:
@@ -7561,6 +7696,115 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 1836641181}
+--- !u!1 &476937917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476937918}
+  - component: {fileID: 476937920}
+  - component: {fileID: 476937919}
+  m_Layer: 0
+  m_Name: boxCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476937918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476937917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.22, y: -5.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2056888164}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &476937919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476937917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 476937917}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  name: Azri
+  dialogue:
+  - '*Huff Huff Huff*'
+  - That dream again...
+  - Wait a second...Where am I?!
+  - I really need to get this sleepwalking checked out...
+  - I should call someone to get me.
+  - Sial lah! Did I not bring my phone?!
+  - Okay Azri...don't panic...
+  - It's Singapore. Nobody gets lost in Singapore.
+  - I just need to keep walking to find someone to help me.
+  isPickUp: 0
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
+  wordSpeed: 0.03
+  currentWordSpeed: 0
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 0
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 1
+--- !u!61 &476937920
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476937917}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3900199, y: -0.18572378}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.522935, y: 0.62855244}
+  m_EdgeRadius: 0
 --- !u!1 &480367247
 GameObject:
   m_ObjectHideFlags: 0
@@ -9962,7 +10206,7 @@ Transform:
   m_Children:
   - {fileID: 1653329506}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611280145
 GameObject:
@@ -13360,103 +13604,6 @@ Transform:
   m_Father: {fileID: 871492005}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!1 &802200774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 802200775}
-  - component: {fileID: 802200777}
-  - component: {fileID: 802200776}
-  m_Layer: 0
-  m_Name: boundarytrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &802200775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802200774}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.1, y: -1.5, z: 0}
-  m_LocalScale: {x: 0.13875, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1346991876}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &802200776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802200774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1307237298}
-  showcase: {fileID: 576505571}
-  gameObj: {fileID: 802200774}
-  dialogueText: {fileID: 612804699}
-  nameTextBox: {fileID: 1944098500}
-  AzriPreview: {fileID: 1841857537}
-  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
-  AzriReactions:
-  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
-  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
-  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
-  name: Azri
-  dialogue:
-  - I really want to go home..
-  - But what if I get nightmares again?
-  - Let's just see what we have to do here.
-  isPickUp: 0
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
-  wordSpeed: 0.03
-  currentWordSpeed: 0
-  playerIsClose: 0
-  start: 1
-  hasCompletedLine: 0
-  SetActiveAfterFinished: 0
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 1
---- !u!61 &802200777
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802200774}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4.007387, y: -0.34470367}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 22.995636, y: 7.35787}
-  m_EdgeRadius: 0
 --- !u!1 &806385858
 GameObject:
   m_ObjectHideFlags: 0
@@ -14185,7 +14332,7 @@ MonoBehaviour:
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 0}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
 --- !u!61 &845652109
@@ -15041,7 +15188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882695337
 GameObject:
@@ -15290,6 +15437,117 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887931758}
   m_CullTransparentMesh: 1
+--- !u!1 &891785293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891785294}
+  - component: {fileID: 891785296}
+  - component: {fileID: 891785295}
+  m_Layer: 0
+  m_Name: fenceblocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891785294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891785293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.62, y: 0.41, z: 0}
+  m_LocalScale: {x: 1.3906, y: 12.991914, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 285658767}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &891785295
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891785293}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016413987, y: -0.008847684}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.96717227, y: 1.0176952}
+  m_EdgeRadius: 0
+--- !u!212 &891785296
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891785293}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1010005757
+  m_SortingLayer: 7
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &893453468
 GameObject:
   m_ObjectHideFlags: 0
@@ -19439,10 +19697,10 @@ MonoBehaviour:
   - {fileID: 1006999135}
   - {fileID: 617948973}
   player: {fileID: 705463099}
-  gateClosed: {fileID: 1676085652}
-  gateOpened: {fileID: 1772794264}
+  gateClosed: {fileID: 0}
+  gateOpened: {fileID: 0}
   Puzzle: {fileID: 1321091889}
-  Background: {fileID: 322808689}
+  Background: {fileID: 0}
   image: {fileID: 2055965102}
 --- !u!1 &1031272468
 GameObject:
@@ -20330,7 +20588,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1067737193
 MonoBehaviour:
@@ -20858,6 +21116,7 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - Eh? Another finger in this room. I better pick this up la.
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
   currentWordSpeed: 0
@@ -22512,6 +22771,7 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - Eh? Another finger in this room. I better pick this up la.
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
   currentWordSpeed: 0
@@ -24122,7 +24382,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257483109
 GameObject:
@@ -26094,6 +26354,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1336105969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336105971}
+  - component: {fileID: 1336105970}
+  m_Layer: 0
+  m_Name: fence Z
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &1336105970
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336105969}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -665059025
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 737c1b4aa59a3264384843f235c0fbdb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.99, y: 0.88}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1336105971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336105969}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.328597, y: -0.19354415, z: 16.679083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 285658767}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340505925
 GameObject:
   m_ObjectHideFlags: 0
@@ -26350,7 +26694,7 @@ MonoBehaviour:
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 0}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
 --- !u!61 &1341492795
@@ -26551,6 +26895,7 @@ MonoBehaviour:
   AzriReactions: []
   dialogue:
   - What's this?
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -26682,11 +27027,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 802200775}
+  - {fileID: 371450019}
   - {fileID: 818506409}
   - {fileID: 1078985446}
+  - {fileID: 2056888164}
   - {fileID: 1238355802}
   - {fileID: 597815776}
+  - {fileID: 285658767}
   - {fileID: 1676085653}
   - {fileID: 1772794265}
   - {fileID: 2056149898}
@@ -27223,7 +27570,7 @@ Transform:
   - {fileID: 1412738705}
   - {fileID: 1715592025}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380087718
 GameObject:
@@ -30418,6 +30765,7 @@ MonoBehaviour:
   AzriReactions: []
   dialogue:
   - What's this?
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -30906,6 +31254,90 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.99, y: 0.88}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1589647228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1589647229}
+  - component: {fileID: 1589647230}
+  m_Layer: 0
+  m_Name: Further Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1589647229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589647228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48.7865, y: -1.9397504, z: 16.679083}
+  m_LocalScale: {x: 1.1357447, y: 1.1357447, z: 1.1357447}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 285658767}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1589647230
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589647228}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -684084417
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0feed1f894d1b6442903b61f48dddbf6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 80.13912, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -32527,12 +32959,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1676085653}
   m_Layer: 0
-  m_Name: FenceClosed
+  m_Name: FenceClosed_HasBoltcutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1676085653
 Transform:
   m_ObjectHideFlags: 0
@@ -32550,7 +32982,7 @@ Transform:
   - {fileID: 1031272469}
   - {fileID: 322808688}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677214678
 GameObject:
@@ -33007,7 +33439,7 @@ MonoBehaviour:
   showAfterDialogue: 0
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
 --- !u!1 &1705741881
@@ -33489,6 +33921,7 @@ GameObject:
   - component: {fileID: 1715592024}
   - component: {fileID: 1715592026}
   - component: {fileID: 1715592027}
+  - component: {fileID: 1715592028}
   m_Layer: 0
   m_Name: boltcutters
   m_TagString: reqItem
@@ -33615,13 +34048,18 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - 'Huh? Why got boltcutters on the bicycle? '
+  - Is this my bike? What is it doing here?
+  - Is this how I got here?
+  - Are these boltcutters? I don't remember owning boltcutters...
   - I bring this but not my phone?
   - Aiya just bring along with me ah.
   - Maybe I can use later.
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -33629,6 +34067,20 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+--- !u!114 &1715592028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715592023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6069fd7e9d4ee4b9a372412ebbeecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBoltcutter: {fileID: 1676085652}
+  noBoltcutter: {fileID: 285658766}
 --- !u!1 &1715937363
 GameObject:
   m_ObjectHideFlags: 0
@@ -34116,7 +34568,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1747605710 stripped
 MonoBehaviour:
@@ -34382,7 +34834,7 @@ Transform:
   m_Children:
   - {fileID: 2055838694}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1761090688
 MonoBehaviour:
@@ -34721,7 +35173,7 @@ Transform:
   - {fileID: 2076073521}
   - {fileID: 1539766747}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792519030
 GameObject:
@@ -34906,6 +35358,256 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 1315879309}
+--- !u!1 &1803070716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803070717}
+  - component: {fileID: 1803070721}
+  - component: {fileID: 1803070720}
+  - component: {fileID: 1803070719}
+  - component: {fileID: 1803070718}
+  m_Layer: 0
+  m_Name: fence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803070717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803070716}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.778598, y: 0.3777001, z: 16.679083}
+  m_LocalScale: {x: 1, y: 13.025288, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 285658767}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1803070718
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803070716}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1803070719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803070716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e2a608fe908e649ad1af2e840a5d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  Z: {fileID: 1336105969}
+  gameObj: {fileID: 1803070716}
+  display: {fileID: 576505571}
+  newImage: {fileID: 21300000, guid: 85cf230d1ef2cc247bbb790d4cecfef9, type: 3}
+  dialogueText: {fileID: 612804699}
+  pickUp: 0
+  boxCollider: {fileID: 1803070720}
+  spriteRenderer: {fileID: 1803070721}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  dialogue:
+  - Eh there's a gate?
+  - Maybe I can climb over?
+  - Ah there's wires at the top.
+  - Maybe I should use those boltcutters in my bicycle.
+  index: 0
+  hasCompletedLine: 0
+  wordSpeed: 0.03
+  currentWordSpeed: 0.03
+  playerIsClose: 0
+  start: 1
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 1
+--- !u!61 &1803070720
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803070716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7367569, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.473514, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1803070721
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803070716}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1010005757
+  m_SortingLayer: 7
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1817258525
 GameObject:
   m_ObjectHideFlags: 0
@@ -35788,6 +36490,7 @@ MonoBehaviour:
   AzriReactions: []
   dialogue:
   - What's this?
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
   currentWordSpeed: 0
@@ -37879,7 +38582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 745735999}
   puzzle: {fileID: 1601488960}
-  display: {fileID: 3455326}
+  display: {fileID: 0}
   player: {fileID: 705463099}
   digits:
   - {fileID: 485107556, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
@@ -39190,6 +39893,7 @@ MonoBehaviour:
   - Eh? Who is this man. Could he be the director of this hospital?
   - Why does he look so much like me ah?
   - Could this man be the guy that the little girl talk about just now?
+  index: 0
   hasCompletedLine: 0
   wordSpeed: 0.05
   currentWordSpeed: 0
@@ -39393,7 +40097,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39815,7 +40519,7 @@ MonoBehaviour:
   showAfterDialogue: 1
   showAfterDialogueIndex: 4
   puzzleCompleted: 0
-  dialogueTypingSoundClip: {fileID: 0}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
 --- !u!61 &2042510828
@@ -40444,7 +41148,7 @@ Transform:
   - {fileID: 53170340}
   - {fileID: 1118881234}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2056149899
 MonoBehaviour:
@@ -40464,6 +41168,38 @@ MonoBehaviour:
   moveSpeed: 2.5
   patrolDestination: 0
   myCollider: {fileID: 0}
+--- !u!1 &2056888163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056888164}
+  m_Layer: 0
+  m_Name: SpawnDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2056888164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056888163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 476937918}
+  m_Father: {fileID: 1346991876}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060840739
 GameObject:
   m_ObjectHideFlags: 0
@@ -41093,9 +41829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aac61feb6e1e314793b70daa66d7e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1761090685}
+  door: {fileID: 0}
   puzzle: {fileID: 363275661}
-  display: {fileID: 3455326}
+  display: {fileID: 0}
   player: {fileID: 705463099}
   digits:
   - {fileID: 485107556, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}

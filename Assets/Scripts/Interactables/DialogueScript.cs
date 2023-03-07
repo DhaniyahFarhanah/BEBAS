@@ -25,7 +25,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] Sprite[] AzriReactions;
 
     public string[] dialogue;
-    private int index;
+    public int index;
     [SerializeField] private bool hasCompletedLine = false;
     private bool completeLineNow = false;
 
