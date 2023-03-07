@@ -41,7 +41,7 @@ public class EventDialogue : MonoBehaviour
 
     private void Awake()
     {
-        wordSpeed = 0.1f;
+        wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
     }

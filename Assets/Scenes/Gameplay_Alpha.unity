@@ -179,8 +179,8 @@ MonoBehaviour:
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
   dialogue:
-  - 'Oh! There is a door here.  '
-  - "Hmm, there is a keypad here. I don\u2019t have any clue to open this door."
+  - Oh! Got door here, must be the entrance.
+  - Hmm, got a keypad here. But how to open ah? I don't have the number.
   - 'Maybe I should walk forward more to see if I can find any clue. '
   index: 0
   hasCompletedLine: 0
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   name: Azri
   dialogue:
-  - There seems to be lights flashing at the front...
+  - Eh why got light in front
   - Why would anyone be here at this hour?
   - I should CROUCH so he doesn't see me.
   isPickUp: 0
@@ -26239,11 +26239,11 @@ MonoBehaviour:
   newImage: {fileID: 0}
   dialogueText: {fileID: 612804699}
   dialogue:
-  - I think I have to push this lever to switch on the lights siah.
-  - Seems to be an indicator around the 70-90 mark.
-  - Let me try to get this to work lah.
+  - I think I have to push this lever to switch on the lights.
+  - Got indicator around the 70-90 mark.
+  - Let me try to get this to work.
   - Ok wow the lights are on now.
-  - I should continue to walk to see what else can I find in here sia.
+  - I should continue to walk to see what else can I find in here.
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
@@ -32897,8 +32897,8 @@ MonoBehaviour:
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
   dialogue:
-  - 'There is a wire fence here. '
-  - Oh right! I can cut out a square using the bolt cutters that I picked up earlier!
+  - Eh got fence here.. how to go over ah?
+  - Oh ya! I can cut out a square using the bolt cutters that I picked up just now!
   - 'I should cut a square at the bottom and try to crawl in to enter the hospital. '
   index: 0
   hasCompletedLine: 0
@@ -33520,12 +33520,12 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - "Hmm\u2026? Why are there boltcutters on the bicycle? "
-  - I brought boltcutters but not a phone?
-  - "Let's pick it up\u2026  "
-  - 'I think it might be helpful later. '
+  - 'Huh?  Why got boltcutters on the bicycle? '
+  - I bring this but not my phone?
+  - Aiya just bring along with me ah.
+  - Maybe I can use later.
   hasCompletedLine: 0
-  wordSpeed: 0.05
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -40363,7 +40363,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 881200140}
   - {fileID: 1733372668}
-  moveSpeed: 2
+  moveSpeed: 2.5
   patrolDestination: 0
   myCollider: {fileID: 0}
 --- !u!1 &2060840739
