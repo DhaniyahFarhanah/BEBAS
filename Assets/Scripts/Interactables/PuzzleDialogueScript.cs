@@ -51,7 +51,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //SkipLine();
+        SkipLine();
         // Otherwise player can keep on pressing and can hear that it is typing
         if (puzzle.activeSelf == true)
         {
@@ -66,15 +66,17 @@ public class PuzzleDialogueScript : MonoBehaviour
                 index = 0;
                 StartCoroutine(Typing());
             }
-            if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
+            if (dialoguePanel.activeSelf == true)
             {
-                Debug.Log("CLickclc");
-                if (index + 1 == showAfterDialogueIndex)
+                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
                 {
-                    zeroText();
-                    index = showAfterDialogueIndex;
+                    if (index + 1 == showAfterDialogueIndex)
+                    {
+                        zeroText();
+                        index = showAfterDialogueIndex;
+                    }
+                    NextLine();
                 }
-                NextLine();
             }
 
 
@@ -90,10 +92,13 @@ public class PuzzleDialogueScript : MonoBehaviour
                 }
             }
 
+            // If puzzle is active, dont need to run the remaining code in this method, so just return and stop it here
             return;
         }
 
 
+        // If puzzle is not active and showing predialogue now, zeroText()
+        // Will come to this line of code WHEN user press ESC after clicking on puzzle dialogue
         if (puzzle.activeSelf == false && showingPreDialogueNow && !puzzleCompleted)
         {
             showingPreDialogueNow = false;
@@ -163,7 +168,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         start = true;
 
         dialoguePanel.SetActive(false);
-
+        StopAllCoroutines();
     }
 
     IEnumerator Typing()

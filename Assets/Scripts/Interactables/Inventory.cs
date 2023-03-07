@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,12 +29,23 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (inventoryCanvas.activeSelf == false)
-                inventoryCanvas.SetActive(true);
+            {
+                ShowInventory();
+            }
             else
-                inventoryCanvas.SetActive(false);
+            {
+                HideInventory();
+            }
         }
     }
-
+    private void ShowInventory()
+    {
+        inventoryCanvas.SetActive(true);
+    }
+    private void HideInventory()
+    {
+        inventoryCanvas.SetActive(false);
+    }
     // Will be called in DialogueScript to add
     public void AddToInventory(Sprite item)
     {
@@ -60,5 +70,5 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    
+
 }
