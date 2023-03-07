@@ -32902,7 +32902,7 @@ MonoBehaviour:
   - 'I should cut a square at the bottom and try to crawl in to enter the hospital. '
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.05
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
