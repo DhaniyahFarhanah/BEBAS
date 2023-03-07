@@ -51,33 +51,32 @@ public class PuzzleDialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SkipLine();
+        //SkipLine();
         // Otherwise player can keep on pressing and can hear that it is typing
         if (puzzle.activeSelf == true)
         {
-            if (showAfterDialogue)
-            {
-                // Show dialog here
-                if (!showingPreDialogueNow)
-                {
-                    showingPreDialogueNow = true;
 
-                    start = false;
-                    dialoguePanel.SetActive(true);
-                    index = 0;
-                    StartCoroutine(Typing());
-                }
-                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
-                {
-                    Debug.Log("CLickclc");
-                    if (index + 1 == showAfterDialogueIndex)
-                    {
-                        zeroText();
-                        index = showAfterDialogueIndex;
-                    }
-                    NextLine();
-                }
+            // Show dialog here
+            if (!showingPreDialogueNow)
+            {
+                showingPreDialogueNow = true;
+
+                start = false;
+                dialoguePanel.SetActive(true);
+                index = 0;
+                StartCoroutine(Typing());
             }
+            if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
+            {
+                Debug.Log("CLickclc");
+                if (index + 1 == showAfterDialogueIndex)
+                {
+                    zeroText();
+                    index = showAfterDialogueIndex;
+                }
+                NextLine();
+            }
+
 
             // Check if game completed here
             if (puzzle.GetComponent<FuseBoxPuzzleScript>())
@@ -106,7 +105,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
 
             Debug.Log("Interact");
-            if (dialogue.Length == 0 && interactable && !puzzleCompleted)
+            if ((dialogue.Length == 0 || !showAfterDialogue) && interactable && !puzzleCompleted)
             {
                 Debug.Log("puzzle1");
 
@@ -164,7 +163,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         start = true;
 
         dialoguePanel.SetActive(false);
-        
+
     }
 
     IEnumerator Typing()
