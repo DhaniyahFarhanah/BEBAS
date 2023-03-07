@@ -1234,7 +1234,7 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   name: Azri
   dialogue:
-  - Eh why got light in front
+  - Eh why got light in front?
   - Why would anyone be here at this hour?
   - I should CROUCH so he doesn't see me.
   isPickUp: 0
@@ -32994,8 +32994,8 @@ MonoBehaviour:
   dialogueText: {fileID: 612804699}
   dialogue:
   - Eh got fence here.. how to go over ah?
-  - Oh ya! I can cut out a square using the bolt cutters that I picked up just now!
-  - 'I should cut a square at the bottom and try to crawl in to enter the hospital. '
+  - I think need boltcutters to cut a square.
+  - Then I can crawl over to the hospital.
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
@@ -33489,7 +33489,7 @@ GameObject:
   - component: {fileID: 1715592027}
   m_Layer: 0
   m_Name: boltcutters
-  m_TagString: Untagged
+  m_TagString: reqItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33616,7 +33616,7 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - 'Huh?  Why got boltcutters on the bicycle? '
+  - 'Huh? Why got boltcutters on the bicycle? '
   - I bring this but not my phone?
   - Aiya just bring along with me ah.
   - Maybe I can use later.

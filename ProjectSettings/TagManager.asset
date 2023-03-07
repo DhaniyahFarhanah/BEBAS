@@ -10,6 +10,7 @@ TagManager:
   - ground
   - loreItem
   - Obstacle
+  - reqItem
   layers:
   - Default
   - TransparentFX

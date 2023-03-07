@@ -36,6 +36,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
     [SerializeField] private bool interactable;
+
     private void Awake()
     {
         wordSpeed = 0.03f;
@@ -53,33 +54,31 @@ public class PuzzleDialogueScript : MonoBehaviour
     {
         SkipLine();
         // Otherwise player can keep on pressing and can hear that it is typing
+
         if (puzzle.activeSelf == true)
         {
-
             // Show dialog here
             if (!showingPreDialogueNow)
             {
-                showingPreDialogueNow = true;
-
-                start = false;
-                dialoguePanel.SetActive(true);
-                index = 0;
-                StartCoroutine(Typing());
+              showingPreDialogueNow = true;
+              start = false;
+              dialoguePanel.SetActive(true);
+              index = 0;
+              StartCoroutine(Typing());
             }
             if (dialoguePanel.activeSelf == true)
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
+              if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
+              {
+                if (index + 1 == showAfterDialogueIndex)
                 {
-                    if (index + 1 == showAfterDialogueIndex)
-                    {
-                        zeroText();
-                        index = showAfterDialogueIndex;
-                    }
-                    NextLine();
+                   zeroText();
+                   index = showAfterDialogueIndex;
                 }
+                NextLine();
+              }
             }
-
-
+            
             // Check if game completed here
             if (puzzle.GetComponent<FuseBoxPuzzleScript>())
             {
@@ -161,6 +160,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             StartCoroutine(Typing());
         }
     }
+
     public void zeroText()
     {
         dialogueText.text = "";
