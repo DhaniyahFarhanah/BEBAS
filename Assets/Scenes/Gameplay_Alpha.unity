@@ -11636,6 +11636,8 @@ MonoBehaviour:
   isTalking: 0
   isRun: 0
   isDead: 0
+  walkingSoundClip: {fileID: 8300000, guid: f7e3d5f748d606f4f86dee8874518fd5, type: 3}
+  stopAudioSource: 1
 --- !u!70 &705463102
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

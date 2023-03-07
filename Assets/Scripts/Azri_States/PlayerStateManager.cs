@@ -41,10 +41,6 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerIdleState idleState = new PlayerIdleState();
     public PlayerDeadState deadState = new PlayerDeadState();
 
-    //internal PlayerBaseState yeetState;
-    //internal PlayerBaseState twerkState;
-    //internal PlayerBaseState killState;
-
     public Image timerBar;
     public float maxTime = 1f;
     float remainingTime;
@@ -52,6 +48,15 @@ public class PlayerStateManager : MonoBehaviour
     public bool isTalking;
     public bool isRun;
     public bool isDead;
+
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip walkingSoundClip;
+    [SerializeField] private bool stopAudioSource;
+
+    private void Awake()
+    {
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+    }
 
     void Start()
     {
@@ -165,6 +170,11 @@ public class PlayerStateManager : MonoBehaviour
                 // animator.SetBool("Crouch", false);
                 // animator.SetBool("Breath", false);
 
+                if (stopAudioSource)
+                {
+                    audioSource.Stop();
+                }
+                audioSource.PlayOneShot(walkingSoundClip);
 
                 //code
                 darkness.SetActive(false);
