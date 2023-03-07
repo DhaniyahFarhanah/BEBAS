@@ -33,7 +33,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private bool puzzleCompleted;
 
     private AudioSource audioSource;
-    [SerializeField] private AudioClip dialogueTypingSoundClip;
+    [SerializeField] private AudioClip walkingSoundClip;
     [SerializeField] private bool stopAudioSource;
     [SerializeField] private bool interactable;
 
@@ -183,7 +183,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             {
                 audioSource.Stop();
             }
-            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            audioSource.PlayOneShot(walkingSoundClip);
 
             if (completeLineNow)
             {
