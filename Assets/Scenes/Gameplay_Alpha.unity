@@ -156,7 +156,7 @@ Transform:
   m_Children:
   - {fileID: 1844310165}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3455328
 MonoBehaviour:
@@ -207,7 +207,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3857522, y: 1.1756935}
+  m_Offset: {x: -10.182765, y: 2.232174}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -218,7 +218,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.715958, y: 48.003685}
+  m_Size: {x: 25.678774, y: 45.890724}
   m_EdgeRadius: 0
 --- !u!212 &3455330
 SpriteRenderer:
@@ -1207,7 +1207,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &68857674
 MonoBehaviour:
@@ -7004,7 +7004,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &444206038
 SpriteRenderer:
@@ -10554,6 +10554,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &629461070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629461071}
+  - component: {fileID: 629461073}
+  - component: {fileID: 629461072}
+  m_Layer: 0
+  m_Name: Keypad trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629461071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629461070}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.45, y: 1.59, z: 0}
+  m_LocalScale: {x: 0.13875, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1346991876}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629461072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629461070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 629461070}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  name: Azri
+  dialogue:
+  - Ok good I didn't get caught.
+  - I should key in the numbers on the keypad now.
+  isPickUp: 0
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
+  wordSpeed: 0.03
+  currentWordSpeed: 0
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 0
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 1
+--- !u!61 &629461073
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629461070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -10.168315, y: 0.09984183}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.673788, y: 0.80031633}
+  m_EdgeRadius: 0
 --- !u!1 &647433656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11880,7 +11976,7 @@ MonoBehaviour:
   isTalking: 0
   isRun: 0
   isDead: 0
-  walkingSoundClip: {fileID: 8300000, guid: f7e3d5f748d606f4f86dee8874518fd5, type: 3}
+  walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
 --- !u!70 &705463102
 CapsuleCollider2D:
@@ -15188,7 +15284,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882695337
 GameObject:
@@ -20588,7 +20684,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1067737193
 MonoBehaviour:
@@ -20617,7 +20713,7 @@ MonoBehaviour:
   dialogue:
   - Eh? What is this number? 1942?
   - This was when the war started right?
-  - What if I press this into the door for fun?
+  - What if this is the keypad number?
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -27038,6 +27134,7 @@ Transform:
   - {fileID: 1772794265}
   - {fileID: 2056149898}
   - {fileID: 1375895051}
+  - {fileID: 629461071}
   - {fileID: 444206037}
   - {fileID: 3455327}
   - {fileID: 1761090687}
@@ -34568,7 +34665,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1747605710 stripped
 MonoBehaviour:
@@ -34834,7 +34931,7 @@ Transform:
   m_Children:
   - {fileID: 2055838694}
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1761090688
 MonoBehaviour:
@@ -40097,7 +40194,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
