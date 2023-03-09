@@ -162,27 +162,34 @@ public class EnemyAgro : MonoBehaviour
 
     void KillCheck()
     {
-        if(playerState.currentState != playerState.eyesState)
+        if(playerState.currentState != playerState.eyesState && checkAgroRange.noImmediateKill)
         {
             Debug.Log("Kill time");
 
-
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, killmovespeed * agroRange * Time.deltaTime);
 
-            playerState.SwitchState(playerState.deadState);
+            if (transform.position == player.transform.position)
+            {
+                playerState.SwitchState(playerState.deadState);
 
-            gameOver.SetActive(true);
+                //play anim kill
 
-            setCheckpoint.checkpointX = checkpointXset;
-            setCheckpoint.checkpointY = checkpointYset;
-            setCheckpoint.checkpointZ = checkpointZset;
-            
+                gameOver.SetActive(true);
+
+                setCheckpoint.checkpointX = checkpointXset;
+                setCheckpoint.checkpointY = checkpointYset;
+                setCheckpoint.checkpointZ = checkpointZset;
+            }
+
 
         }
+
         else
         {
             Debug.Log("Safe");
         }
+
+        
     }
 
     IEnumerator WaitForCrawl()
@@ -193,6 +200,26 @@ public class EnemyAgro : MonoBehaviour
         triggerAgro = true;
         
     }
+
+    /*IEnumerator WaitForKill()
+    {
+        yield return new WaitForSeconds(3f);
+
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, killmovespeed * agroRange * Time.deltaTime);
+
+        if(transform.position == player.transform.position)
+        {
+            playerState.SwitchState(playerState.deadState);
+
+            //play anim kill
+
+            gameOver.SetActive(true);
+
+            setCheckpoint.checkpointX = checkpointXset;
+            setCheckpoint.checkpointY = checkpointYset;
+            setCheckpoint.checkpointZ = checkpointZset;
+        }
+    }*/
 
 
 }

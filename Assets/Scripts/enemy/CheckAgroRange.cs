@@ -5,11 +5,12 @@ using UnityEngine;
 public class CheckAgroRange : MonoBehaviour
 {
     public bool canAgro;
+    public bool noImmediateKill;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        noImmediateKill = false;
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class CheckAgroRange : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canAgro = true;
+            StartCoroutine(waitForKill()); 
         }
     }
 
@@ -39,6 +41,13 @@ public class CheckAgroRange : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canAgro = false;
+            noImmediateKill = false;
         }
+    }
+
+    IEnumerator waitForKill()
+    {
+        yield return new WaitForSeconds(2f);
+        noImmediateKill = true;
     }
 }
