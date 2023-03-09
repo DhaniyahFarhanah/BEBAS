@@ -18,7 +18,7 @@ public class EventDialogue : MonoBehaviour
 
     public new string name;
     public string[] dialogue;
-    private int index;
+    public int index;
 
     [SerializeField] bool isPickUp;
 

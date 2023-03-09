@@ -87,7 +87,7 @@ public class PuzzleDialogueScript : MonoBehaviour
                     puzzleCompleted = true;
                     interactable = false;   // Once puzzle completed, this puzzle dont have to be interactable anymore, we dont want player to touch it
 
-                    ShowAfterPuzzleDialogue();
+                    //ShowAfterPuzzleDialogue();
                 }
             }
 
@@ -149,7 +149,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     }
 
-    private void ShowAfterPuzzleDialogue()
+    /*private void ShowAfterPuzzleDialogue()
     {
         if (puzzleCompleted && !showingDialogueNow)
         {
@@ -159,7 +159,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             showingDialogueNow = true;
             StartCoroutine(Typing());
         }
-    }
+    }*/
 
     public void zeroText()
     {

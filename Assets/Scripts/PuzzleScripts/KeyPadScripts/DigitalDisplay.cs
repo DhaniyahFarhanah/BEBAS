@@ -9,6 +9,8 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] GameObject puzzle;
     [SerializeField] GameObject display;
     [SerializeField] GameObject player;
+    [SerializeField] GameObject puzzleComplete;
+    [SerializeField] GameObject puzzleNotComplete;
 
     [SerializeField]
     private Sprite[] digits;
@@ -172,6 +174,8 @@ public class DigitalDisplay : MonoBehaviour
         door.SetActive(true);
         puzzle.SetActive(false);
         display.SetActive(false);
+        puzzleNotComplete.SetActive(false);
+        puzzleComplete.SetActive(true);
         if (enableplayer)
         {
         player.SetActive(true);

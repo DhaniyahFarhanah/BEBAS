@@ -25,6 +25,8 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     [SerializeField] GameObject Switch_2;
     [SerializeField] GameObject Switch_3;
     [SerializeField] GameObject Switch_4;
+    [SerializeField] GameObject puzzleComplete;
+    [SerializeField] GameObject puzzleNotComplete;
 
     [SerializeField] bool Switch1_On;
     [SerializeField] bool Switch2_On;
@@ -194,6 +196,8 @@ public class FuseBoxPuzzleScript : MonoBehaviour
         yield return new WaitForSeconds(2f);
        
         player.SetActive(true);
+        puzzleComplete.SetActive(true);
+        puzzleNotComplete.SetActive(false);
         gameObject.SetActive(false);
         //fusebox.SetActive(false); i need to remove this to show after-puzzle-dialogue
 
