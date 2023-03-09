@@ -11463,7 +11463,7 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
-  newImage: {fileID: 21300000, guid: e82a0b3ed60f6ce4995325de92a03daf, type: 3}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -29518,7 +29518,7 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
-  newImage: {fileID: 0}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -31906,7 +31906,7 @@ MonoBehaviour:
   gameObj: {fileID: 1454913254}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
-  newImage: {fileID: 0}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -42112,7 +42112,7 @@ MonoBehaviour:
   gameObj: {fileID: 1927825446}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
-  newImage: {fileID: 21300000, guid: 90c39cdf996627f45bf2d717877d6b26, type: 3}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -44910,7 +44910,7 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
-  newImage: {fileID: 0}
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
