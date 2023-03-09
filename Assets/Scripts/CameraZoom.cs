@@ -8,7 +8,7 @@ public class CameraZoom : MonoBehaviour
     private Camera cam;
     public GameObject player;
 
-
+    PlayerStateManager state;
 
     [Range(1,5)]
     public float zoomSize;
@@ -18,7 +18,10 @@ public class CameraZoom : MonoBehaviour
 
     public float setY;
 
-
+    void Awake()
+    {
+        state = player.GetComponent<PlayerStateManager>();
+    }
     void Start()
     {
         cam = Camera.main;
@@ -44,9 +47,13 @@ public class CameraZoom : MonoBehaviour
     }
     private void LateUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (state.currentState == state.eyesState)
         {
-            zoomCamera();
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                zoomCamera();
+            }
+           
         }
         else
         {

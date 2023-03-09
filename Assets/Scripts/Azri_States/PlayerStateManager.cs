@@ -125,7 +125,7 @@ public class PlayerStateManager : MonoBehaviour
 
         //=========BREATH BAR===========
 
-        if (remainingTime > 0 && Input.GetKey(KeyCode.Space))
+        if (remainingTime > 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
         {
             timerBar.enabled = true;
             remainingTime -= Time.deltaTime;
@@ -141,7 +141,7 @@ public class PlayerStateManager : MonoBehaviour
             timerBar.fillAmount = maxTime;
         }
 
-        else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space))
+        else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
         {
             timerBar.enabled = false;
             gameOverScreen.SetActive(true);

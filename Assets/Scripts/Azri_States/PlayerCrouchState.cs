@@ -19,7 +19,14 @@ public class PlayerCrouchState : PlayerBaseState
 
         else
         {
-            player.charSpeed = 3f;
+            if (player.isRun)
+            {
+                player.charSpeed = 5f;
+            }
+            else
+            {
+                player.charSpeed = 3f;
+            }
         }
 
         if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
@@ -38,13 +45,7 @@ public class PlayerCrouchState : PlayerBaseState
 
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            player.animator.SetBool("Crouch", false);
-
-            player.SwitchState(player.eyesState);
-        }
-
+       
 
     }
 
