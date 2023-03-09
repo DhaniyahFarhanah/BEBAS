@@ -29,21 +29,26 @@ public class PlayerCrouchState : PlayerBaseState
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
+        if (!player.isInVent)
         {
-
-            player.animator.SetBool("Crouch", false);
-
-            if (Input.GetAxisRaw("Horizontal") == 0) //idle
+            if (Input.GetKeyUp(KeyCode.S)) //if no longer pressing
             {
+
+                player.animator.SetBool("Crouch", false);
+
+                if (Input.GetAxisRaw("Horizontal") == 0) //idle
+                {
                 player.SwitchState(player.idleState);
-            }
-            else
-            {
+                }
+                else
+                {
                 player.SwitchState(player.walkState);
+                }
+
             }
 
         }
+
 
        
 

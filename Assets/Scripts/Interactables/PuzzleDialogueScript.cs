@@ -12,8 +12,13 @@ public class PuzzleDialogueScript : MonoBehaviour
     public GameObject player;
 
     public Image display;
-    public Sprite newImage;
     public TMP_Text dialogueText;
+    [SerializeField] Sprite empty;
+    [SerializeField] GameObject azriDisplay;
+    [SerializeField]
+    Sprite[] azriReactions;
+    Image azriPreview;
+    [SerializeField] Sprite AzriDefault;
 
     public string[] dialogue;
     [SerializeField] private int index;
@@ -39,6 +44,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     private void Awake()
     {
+        azriPreview = azriDisplay.GetComponent<Image>();
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -168,11 +174,13 @@ public class PuzzleDialogueScript : MonoBehaviour
         start = true;
 
         dialoguePanel.SetActive(false);
+        azriPreview.sprite = AzriDefault;
         StopAllCoroutines();
     }
 
     IEnumerator Typing()
     {
+        azriPreview.sprite = azriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {
             yield return new WaitForSeconds(currentWordSpeed);
@@ -249,11 +257,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
             playerIsClose = true;
             Z.SetActive(true);
-            display.sprite = newImage;
-            if (newImage == null)
-            {
-                display.gameObject.SetActive(false);
-            }
+            display.sprite = empty;
 
             Debug.Log("Player is in range");
         }

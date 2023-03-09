@@ -16,7 +16,6 @@ public class NpcDialogue : MonoBehaviour
     [SerializeField] Image rightTalkingImage;
     [SerializeField] Sprite leftImage;
     [SerializeField] Sprite rightImage;
-    [SerializeField] GameObject NPCImageGO;
 
     public string[] nameOfPerson;
     public string[] dialogue;
@@ -49,14 +48,14 @@ public class NpcDialogue : MonoBehaviour
 
     private void Start()
     {
-        AssignItems();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         SkipLine();
-        SpeechAssignment();
+
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
@@ -70,6 +69,7 @@ public class NpcDialogue : MonoBehaviour
             else
             {
                 start = false;
+                SpeechAssignment();
                 dialoguePanel.SetActive(true);
                 index = 0;
                 StartCoroutine(Typing());
@@ -90,7 +90,6 @@ public class NpcDialogue : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-        NPCImageGO.SetActive(false);
 
         gameObj.SetActive(SetActiveAfterFinished);
 
@@ -98,6 +97,7 @@ public class NpcDialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
+        SpeechAssignment();
         foreach (char letter in dialogue[index].ToCharArray())
         {
             yield return new WaitForSeconds(currentWordSpeed);
@@ -119,6 +119,7 @@ public class NpcDialogue : MonoBehaviour
                 SetWordSpeed(wordSpeed); // set cur_wordspeed back to original value
             }
         }
+
         hasCompletedLine = true;
         completeLineNow = false;
     }
@@ -156,7 +157,6 @@ public class NpcDialogue : MonoBehaviour
         {
             AssignItems();
             Z.SetActive(true);
-            NPCImageGO.SetActive(true);
             nameTextBox.text = name;
             playerIsClose = true;
             showcase.sprite = newImage;
@@ -191,11 +191,13 @@ public class NpcDialogue : MonoBehaviour
         if (nameOfPerson[index] != "Azri")
         {
             nameTextBox.alignment = TextAlignmentOptions.Right;
+            rightTalkingImage.sprite = personShowcase[index];
             leftTalkingImage.color = new Color(0.3f, 0.3f, 0.3f);
             rightTalkingImage.color = new Color(1f, 1f, 1f);
         }
         else
         {
+            leftTalkingImage.sprite = personShowcase[index];
             nameTextBox.alignment = TextAlignmentOptions.Left;
             leftTalkingImage.color = new Color(1f, 1f, 1f);
             rightTalkingImage.color = new Color(0.3f, 0.3f, 0.3f);

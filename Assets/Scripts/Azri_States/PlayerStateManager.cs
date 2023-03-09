@@ -48,6 +48,7 @@ public class PlayerStateManager : MonoBehaviour
     public bool isTalking;
     public bool isRun;
     public bool isDead;
+    public bool isInVent;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip walkingSoundClip;
@@ -185,7 +186,7 @@ public class PlayerStateManager : MonoBehaviour
                 
                 if (isRun)
                 {
-                    charSpeed = 11f;
+                    charSpeed = 12f;
                 }
                 else
                 {

@@ -11,18 +11,18 @@ public class EventDialogue : MonoBehaviour
     public TMP_Text dialogueText;
     [SerializeField] TMP_Text nameTextBox;
 
+    public Sprite newImage;
     //AzriReactions
     [SerializeField] Image AzriPreview;
     [SerializeField] Sprite AzriDefault;
     [SerializeField] Sprite[] AzriReactions;
+
 
     public new string name;
     public string[] dialogue;
     public int index;
 
     [SerializeField] bool isPickUp;
-
-    public Sprite newImage;
 
     public float wordSpeed;
     public float currentWordSpeed;
@@ -161,8 +161,7 @@ public class EventDialogue : MonoBehaviour
                 StartCoroutine(Typing());
                 playerIsClose = true;
                 showcase.sprite = newImage;
-                if (newImage == null)
-                    showcase.gameObject.SetActive(false);
+                
             }
 
         }
