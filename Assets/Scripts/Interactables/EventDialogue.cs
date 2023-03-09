@@ -167,6 +167,25 @@ public class EventDialogue : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (start && !dialogueAppearedBefore)
+            {
+                dialogueAppearedBefore = true;
+                start = false;
+                dialoguePanel.SetActive(true);
+                nameTextBox.text = name;
+                StartCoroutine(Typing());
+                playerIsClose = true;
+                showcase.sprite = newImage;
+
+            }
+
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))
