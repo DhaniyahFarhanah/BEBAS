@@ -33,7 +33,6 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private bool showAfterDialogue;
     private bool showingPreDialogueNow;
     [SerializeField] private int showAfterDialogueIndex;
-    private bool showingDialogueNow = false;
 
     [SerializeField] private bool puzzleCompleted;
 

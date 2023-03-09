@@ -9,7 +9,6 @@ public class SecurityGuardMove : MonoBehaviour
 
     public int patrolDestination;
 
-    int paceCounter = 0;
 
     private bool isWaiting = false;
 
