@@ -176,8 +176,8 @@ MonoBehaviour:
   puzzle: {fileID: 363275661}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -860,7 +860,7 @@ MonoBehaviour:
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!1 &50789409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,7 +1898,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &107308994
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3284,12 +3284,12 @@ MonoBehaviour:
   - I can't believe I have to collect these...
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &212779248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4375,12 +4375,12 @@ MonoBehaviour:
   - She said there's a hidden room here...
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &280512281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7307,8 +7307,8 @@ MonoBehaviour:
   puzzle: {fileID: 171689636}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -12375,12 +12375,12 @@ MonoBehaviour:
   - Sial lah I really don't want to pick this up...
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &686868417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12827,6 +12827,7 @@ MonoBehaviour:
   isTalking: 0
   isRun: 0
   isDead: 0
+  isInVent: 0
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
 --- !u!70 &705463102
@@ -15493,8 +15494,8 @@ MonoBehaviour:
   puzzle: {fileID: 1601488960}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -15507,7 +15508,7 @@ MonoBehaviour:
   - Wait could it be related to the note on the door?
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -15515,7 +15516,7 @@ MonoBehaviour:
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
   walkingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
   interactable: 1
 --- !u!61 &845652109
 BoxCollider2D:
@@ -17345,7 +17346,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &907478747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18485,14 +18486,14 @@ MonoBehaviour:
   - Test
   index: 0
   isPickUp: 0
-  wordSpeed: 0
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &941033702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22994,12 +22995,12 @@ MonoBehaviour:
   - I should find the other fingers.
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &1097775322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24668,12 +24669,12 @@ MonoBehaviour:
   - Heh...
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &1185719507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28806,8 +28807,8 @@ MonoBehaviour:
   puzzle: {fileID: 914814052}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 0}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -28818,7 +28819,7 @@ MonoBehaviour:
   - Got indicator around the 70-90 mark.
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -28826,7 +28827,7 @@ MonoBehaviour:
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
   walkingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
   interactable: 1
 --- !u!61 &1341492795
 BoxCollider2D:
@@ -29283,7 +29284,7 @@ MonoBehaviour:
   - I think I should crouch down to avoid them
   index: 0
   isPickUp: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -31548,14 +31549,14 @@ MonoBehaviour:
   - I don't want to stay here longer than I have to...
   index: 0
   isPickUp: 0
-  wordSpeed: 0
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &1454913257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31994,7 +31995,7 @@ MonoBehaviour:
   - Wait- there's a note with this...
   index: 0
   isPickUp: 1
-  wordSpeed: 0
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -33701,7 +33702,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &1570018990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35513,7 +35514,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!212 &1660373199
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36736,8 +36737,8 @@ MonoBehaviour:
   puzzle: {fileID: 1321091889}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: 0}
@@ -39826,7 +39827,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &1849582311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42620,7 +42621,7 @@ MonoBehaviour:
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!61 &1989759379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43435,12 +43436,12 @@ MonoBehaviour:
   - 'Could he be the director of the hospital? '
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0.05
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
 --- !u!1 &2028167649
 GameObject:
   m_ObjectHideFlags: 0
@@ -44043,8 +44044,8 @@ MonoBehaviour:
   puzzle: {fileID: 200877912}
   player: {fileID: 705463099}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   dialogueText: {fileID: 612804699}
+  empty: {fileID: 0}
   azriDisplay: {fileID: 157491367}
   azriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -44059,7 +44060,7 @@ MonoBehaviour:
   - His fingers... Just like in my dream... It can't be
   index: 0
   hasCompletedLine: 0
-  wordSpeed: 0
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -44067,7 +44068,7 @@ MonoBehaviour:
   showAfterDialogueIndex: 4
   puzzleCompleted: 0
   walkingSoundClip: {fileID: 0}
-  stopAudioSource: 0
+  stopAudioSource: 1
   interactable: 1
 --- !u!61 &2042510828
 BoxCollider2D:
@@ -44324,7 +44325,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 726c1bb5e2023df4da372c176123d251, type: 3}
   - {fileID: 21300000, guid: 9f3db871f1e45bf4c91b05776b030f03, type: 3}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
@@ -44547,7 +44548,7 @@ MonoBehaviour:
     this room\u2026"
   index: 0
   isPickUp: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.03
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
