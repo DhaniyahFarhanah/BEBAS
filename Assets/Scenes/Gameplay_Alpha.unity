@@ -759,6 +759,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44860271}
   m_CullTransparentMesh: 1
+--- !u!1 &50174758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50174759}
+  - component: {fileID: 50174760}
+  - component: {fileID: 50174761}
+  m_Layer: 0
+  m_Name: itsLocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &50174759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50174758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1625738555}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &50174760
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50174758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1566658, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1933365, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &50174761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50174758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 50174758}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  name: Azri
+  dialogue:
+  - The door is locked
+  - Maybe I should find for the other fingers first
+  index: 0
+  isPickUp: 0
+  newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
+  wordSpeed: 0.03
+  currentWordSpeed: 0
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 0
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
+  stopAudioSource: 0
 --- !u!1 &50789409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1333,7 @@ MonoBehaviour:
   - Eh why got light in front?
   - Why would anyone be here at this hour?
   - I should CROUCH so he doesn't see me.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -2947,6 +3044,7 @@ GameObject:
   - component: {fileID: 212779246}
   - component: {fileID: 212779247}
   - component: {fileID: 212779248}
+  - component: {fileID: 212779249}
   m_Layer: 0
   m_Name: Room102_Finger
   m_TagString: Untagged
@@ -2962,7 +3060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212779244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.5438, y: 4.2764, z: 10.2042885}
+  m_LocalPosition: {x: 11.5438, y: 4.216, z: 10.2042885}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3038,7 +3136,7 @@ MonoBehaviour:
   Z: {fileID: 1056479148}
   gameObj: {fileID: 212779244}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: 779f7f57c8bcd442a9e283c2250002cd, type: 3}
+  newImage: {fileID: 69018883, guid: 2ad6c484ba90b2549ba7e21376f964ab, type: 3}
   dialogueText: {fileID: 612804699}
   pickUp: 1
   boxCollider: {fileID: 212779248}
@@ -3047,8 +3145,12 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - Eh? Another finger in this room. I better pick this up la.
+  - 'Eh? Another finger in this room. '
+  - This looks like a ring finger...
+  - I can't believe I have to collect these...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
@@ -3070,7 +3172,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2.054625, y: 0.36046565}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3081,8 +3183,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 0.8}
+  m_Size: {x: 13.751687, y: 8.44176}
   m_EdgeRadius: 0
+--- !u!114 &212779249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212779244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11edcab6242951244a6d6ed5fe27883c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  fingerIndex: 3
 --- !u!1 &214504978
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,6 +4121,7 @@ MonoBehaviour:
   - The hospital-
   - It's shaking!
   - I need to get out of here!
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.05
@@ -4042,6 +4159,7 @@ GameObject:
   - component: {fileID: 280512281}
   - component: {fileID: 280512280}
   - component: {fileID: 280512279}
+  - component: {fileID: 280512282}
   m_Layer: 0
   m_Name: DirectorRoom_Finger
   m_TagString: Untagged
@@ -4078,7 +4196,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.43027568, y: 0.053122997}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4089,7 +4207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 0.8}
+  m_Size: {x: 9.464169, y: 5.581918}
   m_EdgeRadius: 0
 --- !u!114 &280512280
 MonoBehaviour:
@@ -4107,7 +4225,7 @@ MonoBehaviour:
   Z: {fileID: 875861288}
   gameObj: {fileID: 280512277}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: 779f7f57c8bcd442a9e283c2250002cd, type: 3}
+  newImage: {fileID: -2011352078, guid: 2ad6c484ba90b2549ba7e21376f964ab, type: 3}
   dialogueText: {fileID: 612804699}
   pickUp: 1
   boxCollider: {fileID: 280512279}
@@ -4116,8 +4234,14 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - This must be the final finger.
+  - It looks like a thumb...
+  - Now what?
+  - She said there's a hidden room here...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
@@ -4178,6 +4302,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &280512282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280512277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11edcab6242951244a6d6ed5fe27883c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  fingerIndex: 0
 --- !u!1 &285588949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,6 +5965,7 @@ MonoBehaviour:
   - There's nothing but wilderness out there.
   - I saw a building on the other side.
   - I'm sure there's somebody there that can help me.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -7159,7 +7298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &444206037
 Transform:
   m_ObjectHideFlags: 0
@@ -7733,6 +7872,7 @@ MonoBehaviour:
   - Am I going crazy or what?
   - The sounds get louder when someone is near me.
   - I should hold my breath so that they don't know I'm here.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 0}
   wordSpeed: 0.1
@@ -7891,7 +8031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476937917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.22, y: -5.05, z: 0}
+  m_LocalPosition: {x: -24.51, y: -5.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7938,6 +8078,7 @@ MonoBehaviour:
   - Okay Azri...don't panic...
   - It's Singapore. Nobody gets lost in Singapore.
   - I just need to keep walking to find someone to help me.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -9688,90 +9829,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &573082507
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 573082508}
-  - component: {fileID: 573082509}
-  m_Layer: 0
-  m_Name: fuseboxIndicator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &573082508
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573082507}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4, y: 5.9, z: 0}
-  m_LocalScale: {x: 5.1975055, y: 5.1975055, z: 5.1975055}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 597530556}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &573082509
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573082507}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -665059025
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 737c1b4aa59a3264384843f235c0fbdb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.99, y: 0.88}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!114 &576505571 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3814229848789234856, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
@@ -10276,7 +10333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &597530556
 Transform:
   m_ObjectHideFlags: 0
@@ -10289,9 +10346,9 @@ Transform:
   m_LocalScale: {x: 0.1924, y: 0.1924, z: 0.1924}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 573082508}
+  - {fileID: 1454913255}
   m_Father: {fileID: 918576238}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &597530557
 SpriteRenderer:
@@ -10783,6 +10840,7 @@ MonoBehaviour:
   dialogue:
   - Ok good I didn't get caught.
   - I should key in the numbers on the keypad now.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -10878,6 +10936,7 @@ MonoBehaviour:
   dialogue:
   - Walao. It is so dark in here.
   - I'm sure there's something here to light this place up.
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: e82a0b3ed60f6ce4995325de92a03daf, type: 3}
   wordSpeed: 0.03
@@ -11776,8 +11835,9 @@ GameObject:
   m_Component:
   - component: {fileID: 686868414}
   - component: {fileID: 686868417}
-  - component: {fileID: 686868416}
   - component: {fileID: 686868415}
+  - component: {fileID: 686868416}
+  - component: {fileID: 686868418}
   m_Layer: 0
   m_Name: Ward_Finger
   m_TagString: Untagged
@@ -11814,7 +11874,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.35321045, y: 9.583463}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11825,7 +11885,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 0.8}
+  m_Size: {x: 8.987549, y: 19.966928}
   m_EdgeRadius: 0
 --- !u!114 &686868416
 MonoBehaviour:
@@ -11843,7 +11903,7 @@ MonoBehaviour:
   Z: {fileID: 2118347848}
   gameObj: {fileID: 686868413}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: 779f7f57c8bcd442a9e283c2250002cd, type: 3}
+  newImage: {fileID: 674159746, guid: 2ad6c484ba90b2549ba7e21376f964ab, type: 3}
   dialogueText: {fileID: 612804699}
   pickUp: 1
   boxCollider: {fileID: 686868415}
@@ -11852,8 +11912,12 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - Eh? Another finger in this room. I better pick this up la.
+  - Eh? Another finger?
+  - This looks like an index finger...
+  - Sial lah I really don't want to pick this up...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
@@ -11914,6 +11978,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &686868418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686868413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11edcab6242951244a6d6ed5fe27883c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  fingerIndex: 0
 --- !u!1 &701624341
 GameObject:
   m_ObjectHideFlags: 0
@@ -12251,6 +12329,7 @@ GameObject:
   - component: {fileID: 705463109}
   - component: {fileID: 705463108}
   - component: {fileID: 705463111}
+  - component: {fileID: 705463112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12392,7 +12471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: -0.1, z: 0}
+  m_LocalPosition: {x: -11.61, y: -1.2, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -12495,6 +12574,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c3449ad4afc7f49a9cf9ea83dac3e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &705463112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705463099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bbf93da19e58643b4cd936a12eb2a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasFinger: 0000000000
+  Count: 0
 --- !u!1 &711139624
 GameObject:
   m_ObjectHideFlags: 0
@@ -14858,6 +14951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848622950}
   - component: {fileID: 848622949}
+  - component: {fileID: 848622951}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -14932,6 +15026,26 @@ Transform:
   m_Father: {fileID: 1375895051}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &848622951
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848622948}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &856886622
 GameObject:
   m_ObjectHideFlags: 0
@@ -15585,6 +15699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 875861289}
   - component: {fileID: 875861290}
+  - component: {fileID: 875861291}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -15659,6 +15774,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &875861291
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875861288}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &881200139
 GameObject:
   m_ObjectHideFlags: 0
@@ -16784,6 +16919,8 @@ MonoBehaviour:
   Switch_2: {fileID: 525171138}
   Switch_3: {fileID: 1374825647}
   Switch_4: {fileID: 1222592476}
+  puzzleComplete: {fileID: 597530555}
+  puzzleNotComplete: {fileID: 1341492791}
   Switch1_On: 0
   Switch2_On: 0
   Switch3_On: 0
@@ -16859,8 +16996,8 @@ Transform:
   - {fileID: 395299836}
   - {fileID: 1476421820}
   - {fileID: 1625738555}
-  - {fileID: 597530556}
   - {fileID: 1341492792}
+  - {fileID: 597530556}
   - {fileID: 761203282}
   - {fileID: 1594141308}
   - {fileID: 1343623972}
@@ -17516,6 +17653,7 @@ MonoBehaviour:
   name: Azri
   dialogue:
   - Test
+  index: 0
   isPickUp: 0
   newImage: {fileID: 0}
   wordSpeed: 0
@@ -18252,6 +18390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973915803}
   - component: {fileID: 973915804}
+  - component: {fileID: 973915805}
   m_Layer: 0
   m_Name: fuseboxIndicator
   m_TagString: Untagged
@@ -18326,6 +18465,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &973915805
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973915802}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &980614233
 GameObject:
   m_ObjectHideFlags: 0
@@ -18712,6 +18871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990779925}
   - component: {fileID: 990779926}
+  - component: {fileID: 990779927}
   m_Layer: 0
   m_Name: eye thingy
   m_TagString: Untagged
@@ -18786,6 +18946,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &990779927
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990779924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &992504922
 GameObject:
   m_ObjectHideFlags: 0
@@ -19910,6 +20090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024131368}
   - component: {fileID: 1024131369}
+  - component: {fileID: 1024131370}
   m_Layer: 0
   m_Name: eye thingy (1)
   m_TagString: Untagged
@@ -19984,6 +20165,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1024131370
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024131367}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1025447065
 GameObject:
   m_ObjectHideFlags: 0
@@ -20644,6 +20845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037570222}
   - component: {fileID: 1037570223}
+  - component: {fileID: 1037570224}
   m_Layer: 0
   m_Name: eyethingy
   m_TagString: Untagged
@@ -20718,6 +20920,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1037570224
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037570221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1042508959
 GameObject:
   m_ObjectHideFlags: 0
@@ -20759,6 +20981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048645529}
   - component: {fileID: 1048645530}
+  - component: {fileID: 1048645531}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -20833,6 +21056,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1048645531
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048645528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1056479148
 GameObject:
   m_ObjectHideFlags: 0
@@ -20843,6 +21086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056479149}
   - component: {fileID: 1056479150}
+  - component: {fileID: 1056479151}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -20917,6 +21161,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1056479151
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056479148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1066272463
 GameObject:
   m_ObjectHideFlags: 0
@@ -21119,6 +21383,7 @@ MonoBehaviour:
   - Eh? What is this number? 1942?
   - This was when the war started right?
   - What if this is the keypad number?
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -21541,6 +21806,7 @@ GameObject:
   - component: {fileID: 1097775322}
   - component: {fileID: 1097775321}
   - component: {fileID: 1097775320}
+  - component: {fileID: 1097775323}
   m_Layer: 0
   m_Name: Room101_Finger
   m_TagString: Untagged
@@ -21577,7 +21843,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.4079647, y: 0.20387721}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21588,7 +21854,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 0.8}
+  m_Size: {x: 17.10579, y: 10.34421}
   m_EdgeRadius: 0
 --- !u!114 &1097775321
 MonoBehaviour:
@@ -21606,7 +21872,7 @@ MonoBehaviour:
   Z: {fileID: 1583509849}
   gameObj: {fileID: 1097775318}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: 779f7f57c8bcd442a9e283c2250002cd, type: 3}
+  newImage: {fileID: -1432500257, guid: 2ad6c484ba90b2549ba7e21376f964ab, type: 3}
   dialogueText: {fileID: 612804699}
   pickUp: 1
   boxCollider: {fileID: 1097775320}
@@ -21615,8 +21881,11 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - I think this is the finger she was talking about.
+  - This looks like a pinkie finger...
   - I should find the other fingers.
   index: 0
   hasCompletedLine: 0
@@ -21678,6 +21947,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1097775323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097775318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11edcab6242951244a6d6ed5fe27883c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  fingerIndex: 4
 --- !u!1 &1099328956
 GameObject:
   m_ObjectHideFlags: 0
@@ -23197,6 +23480,7 @@ GameObject:
   - component: {fileID: 1185719507}
   - component: {fileID: 1185719506}
   - component: {fileID: 1185719505}
+  - component: {fileID: 1185719508}
   m_Layer: 0
   m_Name: Room103_Finger
   m_TagString: Untagged
@@ -23233,7 +23517,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.22383118, y: 0.5054246}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23244,7 +23528,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.01, y: 0.8}
+  m_Size: {x: 8.126312, y: 2.5058062}
   m_EdgeRadius: 0
 --- !u!114 &1185719506
 MonoBehaviour:
@@ -23262,7 +23546,7 @@ MonoBehaviour:
   Z: {fileID: 1223670026}
   gameObj: {fileID: 1185719503}
   display: {fileID: 576505571}
-  newImage: {fileID: 21300000, guid: 779f7f57c8bcd442a9e283c2250002cd, type: 3}
+  newImage: {fileID: 1784384086, guid: 2ad6c484ba90b2549ba7e21376f964ab, type: 3}
   dialogueText: {fileID: 612804699}
   pickUp: 1
   boxCollider: {fileID: 1185719505}
@@ -23271,8 +23555,12 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
-  - Eh? Another finger in this room. I better pick this up la.
+  - Eh? Another finger in this room.
+  - This looks like a middle finger...
+  - Heh...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
@@ -23333,6 +23621,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1185719508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185719503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11edcab6242951244a6d6ed5fe27883c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  fingerIndex: 3
 --- !u!1 &1186289143
 GameObject:
   m_ObjectHideFlags: 0
@@ -24483,6 +24785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223670027}
   - component: {fileID: 1223670028}
+  - component: {fileID: 1223670029}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -24557,6 +24860,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1223670029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223670026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1232470874
 GameObject:
   m_ObjectHideFlags: 0
@@ -24701,6 +25024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237144193}
   - component: {fileID: 1237144194}
+  - component: {fileID: 1237144195}
   m_Layer: 0
   m_Name: eye thingy
   m_TagString: Untagged
@@ -24775,6 +25099,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1237144195
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237144192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1238355799
 GameObject:
   m_ObjectHideFlags: 0
@@ -25366,6 +25710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266039373}
   - component: {fileID: 1266039374}
+  - component: {fileID: 1266039375}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -25440,6 +25785,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1266039375
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266039372}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1267540972
 GameObject:
   m_ObjectHideFlags: 0
@@ -27128,7 +27493,7 @@ Transform:
   m_Children:
   - {fileID: 973915803}
   m_Father: {fileID: 918576238}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1341492793
 SpriteRenderer:
@@ -27205,17 +27570,14 @@ MonoBehaviour:
   dialogue:
   - I think I have to push this lever to switch on the lights.
   - Got indicator around the 70-90 mark.
-  - Let me try to get this to work.
-  - Ok wow the lights are on now.
-  - I should continue to walk to see what else can I find in here.
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.1
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  showAfterDialogue: 1
-  showAfterDialogueIndex: 3
+  showAfterDialogue: 0
+  showAfterDialogueIndex: 0
   puzzleCompleted: 0
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
@@ -27672,6 +28034,7 @@ MonoBehaviour:
   - Are those hanging ghost...?
   - Will I die tif they touch me?
   - I think I should crouch down to avoid them
+  index: 0
   isPickUp: 0
   newImage: {fileID: 0}
   wordSpeed: 0.1
@@ -27718,6 +28081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352275637}
   - component: {fileID: 1352275638}
+  - component: {fileID: 1352275639}
   m_Layer: 0
   m_Name: eye thingy
   m_TagString: Untagged
@@ -27792,6 +28156,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1352275639
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352275636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1374325510
 GameObject:
   m_ObjectHideFlags: 0
@@ -29525,6 +29909,126 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1454913254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454913255}
+  - component: {fileID: 1454913257}
+  - component: {fileID: 1454913256}
+  - component: {fileID: 1454913258}
+  m_Layer: 0
+  m_Name: boxCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454913255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454913254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 597530556}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454913256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454913254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025ece68f30b30148afdc70d29160dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1307237298}
+  showcase: {fileID: 576505571}
+  gameObj: {fileID: 1454913254}
+  dialogueText: {fileID: 612804699}
+  nameTextBox: {fileID: 1944098500}
+  AzriPreview: {fileID: 1841857537}
+  AzriDefault: {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  AzriReactions:
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  name: Azri
+  dialogue:
+  - There...the lights are on
+  - What was that?!
+  - ...maybe my eyes are playing tricks on me...
+  - I should keep going
+  - I don't want to stay here longer than I have to...
+  index: 0
+  isPickUp: 0
+  newImage: {fileID: 0}
+  wordSpeed: 0
+  currentWordSpeed: 0
+  playerIsClose: 0
+  start: 1
+  hasCompletedLine: 0
+  SetActiveAfterFinished: 0
+  dialogueTypingSoundClip: {fileID: 0}
+  stopAudioSource: 0
+--- !u!61 &1454913257
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454913254}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.6129208, y: -21.409271}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 54.56326, y: 7.5751343}
+  m_EdgeRadius: 0
+--- !u!114 &1454913258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454913254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143a2ac5e9dd59f428581032060c081f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  waitTime: 2
+  dialogueIndex: 1
+  flipPlayerLeft: 0
+  flipPlayerRight: 1
 --- !u!1 &1476421819
 GameObject:
   m_ObjectHideFlags: 0
@@ -29706,6 +30210,7 @@ MonoBehaviour:
   - A rusted key?
   - Where can I use this?
   - Wait- there's a note with this...
+  index: 0
   isPickUp: 1
   newImage: {fileID: 21300000, guid: c2060da448fada340b717b018b683951, type: 3}
   wordSpeed: 0
@@ -31709,6 +32214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583509850}
   - component: {fileID: 1583509851}
+  - component: {fileID: 1583509852}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -31783,6 +32289,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1583509852
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583509849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1589647228
 GameObject:
   m_ObjectHideFlags: 0
@@ -32631,6 +33157,7 @@ GameObject:
   - component: {fileID: 1625738558}
   - component: {fileID: 1625738557}
   - component: {fileID: 1625738556}
+  - component: {fileID: 1625738559}
   m_Layer: 0
   m_Name: Door4
   m_TagString: Untagged
@@ -32651,6 +33178,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1643939908}
+  - {fileID: 50174759}
   m_Father: {fileID: 918576238}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32713,6 +33241,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.530899, y: 6.632143}
   m_EdgeRadius: 0
+--- !u!114 &1625738559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625738554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31dca1c544fd2534cb63ccbcd6bf5efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 705463099}
+  itsLocked: {fileID: 50174758}
+  isLocked: 0
 --- !u!1 &1625834747
 GameObject:
   m_ObjectHideFlags: 0
@@ -33082,6 +33625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661318539}
   - component: {fileID: 1661318538}
+  - component: {fileID: 1661318540}
   m_Layer: 0
   m_Name: fence Z
   m_TagString: Untagged
@@ -33156,6 +33700,26 @@ Transform:
   m_Father: {fileID: 1772794265}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1661318540
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661318537}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1662651210
 GameObject:
   m_ObjectHideFlags: 0
@@ -33744,6 +34308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700864425}
   - component: {fileID: 1700864426}
+  - component: {fileID: 1700864427}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -33818,6 +34383,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1700864427
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700864424}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1703884377
 GameObject:
   m_ObjectHideFlags: 0
@@ -36616,6 +37201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1844310165}
   - component: {fileID: 1844310166}
+  - component: {fileID: 1844310167}
   m_Layer: 0
   m_Name: Icon
   m_TagString: Untagged
@@ -36690,6 +37276,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1844310167
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844310164}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1849113588
 GameObject:
   m_ObjectHideFlags: 0
@@ -37675,6 +38281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1877408796}
   - component: {fileID: 1877408797}
+  - component: {fileID: 1877408798}
   m_Layer: 0
   m_Name: fence Z
   m_TagString: Untagged
@@ -37749,6 +38356,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1877408798
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877408795}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1885827551
 GameObject:
   m_ObjectHideFlags: 0
@@ -37982,7 +38609,7 @@ MonoBehaviour:
   player: {fileID: 705463105}
   roomToBeEnabled: {fileID: 918576237}
   checkEnter: 0
-  x: 69.70872
+  x: 94.95816
   y: 18.93578
   z: 0
 --- !u!61 &1890800753
@@ -38922,6 +39549,7 @@ MonoBehaviour:
   - 'Sial Lah! '
   - Yea no I'm not going there
   - Not until I can see
+  index: 0
   isPickUp: 0
   newImage: {fileID: 21300000, guid: 90c39cdf996627f45bf2d717877d6b26, type: 3}
   wordSpeed: 0.03
@@ -39108,6 +39736,8 @@ MonoBehaviour:
   puzzle: {fileID: 1601488960}
   display: {fileID: 0}
   player: {fileID: 705463099}
+  puzzleComplete: {fileID: 0}
+  puzzleNotComplete: {fileID: 0}
   digits:
   - {fileID: 485107556, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   - {fileID: 1062649669, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
@@ -39180,6 +39810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945679132}
   - component: {fileID: 1945679133}
+  - component: {fileID: 1945679134}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -39254,6 +39885,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1945679134
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945679131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1950885173
 GameObject:
   m_ObjectHideFlags: 0
@@ -40936,7 +41587,7 @@ GameObject:
   - component: {fileID: 2042510827}
   m_Layer: 0
   m_Name: placeholderTortured
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41472,6 +42123,7 @@ MonoBehaviour:
   - I think I can continue to find a finger in here.
   - "That little girl reminded me to hold my breath whenever I faced any danger in
     this room\u2026"
+  index: 0
   isPickUp: 0
   newImage: {fileID: 0}
   wordSpeed: 0.1
@@ -42357,6 +43009,8 @@ MonoBehaviour:
   puzzle: {fileID: 363275661}
   display: {fileID: 705463099}
   player: {fileID: 705463099}
+  puzzleComplete: {fileID: 444206036}
+  puzzleNotComplete: {fileID: 3455326}
   digits:
   - {fileID: 485107556, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   - {fileID: 1062649669, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
@@ -42891,6 +43545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118347849}
   - component: {fileID: 2118347850}
+  - component: {fileID: 2118347851}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -42965,6 +43620,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2118347851
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118347848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 816aacb5b7c9a8f4192f6528cc104bfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2130172889
 GameObject:
   m_ObjectHideFlags: 0

@@ -63,6 +63,7 @@ public class DialogueScript : MonoBehaviour
             {
                 start = false;
                 dialoguePanel.SetActive(true);
+                display.enabled = true;
                 index = 0;
                 StartCoroutine(Typing());
 

@@ -8,6 +8,12 @@ public class InstructionScript : MonoBehaviour
     public GameObject sensor;
     public GameObject player;
 
+
+    private void Start()
+    {
+        
+    }
+
     private void OnTriggerStay2D(Collider2D sensor)
     {
         if (sensor.CompareTag("Player"))
