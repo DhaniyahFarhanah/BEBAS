@@ -10,10 +10,10 @@ public class SecurityGuardMove : MonoBehaviour
     public int patrolDestination;
 
     [SerializeField] SpriteRenderer SpriteRenderer;
-    [SerializeField] Animator animator;
+    public Animator animator;
 
 
-    private bool isWaiting = false;
+    public bool isWaiting = false;
 
     [SerializeField] private Collider2D myCollider;
     private Transform Player;

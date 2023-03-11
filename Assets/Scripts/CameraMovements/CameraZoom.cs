@@ -74,7 +74,7 @@ public class CameraZoom : MonoBehaviour
 
             
 
-            if(cam.orthographicSize > 2.8f)
+            if(cam.orthographicSize > 2.5f)
             {
 
                 if (!dialoguePanel.activeInHierarchy)
@@ -117,7 +117,7 @@ public class CameraZoom : MonoBehaviour
     IEnumerator WaitforZoomSpawn()
     {
         yield return new WaitForSeconds(2f);
-        spawnZoomOut();
         spawnDialogue.SetActive(true);
+        spawnZoomOut();
     }
 }
