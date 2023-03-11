@@ -44751,9 +44751,8 @@ MonoBehaviour:
   name: Azri
   dialogue:
   - Siah lah... Why is the floor in this room so cold.
-  - I think I can continue to find a finger in here.
-  - "That little girl reminded me to hold my breath whenever I faced any danger in
-    this room\u2026"
+  - I think I should continue exploring.
+  - Maybe one of the fingers is in here?
   index: 0
   isPickUp: 0
   wordSpeed: 0.03
