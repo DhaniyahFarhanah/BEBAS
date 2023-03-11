@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LoreDisplay : MonoBehaviour
 {
+    [SerializeField] GameObject eyeIndicator;
     [SerializeField] GameObject loreDisplay;
     [SerializeField] GameObject loreToOpen;
     [SerializeField] GameObject player;
@@ -41,6 +42,7 @@ public class LoreDisplay : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             toOpen = true;
+            eyeIndicator.SetActive(true);
         }
     }
 
@@ -49,6 +51,7 @@ public class LoreDisplay : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             toOpen = false;
+            eyeIndicator.SetActive(false);
         }
     }
 

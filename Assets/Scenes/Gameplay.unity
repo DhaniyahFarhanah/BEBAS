@@ -1858,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7217808518c0f489a46178edb2e252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyeIndicator: {fileID: 1945679131}
   loreDisplay: {fileID: 1677214678}
   loreToOpen: {fileID: 1729835597}
   player: {fileID: 705463099}
@@ -12795,7 +12796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463099}
-  fingerIndex: 0
+  fingerIndex: 1
 --- !u!1 &701624341
 GameObject:
   m_ObjectHideFlags: 0
@@ -13276,7 +13277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.9, y: -0.5, z: 0}
+  m_LocalPosition: {x: -11.91, y: -0.63, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -25089,7 +25090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 705463099}
-  fingerIndex: 3
+  fingerIndex: 2
 --- !u!1 &1186289143
 GameObject:
   m_ObjectHideFlags: 0
@@ -29439,6 +29440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7217808518c0f489a46178edb2e252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyeIndicator: {fileID: 1048645528}
   loreDisplay: {fileID: 1677214678}
   loreToOpen: {fileID: 286512866}
   player: {fileID: 705463099}
@@ -34102,6 +34104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7217808518c0f489a46178edb2e252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyeIndicator: {fileID: 1700864424}
   loreDisplay: {fileID: 1677214678}
   loreToOpen: {fileID: 1729835597}
   player: {fileID: 705463099}
@@ -40235,6 +40238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7217808518c0f489a46178edb2e252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyeIndicator: {fileID: 1266039372}
   loreDisplay: {fileID: 1677214678}
   loreToOpen: {fileID: 1729835597}
   player: {fileID: 705463099}
@@ -42950,6 +42954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7217808518c0f489a46178edb2e252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyeIndicator: {fileID: 341589274}
   loreDisplay: {fileID: 1677214678}
   loreToOpen: {fileID: 1672659653}
   player: {fileID: 705463099}
