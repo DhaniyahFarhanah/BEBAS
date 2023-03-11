@@ -9,6 +9,9 @@ public class SecurityGuardMove : MonoBehaviour
 
     public int patrolDestination;
 
+    [SerializeField] SpriteRenderer SpriteRenderer;
+    [SerializeField] Animator animator;
+
 
     private bool isWaiting = false;
 
@@ -23,8 +26,16 @@ public class SecurityGuardMove : MonoBehaviour
     }
     void Update()
     {
+
+        if (isWaiting)
+        {
+            animator.SetBool("isWalking", false);
+        }
+
         if (!isWaiting)
         {
+            animator.SetBool("isWalking", true);
+
             if (patrolDestination == 0)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
@@ -32,7 +43,6 @@ public class SecurityGuardMove : MonoBehaviour
                 if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
                 {
                     Debug.Log("Go to first waypoint");
-                    transform.Rotate(0, -180, 0);
                     patrolDestination = 1;
                     StartCoroutine(Wait());
                     //paceCounter++;
@@ -46,7 +56,6 @@ public class SecurityGuardMove : MonoBehaviour
                 if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
                 {
                     Debug.Log("Go to second waypoint");
-                    transform.Rotate(0, 180, 0);
                     patrolDestination = 0;
                     StartCoroutine(Wait());
                     //paceCounter++;
@@ -68,6 +77,7 @@ public class SecurityGuardMove : MonoBehaviour
     {
         isWaiting = true;  //set the bool to stop moving
         yield return new WaitForSeconds(3); // wait for 3 sec
+        transform.Rotate(0, 180, 0);
         isWaiting = false; // set the bool to start moving
     }
 }
