@@ -8,10 +8,10 @@ public class CheckFingerCollect : MonoBehaviour
     public bool[] isAttached;
 
     public bool isComplete;
-    [SerializeField] GameObject tortured;
     [SerializeField] GameObject torturedGhost;
     [SerializeField] GameObject puzzle;
     [SerializeField] GameObject puzzleNotDone;
+    [SerializeField] GameObject puzzleDone;
     [SerializeField] GameObject player;
 
     bool twitchDone = false;
@@ -62,9 +62,8 @@ public class CheckFingerCollect : MonoBehaviour
         yield return new WaitForSeconds(1f);
         //have finger twitch
         torturedGhost.SetActive(true);
-        tortured.SetActive(true);
         player.SetActive(true);
-
+        puzzleDone.SetActive(true);
         puzzleNotDone.SetActive(false);
         puzzle.SetActive(false);
         

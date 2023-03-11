@@ -17,7 +17,10 @@ public class StartRun : MonoBehaviour
     }
     void Start()
     {
-        
+        playerStateManager.isRun = true;
+        doorToWard.SetActive(false);
+        doorToEndgame.SetActive(true);
+        //Activate Run
     }
 
     // Update is called once per frame
@@ -26,14 +29,5 @@ public class StartRun : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerStateManager.isRun = true;
-            doorToWard.SetActive(false);
-            doorToEndgame.SetActive(true);
-            //Activate Run
-        }
-    }
+    
 }
