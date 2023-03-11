@@ -7,13 +7,15 @@ public class FollowPlayerScript : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject DialogueBox;
 
+    BoxCollider2D boxKill;
     Transform playerTransform;
     Rigidbody2D rb;
     
 
     private void Awake()
     {
-            rb = GetComponent<Rigidbody2D>();
+        boxKill = gameObject.AddComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Start()
     {
@@ -36,12 +38,14 @@ public class FollowPlayerScript : MonoBehaviour
     void ChasePlayer()
     {
         rb.velocity = new Vector2(-moveSpeed, 0);
+
         
     }
 
     IEnumerator WaitForAgro()
     {
         yield return new WaitForSeconds(4f);
+        gameObject.tag = "Obstacle";
         //play anim of revival here
         ChasePlayer();
     }

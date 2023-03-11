@@ -21,7 +21,7 @@ public class NpcDialogue : MonoBehaviour
     public string[] dialogue;
     public Sprite[] personShowcase;
     public Sprite[] dialogueBoxImageArray;
-    private int index;
+    public int index;
 
     public Sprite newImage;
 

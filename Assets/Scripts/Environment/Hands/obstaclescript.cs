@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class obstaclescript : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Obstacle") //if the player collides with objects with the tag "obstacle"
         {
