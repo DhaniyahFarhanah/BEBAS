@@ -7,46 +7,58 @@ public class FollowPlayerScript : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject DialogueBox;
 
-    BoxCollider2D boxKill;
-    Transform playerTransform;
+    public bool isWaiting;
+
     Rigidbody2D rb;
+    BoxCollider2D killSensor;
+
     
 
     private void Awake()
     {
-        boxKill = gameObject.AddComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        killSensor = gameObject.GetComponent<BoxCollider2D>();
     }
     void Start()
     {
-        playerTransform = GameObject.Find("Player").transform;
+        isWaiting = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform && !DialogueBox.activeInHierarchy)
+        if (isWaiting)
+        {
+            killSensor.enabled = false;
+        }
+        else
+        {
+            killSensor.enabled = true;
+        }
+
+        if (!DialogueBox.activeInHierarchy && isWaiting)
         {
             StartCoroutine(WaitForAgro());
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            ChasePlayer();
         }
+       
     }
 
     void ChasePlayer()
     {
+        Debug.Log("move damn it");
         rb.velocity = new Vector2(-moveSpeed, 0);
-
         
     }
 
     IEnumerator WaitForAgro()
     {
         yield return new WaitForSeconds(4f);
-        gameObject.tag = "Obstacle";
         //play anim of revival here
         ChasePlayer();
+        isWaiting = false;
     }
 }

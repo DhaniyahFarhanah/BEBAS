@@ -3319,7 +3319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &209300552
 Transform:
   m_ObjectHideFlags: 0
@@ -3328,7 +3328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209300551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.41, y: 13.44, z: 0}
+  m_LocalPosition: {x: 12.410001, y: 12.309998, z: -8.084002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3729,7 +3729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &218751697
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,7 +3738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218751696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.64, y: 3.29, z: 0}
+  m_LocalPosition: {x: 14.64, y: 1.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6868,7 +6868,7 @@ GameObject:
   - component: {fileID: 390081485}
   m_Layer: 0
   m_Name: AgroedTorture
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6895,7 +6895,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390081479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -6934,7 +6934,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!212 &390081483
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7001,6 +7001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   DialogueBox: {fileID: 1307237298}
+  isWaiting: 1
 --- !u!114 &390081485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9510,7 +9511,7 @@ MonoBehaviour:
   HUD: {fileID: 1983761776}
   zoomSize: 3.63
   zoomSpeed: 0.1
-  spawnZoomSpeed: 0.1
+  spawnZoomSpeed: 0.01
   setY: 0.2
   isSpawn: 0
 --- !u!114 &519420034
@@ -13762,7 +13763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.25, y: -0.44, z: 0}
+  m_LocalPosition: {x: 131.91, y: 66.43, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -14444,7 +14445,8 @@ Transform:
   m_LocalPosition: {x: 2.1900005, y: 17.05, z: 10.2042885}
   m_LocalScale: {x: 0.93642825, y: 1.1981286, z: 0.35274714}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2046415325}
   m_Father: {fileID: 918576238}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14729,7 +14731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &736857657
 Transform:
   m_ObjectHideFlags: 0
@@ -16101,7 +16103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805106762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.68, y: 6.47, z: 0}
+  m_LocalPosition: {x: -7.679999, y: 6.469997, z: 9.400001}
   m_LocalScale: {x: 1.1627907, y: 1.1627907, z: 1.1627907}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17754,7 +17756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871492004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34, y: -0.13, z: 0}
+  m_LocalPosition: {x: -0.34, y: -0.13, z: 8.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42107,7 +42109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1806823302
 Transform:
   m_ObjectHideFlags: 0
@@ -42152,7 +42154,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.589179, y: -5.486537}
+  m_Offset: {x: -0.67385674, y: -5.1800847}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -42163,7 +42165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2473984, y: 1.263998}
+  m_Size: {x: 5.078043, y: 1.1618471}
   m_EdgeRadius: 0
 --- !u!1 &1817258525
 GameObject:
@@ -47535,7 +47537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2042510825
 Transform:
   m_ObjectHideFlags: 0
@@ -48080,7 +48082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 721185900}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2046415326
 Rigidbody2D:

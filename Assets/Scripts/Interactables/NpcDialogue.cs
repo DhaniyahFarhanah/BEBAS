@@ -65,7 +65,7 @@ public class NpcDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-        if(dialoguePanel.activeSelf == true && startAudio == false)
+        /*if(dialoguePanel.activeSelf == true && startAudio == false)
         {
             startAudio = true;
             ghostTalking = CryingGhostTalking();
@@ -75,7 +75,7 @@ public class NpcDialogue : MonoBehaviour
         {
             startAudio = false;
             StopCoroutine(ghostTalking);
-        }
+        } */
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
