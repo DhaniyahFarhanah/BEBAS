@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,6 +42,9 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private bool stopAudioSource;
     [SerializeField] private bool interactable;
 
+    [SerializeField] private bool playOnce;
+    private bool played;
+
     private void Awake()
     {
         azriPreview = azriDisplay.GetComponent<Image>();
@@ -54,6 +58,24 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        //subscribes to the restart event when the player restarts to the nearest checkpoint
+        PlayerManager.RestartAtCheckPoint += ResetPlayedOnce;
+    }
+
+    private void OnDestroy()
+    {
+        //unsubscribes to the event
+        PlayerManager.RestartAtCheckPoint -= ResetPlayedOnce;
+    }
+
+    //reset the played once bool so that the player will go through the dialogue against after restarting at thte checkpoint.
+    private void ResetPlayedOnce()
+    {
+        played = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -63,27 +85,27 @@ public class PuzzleDialogueScript : MonoBehaviour
         if (puzzle.activeSelf == true)
         {
             // Show dialog here
-            if (!showingPreDialogueNow)
+            if (!showingPreDialogueNow && !played && playOnce)
             {
-              showingPreDialogueNow = true;
-              start = false;
-              dialoguePanel.SetActive(true);
-              index = 0;
-              StartCoroutine(Typing());
+                showingPreDialogueNow = true;
+                start = false;
+                dialoguePanel.SetActive(true);
+                index = 0;
+                StartCoroutine(Typing());
             }
             if (dialoguePanel.activeSelf == true)
             {
-              if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
-              {
-                if (index + 1 == showAfterDialogueIndex)
+                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
                 {
-                   zeroText();
-                   index = showAfterDialogueIndex;
+                    if (index + 1 == showAfterDialogueIndex)
+                    {
+                        zeroText();
+                        index = showAfterDialogueIndex;
+                    }
+                    NextLine();
                 }
-                NextLine();
-              }
             }
-            
+
             // Check if game completed here
             if (puzzle.GetComponent<FuseBoxPuzzleScript>())
             {
@@ -108,7 +130,6 @@ public class PuzzleDialogueScript : MonoBehaviour
             showingPreDialogueNow = false;
             zeroText();
         }
-
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
@@ -138,6 +159,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             {
                 if (interactable)
                 {
+
                     start = false;
                     dialoguePanel.SetActive(true);
                     index = 0;
@@ -232,6 +254,10 @@ public class PuzzleDialogueScript : MonoBehaviour
         else
         {
             zeroText();
+            if (playOnce)
+            {
+                played = true;
+            }
             //StartCoroutine(SwitchPuzzleScene());
         }
     }

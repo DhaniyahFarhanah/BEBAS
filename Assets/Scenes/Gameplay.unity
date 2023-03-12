@@ -200,6 +200,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  playOnce: 1
 --- !u!61 &3455329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7865,6 +7866,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
+  playOnce: 0
 --- !u!61 &440907374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13993,7 +13995,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.91, y: -0.69, z: 0}
+  m_LocalPosition: {x: 29.6, y: -0.69, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17082,6 +17084,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  playOnce: 0
 --- !u!61 &845652109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31130,6 +31133,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  playOnce: 0
 --- !u!61 &1341492795
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40017,6 +40021,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  playOnce: 0
 --- !u!1 &1705741881
 GameObject:
   m_ObjectHideFlags: 0
@@ -47926,6 +47931,7 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  playOnce: 0
 --- !u!61 &2042510828
 BoxCollider2D:
   m_ObjectHideFlags: 0

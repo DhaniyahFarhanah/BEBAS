@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerManager : MonoBehaviour
     public float checkpointY;
     public float checkpointZ;
 
+
+    public static event Action RestartAtCheckPoint;
     private void Awake()
     {
         isGameOver = false; //game is not over by default
@@ -51,5 +54,8 @@ public class PlayerManager : MonoBehaviour
         player.transform.position = new Vector3(checkpointX, checkpointY, checkpointZ);
         isGameOver = false;
         playerState.SwitchState(playerState.idleState);
+
+        // calls an event that the player has restarted to the checkpoint;
+        RestartAtCheckPoint?.Invoke();
     }
 }
