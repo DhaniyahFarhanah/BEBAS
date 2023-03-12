@@ -39,11 +39,21 @@ public class NpcDialogue : MonoBehaviour
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
 
+    [Range(1.0f, 4.0f)]
+    [SerializeField] private float delayGhostTalking = 2f;    // The value that waits for 'delayGhostTalking' seconds before ghost talks again
+    [SerializeField] private bool startAudio = false;   // Need a bool so that run coroutine once only
+    IEnumerator ghostTalking;   // Keeps a reference of the ghost talking, so to stop audio later on
     private void Awake()
     {
         wordSpeed = 0.1f;
         currentWordSpeed = wordSpeed;
-        audioSource = gameObject.AddComponent<AudioSource>();
+        if (!audioSource)
+        {
+            audioSource = gameObject.GetComponent<AudioSource>();
+            if(!audioSource)
+                audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        
     }
 
     private void Start()
@@ -55,7 +65,17 @@ public class NpcDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-
+        if(dialoguePanel.activeSelf == true && startAudio == false)
+        {
+            startAudio = true;
+            ghostTalking = CryingGhostTalking();
+            StartCoroutine(ghostTalking);
+        }
+        if (dialoguePanel.activeSelf == false && ghostTalking != null)
+        {
+            startAudio = false;
+            StopCoroutine(ghostTalking);
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
@@ -124,6 +144,15 @@ public class NpcDialogue : MonoBehaviour
         completeLineNow = false;
     }
 
+    // "Loop" ghost talking but with a delay variable
+    IEnumerator CryingGhostTalking()
+    {
+        while (true)
+        {
+            audioSource.Play();
+            yield return new WaitForSeconds(audioSource.clip.length + delayGhostTalking);
+        }
+    }
     private void SkipLine()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow)
