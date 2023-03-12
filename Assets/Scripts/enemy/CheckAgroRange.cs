@@ -6,6 +6,7 @@ public class CheckAgroRange : MonoBehaviour
 {
     public bool canAgro;
     public bool noImmediateKill;
+    public bool isCrawling;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,15 @@ public class CheckAgroRange : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canAgro = true;
-            noImmediateKill = true;
+            if (isCrawling)
+            {
+                noImmediateKill = false;
+            }
+            else
+            {
+                noImmediateKill = true;
+
+            }
         }
     }
 

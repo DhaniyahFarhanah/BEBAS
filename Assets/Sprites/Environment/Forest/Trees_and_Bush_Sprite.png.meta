@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1973
+        width: 5899
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2437f522bef8834caf8f8954693deff
+      internalID: -867251275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 6939
+        y: 1710
+        width: 728
+        height: 823
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dc91591c707e54db36adc52bd3a996
+      internalID: -1923901927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 7743
+        y: 1715
+        width: 726
+        height: 819
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e99d064a965564e8f31070fc4c2cb4
+      internalID: -150209310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 8536
+        y: 1687
+        width: 910
+        height: 824
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171de4bee0fcb3d41b20f16218141a23
+      internalID: 101721327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1544
+        width: 574
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd7816f7532b304a9486cdbca39fed9
+      internalID: -1489474583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1572
+        width: 529
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70d1e465c1c31044b7b7bcfb09c5b51
+      internalID: -1708609466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1556
+        width: 1841
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d67f4fcedb8a942b9cc64db1eea40b
+      internalID: 282132704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 3547
+        y: 1478
+        width: 1203
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457e1aeadf495ef429d9ff184bf195b1
+      internalID: 1682706751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 3017
+        y: 1547
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e2711f2b63d9b4d8d85784649c3ed2
+      internalID: 800045419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 6703
+        y: 823
+        width: 754
+        height: 808
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6f714c0a1bcc34db717735a3f94de0
+      internalID: -428901517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 8202
+        y: 821
+        width: 465
+        height: 776
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146fdf11e46e83c4c8abc5002f761ad4
+      internalID: -1760727587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 8744
+        y: 785
+        width: 766
+        height: 811
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3c5032743ea9d49b06da99b3c46daa
+      internalID: 2047156510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1237
+        width: 529
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877f31b2be8391b4092d0a9bf0dc356a
+      internalID: -1099769836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1202
+        width: 977
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc4c3cc7323ac4c92f67a25f41dc50
+      internalID: -109073602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 1218
+        width: 831
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529af9d6fee0dcd4183a1f07b5fea548
+      internalID: 1853137296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 1249
+        width: 570
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac2460e769296448360eeb9f015117
+      internalID: -1958708231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 7551
+        y: 950
+        width: 590
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5967bf79a891ecc419a163f84f88cf9b
+      internalID: 1797989762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 249
+        width: 3175
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db7a3e27e0bb7b47ae7de5b502c9758
+      internalID: -2001602924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 736
+        width: 3161
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d73c51cb63d3d4fab81c00b09786a0
+      internalID: -592513452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees_and_Bush_Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 733
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722bce4b20eb4fc40a6320aa394b117a
+      internalID: -1219093422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +546,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trees_and_Bush_Sprite_9: 282132704
+      Trees_and_Bush_Sprite_40: 1968593231
+      Trees_and_Bush_Sprite_6: -1489474583
+      Trees_and_Bush_Sprite_15: 2047156510
+      Trees_and_Bush_Sprite_19: -1958708231
+      Trees_and_Bush_Sprite_44: -1631608034
+      Trees_and_Bush_Sprite_37: -1860254744
+      Trees_and_Bush_Sprite_34: 687184383
+      Trees_and_Bush_Sprite_20: -727300838
+      Trees_and_Bush_Sprite_2: 1282742531
+      Trees_and_Bush_Sprite_5: 101721327
+      Trees_and_Bush_Sprite_12: 800045419
+      Trees_and_Bush_Sprite_13: -428901517
+      Trees_and_Bush_Sprite_39: 440762974
+      Trees_and_Bush_Sprite_32: -1259069585
+      Trees_and_Bush_Sprite_23: 713905540
+      Trees_and_Bush_Sprite_30: 1536242173
+      Trees_and_Bush_Sprite_36: 1096869150
+      Trees_and_Bush_Sprite_41: -2001602924
+      Trees_and_Bush_Sprite_8: -1708609466
+      Trees_and_Bush_Sprite_22: 554562878
+      Trees_and_Bush_Sprite_33: -206142733
+      Trees_and_Bush_Sprite_16: -1099769836
+      Trees_and_Bush_Sprite_14: -1760727587
+      Trees_and_Bush_Sprite_26: -20439460
+      Trees_and_Bush_Sprite_42: -592513452
+      Trees_and_Bush_Sprite_11: -203331529
+      Trees_and_Bush_Sprite_38: -1633147372
+      Trees_and_Bush_Sprite_31: -1394088598
+      Trees_and_Bush_Sprite_17: -109073602
+      Trees_and_Bush_Sprite_1: -484436108
+      Trees_and_Bush_Sprite_25: -1633559778
+      Trees_and_Bush_Sprite_45: -270619335
+      Trees_and_Bush_Sprite_3: -1923901927
+      Trees_and_Bush_Sprite_18: 1853137296
+      Trees_and_Bush_Sprite_0: -867251275
+      Trees_and_Bush_Sprite_10: 1682706751
+      Trees_and_Bush_Sprite_28: 402104504
+      Trees_and_Bush_Sprite_29: -1386932333
+      Trees_and_Bush_Sprite_43: -1219093422
+      Trees_and_Bush_Sprite_35: -1878217373
+      Trees_and_Bush_Sprite_27: -1415620134
+      Trees_and_Bush_Sprite_4: -150209310
+      Trees_and_Bush_Sprite_21: 1797989762
+      Trees_and_Bush_Sprite_24: -1870104653
+      Trees_and_Bush_Sprite_7: -652218344
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

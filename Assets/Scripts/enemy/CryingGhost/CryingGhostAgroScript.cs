@@ -16,6 +16,8 @@ public class CryingGhostAgroScript : MonoBehaviour
     [SerializeField] GameObject agroBounds;
     [SerializeField] GameObject panicAfter;
 
+    [SerializeField] Animator ghostanimator;
+
     [SerializeField]
     Transform[] waypoints;
     [SerializeField] int curWayPointIndex;
@@ -80,10 +82,12 @@ public class CryingGhostAgroScript : MonoBehaviour
         }
 
 
+
     }
 
     void killPlayer()
     {
+        ghostanimator.SetBool("isAgro", false);
         //move to player
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, agroSpeed * Time.deltaTime);
 
@@ -110,7 +114,10 @@ public class CryingGhostAgroScript : MonoBehaviour
 
     void Walk()
     {
+        ghostanimator.SetBool("isAgro", true) ;
         killer.enabled = true;
+
+
         // Constantly move AI to wayPoints[curWayPointIndex]
         transform.position = Vector2.MoveTowards(transform.position, waypoints[curWayPointIndex].position, moveSpeed * Time.deltaTime);
 
@@ -120,24 +127,38 @@ public class CryingGhostAgroScript : MonoBehaviour
             // If reached waypoint, increment waypoint index
             curWayPointIndex = (curWayPointIndex + 1) < waypoints.Length ? curWayPointIndex + 1 : 0;
         }
+
+        if (curWayPointIndex == 0)
+        {
+            if (SpriteRenderer.flipX == true)
+            {
+                SpriteRenderer.flipX = false;
+            }
+        }
+        else if (curWayPointIndex == 1)
+        {
+            if (SpriteRenderer.flipX != true)
+            {
+                SpriteRenderer.flipX = true;
+            }
+        }
     }
 
     IEnumerator FirstSpawnAgro()
     {
+        killer.enabled = false;
         yield return new WaitForSeconds(2f);
         Debug.Log("You better hold your breath now");
 
 
         if(playerStateManager.currentState != playerStateManager.breathState)
         {
-            yield return new WaitForSeconds(1f);
             killer.enabled = true;
             killPlayer();
             FirstSpawn = false;
         }
         else
         {
-            
             FirstSpawn = false;
         }
     }

@@ -37,7 +37,7 @@ public class EnemyAgro : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     
-    int nextWayPoint = 0;
+    [SerializeField]int nextWayPoint = 0;
     float distToWaypoint;
 
     Vector3 spawnPoint;
@@ -122,8 +122,11 @@ public class EnemyAgro : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, Waypoints[nextWayPoint].transform.position, movespeed * Time.deltaTime);
 
+        anim.SetInteger("Index", index[nextWayPoint]);
+        spriteRenderer.flipX = flip[nextWayPoint];
 
-        if (distToWaypoint < 0.25)
+
+        if (distToWaypoint < 0.2)
         {
             TakeTurn();
         }
@@ -147,17 +150,8 @@ public class EnemyAgro : MonoBehaviour
             nextWayPoint = 0;
         }
 
-        anim.SetInteger("Index", index[nextWayPoint]);
-        spriteRenderer.flipX = flip[nextWayPoint];
 
-        if (index[nextWayPoint] == 1)
-        {
-            spriteRenderer.sortingLayerName = "Interactable Items";
-        }
-        else
-        {
-            spriteRenderer.sortingLayerName = "Player";
-        }
+        
     }
 
     void KillCheck()
@@ -196,7 +190,6 @@ public class EnemyAgro : MonoBehaviour
     {
         anim.SetTrigger("Agro");
         yield return new WaitForSeconds(0.5f);
-        anim.SetInteger("Index", 0);
         triggerAgro = true;
         
     }
