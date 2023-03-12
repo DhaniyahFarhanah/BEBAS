@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -15,10 +16,10 @@ public class CryingGhostManager : MonoBehaviour
     [SerializeField] private float moveSpeed = 4.0f;
 
 
+
     private void Start()
     {
-        if (moveSpeed == 0.0f)
-            moveSpeed = 4.0f;
+        
     }
     // Update is called once per frame
     void Update()
