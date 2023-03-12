@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         float x = Mathf.Clamp(player.transform.position.x, xMin , xMax); //mathclamp gets player position and allows player to be between xmin and xmax.
-        float y = Mathf.Clamp(player.transform.position.y + 0.9f, yMin, yMax);
+        float y = Mathf.Clamp(player.transform.position.y + 1.1f, yMin, yMax);
 
         gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z); //set default z
     }
