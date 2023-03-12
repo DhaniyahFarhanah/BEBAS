@@ -8,6 +8,8 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] GameObject toDragPosition;
     [SerializeField] GameObject CheckFingerCollect;
 
+    [SerializeField] AudioSource attachFingerSound;
+
     [SerializeField] float dropDistance;
 
     [SerializeField] int index;
@@ -50,6 +52,7 @@ public class DragAndDrop : MonoBehaviour
         {
             isLocked = true;
             fingerUpdate.isAttached[index] = true;
+            attachFingerSound.Play();
 
             toDrag.transform.position = toDragPosition.transform.position;
         }
