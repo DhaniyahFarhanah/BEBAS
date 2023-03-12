@@ -13,6 +13,8 @@ public class SwitchChangeScript : MonoBehaviour
     [SerializeField] Sprite LightOn;
     [SerializeField] Sprite LightOff;
 
+    [SerializeField] AudioSource SwitchSound;
+
     public bool OnOff;
 
     void Start()
@@ -37,6 +39,7 @@ public class SwitchChangeScript : MonoBehaviour
     public void IsOn()
     {
         OnOff = false;
+        SwitchSound.Play();
         SwitchOff.SetActive(true);
         SwitchOn.SetActive(false);
     }
@@ -44,6 +47,7 @@ public class SwitchChangeScript : MonoBehaviour
     public void IsOff()
     {
         OnOff = true;
+        SwitchSound.Play();
         SwitchOff.SetActive(false);
         SwitchOn.SetActive(true);
         

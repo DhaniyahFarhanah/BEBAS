@@ -28,6 +28,8 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     [SerializeField] GameObject puzzleComplete;
     [SerializeField] GameObject puzzleNotComplete;
 
+    [SerializeField] AudioSource OverloadSound;
+
     [SerializeField] bool Switch1_On;
     [SerializeField] bool Switch2_On;
     [SerializeField] bool Switch3_On;
@@ -182,6 +184,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     IEnumerator AllowOverload()
     {
         anim.SetTrigger("Shake");
+        OverloadSound.Play();
         spark.SetActive(true);
         yield return new WaitForSeconds(1f);
         spark.SetActive(false);
