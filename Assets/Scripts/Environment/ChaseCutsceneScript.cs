@@ -64,6 +64,7 @@ public class ChaseCutsceneScript : MonoBehaviour
         {
             playerSR.flipX = true;
         }
+        ghostDialogue.enabled = false;
         NoAgro.SetActive(false);   
         AgroChase.SetActive(true);
 

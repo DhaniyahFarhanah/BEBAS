@@ -7,6 +7,7 @@ public class StartRun : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject doorToEndgame;
     [SerializeField] GameObject doorToWard;
+    [SerializeField] GameObject start;
 
     PlayerStateManager playerStateManager;
     
@@ -20,6 +21,7 @@ public class StartRun : MonoBehaviour
         playerStateManager.isRun = true;
         doorToWard.SetActive(false);
         doorToEndgame.SetActive(true);
+        start.SetActive(true);
         //Activate Run
     }
 
