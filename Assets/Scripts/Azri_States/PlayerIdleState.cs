@@ -10,6 +10,7 @@ public class PlayerIdleState : PlayerBaseState
     {
 
         Debug.Log("Ayo I'm standing still");
+        player.walkingSound.Stop();
 
     }
 

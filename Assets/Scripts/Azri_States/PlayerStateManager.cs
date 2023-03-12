@@ -28,6 +28,9 @@ public class PlayerStateManager : MonoBehaviour
 
     public Animator animator;
 
+    //audio
+    public AudioSource walkingSound; 
+
     public Sprite idle;
     public Sprite walking;
     public Sprite closedEyes;
@@ -124,6 +127,8 @@ public class PlayerStateManager : MonoBehaviour
 
         }
 
+        
+
         //=========BREATH BAR===========
 
         if (remainingTime > 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
@@ -171,11 +176,11 @@ public class PlayerStateManager : MonoBehaviour
                 // animator.SetBool("Crouch", false);
                 // animator.SetBool("Breath", false);
 
-                if (stopAudioSource)
-                {
-                    audioSource.Stop();
-                }
-                audioSource.PlayOneShot(walkingSoundClip);
+                //if (stopAudioSource)
+                //{
+                //    audioSource.Stop();
+                //}
+                //audioSource.PlayOneShot(walkingSoundClip);
 
                 //code
                 darkness.SetActive(false);

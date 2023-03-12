@@ -5,12 +5,14 @@ public class PlayerWalkState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I am walking");
+        player.walkingSound.Play();
     }
 
     public override void UpdateState(PlayerStateManager player)
     {
 
         player.animator.SetBool("Moving", true);
+        
 
         if (Input.GetKey(KeyCode.Space)) //Holding Breath
        {

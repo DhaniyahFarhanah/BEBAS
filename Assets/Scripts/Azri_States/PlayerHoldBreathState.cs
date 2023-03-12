@@ -5,6 +5,14 @@ public class PlayerHoldBreathState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I can't breath");
+        if (player.input != 0)
+        {
+            player.walkingSound.Play();
+        }
+        else
+        {
+            player.walkingSound.Stop();
+        }
     }
 
     public override void UpdateState(PlayerStateManager player)
@@ -14,13 +22,21 @@ public class PlayerHoldBreathState : PlayerBaseState
         if (player.isTalking)
         {
             player.charSpeed = 0f;
-            
+
         }
 
         else
         {
             player.charSpeed = 2f;
         }
+
+       if(player.input == 0)
+        {
+            player.walkingSound.Stop();
+        }
+
+       
+        
 
         if (Input.GetKeyUp(KeyCode.Space)) //if no longer pressing
         {

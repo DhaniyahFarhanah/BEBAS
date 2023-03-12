@@ -5,6 +5,8 @@ public class PlayerEyesState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I can't see shit");
+        
+
     }
 
     public override void UpdateState(PlayerStateManager player)
@@ -23,6 +25,12 @@ public class PlayerEyesState : PlayerBaseState
             player.charSpeed = 2f;
             player.darkness.SetActive(true);
         }
+
+        if (player.input == 0)
+        {
+            player.walkingSound.Stop();
+        }
+
 
         if (Input.GetKeyUp(KeyCode.LeftShift)) //if no longer pressing
         {

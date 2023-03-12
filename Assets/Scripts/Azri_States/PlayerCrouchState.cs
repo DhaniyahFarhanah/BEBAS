@@ -6,6 +6,15 @@ public class PlayerCrouchState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I am crouching");
+        if (player.input != 0)
+        {
+            player.walkingSound.Play();
+        }
+        else
+        {
+            player.walkingSound.Stop();
+        }
+
     }
 
     public override void UpdateState(PlayerStateManager player)
@@ -28,6 +37,12 @@ public class PlayerCrouchState : PlayerBaseState
                 player.charSpeed = 3f;
             }
         }
+
+        if (player.input == 0)
+        {
+            player.walkingSound.Stop();
+        }
+        
 
         if (!player.isInVent)
         {
