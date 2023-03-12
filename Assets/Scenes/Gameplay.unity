@@ -10039,8 +10039,8 @@ MonoBehaviour:
   player: {fileID: 705463099}
   gameOverScreen: {fileID: 1315879309}
   playerState: {fileID: 0}
-  checkpointX: 15
-  checkpointY: 0
+  checkpointX: 28.4
+  checkpointY: -12.65
   checkpointZ: 0
 --- !u!4 &474014573
 Transform:
@@ -32007,7 +32007,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.8782773, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -32018,7 +32018,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 27.740479, y: 10.8}
   m_EdgeRadius: 0
 --- !u!212 &1238355801
 SpriteRenderer:
