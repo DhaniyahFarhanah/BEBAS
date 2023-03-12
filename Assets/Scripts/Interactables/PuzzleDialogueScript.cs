@@ -85,8 +85,13 @@ public class PuzzleDialogueScript : MonoBehaviour
         if (puzzle.activeSelf == true)
         {
             // Show dialog here
-            if (!showingPreDialogueNow && !played && playOnce)
+            if (!showingPreDialogueNow)
             {
+                if (playOnce)
+                {
+                    if (played)
+                        return;
+                }
                 showingPreDialogueNow = true;
                 start = false;
                 dialoguePanel.SetActive(true);
