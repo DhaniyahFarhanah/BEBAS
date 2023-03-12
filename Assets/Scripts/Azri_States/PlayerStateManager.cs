@@ -142,7 +142,6 @@ public class PlayerStateManager : MonoBehaviour
         if (remainingTime > 0 && remainingTime < 10 && Input.GetKey(KeyCode.Space) == false)
         {
             remainingTime += Time.deltaTime;
-            Debug.Log($"{remainingTime}");
             timerBar.enabled = false;
             timerBar.fillAmount = maxTime;
         }

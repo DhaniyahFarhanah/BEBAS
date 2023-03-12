@@ -29,6 +29,7 @@ public class CameraZoom : MonoBehaviour
 
     public bool isSpawn;
 
+
     void Awake()
     {
         state = player.GetComponent<PlayerStateManager>();
