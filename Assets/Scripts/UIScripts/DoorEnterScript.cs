@@ -10,6 +10,8 @@ public class DoorEnterScript : MonoBehaviour
 
     [SerializeField] bool checkEnter;
 
+    [SerializeField] AudioSource doorOpenSound;
+
     public float x;
     public float y;
     public float z;
@@ -23,6 +25,7 @@ public class DoorEnterScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && checkEnter == true)
         {
+            doorOpenSound.Play();
             player.position = new Vector3(x, y, z);
             Debug.Log("Enter");
             roomToBeEnabled.SetActive(true);
