@@ -11,6 +11,8 @@ public class LoreDisplay : MonoBehaviour
     [SerializeField] GameObject dialogueBox;
     [SerializeField] GameObject gameOver;
 
+    [SerializeField] AudioSource paperSound;
+
     PlayerStateManager playerState;
 
     [SerializeField] bool toOpen;
@@ -57,6 +59,7 @@ public class LoreDisplay : MonoBehaviour
 
     void ActivateLore()
     {
+        paperSound.Play();
         loreToOpen.SetActive(true);
         loreDisplay.SetActive(true);
     }

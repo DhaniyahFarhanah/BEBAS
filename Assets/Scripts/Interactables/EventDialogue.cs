@@ -28,12 +28,15 @@ public class EventDialogue : MonoBehaviour
     public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
+    public bool hasAudioTrigger;
 
 
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
     private bool completeLineNow = false;
+
+    [SerializeField] AudioSource triggerAudio;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
@@ -57,6 +60,7 @@ public class EventDialogue : MonoBehaviour
         SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
+
             //Debug.Log("Interact");
 
             //if (dialoguePanel.activeInHierarchy)
@@ -87,7 +91,11 @@ public class EventDialogue : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
+
+        
+
         AzriPreview.sprite = AzriDefault;
+        
         gameObj.SetActive(SetActiveAfterFinished);
 
     }
@@ -164,6 +172,11 @@ public class EventDialogue : MonoBehaviour
                 
             }
 
+            if (hasAudioTrigger)
+            {
+                triggerAudio.Play();
+            }
+
         }
     }
 
@@ -193,6 +206,7 @@ public class EventDialogue : MonoBehaviour
             playerIsClose = false;
             Debug.Log("Player is out of range");
             zeroText();
+            
         }
     }
 

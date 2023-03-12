@@ -857,8 +857,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!1 &50789409
@@ -1272,8 +1274,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &68857675
@@ -1847,6 +1851,7 @@ GameObject:
   - component: {fileID: 107308995}
   - component: {fileID: 107308994}
   - component: {fileID: 107308992}
+  - component: {fileID: 107308996}
   m_Layer: 0
   m_Name: 'LorePaper1 '
   m_TagString: Untagged
@@ -1888,6 +1893,7 @@ MonoBehaviour:
   player: {fileID: 705463099}
   dialogueBox: {fileID: 1307237298}
   gameOver: {fileID: 1315879309}
+  paperSound: {fileID: 107308996}
   toOpen: 0
 --- !u!61 &107308994
 BoxCollider2D:
@@ -1967,6 +1973,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &107308996
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107308990}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ce9e55852ab9a046b21f6ffeb45d618, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &111639265
 GameObject:
   m_ObjectHideFlags: 0
@@ -6126,8 +6228,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 1
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &371450021
@@ -8209,6 +8313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 463082759}
   - component: {fileID: 463082761}
+  - component: {fileID: 463082762}
   - component: {fileID: 463082760}
   m_Layer: 0
   m_Name: DialogueForCryingGhost
@@ -8295,10 +8400,108 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 1
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 463082762}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+--- !u!82 &463082762
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463082758}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4c9c353f8133d354fbc5d1970dde79f9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &472130821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8501,8 +8704,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &476937920
@@ -11465,8 +11670,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &629461073
@@ -11686,8 +11893,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &647433660
@@ -13517,7 +13726,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -19470,8 +19679,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
 --- !u!61 &941033702
@@ -23575,8 +23786,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &1067737194
@@ -30324,6 +30537,7 @@ GameObject:
   - component: {fileID: 1343623975}
   - component: {fileID: 1343623974}
   - component: {fileID: 1343623976}
+  - component: {fileID: 1343623977}
   m_Layer: 0
   m_Name: CryingGhost_LorePaper
   m_TagString: Untagged
@@ -30443,7 +30657,104 @@ MonoBehaviour:
   player: {fileID: 705463099}
   dialogueBox: {fileID: 1307237298}
   gameOver: {fileID: 1315879309}
+  paperSound: {fileID: 1343623977}
   toOpen: 0
+--- !u!82 &1343623977
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343623971}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ce9e55852ab9a046b21f6ffeb45d618, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1346991875
 GameObject:
   m_ObjectHideFlags: 0
@@ -30602,8 +30913,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!61 &1348985878
@@ -33188,8 +33501,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
 --- !u!61 &1454913257
@@ -33732,8 +34047,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
 --- !u!1 &1487638313
@@ -35458,6 +35775,7 @@ GameObject:
   - component: {fileID: 1570018991}
   - component: {fileID: 1570018990}
   - component: {fileID: 1570018988}
+  - component: {fileID: 1570018992}
   m_Layer: 0
   m_Name: LorePaper2
   m_TagString: Untagged
@@ -35499,6 +35817,7 @@ MonoBehaviour:
   player: {fileID: 705463099}
   dialogueBox: {fileID: 1307237298}
   gameOver: {fileID: 1315879309}
+  paperSound: {fileID: 1570018992}
   toOpen: 0
 --- !u!61 &1570018990
 BoxCollider2D:
@@ -35578,6 +35897,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1570018992
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570018986}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ce9e55852ab9a046b21f6ffeb45d618, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1578142419
 GameObject:
   m_ObjectHideFlags: 0
@@ -38129,6 +38544,7 @@ MonoBehaviour:
   allLores:
   - {fileID: 1729835597}
   - {fileID: 286512866}
+  - {fileID: 1672659653}
 --- !u!114 &1677214680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41821,6 +42237,7 @@ GameObject:
   - component: {fileID: 1849582309}
   - component: {fileID: 1849582311}
   - component: {fileID: 1849582312}
+  - component: {fileID: 1849582313}
   m_Layer: 0
   m_Name: CrawlingGhost_LorePaper
   m_TagString: Untagged
@@ -41940,7 +42357,104 @@ MonoBehaviour:
   player: {fileID: 705463099}
   dialogueBox: {fileID: 1307237298}
   gameOver: {fileID: 1315879309}
+  paperSound: {fileID: 1849582313}
   toOpen: 0
+--- !u!82 &1849582313
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849582307}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ce9e55852ab9a046b21f6ffeb45d618, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1850355188
 GameObject:
   m_ObjectHideFlags: 0
@@ -44021,8 +44535,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
 --- !u!61 &1927825449
@@ -44852,6 +45368,7 @@ MonoBehaviour:
   player: {fileID: 705463099}
   dialogueBox: {fileID: 1307237298}
   gameOver: {fileID: 1315879309}
+  paperSound: {fileID: 0}
   toOpen: 0
 --- !u!61 &1989759379
 BoxCollider2D:
@@ -46786,8 +47303,10 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
+  hasAudioTrigger: 0
   hasCompletedLine: 0
   SetActiveAfterFinished: 0
+  triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
 --- !u!1 &2055838692

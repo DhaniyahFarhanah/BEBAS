@@ -14,6 +14,7 @@ public class CryingGhostManager : MonoBehaviour
     [Range(1, 10)]
     [SerializeField] private float moveSpeed = 4.0f;
 
+
     private void Start()
     {
         if (moveSpeed == 0.0f)
