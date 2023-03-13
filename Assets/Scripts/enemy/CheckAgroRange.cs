@@ -34,7 +34,7 @@ public class CheckAgroRange : MonoBehaviour
         if (collision.CompareTag("Player") && noImmediateKill == false)
         {
             canAgro = true;
-            noImmediateKill = false;
+            noImmediateKill = true;
         }
     }
 

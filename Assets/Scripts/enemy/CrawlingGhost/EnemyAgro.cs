@@ -44,6 +44,7 @@ public class EnemyAgro : MonoBehaviour
 
     public Animator anim;
     public Rigidbody2D rb2d;
+    IEnumerator startToCrawl;
 
     private void Awake()
     {
@@ -67,7 +68,10 @@ public class EnemyAgro : MonoBehaviour
 
         if(checkAgroRange.canAgro == false)
         {
-            //gameObject.transform.position = spawnPoint;
+            triggerAgro = false;
+            gameObject.transform.position = spawnPoint;
+            anim.SetInteger("Index", 4);
+            anim.SetTrigger("Idle");
         }
 
         else if (checkAgroRange.canAgro == true)
@@ -88,8 +92,12 @@ public class EnemyAgro : MonoBehaviour
 
             if (dist2player < 4)
             {
+                //if (startToCrawl == null)
+                //{
+                //    startToCrawl = WaitForCrawl();
+                //    StartCoroutine(startToCrawl);
+                //}
                 StartCoroutine(WaitForCrawl());
-
             }
 
             if (triggerAgro == true)
@@ -109,6 +117,12 @@ public class EnemyAgro : MonoBehaviour
     void WakeUp()
     {
         anim.SetTrigger("Spawn");
+    }
+    void Sleep()
+    {
+        anim.ResetTrigger("Spawn");
+        //anim.SetTrigger("Idle");
+        anim.SetInteger("Index", 4);
     }
 
     void WalkOnWall()
@@ -169,6 +183,8 @@ public class EnemyAgro : MonoBehaviour
                 //play anim kill
 
                 gameOver.SetActive(true);
+                
+                
 
                 setCheckpoint.checkpointX = checkpointXset;
                 setCheckpoint.checkpointY = checkpointYset;
