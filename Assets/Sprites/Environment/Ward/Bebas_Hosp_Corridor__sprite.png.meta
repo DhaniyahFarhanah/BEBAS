@@ -1,0 +1,1506 @@
+fileFormatVersion: 2
+guid: fdd116f074dd81a4888ec739ca024554
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4898
+        width: 10000
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ada7b465a186f49a94b6fa318c48cc
+      internalID: -478031708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_1
+      rect:
+        serializedVersion: 2
+        x: 6688
+        y: 4675
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59bfee2aecb1334987deb8d7d73060b
+      internalID: -420784884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_2
+      rect:
+        serializedVersion: 2
+        x: 6700
+        y: 4672
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22520fb1273fc68449ce5b6ac231d744
+      internalID: 1549277344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4295
+        width: 109
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8747c45ca36b705449ab675b6913fdc6
+      internalID: -1858329408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_4
+      rect:
+        serializedVersion: 2
+        x: 3737
+        y: 3462
+        width: 1015
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f115e9cd86bbba640869eaa0176057d6
+      internalID: -1662286398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_5
+      rect:
+        serializedVersion: 2
+        x: 6283
+        y: 4212
+        width: 421
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bad9a178262aa4b81e04efd3209f27
+      internalID: 2122046375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_6
+      rect:
+        serializedVersion: 2
+        x: 6913
+        y: 4116
+        width: 471
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86b63dc72797f419461b6873e23f09
+      internalID: 1187737535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_9
+      rect:
+        serializedVersion: 2
+        x: 7523
+        y: 4072
+        width: 665
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7e2137d51c8984a9779a3a0ba8dc6d
+      internalID: 1244775448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_10
+      rect:
+        serializedVersion: 2
+        x: 8030
+        y: 4400
+        width: 187
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bef27393679c1b4c9ed04caaaede7b6
+      internalID: -894265068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_11
+      rect:
+        serializedVersion: 2
+        x: 8982
+        y: 3816
+        width: 118
+        height: 848
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae20808504b3da418b5ec3aaaf96799
+      internalID: 306850364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_12
+      rect:
+        serializedVersion: 2
+        x: 9247
+        y: 3816
+        width: 165
+        height: 848
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db76246efe8b154ba43ebdac3fdcc77
+      internalID: 1622916511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 4287
+        width: 105
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c803e29f31adf249bf28826cba18979
+      internalID: -834119189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 4287
+        width: 104
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bfaf3e57bdec948aebe5f92b2b1c22
+      internalID: 230899873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_15
+      rect:
+        serializedVersion: 2
+        x: 5016
+        y: 4216
+        width: 130
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d820b167053ec4294506d90b21b271
+      internalID: 1943545184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_16
+      rect:
+        serializedVersion: 2
+        x: 5168
+        y: 4280
+        width: 105
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05602018f84e17f42bb60f3fd770a349
+      internalID: 1659677008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_17
+      rect:
+        serializedVersion: 2
+        x: 5642
+        y: 4207
+        width: 165
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712a0af6a16cdc740a80d24f3c334e8f
+      internalID: 181586042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_18
+      rect:
+        serializedVersion: 2
+        x: 8334
+        y: 4280
+        width: 105
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627af898eb7a4f04782a8535b45e7a73
+      internalID: -659965088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_20
+      rect:
+        serializedVersion: 2
+        x: 8500
+        y: 4246
+        width: 124
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d72b376855e27438584a00dd439633
+      internalID: 151386065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_23
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3401
+        width: 655
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162187a2492262f49854e72aca187b28
+      internalID: -393433584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_24
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 3712
+        width: 290
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e89e2613de64b3438a95b5c275beacf
+      internalID: -466171958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_25
+      rect:
+        serializedVersion: 2
+        x: 3052
+        y: 3607
+        width: 283
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde14ef3a7ead6747a9cd15a5a1c832a
+      internalID: 1831331685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_26
+      rect:
+        serializedVersion: 2
+        x: 6674
+        y: 3497
+        width: 915
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53beccfc444b0646a9d9fbd3e8dd576
+      internalID: -899254653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_28
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 3206
+        width: 94
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ebd09b808db6c41a1678ad366b8f90
+      internalID: 1098385538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2432
+        width: 1015
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917deaa74cfdf0e41b577569231302e5
+      internalID: -470759874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_30
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 2432
+        width: 1015
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7257f1778b9b7f0489a261c4a08d7994
+      internalID: 1680874361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_31
+      rect:
+        serializedVersion: 2
+        x: 3737
+        y: 2432
+        width: 1015
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60756b7a62fb9f4459a084340da0503f
+      internalID: 1820525161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_32
+      rect:
+        serializedVersion: 2
+        x: 5411
+        y: 2432
+        width: 1016
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947ab00cb799fbc44b2461fb0741c789
+      internalID: -1694105302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_33
+      rect:
+        serializedVersion: 2
+        x: 7769
+        y: 2432
+        width: 1015
+        height: 1001
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b06d6e15cf904e4e85e5635cfc94e34
+      internalID: 706457502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_34
+      rect:
+        serializedVersion: 2
+        x: 8809
+        y: 2986
+        width: 301
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2cdf0a5b7983145bbf6f869b474c0f
+      internalID: -1791475710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_35
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2579
+        width: 287
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aab1c9181f70344da58f6dc1af55064
+      internalID: -1855187044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_36
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2247
+        width: 82
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371f10ef8717300498684a172d920672
+      internalID: -854432336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_37
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2054
+        width: 131
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a44c06291de3eb4da5d899682778f06
+      internalID: 145188053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_38
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1257
+        width: 1806
+        height: 1082
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e1658d381198042b2420523258d98e
+      internalID: -402237029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_39
+      rect:
+        serializedVersion: 2
+        x: 4081
+        y: 1782
+        width: 397
+        height: 573
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc016d0e43726714d84f28f931a0f051
+      internalID: -1399092199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_40
+      rect:
+        serializedVersion: 2
+        x: 8571
+        y: 1182
+        width: 1429
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26784c03db89b7d49a9cda7322657319
+      internalID: 1347784488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_41
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1917
+        width: 117
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e225642c236809048916d60a25f35ece
+      internalID: -408728754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_43
+      rect:
+        serializedVersion: 2
+        x: 4844
+        y: 1152
+        width: 1806
+        height: 1082
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a23a528ceac73d41abf91a5a76e4b5c
+      internalID: -257079546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_44
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 958
+        width: 5768
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215d9ab17ef9834468248ed551dbdbb2
+      internalID: 152803702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_45
+      rect:
+        serializedVersion: 2
+        x: 6814
+        y: 958
+        width: 3186
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e400199aeb6dda24fb9a41ae963dedcf
+      internalID: -53556030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_46
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 468
+        width: 287
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350ee48d6c996844b94408f4c59f4ee5
+      internalID: -1259329486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_47
+      rect:
+        serializedVersion: 2
+        x: 4553
+        y: 468
+        width: 286
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7786e1e86e95dc45a0267b316422f35
+      internalID: 150465046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_48
+      rect:
+        serializedVersion: 2
+        x: 6328
+        y: 468
+        width: 286
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a9bd19a082b2c498c395215e9ace9d
+      internalID: 1979790885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_49
+      rect:
+        serializedVersion: 2
+        x: 6749
+        y: 468
+        width: 285
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd387734125d5bd4b9fecb1187e6b116
+      internalID: 893537343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_50
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 468
+        width: 279
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae90a842bcaac9e44bab8fb41f3f522b
+      internalID: 1688913628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_51
+      rect:
+        serializedVersion: 2
+        x: 7592
+        y: 468
+        width: 286
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1c124876a53d2438484f27f2e034ec
+      internalID: 777350645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_52
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 195
+        width: 252
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94784144a5f87a4fac2544e2363bead
+      internalID: 699781986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_53
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edee1ba945266464492785457273beb1
+      internalID: 281965377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_54
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 195
+        width: 253
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28aff9ee45405a4dbdf2735f7ea92a7
+      internalID: -1805189326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_55
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 195
+        width: 252
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0787eb4693f3c4caee836846d923df
+      internalID: 816173784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_56
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0924f9a3d83534883fc22e97745e7e
+      internalID: -918650178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_57
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 195
+        width: 251
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a263cd3a207faa54088d09d3586c99c5
+      internalID: 1423194149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_58
+      rect:
+        serializedVersion: 2
+        x: 3445
+        y: 195
+        width: 251
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d524bd4a40cc23746b3e38670187f67a
+      internalID: -1715481613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_59
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 195
+        width: 253
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242260710a2b738408cc65f08778ffa2
+      internalID: -969933326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_60
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 197
+        width: 252
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa93064c2ae9c8643b5911ed3c600f50
+      internalID: -984617388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_61
+      rect:
+        serializedVersion: 2
+        x: 4572
+        y: 195
+        width: 252
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619477ffbb9f88b45baa56eca1cc4f82
+      internalID: 1409595742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_62
+      rect:
+        serializedVersion: 2
+        x: 4972
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2469fefb220806b4680f9833c60118f5
+      internalID: 129297258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_63
+      rect:
+        serializedVersion: 2
+        x: 5313
+        y: 195
+        width: 252
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dd4736ca8b3a04da09e1dade208609
+      internalID: 1706996574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_64
+      rect:
+        serializedVersion: 2
+        x: 5651
+        y: 195
+        width: 252
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f221909f4b621e548b5fbdf8c4bc8a98
+      internalID: -1226721029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_65
+      rect:
+        serializedVersion: 2
+        x: 5989
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1d26dfd2c98b84b8cfc276ca00f65e
+      internalID: 619259245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_66
+      rect:
+        serializedVersion: 2
+        x: 6327
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58c95c768709fe4eac97ca018d2cd60
+      internalID: 1808070435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_67
+      rect:
+        serializedVersion: 2
+        x: 7190
+        y: 197
+        width: 251
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb5484d77e9973438f1754827eeb81a
+      internalID: 1094116242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Hosp_Corridor__sprite_68
+      rect:
+        serializedVersion: 2
+        x: 7607
+        y: 197
+        width: 252
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f11480f28deb848acf60e33dc36a01
+      internalID: -1427308793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bebas_Hosp_Corridor__sprite_19: 661224873
+      Bebas_Hosp_Corridor__sprite_25: 1831331685
+      Bebas_Hosp_Corridor__sprite_1: -420784884
+      Bebas_Hosp_Corridor__sprite_0: -478031708
+      Bebas_Hosp_Corridor__sprite_59: -969933326
+      Bebas_Hosp_Corridor__sprite_54: -1805189326
+      Bebas_Hosp_Corridor__sprite_27: -1414160591
+      Bebas_Hosp_Corridor__sprite_20: 151386065
+      Bebas_Hosp_Corridor__sprite_30: 1680874361
+      Bebas_Hosp_Corridor__sprite_28: 1098385538
+      Bebas_Hosp_Corridor__sprite_5: 2122046375
+      Bebas_Hosp_Corridor__sprite_32: -1694105302
+      Bebas_Hosp_Corridor__sprite_35: -1855187044
+      Bebas_Hosp_Corridor__sprite_39: -1399092199
+      Bebas_Hosp_Corridor__sprite_2: 1549277344
+      Bebas_Hosp_Corridor__sprite_18: -659965088
+      Bebas_Hosp_Corridor__sprite_42: -1189669523
+      Bebas_Hosp_Corridor__sprite_67: 1094116242
+      Bebas_Hosp_Corridor__sprite_3: -1858329408
+      Bebas_Hosp_Corridor__sprite_51: 777350645
+      Bebas_Hosp_Corridor__sprite_34: -1791475710
+      Bebas_Hosp_Corridor__sprite_40: 1347784488
+      Bebas_Hosp_Corridor__sprite_22: 128560190
+      Bebas_Hosp_Corridor__sprite_24: -466171958
+      Bebas_Hosp_Corridor__sprite_57: 1423194149
+      Bebas_Hosp_Corridor__sprite_58: -1715481613
+      Bebas_Hosp_Corridor__sprite_9: 1244775448
+      Bebas_Hosp_Corridor__sprite_14: 230899873
+      Bebas_Hosp_Corridor__sprite_17: 181586042
+      Bebas_Hosp_Corridor__sprite_31: 1820525161
+      Bebas_Hosp_Corridor__sprite_48: 1979790885
+      Bebas_Hosp_Corridor__sprite_55: 816173784
+      Bebas_Hosp_Corridor__sprite_15: 1943545184
+      Bebas_Hosp_Corridor__sprite_65: 619259245
+      Bebas_Hosp_Corridor__sprite_66: 1808070435
+      Bebas_Hosp_Corridor__sprite_44: 152803702
+      Bebas_Hosp_Corridor__sprite_68: -1427308793
+      Bebas_Hosp_Corridor__sprite_16: 1659677008
+      Bebas_Hosp_Corridor__sprite_61: 1409595742
+      Bebas_Hosp_Corridor__sprite_6: 1187737535
+      Bebas_Hosp_Corridor__sprite_41: -408728754
+      Bebas_Hosp_Corridor__sprite_37: 145188053
+      Bebas_Hosp_Corridor__sprite_7: -1373005311
+      Bebas_Hosp_Corridor__sprite_10: -894265068
+      Bebas_Hosp_Corridor__sprite_43: -257079546
+      Bebas_Hosp_Corridor__sprite_38: -402237029
+      Bebas_Hosp_Corridor__sprite_45: -53556030
+      Bebas_Hosp_Corridor__sprite_50: 1688913628
+      Bebas_Hosp_Corridor__sprite_52: 699781986
+      Bebas_Hosp_Corridor__sprite_12: 1622916511
+      Bebas_Hosp_Corridor__sprite_4: -1662286398
+      Bebas_Hosp_Corridor__sprite_49: 893537343
+      Bebas_Hosp_Corridor__sprite_33: 706457502
+      Bebas_Hosp_Corridor__sprite_47: 150465046
+      Bebas_Hosp_Corridor__sprite_13: -834119189
+      Bebas_Hosp_Corridor__sprite_8: 767981041
+      Bebas_Hosp_Corridor__sprite_36: -854432336
+      Bebas_Hosp_Corridor__sprite_56: -918650178
+      Bebas_Hosp_Corridor__sprite_21: -1721637484
+      Bebas_Hosp_Corridor__sprite_53: 281965377
+      Bebas_Hosp_Corridor__sprite_23: -393433584
+      Bebas_Hosp_Corridor__sprite_60: -984617388
+      Bebas_Hosp_Corridor__sprite_11: 306850364
+      Bebas_Hosp_Corridor__sprite_64: -1226721029
+      Bebas_Hosp_Corridor__sprite_62: 129297258
+      Bebas_Hosp_Corridor__sprite_29: -470759874
+      Bebas_Hosp_Corridor__sprite_63: 1706996574
+      Bebas_Hosp_Corridor__sprite_26: -899254653
+      Bebas_Hosp_Corridor__sprite_46: -1259329486
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

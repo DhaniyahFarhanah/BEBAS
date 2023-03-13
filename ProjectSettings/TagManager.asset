@@ -78,12 +78,12 @@ TagManager:
   - name: Foreground
     uniqueID: 3284961539
     locked: 0
-  - name: Indicator
-    uniqueID: 4016394557
-    locked: 0
   - name: BlackBars
     uniqueID: 4192690771
     locked: 0
   - name: Foreground2
     uniqueID: 375073371
+    locked: 0
+  - name: Indicator
+    uniqueID: 4016394557
     locked: 0
