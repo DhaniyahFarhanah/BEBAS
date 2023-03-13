@@ -53,30 +53,21 @@ public class NpcDialogue : MonoBehaviour
             if(!audioSource)
                 audioSource = gameObject.AddComponent<AudioSource>();
         }
-        
+        if (audioSource.clip == null)
+            audioSource.clip = dialogueTypingSoundClip;
     }
 
     private void Start()
     {
 
     }
-
+   
     // Update is called once per frame
     void Update()
     {
         SkipLine();
-        /*if(dialoguePanel.activeSelf == true && startAudio == false)
-        {
-            startAudio = true;
-            ghostTalking = CryingGhostTalking();
-            StartCoroutine(ghostTalking);
-        }
-        if (dialoguePanel.activeSelf == false && ghostTalking != null)
-        {
-            startAudio = false;
-            StopCoroutine(ghostTalking);
-        } */
-
+        PlayTalkingSound();
+     
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
@@ -124,11 +115,11 @@ public class NpcDialogue : MonoBehaviour
 
             hasCompletedLine = false;
             dialogueText.text += letter;
-            if (stopAudioSource)
-            {
-                audioSource.Stop();
-            }
-            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            //if (stopAudioSource)
+            //{
+            //    audioSource.Stop();
+            //}
+            //audioSource.PlayOneShot(dialogueTypingSoundClip);
 
             if (completeLineNow)
             {
@@ -142,6 +133,35 @@ public class NpcDialogue : MonoBehaviour
 
         hasCompletedLine = true;
         completeLineNow = false;
+    }
+
+    // Let ghost talk only when it is ghost's turn
+    private void PlayTalkingSound()
+    {
+        if (dialoguePanel.activeSelf == true)
+        {
+            if (nameOfPerson[index] != "Azri" && startAudio == false)
+            {
+                // Play Ghost talk sound
+                startAudio = true;
+                ghostTalking = CryingGhostTalking();
+                StartCoroutine(ghostTalking);
+            }
+            else if (nameOfPerson[index] == "Azri" && ghostTalking != null && startAudio == true)
+            {
+                // Stop ghost talk sound
+                startAudio = false;
+                StopCoroutine(ghostTalking);
+            }
+        }
+        else
+        {
+            if (ghostTalking != null)
+            {
+                startAudio = false;
+                StopCoroutine(ghostTalking);
+            }
+        }
     }
 
     // "Loop" ghost talking but with a delay variable
