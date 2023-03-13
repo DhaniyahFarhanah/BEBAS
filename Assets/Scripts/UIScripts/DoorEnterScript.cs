@@ -12,13 +12,17 @@ public class DoorEnterScript : MonoBehaviour
 
     [SerializeField] AudioSource doorOpenSound;
 
+    [SerializeField] GameObject DoorOverlay;
+
+    Animator animator;
+
     public float x;
     public float y;
     public float z;
 
     void Awake()
     {
-
+        animator = DoorOverlay.GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -26,7 +30,7 @@ public class DoorEnterScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && checkEnter == true)
         {
             doorOpenSound.Play();
-            player.position = new Vector3(x, y, z);
+            StartCoroutine(DoorView());
             Debug.Log("Enter");
             roomToBeEnabled.SetActive(true);
         }
@@ -70,5 +74,15 @@ public class DoorEnterScript : MonoBehaviour
         }
     }
 
+    IEnumerator DoorView()
+    {
+        DoorOverlay.SetActive(true);
+        animator.SetBool("Door", true);
+        yield return new WaitForSeconds(0.3f);
+        player.position = new Vector3(x, y, z);
+        yield return new WaitForSeconds(0.4f);
+        animator.SetBool("Door", false);
+        DoorOverlay.SetActive(false);
+    }
 
 }
