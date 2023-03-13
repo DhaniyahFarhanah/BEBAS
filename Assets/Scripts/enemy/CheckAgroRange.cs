@@ -31,18 +31,10 @@ public class CheckAgroRange : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && noImmediateKill == false)
         {
             canAgro = true;
-            if (isCrawling)
-            {
-                noImmediateKill = false;
-            }
-            else
-            {
-                noImmediateKill = true;
-
-            }
+            noImmediateKill = false;
         }
     }
 

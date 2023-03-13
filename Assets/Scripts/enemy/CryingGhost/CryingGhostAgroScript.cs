@@ -61,6 +61,7 @@ public class CryingGhostAgroScript : MonoBehaviour
                 killer.enabled = true;
             }
 
+            
             killPlayer();
         }
 
@@ -69,10 +70,6 @@ public class CryingGhostAgroScript : MonoBehaviour
             Walk();
         }
 
-        if (!checkAgro.noImmediateKill)
-        {
-            killer.enabled = false;
-        }
 
         if(FirstRunIn && dist2player > 6.1f)
         {
@@ -92,6 +89,7 @@ public class CryingGhostAgroScript : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, agroSpeed * Time.deltaTime);
 
 
+        
 
         //if on left of player, will move right
         if (transform.position.x < player.position.x)
@@ -117,7 +115,10 @@ public class CryingGhostAgroScript : MonoBehaviour
         ghostanimator.SetBool("isAgro", true) ;
         killer.enabled = true;
 
-
+        if (!checkAgro.noImmediateKill)
+        {
+            killer.enabled = false;
+        }
         // Constantly move AI to wayPoints[curWayPointIndex]
         transform.position = Vector2.MoveTowards(transform.position, waypoints[curWayPointIndex].position, moveSpeed * Time.deltaTime);
 
