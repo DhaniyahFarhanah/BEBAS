@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoorEnterScript : MonoBehaviour
 {
+    [SerializeField] private PlayerManager playerManager;
     [SerializeField] Transform player;
 
     [SerializeField] GameObject roomToBeEnabled;
@@ -23,6 +24,12 @@ public class DoorEnterScript : MonoBehaviour
     void Awake()
     {
         animator = DoorOverlay.GetComponentInChildren<Animator>();
+        if (!playerManager)
+        {
+            playerManager = GameObject.Find("PlayerManager").GetComponent<PlayerManager>();
+            if (!playerManager)
+                Debug.LogError("You are missing a PlayerManager GameObject in scene.");
+        }
     }
 
     void Update()
@@ -33,6 +40,9 @@ public class DoorEnterScript : MonoBehaviour
             StartCoroutine(DoorView());
             Debug.Log("Enter");
             roomToBeEnabled.SetActive(true);
+            playerManager.checkpointX = this.transform.position.x;
+            playerManager.checkpointY = this.transform.position.y;
+            Debug.Log("This is " + this.gameObject.name);
         }
     }
 
