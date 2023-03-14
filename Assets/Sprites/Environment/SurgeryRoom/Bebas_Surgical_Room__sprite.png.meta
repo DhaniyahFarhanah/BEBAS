@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2828
+        width: 4000
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c8f75f71b078c42a06031abcd3aa41
+      internalID: -1960281830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 4000
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a61bf45f5c28d409b307d0e1a56bdc
+      internalID: -1715574412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1912
+        width: 356
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c262a629fa25c4ab9069fdc0d3518d
+      internalID: -306446366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 2635
+        width: 180
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47c14f3b194f814bb617ef12cfb0593
+      internalID: 420497224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_4
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 1904
+        width: 815
+        height: 793
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836aa08b653d7bc49b2a8f2317a2e94e
+      internalID: -1942743886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_5
+      rect:
+        serializedVersion: 2
+        x: 3714
+        y: 2007
+        width: 286
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ace033e5524a1a4abf937099174aa12
+      internalID: -1680852193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2270
+        width: 170
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf491ea10e6efec49b0bcb8d01ea5d37
+      internalID: 230969425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 2105
+        width: 130
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d99a7cd58094e4784b9449c293bc9e
+      internalID: -856482891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2470
+        width: 135
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec74f31eaa64a342903709be9f5c702
+      internalID: 821955176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2464
+        width: 94
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdc9dac784836446928cb263a405cf9
+      internalID: -250383841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_10
+      rect:
+        serializedVersion: 2
+        x: 3310
+        y: 2405
+        width: 249
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a373f71261cd489f88d0a41de453c
+      internalID: -2053986077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 2324
+        width: 93
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169f05b10c1092c49b4a1c49718ef1e1
+      internalID: 123694631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2329
+        width: 134
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0819073c484f95f40a5cf271883a589b
+      internalID: 584788492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 2089
+        width: 375
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc03fd1fab445944b61ffd122cd8031
+      internalID: 743631106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 2103
+        width: 133
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e02eab8cd7654749a818cc2de383aba
+      internalID: -652426076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_18
+      rect:
+        serializedVersion: 2
+        x: 3694
+        y: 1919
+        width: 306
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eccfffd72ed7254284d75808c358b58
+      internalID: 56728409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_19
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1347
+        width: 266
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868fe1c8c0ca2c24d97f493842c42c47
+      internalID: 40525425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_22
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 1347
+        width: 315
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fd6a48a8a3ddd4ab237e3676bcd1ed
+      internalID: -1252013027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1481
+        width: 712
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac117c587d17eae408ab1fa151e60182
+      internalID: -158140728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1406
+        width: 644
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2402a02220744cf4ebe2c38001d9d684
+      internalID: 1815703326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_26
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 1581
+        width: 124
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccecb6f0c92fd4d409b24f48c7d91cef
+      internalID: 1305037676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_27
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1340
+        width: 250
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1125f151a181e429d40c7cad01e1f1
+      internalID: 1121972252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_28
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 1208
+        width: 1999
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03eea9e8b30ac54e89cd175175b8ced
+      internalID: 594575075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bebas_Surgical_Room__sprite_29
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 99
+        width: 1997
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d10763a08d072240a7b3beb278a499e
+      internalID: -1186986302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +630,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bebas_Surgical_Room__sprite_29: -1186986302
+      Bebas_Surgical_Room__sprite_17: -1697506113
+      Bebas_Surgical_Room__sprite_28: 594575075
+      Bebas_Surgical_Room__sprite_0: -1960281830
+      Bebas_Surgical_Room__sprite_12: 584788492
+      Bebas_Surgical_Room__sprite_21: 52528444
+      Bebas_Surgical_Room__sprite_23: -158140728
+      Bebas_Surgical_Room__sprite_11: 123694631
+      Bebas_Surgical_Room__sprite_5: -1680852193
+      Bebas_Surgical_Room__sprite_14: -652426076
+      Bebas_Surgical_Room__sprite_20: 459456002
+      Bebas_Surgical_Room__sprite_27: 1121972252
+      Bebas_Surgical_Room__sprite_1: -1715574412
+      Bebas_Surgical_Room__sprite_13: 743631106
+      Bebas_Surgical_Room__sprite_3: 420497224
+      Bebas_Surgical_Room__sprite_7: -856482891
+      Bebas_Surgical_Room__sprite_6: 230969425
+      Bebas_Surgical_Room__sprite_16: 139680409
+      Bebas_Surgical_Room__sprite_24: -977240619
+      Bebas_Surgical_Room__sprite_25: 1815703326
+      Bebas_Surgical_Room__sprite_18: 56728409
+      Bebas_Surgical_Room__sprite_19: 40525425
+      Bebas_Surgical_Room__sprite_22: -1252013027
+      Bebas_Surgical_Room__sprite_15: -1615604618
+      Bebas_Surgical_Room__sprite_2: -306446366
+      Bebas_Surgical_Room__sprite_8: 821955176
+      Bebas_Surgical_Room__sprite_10: -2053986077
+      Bebas_Surgical_Room__sprite_9: -250383841
+      Bebas_Surgical_Room__sprite_4: -1942743886
+      Bebas_Surgical_Room__sprite_26: 1305037676
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
