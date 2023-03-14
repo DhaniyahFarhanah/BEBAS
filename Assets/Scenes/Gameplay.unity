@@ -4658,7 +4658,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13027,7 +13027,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &390081481
 BoxCollider2D:
@@ -17722,7 +17722,7 @@ MonoBehaviour:
   HUD: {fileID: 1983761776}
   zoomSize: 3.63
   zoomSpeed: 0.1
-  spawnZoomSpeed: 0.001
+  spawnZoomSpeed: 0.01
   setY: 0.2
   isSpawn: 0
 --- !u!114 &519420034
@@ -19179,7 +19179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &545328001
 BoxCollider2D:
@@ -26031,6 +26031,7 @@ GameObject:
   - component: {fileID: 695690040}
   - component: {fileID: 695690039}
   - component: {fileID: 695690038}
+  - component: {fileID: 695690042}
   m_Layer: 0
   m_Name: AgroedTorture_InWard
   m_TagString: Obstacle
@@ -26046,7 +26047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695690034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.01, y: 19.29, z: 8.739998}
+  m_LocalPosition: {x: 53, y: 19.29, z: 8.739998}
   m_LocalScale: {x: 4.0989404, y: 1.2721386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26171,6 +26172,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &695690042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695690034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ff7e5291ea9334eb3c1d3bd6d6f9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &701624341
 GameObject:
   m_ObjectHideFlags: 0
@@ -26653,7 +26666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.24, y: -12.43, z: 0}
+  m_LocalPosition: {x: 83.2, y: 68.5, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -27544,7 +27557,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &715520601
 BoxCollider2D:
@@ -28298,7 +28311,7 @@ Transform:
   m_Children:
   - {fileID: 1024131368}
   m_Father: {fileID: 846638336}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &736857658
 SpriteRenderer:
@@ -31963,7 +31976,6 @@ Transform:
   - {fileID: 820196959}
   - {fileID: 107308991}
   - {fileID: 1570018987}
-  - {fileID: 1830144591}
   - {fileID: 545328000}
   - {fileID: 133618848}
   - {fileID: 1535490043}
@@ -49445,7 +49457,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.039073, y: 4.9047384}
+  m_Offset: {x: 4.039073, y: 5.549515}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -49456,7 +49468,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22.848867, y: 6.5689774}
+  m_Size: {x: 22.848867, y: 5.2794247}
   m_EdgeRadius: 0
 --- !u!1 &1222592476
 GameObject:
@@ -62971,7 +62983,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536147829
 GameObject:
@@ -65552,7 +65564,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846638336}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1588912934
 BoxCollider2D:
@@ -75412,64 +75424,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1830144590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1830144591}
-  - component: {fileID: 1830144592}
-  m_Layer: 0
-  m_Name: TortureRoom_BoundaryStart
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1830144591
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830144590}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.51, y: 16.03, z: 6.2359786}
-  m_LocalScale: {x: 0.85999995, y: 0.85999995, z: 0.85999995}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 846638336}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1830144592
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830144590}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -10.483279, y: 5.0386543}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6705685, y: 6.301145}
-  m_EdgeRadius: 0
 --- !u!1 &1834853778
 GameObject:
   m_ObjectHideFlags: 0
@@ -83379,7 +83333,7 @@ Transform:
   m_Children:
   - {fileID: 179704598}
   m_Father: {fileID: 846638336}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2042510826
 SpriteRenderer:

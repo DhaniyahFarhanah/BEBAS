@@ -61,6 +61,8 @@ public class FollowPlayerScript : MonoBehaviour
 
         }
 
+        
+
         if (isKilled)
         {
             StopAllCoroutines();
@@ -73,7 +75,16 @@ public class FollowPlayerScript : MonoBehaviour
         Debug.Log("move damn it");
         rb.velocity = new Vector2(-moveSpeed, 0);
 
-        if(transform.position.x == playerTransform.position.x)
+        if (DialogueBox.activeInHierarchy)
+        {
+            rb.velocity = Vector2.zero;
+        }
+        else if (!DialogueBox.activeInHierarchy)
+        {
+            rb.velocity = new Vector2(-moveSpeed, 0);
+        }
+
+        if (transform.position.x == playerTransform.position.x)
         {
             isKilled = true;
             rb.velocity = Vector2.zero;
