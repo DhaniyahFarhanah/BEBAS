@@ -18,8 +18,7 @@ public class DragAndDrop : MonoBehaviour
     CheckFingerCollect fingerUpdate;
 
     Vector2 objectInitPos;
-    Quaternion initRotation;
-    // Start is called before the first frame update
+
 
     private void Awake()
     {
@@ -28,7 +27,7 @@ public class DragAndDrop : MonoBehaviour
     void Start()
     {
         objectInitPos = toDrag.transform.position;
-        initRotation = toDrag.transform.rotation;
+        
     }
 
     // Update is called once per frame

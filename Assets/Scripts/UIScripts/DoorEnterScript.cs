@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DoorEnterScript : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class DoorEnterScript : MonoBehaviour
     public float y;
     public float z;
 
+
+    public static event Action EnteredWard;
     void Awake()
     {
         animator = DoorOverlay.GetComponentInChildren<Animator>();
@@ -47,6 +50,7 @@ public class DoorEnterScript : MonoBehaviour
             {
                 //change scene
                 doorOpenSound.Play();
+                EnteredWard?.Invoke();
                 StateManager.Instance.SwitchSceneTo("EndGameScene");
 
             }

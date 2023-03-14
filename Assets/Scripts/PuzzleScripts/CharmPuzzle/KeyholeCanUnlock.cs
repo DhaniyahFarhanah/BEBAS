@@ -23,6 +23,8 @@ public class KeyholeCanUnlock : MonoBehaviour
     bool eyeshow;
 
     [SerializeField] int clickIndex;
+    [SerializeField] private AudioSource keyIn;
+    [SerializeField] private AudioSource keyTurn;
     void Start()
     {
         keyhole = GetComponent<Image>();
@@ -44,6 +46,7 @@ public class KeyholeCanUnlock : MonoBehaviour
         if (clickIndex == 1)
         {
             //key inside
+            keyIn.Play();
             keyhole.sprite = KeyisInside;
 
             
@@ -85,6 +88,7 @@ public class KeyholeCanUnlock : MonoBehaviour
     IEnumerator UnlockDoor()
     {
         keyhole.sprite = KeyTurn;
+        keyTurn.Play();
         yield return new WaitForSeconds(1f);
         DoorOpen.SetActive(true);
         yield return new WaitForSeconds(1f);
