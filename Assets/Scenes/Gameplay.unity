@@ -85563,8 +85563,8 @@ MonoBehaviour:
   KeyTurn: {fileID: 2038995612, guid: 3f71c10fa76ff0842a8153845d65b5a9, type: 3}
   DoorOpen: {fileID: 552190829}
   clickIndex: 0
-  keyIn: {fileID: 976677948}
-  keyTurn: {fileID: 479147868}
+  keyIn: {fileID: 0}
+  keyTurn: {fileID: 0}
 --- !u!114 &1914065514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86546,7 +86546,7 @@ MonoBehaviour:
   - {fileID: 1590938540}
   correctCombi: 4768
   enableplayer: 0
-  wrongInputAudio: {fileID: 1945160225}
+  wrongInputAudio: {fileID: 0}
 --- !u!114 &1945160223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92897,7 +92897,7 @@ MonoBehaviour:
   - {fileID: 425613602}
   correctCombi: 1942
   enableplayer: 1
-  wrongInputAudio: {fileID: 2084211161}
+  wrongInputAudio: {fileID: 0}
 --- !u!114 &2084211159
 MonoBehaviour:
   m_ObjectHideFlags: 0
