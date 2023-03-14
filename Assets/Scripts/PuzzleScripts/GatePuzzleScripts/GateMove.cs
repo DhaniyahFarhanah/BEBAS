@@ -8,18 +8,22 @@ public class GateMove : MonoBehaviour
     //this is a shit ass way to do it but it works for now
 
     public Button[] gateArray;
+    public GameObject fenceOpen;
+    public GameObject bolt;
 
     public GameObject player;
     public GameObject gateClosed;
     public GameObject gateOpened;
     public GameObject Puzzle;
 
-    public SpriteRenderer Background;
-
-    public RawImage image;
+    Animator animator;
 
     int count;
 
+    private void Awake()
+    {
+        animator = fenceOpen.GetComponent<Animator>();
+    }
     void Start()
     {
         count = 0;
@@ -44,7 +48,6 @@ public class GateMove : MonoBehaviour
         if (count == 11)
             {
                 Debug.Log("finished");
-                image.CrossFadeAlpha(0, 0.3f, true);
                 StartCoroutine(ReturnGameplayScene());
             }
             else
@@ -54,8 +57,16 @@ public class GateMove : MonoBehaviour
 
     }
 
+    public void playAnim()
+    {
+        //here will have anims but for now just disable the boltcutter;
+        bolt.SetActive(false);
+    }
+
     IEnumerator ReturnGameplayScene()
     {
+        yield return new WaitForSeconds(0.5f);
+        animator.SetTrigger("Open");
         yield return new WaitForSeconds(1f);
         
         Puzzle.SetActive(false);
