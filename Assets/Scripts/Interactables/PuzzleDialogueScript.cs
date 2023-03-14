@@ -140,6 +140,7 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
 
             Debug.Log("Interact");
+            Z.GetComponent<PlayAudio>().Play();
             if ((dialogue.Length == 0 || !showAfterDialogue) && interactable && !puzzleCompleted)
             {
                 Debug.Log("puzzle1");

@@ -71,6 +71,7 @@ public class NpcDialogue : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
         {
             Debug.Log("Interact");
+            Z.GetComponent<PlayAudio>().Play();
 
             if (dialoguePanel.activeInHierarchy)
             {

@@ -26,7 +26,7 @@ public class StopBackgroundAudio : MonoBehaviour
 
     private void ChangeAudio()
     {
-        forestAudioSource.Stop();
-        wardAudioSource.Play();
+        forestAudioSource.enabled = false;
+        wardAudioSource.enabled = true;
     }
 }
