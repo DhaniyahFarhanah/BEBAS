@@ -10,6 +10,7 @@ public class DoorEnterScript : MonoBehaviour
     [SerializeField] GameObject roomToBeEnabled;
 
     [SerializeField] bool checkEnter;
+    [SerializeField] bool endGame;
 
     [SerializeField] AudioSource doorOpenSound;
 
@@ -42,13 +43,24 @@ public class DoorEnterScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && checkEnter == true && !playerTalking.isTalking)
         {
-            doorOpenSound.Play();
-            StartCoroutine(DoorView());
-            Debug.Log("Enter");
-            roomToBeEnabled.SetActive(true);
-            playerManager.checkpointX = this.transform.position.x;
-            playerManager.checkpointY = this.transform.position.y;
-            Debug.Log("This is " + this.gameObject.name);
+            if (endGame)
+            {
+                //change scene
+                doorOpenSound.Play();
+                StateManager.Instance.SwitchSceneTo("EndGameScene");
+
+            }
+            else
+            {
+                doorOpenSound.Play();
+                StartCoroutine(DoorView());
+                Debug.Log("Enter");
+                roomToBeEnabled.SetActive(true);
+                playerManager.checkpointX = this.transform.position.x;
+                playerManager.checkpointY = this.transform.position.y;
+                Debug.Log("This is " + this.gameObject.name);
+
+            }
         }
     }
 
