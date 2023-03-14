@@ -23,7 +23,7 @@ public class RespawnInWard : MonoBehaviour
         if (isHere.AzriInWard)
         {
             //idk if this is the coords to the ward
-            gameObject.transform.position = new Vector2(287, 19.29f);
+            gameObject.transform.position = new Vector2(165.7f, -28.16f);
         }
     }
 }

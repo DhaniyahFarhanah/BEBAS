@@ -26666,7 +26666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 83.2, y: 68.5, z: 0}
+  m_LocalPosition: {x: -12.2, y: -12.51, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -32885,7 +32885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 400523671, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  m_Sprite: {fileID: 1990608282, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -37110,7 +37110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -702016382, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  m_Sprite: {fileID: 2084588138, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -55703,10 +55703,12 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   name: Azri
   dialogue:
   - Why are there so many thing hanging around ah?
   - Is that...hair?!
+  - There's like...7 of them.
   - Will I die tif they touch me?
   - I think I should crouch down to avoid them
   index: 0
@@ -65870,7 +65872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2084588138, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  m_Sprite: {fileID: -702016382, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -68898,7 +68900,7 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - It's a vase of withered flowers
-  - There seems to be 7 of them
+  - There seems to be 8 of them
   - These must've been for the little girl...
   index: 0
   hasCompletedLine: 0
@@ -79728,16 +79730,16 @@ MonoBehaviour:
   - {fileID: -512989934, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   - {fileID: -1681831604, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   correct:
-  - {fileID: 400523671, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
-  - {fileID: -702016382, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
-  - {fileID: -29004701, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  - {fileID: 1990608282, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   - {fileID: 2084588138, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  - {fileID: -29004701, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
+  - {fileID: -702016382, guid: 004baf092ba3fe6488d2351680a87f8c, type: 3}
   characters:
   - {fileID: 859752780}
   - {fileID: 933101957}
   - {fileID: 1186289145}
   - {fileID: 1590938540}
-  correctCombi: 4768
+  correctCombi: 5867
   enableplayer: 0
 --- !u!114 &1945160223
 MonoBehaviour:
