@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorEnterScript : MonoBehaviour
 {
     [SerializeField] private PlayerManager playerManager;
-    [SerializeField] Transform player;
+    [SerializeField] GameObject playerScripts;
 
     [SerializeField] GameObject roomToBeEnabled;
 
@@ -15,7 +15,9 @@ public class DoorEnterScript : MonoBehaviour
 
     [SerializeField] GameObject DoorOverlay;
 
+    PlayerStateManager playerTalking;
     Animator animator;
+    Transform player;
 
     public float x;
     public float y;
@@ -30,11 +32,15 @@ public class DoorEnterScript : MonoBehaviour
             if (!playerManager)
                 Debug.LogError("You are missing a PlayerManager GameObject in scene.");
         }
+
+        playerTalking = playerScripts.GetComponent<PlayerStateManager>();
+        player = playerScripts.GetComponent<Transform>();
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && checkEnter == true)
+        if (Input.GetKeyDown(KeyCode.W) && checkEnter == true && !playerTalking.isTalking)
         {
             doorOpenSound.Play();
             StartCoroutine(DoorView());
