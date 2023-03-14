@@ -12,11 +12,11 @@ public class GatePuzzle : MonoBehaviour
     public KeyCode key;
 
     public Button _button;
-
+    private PlayAudio audioCut;
     // Start is called before the first frame update
     void Awake()
     {
-        
+        TryGetComponent(out audioCut);
     }
 
     void Update()
@@ -32,5 +32,6 @@ public class GatePuzzle : MonoBehaviour
     public void Cut()
     {
         _button.interactable = false;
+        audioCut.Play();
     }
 }

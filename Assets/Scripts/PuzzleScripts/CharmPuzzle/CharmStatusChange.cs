@@ -14,12 +14,14 @@ public class CharmStatusChange : MonoBehaviour
     [SerializeField] Color notSelectedColor;
 
     CharmsPuzzle charm;
+    private AudioSource paperTear;
 
     // Start is called before the first frame update
 
     private void Awake()
     {
         charm = charmPuzzle.GetComponent<CharmsPuzzle>();
+        TryGetComponent(out paperTear);
     }
     void Start()
     {
@@ -44,6 +46,7 @@ public class CharmStatusChange : MonoBehaviour
 
     public void Tear()
     {
+        paperTear.Play();
         clueDialogue.SetActive(false);
         charm.isTear[charmIndex] = true;
         charmCut.SetActive(true);

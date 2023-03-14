@@ -28,6 +28,8 @@ public class DigitalDisplay : MonoBehaviour
     private bool enableplayer;
 
     private string codeSequence;
+
+    [SerializeField] private AudioSource wrongInputAudio;
     void Start()
     {
         codeSequence = "";
@@ -151,6 +153,7 @@ public class DigitalDisplay : MonoBehaviour
         else
         {
             Debug.Log("Wrong");
+            wrongInputAudio.Play();
             ResetDisplay();
         }
     }

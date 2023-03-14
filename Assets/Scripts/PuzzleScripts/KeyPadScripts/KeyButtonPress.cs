@@ -10,6 +10,13 @@ public class KeyButtonPress : MonoBehaviour
 
     private int dividerPosition;
     private String buttonName, buttonValue;
+
+    private PlayAudio buttonPresed;
+
+    private void Awake()
+    {
+        TryGetComponent(out buttonPresed);
+    }
     void Start()
     {
         buttonName = gameObject.name;
@@ -22,5 +29,6 @@ public class KeyButtonPress : MonoBehaviour
     private void ButtonClicked()
     {
         ButtonPressed(buttonValue);
+        buttonPresed.Play();
     }
 }
