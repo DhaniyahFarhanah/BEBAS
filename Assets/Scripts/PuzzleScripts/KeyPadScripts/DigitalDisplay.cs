@@ -30,6 +30,7 @@ public class DigitalDisplay : MonoBehaviour
     private string codeSequence;
 
     [SerializeField] private AudioSource wrongInputAudio;
+    [SerializeField] private AudioSource correctInputAudio;
     void Start()
     {
         codeSequence = "";
@@ -146,7 +147,7 @@ public class DigitalDisplay : MonoBehaviour
             characters[1].sprite = correct[1];
             characters[2].sprite = correct[2];
             characters[3].sprite = correct[3];
-
+            correctInputAudio.Play();
             StartCoroutine(Correct());
         }
 

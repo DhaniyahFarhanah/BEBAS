@@ -50,7 +50,6 @@ public class DoorEnterScript : MonoBehaviour
             {
                 //change scene
                 doorOpenSound.Play();
-                EnteredWard?.Invoke();
                 StateManager.Instance.SwitchSceneTo("EndGameScene");
 
             }
@@ -60,6 +59,7 @@ public class DoorEnterScript : MonoBehaviour
                 StartCoroutine(DoorView());
                 Debug.Log("Enter");
                 roomToBeEnabled.SetActive(true);
+                EnteredWard?.Invoke();
                 playerManager.checkpointX = this.transform.position.x;
                 playerManager.checkpointY = this.transform.position.y;
                 Debug.Log("This is " + this.gameObject.name);
