@@ -5,6 +5,7 @@ using UnityEngine;
 public class InWardEndGame : MonoBehaviour
 {
     [SerializeField] GameObject tortured;
+    [SerializeField] GameObject lighting;
 
     FollowPlayerScript azriWardCheck;
 
@@ -27,6 +28,7 @@ public class InWardEndGame : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            lighting.SetActive(true);
             azriWardCheck.AzriInWard = true;
         }
     }
