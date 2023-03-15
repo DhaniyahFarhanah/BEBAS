@@ -20,6 +20,8 @@ public class DragAndDrop : MonoBehaviour
     Vector2 objectInitPos;
     Quaternion initRotation;
 
+    // Start is called before the first frame update
+
     private void Awake()
     {
         fingerUpdate = CheckFingerCollect.GetComponent<CheckFingerCollect>();
