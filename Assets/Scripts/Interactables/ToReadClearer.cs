@@ -1,7 +1,6 @@
-#if UNITY_EDITOR
+
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Overlays;
 using UnityEngine;
 
 public class ToReadClearer : MonoBehaviour
@@ -30,4 +29,3 @@ public class ToReadClearer : MonoBehaviour
         }
     }
 }
-#endif
