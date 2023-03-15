@@ -149,8 +149,19 @@ public class PlayerStateManager : MonoBehaviour
         else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
         {
             timerBar.enabled = false;
-            gameOverScreen.SetActive(true);
-            Time.timeScale = 0;
+            remainingTime += Time.deltaTime;
+            animator.SetBool("Breath", false);
+            if (charSpeed > 0)
+            {
+                currentState = idleState;
+                SwitchState(idleState);
+
+            }
+            else
+            {
+                currentState = walkState;
+                SwitchState(walkState);
+            }
         }
 
     }

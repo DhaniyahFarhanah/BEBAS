@@ -18978,7 +18978,7 @@ MonoBehaviour:
   HUD: {fileID: 1983761776}
   zoomSize: 3.63
   zoomSpeed: 0.1
-  spawnZoomSpeed: 0.001
+  spawnZoomSpeed: 0.005
   setY: 0.2
   isSpawn: 0
 --- !u!114 &519420034
