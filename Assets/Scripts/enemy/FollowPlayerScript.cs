@@ -14,6 +14,7 @@ public class FollowPlayerScript : MonoBehaviour
     public bool AzriInWard;
     public bool isKilled;
 
+    Animator animator;
     Transform playerTransform;
     Rigidbody2D rb;
     BoxCollider2D killSensor;
@@ -25,6 +26,7 @@ public class FollowPlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         killSensor = gameObject.GetComponent<BoxCollider2D>();
         playerTransform = player.GetComponent<Transform>();
+        animator = gameObject.GetComponent<Animator>();
     }
     void Start()
     {
@@ -46,6 +48,7 @@ public class FollowPlayerScript : MonoBehaviour
 
         if (!DialogueBox.activeInHierarchy && isWaiting)
         {
+
             StartCoroutine(WaitForAgro());
         }
         else
@@ -73,6 +76,7 @@ public class FollowPlayerScript : MonoBehaviour
     void ChasePlayer()
     {
         Debug.Log("move damn it");
+        animator.SetInteger("Status", 2);
         rb.velocity = new Vector2(-moveSpeed, 0);
 
         if (DialogueBox.activeInHierarchy)
@@ -94,7 +98,8 @@ public class FollowPlayerScript : MonoBehaviour
 
     IEnumerator WaitForAgro()
     {
-        yield return new WaitForSeconds(4f);
+        animator.SetInteger("Status", 1);
+        yield return new WaitForSeconds(2f);
         //play anim of revival here
         ChasePlayer();
         isWaiting = false;
