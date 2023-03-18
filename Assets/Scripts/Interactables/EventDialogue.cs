@@ -30,7 +30,7 @@ public class EventDialogue : MonoBehaviour
     public bool start = true;
     public bool hasAudioTrigger;
 
-
+    pausemenu pause;
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
@@ -47,6 +47,8 @@ public class EventDialogue : MonoBehaviour
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
+
+        pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
 
     private void Start()
@@ -58,7 +60,7 @@ public class EventDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
 
             //Debug.Log("Interact");
@@ -77,7 +79,7 @@ public class EventDialogue : MonoBehaviour
             //}
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine && !pause.isPaused)
         {
             NextLine();
         }

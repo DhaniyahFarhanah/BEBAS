@@ -7,7 +7,8 @@ public class pausemenu : MonoBehaviour
 {
     public GameObject PauseMenu; //ref to pause menu 
 
-    public static bool isPaused; //global variable so that inputs from other scripts will stop when game is paused
+
+    public bool isPaused; //global variable so that inputs from other scripts will stop when game is paused
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class pausemenu : MonoBehaviour
         PauseMenu.SetActive(true); //menu is active when button is pressed
         Time.timeScale = 0f;
         isPaused = true;
+        
     }
 
     public void ResumeGame()

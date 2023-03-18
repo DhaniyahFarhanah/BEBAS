@@ -11,11 +11,12 @@ TagManager:
   - loreItem
   - Obstacle
   - reqItem
+  - menu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Dialogue
   - Water
   - UI
   - 

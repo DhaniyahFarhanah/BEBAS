@@ -33,6 +33,8 @@ public class DialogueScript : MonoBehaviour
     public float currentWordSpeed;
     public bool playerIsClose;
     public bool start = true;
+
+    pausemenu pause;
     
 
     private AudioSource audioSource;
@@ -44,13 +46,15 @@ public class DialogueScript : MonoBehaviour
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = this.gameObject.AddComponent<AudioSource>();
+
+        pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
         SkipLine();
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
             Debug.Log("Interact");
             Z.GetComponent<PlayAudio>().Play();
@@ -76,7 +80,7 @@ public class DialogueScript : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine && !pause.isPaused)
         {
             NextLine();
            
@@ -117,7 +121,7 @@ public class DialogueScript : MonoBehaviour
     }
     private void SkipLine()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start && !pause.isPaused)
             completeLineNow = true;
     }
 

@@ -31,6 +31,8 @@ public class PuzzleDialogueScript : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
 
+    pausemenu pause;
+
     [SerializeField] private bool showAfterDialogue;
     private bool showingPreDialogueNow;
     [SerializeField] private int showAfterDialogueIndex;
@@ -55,6 +57,8 @@ public class PuzzleDialogueScript : MonoBehaviour
         {
             showAfterDialogueIndex = dialogue.Length;
         }
+
+        pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
 
     }
 
@@ -100,7 +104,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             }
             if (dialoguePanel.activeSelf == true)
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine)
+                if (Input.GetKeyDown(KeyCode.Mouse0) && hasCompletedLine && !pause.isPaused)
                 {
                     if (index + 1 == showAfterDialogueIndex)
                     {
@@ -136,7 +140,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             zeroText();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused )
         {
 
             Debug.Log("Interact");
@@ -174,7 +178,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine && !pause.isPaused)
         {
             NextLine();
         }
@@ -234,7 +238,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     }
     private void SkipLine()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow && !start && !pause.isPaused)
         {
             completeLineNow = true;
         }

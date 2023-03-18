@@ -30,6 +30,8 @@ public class NpcDialogue : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
 
+    pausemenu pause;
+
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
@@ -55,6 +57,8 @@ public class NpcDialogue : MonoBehaviour
         }
         if (audioSource.clip == null)
             audioSource.clip = dialogueTypingSoundClip;
+
+        pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
 
     private void Start()
@@ -68,7 +72,7 @@ public class NpcDialogue : MonoBehaviour
         SkipLine();
         PlayTalkingSound();
      
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
             Debug.Log("Interact");
             Z.GetComponent<PlayAudio>().Play();
@@ -88,7 +92,7 @@ public class NpcDialogue : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine)
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && start == false && hasCompletedLine && !pause.isPaused)
         {
             NextLine();
         }

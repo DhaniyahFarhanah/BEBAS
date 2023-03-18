@@ -14,6 +14,7 @@ public class LoreDisplay : MonoBehaviour
     [SerializeField] AudioSource paperSound;
 
     PlayerStateManager playerState;
+    pausemenu pause;
 
     [SerializeField] bool toOpen;
 
@@ -22,6 +23,7 @@ public class LoreDisplay : MonoBehaviour
     void Awake()
     {
         playerState = player.GetComponent<PlayerStateManager>();
+        pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
     void Start()
     {
@@ -31,7 +33,7 @@ public class LoreDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (toOpen && Input.GetKeyDown(KeyCode.Mouse0) && playerState.currentState != playerState.deadState && dialogueBox.activeInHierarchy == false && gameOver.activeInHierarchy == false)
+        if (toOpen && Input.GetKeyDown(KeyCode.Mouse0) && playerState.currentState != playerState.deadState && dialogueBox.activeInHierarchy == false && gameOver.activeInHierarchy == false && !pause.isPaused)
         {
             ActivateLore();
         }
