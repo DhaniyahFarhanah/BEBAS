@@ -91,20 +91,11 @@ public class DigitalDisplay : MonoBehaviour
                     break;
             }
         }
-
-        switch (digitEntered)
+        if(codeSequence.Length == 4)
         {
-            case "Star":
-                ResetDisplay();
-                break;
-
-            case "Hex":
-                if(codeSequence.Length > 0)
-                {
-                    CheckResults();
-                }
-                break;
+            CheckResults();
         }
+
     }
 
     private void DisplayCodeSequence(int digitJustEntered)
@@ -155,7 +146,7 @@ public class DigitalDisplay : MonoBehaviour
         {
             Debug.Log("Wrong");
             wrongInputAudio.Play();
-            ResetDisplay();
+            StartCoroutine(Wrong());
         }
     }
 
@@ -167,6 +158,7 @@ public class DigitalDisplay : MonoBehaviour
         }
         codeSequence = "";
     }
+
 
     private void OnDestroy()
     {
@@ -186,5 +178,11 @@ public class DigitalDisplay : MonoBehaviour
 
         }
 
+    }
+
+    IEnumerator Wrong()
+    {
+        yield return new WaitForSeconds(0.5f);
+        ResetDisplay();
     }
 }
