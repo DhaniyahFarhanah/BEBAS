@@ -56,6 +56,7 @@ public class KeyholeCanUnlock : MonoBehaviour
         {
             //unlockDoor
             keyhole.sprite = KeyTurn;
+            keyTurn.Play();
             StartCoroutine(UnlockDoor());
         }
     }
@@ -88,7 +89,6 @@ public class KeyholeCanUnlock : MonoBehaviour
     IEnumerator UnlockDoor()
     {
         keyhole.sprite = KeyTurn;
-        keyTurn.Play();
         yield return new WaitForSeconds(1f);
         DoorOpen.SetActive(true);
         yield return new WaitForSeconds(1f);
