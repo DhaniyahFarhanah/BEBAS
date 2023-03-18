@@ -131,6 +131,15 @@ public class PlayerStateManager : MonoBehaviour
 
         //=========BREATH BAR===========
 
+        if(remainingTime < 3f)
+        {
+            timerBar.color = new Color(255, 0, 0);
+        }
+        else
+        {
+            timerBar.color = new Color(255, 255, 255);
+        }
+
         if (remainingTime > 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
         {
             timerBar.enabled = true;
@@ -145,6 +154,8 @@ public class PlayerStateManager : MonoBehaviour
             timerBar.enabled = false;
             timerBar.fillAmount = maxTime;
         }
+
+        
 
         else if (remainingTime <= 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
         {
