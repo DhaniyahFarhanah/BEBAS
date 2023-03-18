@@ -46,7 +46,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public Image timerBar;
     public float maxTime = 1f;
-    float remainingTime;
+    public float remainingTime;
 
     public bool isTalking;
     public bool isRun;
@@ -151,13 +151,13 @@ public class PlayerStateManager : MonoBehaviour
             timerBar.enabled = false;
             remainingTime += Time.deltaTime;
             animator.SetBool("Breath", false);
-            if (charSpeed > 0)
+            if (charSpeed == 0)
             {
                 currentState = idleState;
                 SwitchState(idleState);
 
             }
-            else
+            else if (charSpeed > 0)
             {
                 currentState = walkState;
                 SwitchState(walkState);

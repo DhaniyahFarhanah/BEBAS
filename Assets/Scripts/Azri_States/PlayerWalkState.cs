@@ -16,7 +16,7 @@ public class PlayerWalkState : PlayerBaseState
         player.animator.SetBool("Moving", true);
         
 
-        if (Input.GetKey(KeyCode.Space)) //Holding Breath
+        if (Input.GetKey(KeyCode.Space) && player.remainingTime > 0) //Holding Breath
        {
             player.animator.SetBool("Moving", false);
 
