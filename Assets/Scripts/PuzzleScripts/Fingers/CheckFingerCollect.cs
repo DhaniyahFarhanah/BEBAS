@@ -13,6 +13,7 @@ public class CheckFingerCollect : MonoBehaviour
     [SerializeField] GameObject puzzleNotDone;
     [SerializeField] GameObject puzzleDone;
     [SerializeField] GameObject player;
+    [SerializeField] GameObject fingerHUD;
 
     bool twitchDone = false;
 
@@ -65,6 +66,7 @@ public class CheckFingerCollect : MonoBehaviour
         player.SetActive(true);
         puzzleDone.SetActive(true);
         puzzleNotDone.SetActive(false);
+        fingerHUD.SetActive(false);
         puzzle.SetActive(false);
         
     }
