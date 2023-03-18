@@ -519,7 +519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 30}
   m_SizeDelta: {x: -1309.2809, y: -983.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151405764
@@ -545,8 +545,8 @@ MonoBehaviour:
   m_text: Brother never came back for me, and I died. But I don't care about that
     now.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a0b756063109a414087867a4e5e03340, type: 2}
+  m_sharedMaterial: {fileID: -8668283257443211166, guid: a0b756063109a414087867a4e5e03340, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -680,15 +680,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' I just want my fingers back.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a0b756063109a414087867a4e5e03340, type: 2}
+  m_sharedMaterial: {fileID: -8668283257443211166, guid: a0b756063109a414087867a4e5e03340, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279506105
-  m_fontColor: {r: 0.7264151, g: 0.0788092, b: 0.0788092, a: 1}
+    rgba: 4279308717
+  m_fontColor: {r: 0.6792453, g: 0.06664292, b: 0.06664292, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -705,13 +705,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 49
-  m_fontSizeBase: 49
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -291.86908, y: 0, z: -314.91162, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
