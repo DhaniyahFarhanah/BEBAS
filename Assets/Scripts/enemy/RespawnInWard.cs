@@ -6,6 +6,7 @@ public class RespawnInWard : MonoBehaviour
 {
 
     FollowPlayerScript isHere;
+    [SerializeField] GameObject waypoint;
     // Start is called before the first frame update
 
     private void Awake()
@@ -23,7 +24,8 @@ public class RespawnInWard : MonoBehaviour
         if (isHere.AzriInWard)
         {
             //idk if this is the coords to the ward
-            gameObject.transform.position = new Vector2(165.7f, -28.16f);
+            gameObject.transform.position = waypoint.transform.position;
+            isHere.AzriInWard = false;
         }
     }
 }
