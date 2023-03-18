@@ -148,7 +148,7 @@ public class CryingGhostAgroScript : MonoBehaviour
     IEnumerator FirstSpawnAgro()
     {
         killer.enabled = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         Debug.Log("You better hold your breath now");
 
 
