@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 39765140c4b21b1428b32dd027d8dc16
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Ticking Timebomb BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f7ec053b0cf2f4242afd7b9e77d8aef2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

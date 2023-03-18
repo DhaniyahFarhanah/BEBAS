@@ -16,6 +16,16 @@ public class NpcDialogue : MonoBehaviour
     [SerializeField] Image rightTalkingImage;
     [SerializeField] Sprite leftImage;
     [SerializeField] Sprite rightImage;
+    [SerializeField] Image Arrow;
+
+    [SerializeField] TMP_FontAsset NPCFont;
+    [SerializeField] Color NPCTextColor;
+    [SerializeField] int NPCfontsize;
+    [SerializeField] Sprite NPCArrow;
+    [SerializeField] TMP_FontAsset AzriFont;
+    [SerializeField] Color AzriTextColor;
+    [SerializeField] int Azrifontsize;
+    [SerializeField] Sprite AzriArrow;
 
     public string[] nameOfPerson;
     public string[] dialogue;
@@ -244,15 +254,25 @@ public class NpcDialogue : MonoBehaviour
 
         if (nameOfPerson[index] != "Azri")
         {
-            nameTextBox.alignment = TextAlignmentOptions.Right;
+            dialogueText.color = NPCTextColor;
+            nameTextBox.color = NPCTextColor;
+            dialogueText.font = NPCFont;
+            dialogueText.fontSize = NPCfontsize;
+            nameTextBox.font = NPCFont;
+            Arrow.sprite = NPCArrow;
             rightTalkingImage.sprite = personShowcase[index];
             leftTalkingImage.color = new Color(0.3f, 0.3f, 0.3f);
             rightTalkingImage.color = new Color(1f, 1f, 1f);
         }
         else
         {
+            dialogueText.color = AzriTextColor;
+            nameTextBox.color = AzriTextColor;
+            dialogueText.font = AzriFont;
+            nameTextBox.font = AzriFont;
+            dialogueText.fontSize = Azrifontsize;
+            Arrow.sprite = AzriArrow;
             leftTalkingImage.sprite = personShowcase[index];
-            nameTextBox.alignment = TextAlignmentOptions.Left;
             leftTalkingImage.color = new Color(1f, 1f, 1f);
             rightTalkingImage.color = new Color(0.3f, 0.3f, 0.3f);
         }

@@ -17,6 +17,7 @@ public class DialogueScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public SpriteRenderer spriteRenderer;
 
+
     GameObject player;
 
     // Azri reactions
@@ -53,6 +54,8 @@ public class DialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
