@@ -17081,9 +17081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 1836641181}
-  LoreDisplay: {fileID: 1677214678}
-  dialogueBox: {fileID: 1307237298}
-  npcDialogueBox: {fileID: 1697471760}
+  isPaused: 0
 --- !u!1 &476937917
 GameObject:
   m_ObjectHideFlags: 0
@@ -25415,7 +25413,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &651111173
 RectTransform:
@@ -28521,7 +28519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.21, y: 46.8, z: 0}
+  m_LocalPosition: {x: 75.1, y: 68.9, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -95072,7 +95070,7 @@ PrefabInstance:
       objectReference: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
     - target: {fileID: 3814229848344508920, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3814229848344508923, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_Name
@@ -95369,7 +95367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594362182714582150, guid: fb5b0d349b0bd4479a1b91af5f7be48f, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5594362182714582153, guid: fb5b0d349b0bd4479a1b91af5f7be48f, type: 3}
       propertyPath: m_Name
@@ -95502,7 +95500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6319024277672701920, guid: b7bc272ebd983471ea848570c2f38beb, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6319024277672701923, guid: b7bc272ebd983471ea848570c2f38beb, type: 3}
       propertyPath: m_Name
