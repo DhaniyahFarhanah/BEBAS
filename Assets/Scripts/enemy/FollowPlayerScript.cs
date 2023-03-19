@@ -19,7 +19,8 @@ public class FollowPlayerScript : MonoBehaviour
     Rigidbody2D rb;
     BoxCollider2D killSensor;
 
-    
+
+    private Vector3 startPos;
 
     private void Awake()
     {
@@ -32,8 +33,20 @@ public class FollowPlayerScript : MonoBehaviour
     {
         isWaiting = true;
         AzriInWard = false;
-    }
+        startPos = transform.position;
+        //subscribes to the restart event when the player restarts to the nearest checkpoint
+        PlayerManager.RestartAtCheckPoint += ResetGhost;
 
+    }
+    private void OnDestroy()
+    {
+        //unsubscribes to the event
+        PlayerManager.RestartAtCheckPoint -= ResetGhost;
+    }
+    private void ResetGhost()
+    {
+        transform.position = startPos;
+    }
     // Update is called once per frame
     void Update()
     {

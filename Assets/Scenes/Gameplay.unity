@@ -29440,7 +29440,7 @@ MonoBehaviour:
   playerManager: {fileID: 474014572}
   playerScripts: {fileID: 705463099}
   roomToBeEnabled: {fileID: 1918994575}
-  checkEnter: 0
+  checkEnter: 1
   endGame: 0
   doorOpenSound: {fileID: 711139630}
   DoorOverlay: {fileID: 618500291}

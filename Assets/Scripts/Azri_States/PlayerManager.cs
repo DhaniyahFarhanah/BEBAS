@@ -31,7 +31,9 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        checkpointX = player.transform.position.x;
+        checkpointY = player.transform.position.y;
+        checkpointZ = player.transform.position.z;
     }
 
     // Update is called once per frame
