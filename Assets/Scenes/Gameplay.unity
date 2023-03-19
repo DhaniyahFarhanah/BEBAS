@@ -17346,8 +17346,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 705463099}
   gameOverScreen: {fileID: 1315879309}
-  jumpscareHUD: {fileID: 0}
-  playerState: {fileID: 0}
+  jumpscareHUD: {fileID: 1073506355}
+  Jumpscareanimator: {fileID: 1426956427}
+  death: 1
+  integer: 0
+  playerState: {fileID: 705463100}
   checkpointX: 32.38
   checkpointY: -12.54338
   checkpointZ: 0
