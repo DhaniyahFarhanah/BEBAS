@@ -85,6 +85,7 @@ public class CameraZoom : MonoBehaviour
                     moveInstructions.SetActive(true);
                     HUD.SetActive(true);
                     isSpawn = false;
+             
 
                 }
                 else

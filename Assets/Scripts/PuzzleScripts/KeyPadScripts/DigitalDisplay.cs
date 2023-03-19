@@ -11,6 +11,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject puzzleComplete;
     [SerializeField] GameObject puzzleNotComplete;
+    [SerializeField] bool safe;
 
     [SerializeField]
     private Sprite[] digits;
@@ -39,8 +40,14 @@ public class DigitalDisplay : MonoBehaviour
         {
             characters[i].sprite = digits[10];
         }
-
-        KeyButtonPress.ButtonPressed += AddDigitToCodeSequence;
+        if (safe)
+        {
+            KeyButtonPress2.ButtonPressed2 += AddDigitToCodeSequence;
+        }
+        else
+        {
+            KeyButtonPress.ButtonPressed += AddDigitToCodeSequence;
+        }
     }
 
     private void AddDigitToCodeSequence(string digitEntered)
@@ -163,10 +170,12 @@ public class DigitalDisplay : MonoBehaviour
     private void OnDestroy()
     {
         KeyButtonPress.ButtonPressed -= AddDigitToCodeSequence;
+        KeyButtonPress2.ButtonPressed2 -= AddDigitToCodeSequence;
     }
     IEnumerator Correct()
     {
         yield return new WaitForSeconds(1f);
+        codeSequence = "";
         door.SetActive(true);
         puzzle.SetActive(false);
         display.SetActive(false);
