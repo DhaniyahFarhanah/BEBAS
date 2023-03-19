@@ -1,6 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -8,13 +9,17 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
     public GameObject gameOverScreen; //game over screen
+    [SerializeField] GameObject jumpscareHUD;
+    [SerializeField] Animator Jumpscareanimator;
+
+    public bool death;
+    public int integer;
 
     public PlayerStateManager playerState;
 
     public float checkpointX;
     public float checkpointY;
     public float checkpointZ;
-
 
     public static event Action RestartAtCheckPoint;
     private void Awake()
@@ -34,8 +39,13 @@ public class PlayerManager : MonoBehaviour
     {
         if (isGameOver == true)
         {
-            gameOverScreen.SetActive(true); //game over screen will show up when game is over
-            playerState.SwitchState(playerState.deadState);
+
+            jumpscareHUD.SetActive(true);
+            Jumpscareanimator.SetBool("Death", death);
+            Jumpscareanimator.SetInteger("Type", integer);
+            StartCoroutine(Jumpscare());
+
+
         }
         else
         {
@@ -46,6 +56,9 @@ public class PlayerManager : MonoBehaviour
     public void ReplayLevel() //resets the level after the user presses replay button 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        playerState.SwitchState(playerState.idleState);
+        jumpscareHUD.SetActive(false);
+        isGameOver = false;
     }
 
     public void Checkpoint() //Checkpoint code to spawn at a safe space
@@ -57,5 +70,12 @@ public class PlayerManager : MonoBehaviour
 
         // calls an event that the player has restarted to the checkpoint;
         RestartAtCheckPoint?.Invoke();
+    }
+    IEnumerator Jumpscare()
+    {
+        yield return null;
+        jumpscareHUD.SetActive(false);
+        playerState.SwitchState(playerState.deadState);
+        gameOverScreen.SetActive(true); //game over screen will show up when game is over
     }
 }
