@@ -60,8 +60,8 @@ public class DoorEnterScript : MonoBehaviour
                 Debug.Log("Enter");
                 roomToBeEnabled.SetActive(true);
                 EnteredWard?.Invoke();
-                playerManager.checkpointX = this.transform.position.x;
-                playerManager.checkpointY = this.transform.position.y;
+                playerManager.checkpointX = player.transform.position.x;
+                playerManager.checkpointY = player.transform.position.y;
                 Debug.Log("This is " + this.gameObject.name);
 
             }

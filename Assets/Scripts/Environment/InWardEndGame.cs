@@ -30,6 +30,8 @@ public class InWardEndGame : MonoBehaviour
         {
             lighting.SetActive(true);
             azriWardCheck.AzriInWard = true;
+            FindObjectOfType<PlayerManager>().checkpointX = FindObjectOfType<PlayerStateManager>().transform.position.x;
+            FindObjectOfType<PlayerManager>().checkpointY = FindObjectOfType<PlayerStateManager>().transform.position.y;
         }
     }
 }
