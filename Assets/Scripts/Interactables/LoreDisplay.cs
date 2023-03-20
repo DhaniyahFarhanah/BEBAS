@@ -12,6 +12,7 @@ public class LoreDisplay : MonoBehaviour
     [SerializeField] GameObject gameOver;
 
     [SerializeField] AudioSource paperSound;
+    BoxCollider2D box;
 
     PlayerStateManager playerState;
     pausemenu pause;
@@ -22,6 +23,7 @@ public class LoreDisplay : MonoBehaviour
 
     void Awake()
     {
+        box = gameObject.GetComponent<BoxCollider2D>();
         playerState = player.GetComponent<PlayerStateManager>();
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
@@ -36,6 +38,15 @@ public class LoreDisplay : MonoBehaviour
         if (toOpen && Input.GetKeyDown(KeyCode.Mouse0) && playerState.currentState != playerState.deadState && dialogueBox.activeInHierarchy == false && gameOver.activeInHierarchy == false && !pause.isPaused)
         {
             ActivateLore();
+        }
+
+        if (loreDisplay.activeInHierarchy)
+        {
+            box.enabled = false;
+        }
+        else
+        {
+            box.enabled = true;
         }
 
         

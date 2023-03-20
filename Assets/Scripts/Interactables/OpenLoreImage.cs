@@ -39,7 +39,8 @@ public class OpenLoreImage : MonoBehaviour
 
     public void closeLore()
     {
-        
+        if (gameObject.activeInHierarchy)
+        {
             Time.timeScale = 1;
 
             for (int i = 0; i < allLores.Length; i++)
@@ -48,6 +49,9 @@ public class OpenLoreImage : MonoBehaviour
             }
 
             gameObject.SetActive(false);
+
+        }
+        
 
         
     }

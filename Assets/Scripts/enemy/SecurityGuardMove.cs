@@ -8,32 +8,58 @@ public class SecurityGuardMove : MonoBehaviour
     public float moveSpeed;
 
     public int patrolDestination;
+    public bool reachedclue;
 
     [SerializeField] SpriteRenderer SpriteRenderer;
+    [SerializeField] AudioSource walking;
+    [SerializeField] GameObject dialogue;
+    [SerializeField] GameObject trigger;
+
     public Animator animator;
+    Rigidbody rb;
 
-
+    
     public bool isWaiting = false;
 
     [SerializeField] private Collider2D myCollider;
     private Transform Player;
     private BoxCollider2D playerCollider;
 
+
     private void Start()
     {
+        rb = gameObject.GetComponent<Rigidbody>();
         if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform; if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform;
         playerCollider = Player.gameObject.GetComponent<BoxCollider2D>();
     }
     void Update()
     {
 
+        if (reachedclue && trigger.activeInHierarchy)
+        {
+            isWaiting = true;
+        }
+        else if (reachedclue && !trigger.activeInHierarchy)
+        {
+            reachedclue = false;
+            isWaiting = false;
+        }
+        
+        
+
         if (isWaiting)
         {
             animator.SetBool("isWalking", false);
+            walking.Stop();
         }
 
         if (!isWaiting)
         {
+            if (!walking.isPlaying)
+            {
+                walking.Play();
+            }
+
             animator.SetBool("isWalking", true);
 
             if (patrolDestination == 0)

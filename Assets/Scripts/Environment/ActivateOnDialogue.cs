@@ -5,12 +5,15 @@ using UnityEngine;
 public class ActivateOnDialogue : MonoBehaviour
 {
     EventDialogue dialogueScript;
+    SecurityGuardMove move;
+    [SerializeField] GameObject Guard;
     [SerializeField] GameObject setActive;
     [SerializeField] int index;
     // Start is called before the first frame update
 
     private void Awake()
     {
+        move = Guard.GetComponent<SecurityGuardMove>();
         dialogueScript = gameObject.GetComponent<EventDialogue>();
     }
 
@@ -26,5 +29,14 @@ public class ActivateOnDialogue : MonoBehaviour
         {
             setActive.SetActive(true);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            move.reachedclue = true;
+        }
+        
     }
 }
