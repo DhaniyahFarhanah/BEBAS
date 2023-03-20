@@ -34,12 +34,12 @@ public class JumpscareTrigger : MonoBehaviour
 
     IEnumerator PlayJumpscare()
     {
-        yield return new WaitForSeconds(0.5f);
         Jumpscare.SetActive(true);
         JumpscareAnimator.SetInteger("Type", 3);
         JumpscareAnimator.SetBool("Death", false);
         yield return new WaitForSeconds(1f);
         Jumpscare.SetActive(false);
         JumpscareHud.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
