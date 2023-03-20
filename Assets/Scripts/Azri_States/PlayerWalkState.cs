@@ -5,7 +5,6 @@ public class PlayerWalkState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I am walking");
-        player.walkingSound.Play();
         player.animator.SetBool("Moving", true);
 
     }

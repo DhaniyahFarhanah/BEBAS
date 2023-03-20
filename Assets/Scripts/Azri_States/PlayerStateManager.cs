@@ -21,6 +21,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject npcDialogue;
 
+
     public PlayerManager PManager;
 
     public float charSpeed;
@@ -30,7 +31,13 @@ public class PlayerStateManager : MonoBehaviour
     public Animator animator;
 
     //audio
-    public AudioSource walkingSound; 
+    public AudioClip runAudio;
+    public AudioClip walkingSoundClip;
+    public AudioClip crouchSoundClip;
+    public AudioClip breathingHeavy;
+    public AudioClip closeEyes;
+    public AudioSource walkingSound;
+    public AudioSource breathingSound;
 
     public Sprite idle;
     public Sprite walking;
@@ -54,13 +61,10 @@ public class PlayerStateManager : MonoBehaviour
     public bool isDead;
     public bool isInVent;
 
-    private AudioSource audioSource;
-    [SerializeField] private AudioClip walkingSoundClip;
-    [SerializeField] private bool stopAudioSource;
 
     private void Awake()
     {
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+
     }
 
     void Start()
@@ -77,6 +81,18 @@ public class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if walking, play walking sound
+        if(charSpeed > 0)
+        {
+            if (!walkingSound.isPlaying)
+            {
+                walkingSound.Play();
+            }
+        }
+        else
+        {
+            walkingSound.Stop();
+        }
 
         if (dialogueBox.activeInHierarchy || loreOverlay.activeInHierarchy || npcDialogue.activeInHierarchy)
         {
@@ -214,10 +230,12 @@ public class PlayerStateManager : MonoBehaviour
                 if (isRun)
                 {
                     charSpeed = 12f;
+                    walkingSound.clip = runAudio;
                 }
                 else
                 {
                     charSpeed = 4.5f;
+                    walkingSound.clip = walkingSoundClip;
                 }
                 break;
 
@@ -239,6 +257,7 @@ public class PlayerStateManager : MonoBehaviour
                 else
                 {
                     charSpeed = 3f;
+                    //walkingSound.clip = crouchSoundClip;
                 }
 
 

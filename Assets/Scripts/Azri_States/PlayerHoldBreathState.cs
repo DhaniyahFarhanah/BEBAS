@@ -5,14 +5,7 @@ public class PlayerHoldBreathState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I can't breath");
-        if (player.input != 0)
-        {
-            player.walkingSound.Play();
-        }
-        else
-        {
-            player.walkingSound.Stop();
-        }
+       
     }
 
     public override void UpdateState(PlayerStateManager player)

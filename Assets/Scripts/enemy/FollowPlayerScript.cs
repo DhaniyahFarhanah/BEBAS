@@ -20,6 +20,7 @@ public class FollowPlayerScript : MonoBehaviour
     Transform playerTransform;
     Rigidbody2D rb;
     BoxCollider2D killSensor;
+    PlayerStateManager state;
 
 
     private Vector3 startPos;
@@ -30,6 +31,7 @@ public class FollowPlayerScript : MonoBehaviour
         killSensor = gameObject.GetComponent<BoxCollider2D>();
         playerTransform = player.GetComponent<Transform>();
         animator = gameObject.GetComponent<Animator>();
+        state = player.GetComponent<PlayerStateManager>();
     }
     void Start()
     {
@@ -60,6 +62,7 @@ public class FollowPlayerScript : MonoBehaviour
                 shacklesound.Play();
             }
         }
+        
         else
         {
             shacklesound.Stop();
@@ -96,7 +99,8 @@ public class FollowPlayerScript : MonoBehaviour
 
         if (isKilled)
         {
-            StopAllCoroutines();
+            //StopAllCoroutines();
+            isWaiting = true;
         }
        
     }
@@ -116,7 +120,7 @@ public class FollowPlayerScript : MonoBehaviour
             rb.velocity = new Vector2(-moveSpeed, 0);
         }
 
-        if (transform.position.x == playerTransform.position.x)
+        if (state.currentState == state.deadState)
         {
             isKilled = true;
             rb.velocity = Vector2.zero;
@@ -131,6 +135,7 @@ public class FollowPlayerScript : MonoBehaviour
         //play anim of revival here
         ChasePlayer();
         isWaiting = false;
+        isKilled = false;
     }
 
     
