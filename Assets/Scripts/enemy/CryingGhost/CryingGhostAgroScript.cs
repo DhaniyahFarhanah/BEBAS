@@ -16,6 +16,9 @@ public class CryingGhostAgroScript : MonoBehaviour
     [SerializeField] GameObject agroBounds;
     [SerializeField] GameObject panicAfter;
 
+    [SerializeField] AudioSource cryingSound;
+    [SerializeField] AudioSource agroSound;
+
     [SerializeField] Animator ghostanimator;
 
     [SerializeField]
@@ -48,6 +51,10 @@ public class CryingGhostAgroScript : MonoBehaviour
     {
         if (FirstSpawn)
         {
+            if (!cryingSound.isPlaying)
+            {
+                cryingSound.Play();
+            }
             StartCoroutine(FirstSpawnAgro());
         }
         //distance to player
@@ -84,6 +91,12 @@ public class CryingGhostAgroScript : MonoBehaviour
 
     void killPlayer()
     {
+
+        cryingSound.Stop();
+        if (!agroSound.isPlaying)
+        {
+            agroSound.Play();
+        }
         ghostanimator.SetBool("isAgro", false);
         //move to player
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, agroSpeed * Time.deltaTime);
@@ -112,6 +125,12 @@ public class CryingGhostAgroScript : MonoBehaviour
 
     void Walk()
     {
+        agroSound.Stop();
+        if (!cryingSound.isPlaying)
+        {
+            cryingSound.Play();
+        }
+
         ghostanimator.SetBool("isAgro", true) ;
         killer.enabled = true;
 
@@ -148,12 +167,19 @@ public class CryingGhostAgroScript : MonoBehaviour
     IEnumerator FirstSpawnAgro()
     {
         killer.enabled = false;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         Debug.Log("You better hold your breath now");
 
 
-        if(playerStateManager.currentState != playerStateManager.breathState)
+        if (playerStateManager.currentState != playerStateManager.breathState)
         {
+            
+            cryingSound.Stop();
+            if (!agroSound.isPlaying)
+            {
+                agroSound.Play();
+            }
+            yield return new WaitForSeconds(2f);
             killer.enabled = true;
             killPlayer();
             FirstSpawn = false;
