@@ -242,7 +242,7 @@ public class NpcDialogue : MonoBehaviour
             playerIsClose = false;
             Z.SetActive(false);
             Debug.Log("Player is out of range");
-            zeroText();
+            dialogueText.text = "";
         }
     }
 

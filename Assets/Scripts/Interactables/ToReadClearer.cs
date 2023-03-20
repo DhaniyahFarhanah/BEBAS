@@ -14,11 +14,11 @@ public class ToReadClearer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) && !overlay.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Space) && !overlay.activeInHierarchy)
         {
             overlay.SetActive(true);
         }
-        else if(Input.GetKeyDown(KeyCode.Tab) && overlay.activeInHierarchy)
+        else if(Input.GetKeyDown(KeyCode.Space) && overlay.activeInHierarchy)
         {
             overlay.SetActive(false);
         }
