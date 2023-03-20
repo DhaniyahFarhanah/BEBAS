@@ -11,6 +11,8 @@ public class FollowPlayerScript : MonoBehaviour
     [SerializeField] GameObject AgroInWard;
 
     [SerializeField] bool isWaiting;
+    [SerializeField] AudioSource shacklesound;
+    [SerializeField] AudioSource rawrXD;
     public bool AzriInWard;
     public bool isKilled;
 
@@ -31,6 +33,7 @@ public class FollowPlayerScript : MonoBehaviour
     }
     void Start()
     {
+        rawrXD.Play();
         isWaiting = true;
         AzriInWard = false;
         startPos = transform.position;
@@ -50,6 +53,18 @@ public class FollowPlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(rb.velocity == new Vector2(-moveSpeed, 0))
+        {
+            if (!shacklesound.isPlaying)
+            {
+                shacklesound.Play();
+            }
+        }
+        else
+        {
+            shacklesound.Stop();
+        }
+
         if (isWaiting)
         {
             killSensor.enabled = false;

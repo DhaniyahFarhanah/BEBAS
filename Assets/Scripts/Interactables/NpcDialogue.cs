@@ -9,6 +9,7 @@ public class NpcDialogue : MonoBehaviour
     public Image showcase;
     public GameObject gameObj;
     public TMP_Text dialogueText;
+    [SerializeField] bool doneTalk;
     [SerializeField] GameObject Z;
     [SerializeField] TMP_Text nameTextBox;
     [SerializeField] Image dialogueBoxImage;
@@ -81,8 +82,13 @@ public class NpcDialogue : MonoBehaviour
     {
         SkipLine();
         PlayTalkingSound();
+
+        if (doneTalk)
+        {
+            Z.SetActive(false);
+        }
      
-        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused && !doneTalk)
         {
             Debug.Log("Interact");
             Z.GetComponent<PlayAudio>().Play();
@@ -116,7 +122,7 @@ public class NpcDialogue : MonoBehaviour
         index = 0;
         start = true;
         dialoguePanel.SetActive(false);
-
+        doneTalk = true;
         gameObj.SetActive(SetActiveAfterFinished);
 
     }
