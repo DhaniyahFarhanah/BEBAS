@@ -413,6 +413,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGM
       objectReference: {fileID: 0}
+    - target: {fileID: 6726235520931724978, guid: 5f43d9edb0e334777a967a1c26e7a9e9, type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6726235520931724978, guid: 5f43d9edb0e334777a967a1c26e7a9e9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 821c45c5f0176574eb114647465116ea, type: 3}
     - target: {fileID: 6726235520931724979, guid: 5f43d9edb0e334777a967a1c26e7a9e9, type: 3}
       propertyPath: m_RootOrder
       value: 3
