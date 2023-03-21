@@ -15978,7 +15978,7 @@ MonoBehaviour:
   m_text: 'WARNING:
 
 
-    DON''T LOOK UP'
+    DON''T LOOK UP. JUST CROUCH.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a0b756063109a414087867a4e5e03340, type: 2}
   m_sharedMaterial: {fileID: -8668283257443211166, guid: a0b756063109a414087867a4e5e03340, type: 2}
