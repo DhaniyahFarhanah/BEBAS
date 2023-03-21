@@ -1895,7 +1895,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1526692552}
   - {fileID: 708823881}
-  waitTime: 2
+  waitTime: 5
 --- !u!212 &63706151
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15365,7 +15365,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1972217374}
   - {fileID: 369346035}
-  waitTime: 2
+  waitTime: 5
 --- !u!212 &392954840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20909,7 +20909,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1178833310}
   - {fileID: 363619080}
-  waitTime: 1
+  waitTime: 5
 --- !u!212 &527229039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60402,7 +60402,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 253771071}
   - {fileID: 1647650795}
-  waitTime: 2
+  waitTime: 5
 --- !u!212 &1257483113
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66181,7 +66181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: R U N
+  m_text: '< ----- R U N '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -88456,7 +88456,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1357824781}
   - {fileID: 451906084}
-  waitTime: 2
+  waitTime: 5
 --- !u!212 &1842368746
 SpriteRenderer:
   m_ObjectHideFlags: 0
