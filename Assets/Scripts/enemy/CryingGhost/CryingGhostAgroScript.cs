@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class CryingGhostAgroScript : MonoBehaviour
@@ -15,6 +16,7 @@ public class CryingGhostAgroScript : MonoBehaviour
 
     [SerializeField] GameObject agroBounds;
     [SerializeField] GameObject panicAfter;
+    [SerializeField] GameObject dialogueBox;
 
     [SerializeField] AudioSource cryingSound;
     [SerializeField] AudioSource agroSound;
@@ -26,7 +28,7 @@ public class CryingGhostAgroScript : MonoBehaviour
     [SerializeField] int curWayPointIndex;
 
     Rigidbody2D rb2d;
-    CheckAgroRange checkAgro;
+    CheckAgroCryingScript checkAgro;
     BoxCollider2D killer;
     PlayerStateManager playerStateManager;
     SpriteRenderer SpriteRenderer;
@@ -36,7 +38,7 @@ public class CryingGhostAgroScript : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         playerStateManager = player.GetComponent<PlayerStateManager>();
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        checkAgro = agroBounds.GetComponent<CheckAgroRange>();
+        checkAgro = agroBounds.GetComponent<CheckAgroCryingScript>();
         killer = gameObject.GetComponent<BoxCollider2D>();
 
     }
@@ -49,6 +51,11 @@ public class CryingGhostAgroScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialogueBox.activeInHierarchy)
+        {
+            transform.position = transform.position;
+        }
+
         if (FirstSpawn)
         {
             if (!cryingSound.isPlaying)
@@ -61,13 +68,8 @@ public class CryingGhostAgroScript : MonoBehaviour
         float dist2player = Vector2.Distance(transform.position, player.transform.position);
 
         //the amount of conditition is longer than my will to live
-        if(dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && checkAgro.canAgro && checkAgro.noImmediateKill && !FirstSpawn &&  playerStateManager.currentState != playerStateManager.deadState)
+        if(dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn &&  playerStateManager.currentState != playerStateManager.deadState)
         {
-            if (!killer.isActiveAndEnabled)
-            {
-                killer.enabled = true;
-            }
-
             
             killPlayer();
         }
@@ -97,6 +99,9 @@ public class CryingGhostAgroScript : MonoBehaviour
         {
             agroSound.Play();
         }
+
+        killer.enabled = true;
+
         ghostanimator.SetBool("isAgro", false);
         //move to player
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, agroSpeed * Time.deltaTime);
@@ -131,13 +136,10 @@ public class CryingGhostAgroScript : MonoBehaviour
             cryingSound.Play();
         }
 
-        ghostanimator.SetBool("isAgro", true) ;
-        killer.enabled = true;
+        ghostanimator.SetBool("isAgro", true);
 
-        if (!checkAgro.noImmediateKill)
-        {
-            killer.enabled = false;
-        }
+        killer.enabled = false;
+
         // Constantly move AI to wayPoints[curWayPointIndex]
         transform.position = Vector2.MoveTowards(transform.position, waypoints[curWayPointIndex].position, moveSpeed * Time.deltaTime);
 
@@ -181,7 +183,6 @@ public class CryingGhostAgroScript : MonoBehaviour
             }
             yield return new WaitForSeconds(2f);
             killer.enabled = true;
-            killPlayer();
             FirstSpawn = false;
         }
         else

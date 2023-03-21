@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,10 +35,14 @@ public class PlayerStateManager : MonoBehaviour
     public AudioClip runAudio;
     public AudioClip walkingSoundClip;
     public AudioClip crouchSoundClip;
-    public AudioClip breathingHeavy;
-    public AudioClip closeEyes;
+    public AudioClip fastPant;
+
     public AudioSource walkingSound;
+    public AudioSource closeEyesAmbience;
     public AudioSource breathingSound;
+    public AudioSource outofbreathSound;
+    public AudioSource recoveringbreathSound;
+    public AudioSource heartbeatSound;
 
     public Sprite idle;
     public Sprite walking;
@@ -151,10 +156,23 @@ public class PlayerStateManager : MonoBehaviour
         if(remainingTime < 3f)
         {
             timerBar.color = new Color(255, 0, 0);
+            if (!outofbreathSound.isPlaying)
+            {
+                outofbreathSound.Play();
+            }
+
+            if (breathingSound.isPlaying)
+            {
+                breathingSound.Stop();
+            }
+
         }
         else
         {
             timerBar.color = new Color(255, 255, 255);
+            outofbreathSound.Stop();
+            
+
         }
 
         if (remainingTime > 0 && Input.GetKey(KeyCode.Space) && currentState == breathState)
@@ -219,6 +237,9 @@ public class PlayerStateManager : MonoBehaviour
                 //    audioSource.Stop();
                 //}
                 //audioSource.PlayOneShot(walkingSoundClip);
+                //audio
+                closeEyesAmbience.Stop();
+                heartbeatSound.Stop();
 
                 //code
                 darkness.SetActive(false);
@@ -229,19 +250,24 @@ public class PlayerStateManager : MonoBehaviour
                 
                 if (isRun)
                 {
+                    breathingSound.clip = fastPant;
+                    breathingSound.Play();
                     charSpeed = 12f;
                     walkingSound.clip = runAudio;
                 }
                 else
                 {
+                    breathingSound.Stop();
                     charSpeed = 4.5f;
                     walkingSound.clip = walkingSoundClip;
                 }
                 break;
 
             case PlayerCrouchState:
-                //anim states
-               
+                //audio
+                closeEyesAmbience.Stop();
+                heartbeatSound.Stop();
+                breathingSound.Stop();
 
                 //code
                 darkness.SetActive(false);
@@ -264,7 +290,11 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerHoldBreathState:
-                //anim states
+                //audio
+                closeEyesAmbience.Stop();
+                heartbeatSound.Stop();
+                breathingSound.Play();
+                
 
                 //code
                 darkness.SetActive(false);
@@ -285,7 +315,11 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerEyesState:
-                //anim states
+                //audio
+                closeEyesAmbience.Play();
+                heartbeatSound.Play();
+                breathingSound.Play();
+
 
                 //code
                 crouchCollider.enabled = false;
@@ -309,7 +343,11 @@ public class PlayerStateManager : MonoBehaviour
 
             case PlayerIdleState:
                 //anim states
-                //code
+                //audio
+                closeEyesAmbience.Stop();
+                heartbeatSound.Stop();
+                breathingSound.Stop();
+
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;
@@ -318,6 +356,12 @@ public class PlayerStateManager : MonoBehaviour
                 break;
 
             case PlayerDeadState:
+                //audio
+                closeEyesAmbience.Stop();
+                heartbeatSound.Stop();
+                breathingSound.Stop();
+                walkingSound.Stop();
+
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
                 standingCollider.enabled = true;

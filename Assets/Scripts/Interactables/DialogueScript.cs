@@ -17,7 +17,9 @@ public class DialogueScript : MonoBehaviour
     public BoxCollider2D boxCollider;
     public SpriteRenderer spriteRenderer;
 
-
+    //this is for pick up audio
+    [SerializeField] bool HasItemAudio;
+    [SerializeField] AudioSource bagAudio;
     GameObject player;
 
     // Azri reactions
@@ -55,12 +57,11 @@ public class DialogueScript : MonoBehaviour
     void Update()
     {
 
-
         SkipLine();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
-            Debug.Log("Interact");
             Z.GetComponent<PlayAudio>().Play();
+            Debug.Log("Interact");
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
@@ -97,6 +98,10 @@ public class DialogueScript : MonoBehaviour
         index = 0;
         start = true;
         AzriPreview.sprite = AzriDefault;
+        if (pickUp)
+        {
+            bagAudio.Play();
+        }
         dialoguePanel.SetActive(false);
     }
 
@@ -160,6 +165,7 @@ public class DialogueScript : MonoBehaviour
             Z.SetActive(true);
             display.sprite = newImage;
             player = interact.gameObject;
+
                        
             Debug.Log("Player is in range");
         }
@@ -172,7 +178,7 @@ public class DialogueScript : MonoBehaviour
             playerIsClose = false;
             Debug.Log("Player is out of range");
             Z.SetActive(false);
-            zeroText();
+            dialogueText.text = "";
         }
     }
 
