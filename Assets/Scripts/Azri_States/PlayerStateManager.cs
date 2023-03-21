@@ -21,6 +21,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject loreOverlay;
     public GameObject gameOverScreen;
     public GameObject npcDialogue;
+    public GameObject checkWard;
 
 
     public PlayerManager PManager;
@@ -33,7 +34,8 @@ public class PlayerStateManager : MonoBehaviour
 
     //audio
     public AudioClip runAudio;
-    public AudioClip walkingSoundClip;
+    public AudioClip OutdoorWalkClip;
+    public AudioClip IndoorWalkClip;
     public AudioClip crouchSoundClip;
     public AudioClip fastPant;
 
@@ -66,10 +68,12 @@ public class PlayerStateManager : MonoBehaviour
     public bool isDead;
     public bool isInVent;
 
+    CheckAgroCryingScript checkAgroCryingScript;
+
 
     private void Awake()
     {
-
+        checkAgroCryingScript = checkWard.GetComponent<CheckAgroCryingScript>();
     }
 
     void Start()
@@ -86,6 +90,7 @@ public class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         //if walking, play walking sound
         if(charSpeed > 0)
         {
@@ -257,9 +262,16 @@ public class PlayerStateManager : MonoBehaviour
                 }
                 else
                 {
+                    if (checkAgroCryingScript.inWard)
+                    {
+                        walkingSound.clip = IndoorWalkClip;
+                    }
+                    else
+                    {
+                        walkingSound.clip = OutdoorWalkClip;
+                    }
                     breathingSound.Stop();
                     charSpeed = 4.5f;
-                    walkingSound.clip = walkingSoundClip;
                 }
                 break;
 

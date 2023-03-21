@@ -6,6 +6,7 @@ public class CheckAgroCryingScript : MonoBehaviour
 {
 
     public bool justEntered = true;
+    public bool inWard;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class CheckAgroCryingScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            inWard = true;
             justEntered = true;
             StartCoroutine(waitforkill());
         }

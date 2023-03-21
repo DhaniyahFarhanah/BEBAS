@@ -7,6 +7,8 @@ public class PlayOnStart : MonoBehaviour
     [SerializeField] AudioSource audio;
     [SerializeField] GameObject objToPlaySound;
     [SerializeField] bool stopWhenInactive;
+
+    bool PlayOnce;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +18,10 @@ public class PlayOnStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (objToPlaySound.activeInHierarchy)
+        if (objToPlaySound.activeInHierarchy && !PlayOnce)
         {
             audio.Play();
+            PlayOnce = true;
         }
 
         if (stopWhenInactive)

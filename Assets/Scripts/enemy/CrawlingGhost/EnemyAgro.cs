@@ -20,10 +20,17 @@ public class EnemyAgro : MonoBehaviour
     CheckAgroRange checkAgroRange;
     PlayerManager setCheckpoint;
 
+    //Audio shit
+    [SerializeField] AudioSource AgroSound;
+    [SerializeField] AudioSource GroaningSound;
+    [SerializeField] AudioSource MovementSound;
+
     [SerializeField] GameObject playerManager;
     [SerializeField] GameObject gameOver;
     [SerializeField] GameObject checkAgro;
     [SerializeField] public GameObject playerGO;
+
+    bool playOnce;
 
     public GameObject[] Waypoints;
     public int[] index; //index for ghost states
@@ -102,6 +109,14 @@ public class EnemyAgro : MonoBehaviour
 
             if (triggerAgro == true)
             {
+                if (!GroaningSound.isPlaying)
+                {
+                    GroaningSound.Play();
+                }
+                if (!MovementSound.isPlaying)
+                {
+                    MovementSound.Play();
+                }
                 WalkOnWall();
                 KillCheck();
             }
@@ -204,6 +219,12 @@ public class EnemyAgro : MonoBehaviour
 
     IEnumerator WaitForCrawl()
     {
+        if (!playOnce)
+        {
+            AgroSound.Play();
+            playOnce = true;
+        }
+        
         anim.SetTrigger("Agro");
         yield return new WaitForSeconds(0.5f);
         triggerAgro = true;

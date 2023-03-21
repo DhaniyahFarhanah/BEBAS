@@ -50,6 +50,8 @@ public class DoorEnterScript : MonoBehaviour
 
     void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.W) && checkEnter == true && !playerTalking.isTalking)
         {
             if (endGame)
@@ -92,7 +94,12 @@ public class DoorEnterScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            doorSound.Play();
+
+            if (this.isActiveAndEnabled)
+            {
+                doorSound.Play();
+            }
+
             checkEnter = true;
 
         }
@@ -121,8 +128,13 @@ public class DoorEnterScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if (this.isActiveAndEnabled)
+            {
+                doorCloseSound.Play();
+            }
+
             checkEnter = false;
-            doorCloseSound.Play();
+            
         }
     }
 

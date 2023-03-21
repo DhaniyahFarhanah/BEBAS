@@ -10,7 +10,7 @@ public class FingerDoorCheck : MonoBehaviour
     PlayerCheckPickUpFinger fingerCount;
     DoorEnterScript door;
     InstructionScript W;
-    [SerializeField] bool isLocked;
+    public bool isLocked;
 
     // Start is called before the first frame update
     private void Awake()

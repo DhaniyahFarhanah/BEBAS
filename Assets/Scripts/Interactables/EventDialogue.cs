@@ -29,6 +29,7 @@ public class EventDialogue : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
     public bool hasAudioTrigger;
+    bool audioPlayOnce;
 
     pausemenu pause;
 
@@ -174,9 +175,10 @@ public class EventDialogue : MonoBehaviour
                 
             }
 
-            if (hasAudioTrigger)
+            if (hasAudioTrigger && ! audioPlayOnce)
             {
                 triggerAudio.Play();
+                audioPlayOnce = true;
             }
 
         }
