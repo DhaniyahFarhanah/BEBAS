@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 1952616089}
   wayPoints:
   - {fileID: 1526692552}
@@ -15242,7 +15242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 1293693719}
   wayPoints:
   - {fileID: 1972217374}
@@ -19665,7 +19665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 1963624990}
   wayPoints:
   - {fileID: 1696585267}
@@ -20786,12 +20786,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 956702091}
   wayPoints:
   - {fileID: 1178833310}
   - {fileID: 363619080}
-  waitTime: 2
+  waitTime: 1
 --- !u!212 &527229039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59236,7 +59236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 1921176400}
   wayPoints:
   - {fileID: 2123450265}
@@ -60279,7 +60279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 715306650}
   wayPoints:
   - {fileID: 253771071}
@@ -87015,7 +87015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 1068244}
   wayPoints:
   - {fileID: 1556108123}
@@ -88333,7 +88333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c3f7e3aa7667140a1ee3190300e6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 35
   path: {fileID: 223673200}
   wayPoints:
   - {fileID: 1357824781}
