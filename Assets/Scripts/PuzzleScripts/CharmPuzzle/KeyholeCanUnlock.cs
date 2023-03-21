@@ -18,17 +18,23 @@ public class KeyholeCanUnlock : MonoBehaviour
     [SerializeField] Sprite KeyisInside;
     [SerializeField] Sprite KeyTurn;
     [SerializeField] GameObject DoorOpen;
-    
+
+    bool playOnce;
+    bool playOnceTurn;
+    bool doorOpenPlayOnce;
     Image keyhole;
     bool eyeshow;
 
     [SerializeField] int clickIndex;
     [SerializeField] private AudioSource keyIn;
     [SerializeField] private AudioSource keyTurn;
+    [SerializeField] AudioSource doorOpen;
     void Start()
     {
         keyhole = GetComponent<Image>();
         eyeshow = false;
+        playOnce = false;
+        playOnceTurn = false;
     }
 
     // Update is called once per frame
@@ -46,7 +52,12 @@ public class KeyholeCanUnlock : MonoBehaviour
         if (clickIndex == 1)
         {
             //key inside
-            keyIn.Play();
+            if (!keyIn.isPlaying && !playOnce)
+            {
+                keyIn.Play();
+                playOnce = true;
+            }
+         
             keyhole.sprite = KeyisInside;
 
             
@@ -56,7 +67,12 @@ public class KeyholeCanUnlock : MonoBehaviour
         {
             //unlockDoor
             keyhole.sprite = KeyTurn;
-            keyTurn.Play();
+            if (!keyTurn.isPlaying && !playOnceTurn)
+            {
+                keyTurn.Play();
+                playOnceTurn = true;
+            }
+            
             StartCoroutine(UnlockDoor());
         }
     }
@@ -89,6 +105,12 @@ public class KeyholeCanUnlock : MonoBehaviour
     IEnumerator UnlockDoor()
     {
         keyhole.sprite = KeyTurn;
+        if (!doorOpenPlayOnce)
+        {
+            doorOpen.Play();
+            doorOpenPlayOnce = true;
+        }
+        
         yield return new WaitForSeconds(1f);
         DoorOpen.SetActive(true);
         yield return new WaitForSeconds(1f);

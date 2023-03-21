@@ -14,12 +14,18 @@ public class DoorEnterScript : MonoBehaviour
     [SerializeField] bool endGame;
 
     [SerializeField] AudioSource doorOpenSound;
+    [SerializeField] AudioSource doorCloseSound;
+    [SerializeField] AudioSource doorSound;
+    [SerializeField] SpriteRenderer sr;
+    [SerializeField] Sprite opendoor;
+    [SerializeField] Sprite closeDoor;
 
     [SerializeField] GameObject DoorOverlay;
 
     PlayerStateManager playerTalking;
     Animator animator;
     Transform player;
+
 
     public float x;
     public float y;
@@ -66,6 +72,19 @@ public class DoorEnterScript : MonoBehaviour
 
             }
         }
+
+        if (checkEnter)
+        {
+            sr.sprite = opendoor;
+            
+        }
+        else
+        {
+            sr.sprite = closeDoor;
+            doorSound.Stop();
+            
+        }
+        
     }
 
 
@@ -73,7 +92,7 @@ public class DoorEnterScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-
+            doorSound.Play();
             checkEnter = true;
 
         }
@@ -103,6 +122,7 @@ public class DoorEnterScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             checkEnter = false;
+            doorCloseSound.Play();
         }
     }
 
