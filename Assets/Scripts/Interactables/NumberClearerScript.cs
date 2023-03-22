@@ -7,6 +7,7 @@ public class NumberClearerScript : MonoBehaviour
     SpriteRenderer sr;
     [SerializeField] Sprite Outline;
     [SerializeField] Sprite NoOutline;
+    [SerializeField] GameObject safeDone;
     private void Awake()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
@@ -24,7 +25,10 @@ public class NumberClearerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        sr.sprite = Outline;
+        if (!safeDone.activeInHierarchy)
+        {
+            sr.sprite = Outline;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
