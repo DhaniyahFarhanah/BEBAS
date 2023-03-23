@@ -5793,8 +5793,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1010005757
-  m_SortingLayer: 10
+  m_SortingLayerID: 375073371
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 527549127, guid: 66cebabce3e0315488dd3abfe415cb3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21359,6 +21359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchOn: {fileID: 1595580890}
   SwitchOff: {fileID: 929449312}
+  fuseBox: {fileID: 914814052}
   Light: {fileID: 1380858806}
   LightOn: {fileID: -675233068, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
   LightOff: {fileID: 419883402, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
@@ -32052,7 +32053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.1, y: -12.4, z: 0}
+  m_LocalPosition: {x: -1.6, y: 23.2, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -43602,6 +43603,7 @@ MonoBehaviour:
   Switch4_On: 0
   anim: {fileID: 914814058}
   lightsOn: 0
+  isCorrect: 0
   statusBar: {fileID: 275174482}
   correctValue: 80
   enteredValue: 0
@@ -59036,6 +59038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchOn: {fileID: 858459955}
   SwitchOff: {fileID: 959806910}
+  fuseBox: {fileID: 914814052}
   Light: {fileID: 1023242758}
   LightOn: {fileID: -675233068, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
   LightOff: {fileID: 419883402, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
@@ -60414,6 +60417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchOn: {fileID: 746701012}
   SwitchOff: {fileID: 2096906679}
+  fuseBox: {fileID: 914814052}
   Light: {fileID: 1641996201}
   LightOn: {fileID: -675233068, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
   LightOff: {fileID: 419883402, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
@@ -68574,6 +68578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchOn: {fileID: 1663133360}
   SwitchOff: {fileID: 1090820388}
+  fuseBox: {fileID: 914814052}
   Light: {fileID: 1600887433}
   LightOn: {fileID: -675233068, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}
   LightOff: {fileID: 419883402, guid: fae1a6b5c4ee0f5499638a51b3010a9c, type: 3}

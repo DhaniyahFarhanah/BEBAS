@@ -7,6 +7,7 @@ public class SwitchChangeScript : MonoBehaviour
 {
     [SerializeField] GameObject SwitchOn;
     [SerializeField] GameObject SwitchOff;
+    [SerializeField] GameObject fuseBox;
 
     [SerializeField] Image Light;
 
@@ -17,6 +18,11 @@ public class SwitchChangeScript : MonoBehaviour
 
     public bool OnOff;
 
+    FuseBoxPuzzleScript disable;
+    private void Awake()
+    {
+        disable = fuseBox.GetComponent<FuseBoxPuzzleScript>();
+    }
     void Start()
     {
     
@@ -38,18 +44,26 @@ public class SwitchChangeScript : MonoBehaviour
 
     public void IsOn()
     {
-        OnOff = false;
-        SwitchSound.Play();
-        SwitchOff.SetActive(true);
-        SwitchOn.SetActive(false);
+        if (!disable.isCorrect)
+        {
+            OnOff = false;
+            SwitchSound.Play();
+            SwitchOff.SetActive(true);
+            SwitchOn.SetActive(false);
+
+        }
     }
 
     public void IsOff()
     {
-        OnOff = true;
-        SwitchSound.Play();
-        SwitchOff.SetActive(false);
-        SwitchOn.SetActive(true);
+        if (!disable.isCorrect)
+        {
+            OnOff = true;
+            SwitchSound.Play();
+            SwitchOff.SetActive(false);
+            SwitchOn.SetActive(true);
+
+        }
         
     }
 }

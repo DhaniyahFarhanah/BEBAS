@@ -38,6 +38,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     [SerializeField] Animator anim;
 
     public bool lightsOn;
+    public bool isCorrect;
 
     [SerializeField] Image statusBar;
 
@@ -90,6 +91,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
         if (enteredValue == correctValue)
         {
             lightsOn = true;
+            isCorrect = true;
             StartCoroutine(LightsOn());
             Door1.SetActive(true);
             Door2.SetActive(true);
