@@ -12,8 +12,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] GameObject surePanel;
     [SerializeField] GameObject menuPanel;
     [SerializeField] GameObject quitPanel;
-    [SerializeField] GameObject jumpscareHUD;
-    [SerializeField] Animator Jumpscareanimator;
+    [SerializeField] GameObject JumpscareGO;
+
+    PlayJumpscareOnDeath jumpscare;
 
     public bool death;
     public int integer;
@@ -27,6 +28,7 @@ public class PlayerManager : MonoBehaviour
     public static event Action RestartAtCheckPoint;
     private void Awake()
     {
+        jumpscare = JumpscareGO.GetComponent<PlayJumpscareOnDeath>();
         isGameOver = false; //game is not over by default
         playerState = player.GetComponent<PlayerStateManager>();
     }
@@ -44,18 +46,15 @@ public class PlayerManager : MonoBehaviour
     {
         if (isGameOver == true)
         {
-
-            jumpscareHUD.SetActive(true);
-            Jumpscareanimator.SetBool("Death", death);
-            Jumpscareanimator.SetInteger("Type", integer);
-            StartCoroutine(Jumpscare());
-
+            JumpscareGO.SetActive(true);
+            playerState.currentState = playerState.deadState;
+            playerState.SwitchState(playerState.deadState);
+            jumpscare.PlayDeathAnim();
+            isGameOver = false;
+            
 
         }
-        else
-        {
-            gameOverScreen.SetActive(false);
-        }
+        
     }
 
     public void OpenSurePanel()
@@ -87,7 +86,6 @@ public class PlayerManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         playerState.SwitchState(playerState.idleState);
-        jumpscareHUD.SetActive(false);
         isGameOver = false;
     }
 
@@ -95,17 +93,15 @@ public class PlayerManager : MonoBehaviour
     {
         player.SetActive(true);
         player.transform.position = new Vector3(checkpointX, checkpointY, checkpointZ);
-        isGameOver = false;
         playerState.SwitchState(playerState.idleState);
 
+        playerState.currentState = playerState.idleState;
+        playerState.SwitchState(playerState.idleState);
+        JumpscareGO.SetActive(false);
+        gameOverScreen.SetActive(false);
+
         // calls an event that the player has restarted to the checkpoint;
+        isGameOver = false;
         RestartAtCheckPoint?.Invoke();
-    }
-    IEnumerator Jumpscare()
-    {
-        yield return null;
-        jumpscareHUD.SetActive(false);
-        playerState.SwitchState(playerState.deadState);
-        gameOverScreen.SetActive(true); //game over screen will show up when game is over
     }
 }

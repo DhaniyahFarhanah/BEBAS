@@ -11,6 +11,8 @@ public class PlayerIdleState : PlayerBaseState
 
         Debug.Log("Ayo I'm standing still");
         player.animator.SetBool("Idle", true);
+        player.animator.SetBool("Moving", false);
+        player.animator.SetFloat("Speed", 0);
 
     }
 

@@ -146,12 +146,12 @@ public class PlayerStateManager : MonoBehaviour
 
             input = Input.GetAxisRaw("Horizontal");
 
-            if (input < 0)
+            if (input < 0 && currentState != deadState)
             {
                 
                 spriteRenderer.flipX = true;
             }
-            else if (input > 0)
+            else if (input > 0 && currentState != deadState)
             {
                
 
@@ -384,7 +384,7 @@ public class PlayerStateManager : MonoBehaviour
 
                 darkness.SetActive(false);
                 crouchCollider.enabled = false;
-                standingCollider.enabled = true;
+                standingCollider.enabled = false;
                 break;
 
 

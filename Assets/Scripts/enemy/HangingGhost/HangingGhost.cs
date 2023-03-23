@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HangingGhost : MonoBehaviour
 {
-    [SerializeField] GameObject gameOver;
     [SerializeField] AudioSource ropeAudio;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class HangingGhost : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             
-            gameOver.SetActive(true);
             Debug.Log("Death");   
             
         }
