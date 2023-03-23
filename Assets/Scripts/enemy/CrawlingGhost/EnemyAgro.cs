@@ -193,14 +193,9 @@ public class EnemyAgro : MonoBehaviour
 
             if (transform.position == player.transform.position)
             {
-                playerState.SwitchState(playerState.deadState);
-
                 //play anim kill
-
-                gameOver.SetActive(true);
-                
-                
-
+                PlayerManager.isGameOver = true;
+                playerGO.SetActive(false);
                 setCheckpoint.checkpointX = checkpointXset;
                 setCheckpoint.checkpointY = checkpointYset;
                 setCheckpoint.checkpointZ = checkpointZset;

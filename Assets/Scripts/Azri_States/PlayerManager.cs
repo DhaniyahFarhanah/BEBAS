@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] GameObject quitPanel;
     [SerializeField] GameObject JumpscareGO;
     [SerializeField] AudioSource clickSound;
+   
 
     PlayJumpscareOnDeath jumpscare;
     Animator GameOverAnim;
@@ -30,6 +31,7 @@ public class PlayerManager : MonoBehaviour
     public static event Action RestartAtCheckPoint;
     private void Awake()
     {
+       
         GameOverAnim = gameOverScreen.GetComponentInChildren<Animator>();
         jumpscare = JumpscareGO.GetComponent<PlayJumpscareOnDeath>();
         isGameOver = false; //game is not over by default

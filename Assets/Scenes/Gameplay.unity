@@ -6061,8 +6061,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 375073371
-  m_SortingLayer: 12
+  m_SortingLayerID: -102276525
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: 527549127, guid: 66cebabce3e0315488dd3abfe415cb3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32835,7 +32835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.78, y: -12.4, z: 0}
+  m_LocalPosition: {x: -12.13, y: -12.52, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -35019,8 +35019,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2
-  MaxDistance: 15
+  MinDistance: 5
+  MaxDistance: 17
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -47049,6 +47049,7 @@ GameObject:
   - component: {fileID: 970061720}
   - component: {fileID: 970061719}
   - component: {fileID: 970061718}
+  - component: {fileID: 970061725}
   - component: {fileID: 970061724}
   - component: {fileID: 970061723}
   - component: {fileID: 970061722}
@@ -47142,15 +47143,15 @@ MonoBehaviour:
   agroRange: 8
   movespeed: 7
   killmovespeed: 8
-  checkpointXset: 44
-  checkpointYset: 19
+  checkpointXset: 59.36198
+  checkpointYset: 22.9193
   checkpointZset: 0
   triggerAgro: 0
   AgroSound: {fileID: 970061724}
   GroaningSound: {fileID: 970061723}
   MovementSound: {fileID: 970061722}
   playerManager: {fileID: 474014570}
-  gameOver: {fileID: 1315879309}
+  gameOver: {fileID: 1073506355}
   checkAgro: {fileID: 866142361}
   playerGO: {fileID: 705463099}
   Waypoints:
@@ -47172,7 +47173,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970061715}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -47252,8 +47253,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2
-  MaxDistance: 7
+  MinDistance: 5
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -47348,8 +47349,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2
-  MaxDistance: 7
+  MinDistance: 5
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -47520,6 +47521,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &970061725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970061715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d850fa96e356904498db4a5bef7dcc68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpscareHud: {fileID: 1073506355}
+  type: 2
+  waitTime: 3
+  jumpscareSound: {fileID: 8300000, guid: 1e2e2e0acfc92404daf7e4409f4e79dd, type: 3}
 --- !u!1 &973915802
 GameObject:
   m_ObjectHideFlags: 0
@@ -87730,7 +87747,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ff58ca0261d4f7e4cab0a2945db32940, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -103229,7 +103246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1307237298}
   showcase: {fileID: 576505571}
-  gameObj: {fileID: 647433656}
+  gameObj: {fileID: 2052839352}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
