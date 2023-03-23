@@ -7272,10 +7272,12 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - 'Eh? Another finger in this room. '
   - This looks like a ring finger...
-  - I can't believe I have to collect these...
+  - But that ghost is still in the room...
+  - I should KEEP MY EYES CLOSED if I want to leave this room alive...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03

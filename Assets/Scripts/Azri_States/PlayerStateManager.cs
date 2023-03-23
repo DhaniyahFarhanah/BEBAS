@@ -116,11 +116,19 @@ public class PlayerStateManager : MonoBehaviour
             else if(currentState == eyesState)
             {
                 SwitchState(eyesState);
+                darkness.SetActive(true);
             }
+
             else if(currentState == breathState)
             {
                 SwitchState(breathState);
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    SwitchState(idleState);
+                    animator.SetBool("Breath", false);
+                }
             }
+
             else
             {
                 SwitchState(idleState);
@@ -341,7 +349,7 @@ public class PlayerStateManager : MonoBehaviour
                 if (isTalking)
                 {
                     charSpeed = 0f;
-                    darkness.SetActive(false);
+
 
                 }
 
