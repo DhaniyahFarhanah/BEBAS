@@ -38,7 +38,7 @@ public class CheckAgroCryingScript : MonoBehaviour
 
     IEnumerator waitforkill()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         justEntered = false;
     }
 }

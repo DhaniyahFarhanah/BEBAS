@@ -51,10 +51,6 @@ public class CryingGhostAgroScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogueBox.activeInHierarchy)
-        {
-            transform.position = transform.position;
-        }
 
         if (FirstSpawn)
         {
@@ -68,13 +64,13 @@ public class CryingGhostAgroScript : MonoBehaviour
         float dist2player = Vector2.Distance(transform.position, player.transform.position);
 
         //the amount of conditition is longer than my will to live
-        if(dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn &&  playerStateManager.currentState != playerStateManager.deadState)
+        if(dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn &&  playerStateManager.currentState != playerStateManager.deadState && !dialogueBox.activeInHierarchy)
         {
             
             killPlayer();
         }
 
-        else if (!FirstSpawn)
+        else if (!FirstSpawn && !dialogueBox.activeInHierarchy)
         {
             Walk();
         }
@@ -86,6 +82,8 @@ public class CryingGhostAgroScript : MonoBehaviour
             FirstRunIn = false;
             killer.enabled = true;
         }
+
+        
 
 
 
