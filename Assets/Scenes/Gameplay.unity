@@ -6966,7 +6966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193491437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.47, y: -5.0599995, z: 2.9531507}
+  m_LocalPosition: {x: -52.48, y: -5.0599995, z: 2.9531507}
   m_LocalScale: {x: 0.53188074, y: 0.5843386, z: 0.53188074}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22106,7 +22106,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1178833310}
   - {fileID: 363619080}
-  waitTime: 3
+  waitTime: 2
 --- !u!212 &527229039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28119,7 +28119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &629461071
 Transform:
   m_ObjectHideFlags: 0
@@ -28128,7 +28128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629461070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.35, y: -17.9, z: 0}
+  m_LocalPosition: {x: 32.54, y: -17.9, z: 0}
   m_LocalScale: {x: 0.13875, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62507,8 +62507,8 @@ MonoBehaviour:
   speed: 35
   path: {fileID: 1921176400}
   wayPoints:
-  - {fileID: 2123450265}
   - {fileID: 1777676265}
+  - {fileID: 2123450265}
   waitTime: 7
 --- !u!212 &1241516391
 SpriteRenderer:
@@ -63585,7 +63585,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 253771071}
   - {fileID: 1647650795}
-  waitTime: 3
+  waitTime: 2
 --- !u!212 &1257483113
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68395,7 +68395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342125467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.98, y: -5.0599995, z: 2.9531507}
+  m_LocalPosition: {x: -35.47, y: -5.0599995, z: 2.9531507}
   m_LocalScale: {x: 0.53188074, y: 0.5843386, z: 0.53188074}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87762,7 +87762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733372667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.44, y: -18.09, z: 10.2042885}
+  m_LocalPosition: {x: 42.4, y: -18.09, z: 10.2042885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92974,7 +92974,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1357824781}
   - {fileID: 451906084}
-  waitTime: 3
+  waitTime: 2
 --- !u!212 &1842368746
 SpriteRenderer:
   m_ObjectHideFlags: 0
