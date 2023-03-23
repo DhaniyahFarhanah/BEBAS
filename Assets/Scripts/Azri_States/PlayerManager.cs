@@ -9,6 +9,9 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
     public GameObject gameOverScreen; //game over screen
+    [SerializeField] GameObject surePanel;
+    [SerializeField] GameObject menuPanel;
+    [SerializeField] GameObject quitPanel;
     [SerializeField] GameObject jumpscareHUD;
     [SerializeField] Animator Jumpscareanimator;
 
@@ -53,6 +56,31 @@ public class PlayerManager : MonoBehaviour
         {
             gameOverScreen.SetActive(false);
         }
+    }
+
+    public void OpenSurePanel()
+    {
+        surePanel.SetActive(true);
+    }
+    public void CloseSurePanel()
+    {
+        surePanel.SetActive(false);
+    }
+    public void OpenQuitPanel()
+    {
+        quitPanel.SetActive(true);
+    }
+    public void CloseQuitPanel()
+    {
+        quitPanel.SetActive(false);
+    }
+    public void OpenMenuPanel()
+    {
+        menuPanel.SetActive(true);
+    }
+    public void CloseMenuPanel()
+    {
+        menuPanel.SetActive(false);
     }
 
     public void ReplayLevel() //resets the level after the user presses replay button 
