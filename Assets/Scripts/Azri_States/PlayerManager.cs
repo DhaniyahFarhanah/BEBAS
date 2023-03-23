@@ -13,8 +13,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] GameObject menuPanel;
     [SerializeField] GameObject quitPanel;
     [SerializeField] GameObject JumpscareGO;
+    [SerializeField] AudioSource clickSound;
 
     PlayJumpscareOnDeath jumpscare;
+    Animator GameOverAnim;
 
     public bool death;
     public int integer;
@@ -28,6 +30,7 @@ public class PlayerManager : MonoBehaviour
     public static event Action RestartAtCheckPoint;
     private void Awake()
     {
+        GameOverAnim = gameOverScreen.GetComponentInChildren<Animator>();
         jumpscare = JumpscareGO.GetComponent<PlayJumpscareOnDeath>();
         isGameOver = false; //game is not over by default
         playerState = player.GetComponent<PlayerStateManager>();
@@ -59,26 +62,32 @@ public class PlayerManager : MonoBehaviour
 
     public void OpenSurePanel()
     {
+        clickSound.Play();
         surePanel.SetActive(true);
     }
     public void CloseSurePanel()
     {
+        clickSound.Play();
         surePanel.SetActive(false);
     }
     public void OpenQuitPanel()
     {
+        clickSound.Play();
         quitPanel.SetActive(true);
     }
     public void CloseQuitPanel()
     {
+        clickSound.Play();
         quitPanel.SetActive(false);
     }
     public void OpenMenuPanel()
     {
+        clickSound.Play();
         menuPanel.SetActive(true);
     }
     public void CloseMenuPanel()
     {
+        clickSound.Play();
         menuPanel.SetActive(false);
     }
 
@@ -91,6 +100,11 @@ public class PlayerManager : MonoBehaviour
 
     public void Checkpoint() //Checkpoint code to spawn at a safe space
     {
+        if (!clickSound.isPlaying)
+        {
+            clickSound.Play();
+        }
+
         player.SetActive(true);
         player.transform.position = new Vector3(checkpointX, checkpointY, checkpointZ);
         playerState.SwitchState(playerState.idleState);
@@ -98,10 +112,19 @@ public class PlayerManager : MonoBehaviour
         playerState.currentState = playerState.idleState;
         playerState.SwitchState(playerState.idleState);
         JumpscareGO.SetActive(false);
-        gameOverScreen.SetActive(false);
+        isGameOver = false;
+
+        StartCoroutine(StartFadeCoroutine());
+        GameOverAnim.SetBool("Replay", true);
 
         // calls an event that the player has restarted to the checkpoint;
-        isGameOver = false;
         RestartAtCheckPoint?.Invoke();
+    }
+
+    IEnumerator StartFadeCoroutine()
+    {
+        yield return new WaitForSeconds(0.3f);
+        GameOverAnim.SetBool("Replay", false) ;
+        gameOverScreen.SetActive(false);
     }
 }
