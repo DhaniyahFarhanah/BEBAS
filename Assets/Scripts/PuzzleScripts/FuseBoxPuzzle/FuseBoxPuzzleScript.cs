@@ -40,6 +40,8 @@ public class FuseBoxPuzzleScript : MonoBehaviour
     public bool lightsOn;
     public bool isCorrect;
 
+    exitPuzzle script;
+
     [SerializeField] Image statusBar;
 
     float currentVelocity;
@@ -58,6 +60,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
 
     void Awake()
     {
+        script = gameObject.GetComponent<exitPuzzle>();
         Switch1 = Switch_1.GetComponent<SwitchChangeScript>();
         Switch2 = Switch_2.GetComponent<SwitchChangeScript>();
         Switch3 = Switch_3.GetComponent<SwitchChangeScript>();
@@ -90,6 +93,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
 
         if (enteredValue == correctValue)
         {
+            script.canClose = false;
             lightsOn = true;
             isCorrect = true;
             StartCoroutine(LightsOn());
@@ -100,6 +104,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
         }
         else
         {
+            script.canClose = true;
             lightsOn = false;
             anim.SetBool("On", false);
             Debug.Log("Wrong Amount");

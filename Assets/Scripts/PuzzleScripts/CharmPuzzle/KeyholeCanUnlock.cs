@@ -19,6 +19,8 @@ public class KeyholeCanUnlock : MonoBehaviour
     [SerializeField] Sprite KeyTurn;
     [SerializeField] GameObject DoorOpen;
 
+    exitPuzzle script;
+
     bool playOnce;
     bool playOnceTurn;
     bool doorOpenPlayOnce;
@@ -29,6 +31,10 @@ public class KeyholeCanUnlock : MonoBehaviour
     [SerializeField] private AudioSource keyIn;
     [SerializeField] private AudioSource keyTurn;
     [SerializeField] AudioSource doorOpen;
+    private void Awake()
+    {
+        script = thisPuzzle.GetComponent<exitPuzzle>();
+    }
     void Start()
     {
         keyhole = GetComponent<Image>();
@@ -51,6 +57,7 @@ public class KeyholeCanUnlock : MonoBehaviour
 
         if (clickIndex == 1)
         {
+            script.canClose = true;
             //key inside
             if (!keyIn.isPlaying && !playOnce)
             {
@@ -72,6 +79,8 @@ public class KeyholeCanUnlock : MonoBehaviour
                 keyTurn.Play();
                 playOnceTurn = true;
             }
+
+            script.canClose = false;
             
             StartCoroutine(UnlockDoor());
         }

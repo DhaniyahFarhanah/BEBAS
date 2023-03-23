@@ -7,6 +7,7 @@ public class FollowPlayerScript : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject DialogueBox;
+    [SerializeField] GameObject GameOver;
     [SerializeField] GameObject player;
     [SerializeField] GameObject AgroInWard;
 
@@ -111,7 +112,7 @@ public class FollowPlayerScript : MonoBehaviour
         animator.SetInteger("Status", 2);
         rb.velocity = new Vector2(-moveSpeed, 0);
 
-        if (DialogueBox.activeInHierarchy)
+        if (DialogueBox.activeInHierarchy || GameOver.activeInHierarchy)
         {
             rb.velocity = Vector2.zero;
         }

@@ -1740,6 +1740,9 @@ MonoBehaviour:
   gameObj: {fileID: 50174758}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -2318,6 +2321,9 @@ MonoBehaviour:
   gameObj: {fileID: 68857672}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -10019,7 +10025,7 @@ Transform:
   - {fileID: 875861289}
   - {fileID: 1098170937}
   m_Father: {fileID: 833691859}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &280512279
 BoxCollider2D:
@@ -14390,6 +14396,9 @@ MonoBehaviour:
   gameObj: {fileID: 371450018}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -15703,8 +15712,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 351255253
-  m_SortingLayer: 5
+  m_SortingLayerID: -1135857687
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 53072b9118c7ca34cab1913e82a37ce0, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -15731,6 +15740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   DialogueBox: {fileID: 1307237298}
+  GameOver: {fileID: 1315879309}
   player: {fileID: 705463099}
   AgroInWard: {fileID: 695690034}
   isWaiting: 1
@@ -17467,6 +17477,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &429033018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429033019}
+  - component: {fileID: 429033020}
+  m_Layer: 0
+  m_Name: KeySound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &429033019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429033018}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.42, y: 15.312734, z: 10.2042885}
+  m_LocalScale: {x: 0.23464704, y: 0.22261943, z: 0.20308726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 833691859}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &429033020
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429033018}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4583e857d9575ab49aed2333e67b87e8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &429290190
 GameObject:
   m_ObjectHideFlags: 0
@@ -19154,6 +19292,9 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -19625,6 +19766,9 @@ MonoBehaviour:
   gameObj: {fileID: 476937917}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -28152,6 +28296,9 @@ MonoBehaviour:
   gameObj: {fileID: 629461070}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -29116,6 +29263,9 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -31771,6 +31921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   DialogueBox: {fileID: 1307237298}
+  GameOver: {fileID: 1315879309}
   player: {fileID: 705463099}
   AgroInWard: {fileID: 0}
   isWaiting: 1
@@ -32835,7 +32986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.13, y: -12.52, z: 0}
+  m_LocalPosition: {x: 76.3, y: 68.6, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -39075,6 +39226,7 @@ Transform:
   - {fileID: 2075554440}
   - {fileID: 845652106}
   - {fileID: 840076486}
+  - {fileID: 429033019}
   - {fileID: 941033700}
   - {fileID: 2026420704}
   - {fileID: 280512278}
@@ -43954,6 +44106,9 @@ MonoBehaviour:
   gameObj: {fileID: 909748804}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -45766,7 +45921,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 833691859}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &941033701
 MonoBehaviour:
@@ -45785,6 +45940,9 @@ MonoBehaviour:
   gameObj: {fileID: 941033699}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -50683,6 +50841,7 @@ MonoBehaviour:
   puzzle: {fileID: 678114868}
   openSafe: {fileID: 840076485}
   closeSafe: {fileID: 845652105}
+  Key: {fileID: 429033020}
 --- !u!1 &1023242756
 GameObject:
   m_ObjectHideFlags: 0
@@ -53625,6 +53784,9 @@ MonoBehaviour:
   gameObj: {fileID: 1067737191}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -59021,6 +59183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186836535}
   - component: {fileID: 1186836536}
+  - component: {fileID: 1186836537}
   m_Layer: 0
   m_Name: SafeOpened
   m_TagString: Untagged
@@ -59095,6 +59258,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1186836537
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186836534}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d2513c93f882de40a60bef7d01b4f6a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1187551767
 GameObject:
   m_ObjectHideFlags: 0
@@ -68984,7 +69243,7 @@ Transform:
   - {fileID: 1454223168}
   - {fileID: 1634546268}
   m_Father: {fileID: 833691859}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348985875
 GameObject:
@@ -69036,6 +69295,9 @@ MonoBehaviour:
   gameObj: {fileID: 647433656}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -73826,6 +74088,9 @@ MonoBehaviour:
   gameObj: {fileID: 1454913254}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -75024,6 +75289,7 @@ GameObject:
   - component: {fileID: 1477316123}
   - component: {fileID: 1477316124}
   - component: {fileID: 1477316125}
+  - component: {fileID: 1477316126}
   m_Layer: 0
   m_Name: Boxcollider
   m_TagString: Untagged
@@ -75089,6 +75355,9 @@ MonoBehaviour:
   gameObj: {fileID: 1477316122}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 1
+  audiosource: {fileID: 1186836537}
+  audioClip: {fileID: 8300000, guid: 4d2513c93f882de40a60bef7d01b4f6a, type: 3}
   newImage: {fileID: 21300000, guid: 676109b404550ca4e8ed26f0f868106f, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -75113,6 +75382,102 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+--- !u!82 &1477316126
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477316122}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a7b860b87dbc9495990b702c1cf8a6ae, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1484111312
 GameObject:
   m_ObjectHideFlags: 0
@@ -96579,7 +96944,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2587ba20461abfd44b938403102b2906, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dc581aa4b37ff6f41a9facc21d481ef0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -97381,6 +97746,9 @@ MonoBehaviour:
   gameObj: {fileID: 1927825446}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -99380,6 +99748,9 @@ MonoBehaviour:
   gameObj: {fileID: 1975084428}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -99873,7 +100244,7 @@ Transform:
   - {fileID: 2132484918}
   - {fileID: 341589275}
   m_Father: {fileID: 833691859}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1989759377
 MonoBehaviour:
@@ -100960,6 +101331,9 @@ MonoBehaviour:
   gameObj: {fileID: 2009284235}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -101612,7 +101986,7 @@ Transform:
   - {fileID: 1037570222}
   - {fileID: 1066634951}
   m_Father: {fileID: 833691859}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2026420706
 BoxCollider2D:
@@ -103249,6 +103623,9 @@ MonoBehaviour:
   gameObj: {fileID: 2052839352}
   dialogueText: {fileID: 612804699}
   nameTextBox: {fileID: 1944098500}
+  hasAudioAfter: 0
+  audiosource: {fileID: 0}
+  audioClip: {fileID: 0}
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -106181,6 +106558,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1021938302}
           m_TargetAssemblyTypeName: safeEnabler, Assembly-CSharp
           m_MethodName: Enable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1021938302}
+          m_TargetAssemblyTypeName: safeEnabler, Assembly-CSharp
+          m_MethodName: playSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

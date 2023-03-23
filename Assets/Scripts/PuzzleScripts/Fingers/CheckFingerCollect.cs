@@ -15,9 +15,15 @@ public class CheckFingerCollect : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject fingerHUD;
 
+    exitPuzzle script;
+
     bool twitchDone = false;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        script = puzzle.GetComponent<exitPuzzle>();
+    }
     void Start()
     {
         twitchDone = false;
@@ -50,11 +56,13 @@ public class CheckFingerCollect : MonoBehaviour
         if(count == isAttached.Length)
         {
             isComplete = true;
+            script.canClose = false;
         }
 
         else
         {
             isComplete = false;
+            script.canClose = true;
         }
     }
 

@@ -11,6 +11,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject puzzleComplete;
     [SerializeField] GameObject puzzleNotComplete;
+    
     [SerializeField] bool safe;
 
     [SerializeField]
@@ -30,11 +31,19 @@ public class DigitalDisplay : MonoBehaviour
 
     private string codeSequence;
 
+    exitPuzzle script;
+
     [SerializeField] private AudioSource wrongInputAudio;
     [SerializeField] private AudioSource correctInputAudio;
+
+    private void Awake()
+    {
+        script = puzzle.GetComponent<exitPuzzle>();
+    }
     void Start()
     {
         codeSequence = "";
+        script.canClose = true;
         Debug.Log(this.gameObject.name + " is HAHAHAHA");
         for (int i = 0; i <= characters.Length -1; i++)
         {
@@ -141,6 +150,7 @@ public class DigitalDisplay : MonoBehaviour
         if (codeSequence == correctCombi)
         {
             Debug.Log("Correct");
+            script.canClose = false;
             characters[0].sprite = correct[0];
             characters[1].sprite = correct[1];
             characters[2].sprite = correct[2];
@@ -175,7 +185,9 @@ public class DigitalDisplay : MonoBehaviour
     IEnumerator Correct()
     {
         yield return new WaitForSeconds(1f);
+        
         codeSequence = "";
+       
         door.SetActive(true);
         puzzle.SetActive(false);
         display.SetActive(false);

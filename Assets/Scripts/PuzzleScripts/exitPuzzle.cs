@@ -5,9 +5,10 @@ using UnityEngine;
 public class exitPuzzle : MonoBehaviour
 {
     public GameObject player;
+    public bool canClose;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && gameObject.activeInHierarchy)
+        if (Input.GetKeyDown(KeyCode.Escape) && gameObject.activeInHierarchy && canClose)
         {
             gameObject.SetActive(false);
             player.SetActive(true);

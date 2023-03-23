@@ -11,6 +11,10 @@ public class EventDialogue : MonoBehaviour
     public TMP_Text dialogueText;
     [SerializeField] TMP_Text nameTextBox;
 
+    [SerializeField] bool hasAudioAfter;
+    [SerializeField] AudioSource audiosource;
+    [SerializeField] AudioClip audioClip;
+
     public Sprite newImage;
     //AzriReactions
     [SerializeField] Image AzriPreview;
@@ -98,6 +102,11 @@ public class EventDialogue : MonoBehaviour
         
 
         AzriPreview.sprite = AzriDefault;
+        if (hasAudioAfter && !audiosource.isPlaying)
+        {
+            audiosource.clip = audioClip;
+            audiosource.Play();
+        }
         
         gameObj.SetActive(SetActiveAfterFinished);
 
@@ -209,7 +218,7 @@ public class EventDialogue : MonoBehaviour
         {
             playerIsClose = false;
             Debug.Log("Player is out of range");
-            zeroText();
+            dialogueText.text = "";
             
         }
     }
