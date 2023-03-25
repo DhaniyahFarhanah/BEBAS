@@ -26,7 +26,8 @@ public class Inventory : MonoBehaviour
     // Press I to toggle showing and hiding canvas
     private void ToggleInventoryCanvas()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        //Removing the inventory system
+        /*if (Input.GetKeyDown(KeyCode.I))
         {
             if (inventoryCanvas.activeSelf == false)
             {
@@ -36,7 +37,7 @@ public class Inventory : MonoBehaviour
             {
                 HideInventory();
             }
-        }
+        }*/
     }
     private void ShowInventory()
     {

@@ -6,7 +6,7 @@ public class PlayOnStart : MonoBehaviour
 {
     //Script done by Dhaniyah Farhanah Binte Yusoff
 
-    [SerializeField] AudioSource audio;
+    [SerializeField] AudioSource audioToBePlayed;
     [SerializeField] GameObject objToPlaySound;
     [SerializeField] bool stopWhenInactive;
 
@@ -22,7 +22,7 @@ public class PlayOnStart : MonoBehaviour
     {
         if (objToPlaySound.activeInHierarchy && !PlayOnce)
         {
-            audio.Play();
+            audioToBePlayed.Play();
             PlayOnce = true;
         }
 
@@ -30,13 +30,13 @@ public class PlayOnStart : MonoBehaviour
         {
             if (gameObject.activeInHierarchy)
             {
-                audio.Stop();
+                audioToBePlayed.Stop();
             }
             else
             {
-                if (!audio.isPlaying)
+                if (!audioToBePlayed.isPlaying)
                 {
-                    audio.Play();
+                    audioToBePlayed.Play();
                 }
             }
         }
