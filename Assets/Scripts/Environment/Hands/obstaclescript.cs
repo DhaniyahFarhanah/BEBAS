@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class obstaclescript : MonoBehaviour
 {
+    //Script done by Avian (koko)
     
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class DialogueScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+    //Script modified by Stella
+
     public GameObject dialoguePanel;
     public GameObject Z;
     public GameObject gameObj;

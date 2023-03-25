@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class SecurityGuardMove : MonoBehaviour
 {
+    //Script done by Avian (koko)
+    //Script modified by Stella
+    //Script modified by Dhaniyah Farhanah Binte Yusoffs
+
     public Transform[] patrolPoints;
 
     public float moveSpeed;

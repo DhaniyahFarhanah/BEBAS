@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class safeEnabler : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject player;
     [SerializeField] GameObject puzzle;
     [SerializeField] GameObject openSafe;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayOnStart : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] AudioSource audio;
     [SerializeField] GameObject objToPlaySound;
     [SerializeField] bool stopWhenInactive;

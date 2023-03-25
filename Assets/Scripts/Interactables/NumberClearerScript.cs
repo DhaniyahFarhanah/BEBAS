@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NumberClearerScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     SpriteRenderer sr;
     [SerializeField] Sprite Outline;
     [SerializeField] Sprite NoOutline;

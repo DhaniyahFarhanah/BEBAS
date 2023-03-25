@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject toDrag;
     [SerializeField] GameObject toDragPosition;
     [SerializeField] GameObject CheckFingerCollect;

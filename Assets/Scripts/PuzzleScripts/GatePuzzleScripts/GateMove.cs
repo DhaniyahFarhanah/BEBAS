@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GateMove : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     //this is a shit ass way to do it but it works for now
 
     public Button[] gateArray;

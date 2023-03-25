@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class holdBreathGhost : MonoBehaviour
 {
+    //Script done by Avian (koko)
+    //Script modified by Dhaniyah Farhanah Binte Yusoff
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "holdBreathGhost" && Input.GetKey(KeyCode.Space) == true) //if the player collides with objects with the tag "ghost"

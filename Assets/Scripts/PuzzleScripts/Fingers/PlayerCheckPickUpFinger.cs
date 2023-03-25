@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerCheckPickUpFinger : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public bool[] HasFinger = new bool[5];
     public int Count = 0;
 

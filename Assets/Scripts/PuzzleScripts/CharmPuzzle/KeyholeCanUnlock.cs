@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class KeyholeCanUnlock : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject eyeClue;
     [SerializeField] Color selected;
     [SerializeField] Color notSelected;

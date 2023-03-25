@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerBaseState
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     SpriteRenderer spriteRender;
 
     public Rigidbody2D playerRB;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerEyesState : PlayerBaseState
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I can't see shit");

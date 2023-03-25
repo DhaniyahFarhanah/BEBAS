@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class EnemyAgro : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] private Transform player;
 
     [SerializeField] private float agroRange;

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class FuseBoxPuzzleScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     //pseudocode time
     // get bool of the switches 
     SwitchChangeScript Switch1;

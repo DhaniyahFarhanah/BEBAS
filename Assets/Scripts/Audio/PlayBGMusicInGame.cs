@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayBGMusicInGame : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] AudioClip OutsideBGM;
     [SerializeField] AudioClip InsideBGM;
     [SerializeField] AudioClip EndGameChaseBGM;

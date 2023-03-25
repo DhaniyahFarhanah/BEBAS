@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class KeyButtonPress : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public static event Action<String> ButtonPressed = delegate { };
 
     private int dividerPosition;

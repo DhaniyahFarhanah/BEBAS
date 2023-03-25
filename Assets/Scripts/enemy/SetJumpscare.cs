@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SetJumpscare: MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject jumpscareHud;
     [SerializeField] int type;
     [SerializeField] float waitTime;

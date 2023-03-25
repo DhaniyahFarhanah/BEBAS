@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HudFingerShow : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     Image finger;
     Color hasFinger = new Color(255,255,255);
     Color noFinger = new Color(0,0,0);

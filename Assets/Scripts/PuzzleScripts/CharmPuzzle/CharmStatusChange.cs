@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CharmStatusChange : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] int charmIndex;
     [SerializeField] GameObject charmPuzzle;
     [SerializeField] GameObject charmCut;

@@ -5,6 +5,8 @@ using System;
 
 public class DoorEnterScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] GameObject playerScripts;
 

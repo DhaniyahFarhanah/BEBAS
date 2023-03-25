@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DigitalDisplay : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject door;
     [SerializeField] GameObject puzzle;
     [SerializeField] GameObject display;

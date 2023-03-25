@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
     public Rigidbody2D playerRigidBody;
 
     public Sprite idle;

@@ -6,6 +6,8 @@ using UnityEngine.XR;
 
 public class CharmsPuzzle : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject keyholeScript;
     public bool[] isTear;
     [SerializeField] bool canUnlock;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FingerDoorCheck : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject player;
     [SerializeField] GameObject itsLocked;
 

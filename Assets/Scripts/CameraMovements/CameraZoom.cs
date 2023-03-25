@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class CameraZoom : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     private Camera cam;
     public GameObject player;
 

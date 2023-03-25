@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OpenLoreImage : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject[] allLores;
 
 

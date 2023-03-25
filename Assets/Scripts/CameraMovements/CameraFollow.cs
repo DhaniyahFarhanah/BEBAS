@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public GameObject player;
 
     public float xMin;

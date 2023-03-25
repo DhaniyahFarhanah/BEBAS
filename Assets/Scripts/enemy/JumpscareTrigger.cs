@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class JumpscareTrigger : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject JumpscareHud;
     [SerializeField] GameObject Jumpscare;
     Animator JumpscareAnimator;

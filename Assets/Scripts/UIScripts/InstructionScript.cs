@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InstructionScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public GameObject visuals;
     public GameObject sensor;
     public GameObject player;

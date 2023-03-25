@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public PlayerBaseState currentState;
 
     //float playerScale;

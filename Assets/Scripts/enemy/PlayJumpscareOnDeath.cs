@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayJumpscareOnDeath : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public int AnimIndex;
     public float jumpscareWaitSeconds;
     public AudioClip jumpscareSound;

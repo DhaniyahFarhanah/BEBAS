@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CheckFingerCollect : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public bool[] isAttached;
 
     public bool isComplete;

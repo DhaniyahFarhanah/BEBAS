@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SwitchChangeScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject SwitchOn;
     [SerializeField] GameObject SwitchOff;
     [SerializeField] GameObject fuseBox;

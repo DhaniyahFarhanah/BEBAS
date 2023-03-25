@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CryingGhostAgroScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
 
     [SerializeField] bool FirstSpawn;
     [SerializeField] bool FirstRunIn;

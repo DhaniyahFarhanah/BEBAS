@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckAgroCryingScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
 
     public bool justEntered = true;
     public bool inWard;

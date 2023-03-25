@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class EventDialogue : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+    //Script modified by Stella
+
     public GameObject dialoguePanel;
     public Image showcase;
     public GameObject gameObj;

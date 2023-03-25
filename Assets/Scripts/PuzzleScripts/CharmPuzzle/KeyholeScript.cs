@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class KeyholeScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public bool canUnlock;
 
     [SerializeField] GameObject keyCanUnlock;

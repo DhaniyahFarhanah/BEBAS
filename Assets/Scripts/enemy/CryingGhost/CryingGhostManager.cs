@@ -6,6 +6,7 @@ using UnityEngine;
 /// </summary>
 public class CryingGhostManager : MonoBehaviour
 {
+    //Script done by Stella
     private enum GhostState { IDLE, MOVING };
     private GhostState curState = GhostState.IDLE;
 

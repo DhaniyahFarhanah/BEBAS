@@ -5,6 +5,9 @@ using System.Collections;
 
 public class PlayerManager : MonoBehaviour
 {
+    //Script done by Avian
+    //Script modified by Dhaniyah Farhanah Binte Yusoff
+
     public static bool isGameOver; //bool to check if game is over
 
     public GameObject player;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ActivateOrDisableFingerHud : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject FingerHud;
     [SerializeField] int dialogueIndex;
     

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerDeadState : PlayerBaseState
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("Oh he ded");

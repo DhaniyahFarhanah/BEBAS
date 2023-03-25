@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 
 public class GatePuzzle : MonoBehaviour
 {
-
+    //Script done by Dhaniyah Farhanah Binte Yusoff
 
     public KeyCode key;
 

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameOverButtonEvents : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] Image hand;
     [SerializeField] Image word;
     [SerializeField] Sprite handSelected;

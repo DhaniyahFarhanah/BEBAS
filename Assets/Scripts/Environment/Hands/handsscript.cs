@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class handsscript : MonoBehaviour
 {
+    //Script done by Avian (koko)
+
     public float speed;
     Vector3 targetPos;
 

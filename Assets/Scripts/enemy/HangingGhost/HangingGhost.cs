@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HangingGhost : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] AudioSource ropeAudio;
     // Start is called before the first frame update
     void Start()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CheckAgroRange : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     public bool canAgro;
     public bool noImmediateKill;
     public bool isCrawling;

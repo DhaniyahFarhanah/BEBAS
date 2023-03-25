@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ToReadClearer : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject overlay;
     void Start()
     {

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class FollowPlayerScript : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+    //Script modified by Stella 
+
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject DialogueBox;
     [SerializeField] GameObject GameOver;

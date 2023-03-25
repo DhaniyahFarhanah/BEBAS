@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FingerAddToCollection : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject player;
     [SerializeField] int fingerIndex;
 

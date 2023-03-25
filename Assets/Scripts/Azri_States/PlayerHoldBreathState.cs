@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerHoldBreathState : PlayerBaseState
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
     public override void EnterState(PlayerStateManager player)
     {
         Debug.Log("I can't breath");

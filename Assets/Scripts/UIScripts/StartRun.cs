@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StartRun : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject player;
     [SerializeField] GameObject doorToEndgame;
     [SerializeField] GameObject doorToWard;

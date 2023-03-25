@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LoreDisplay : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     [SerializeField] GameObject eyeIndicator;
     [SerializeField] GameObject loreDisplay;
     [SerializeField] GameObject loreToOpen;
