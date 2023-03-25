@@ -47,6 +47,8 @@ public class FingerDoorCheck : MonoBehaviour
             
         }
 
+        CheckFinger();
+
     }
 
     void CheckFinger()
@@ -57,12 +59,5 @@ public class FingerDoorCheck : MonoBehaviour
             door.enabled = true;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-                CheckFinger();
-
-        }
-    }
+    
 }

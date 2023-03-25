@@ -32951,7 +32951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.2, y: -12.57, z: 0}
+  m_LocalPosition: {x: -12.1, y: -12.6, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -35083,8 +35083,8 @@ MonoBehaviour:
   FirstRunIn: 0
   player: {fileID: 705463105}
   agroRange: 6
-  moveSpeed: 4
-  agroSpeed: 2.5
+  moveSpeed: 5
+  agroSpeed: 3
   agroBounds: {fileID: 981182785}
   panicAfter: {fileID: 1975084428}
   dialogueBox: {fileID: 1307237298}
