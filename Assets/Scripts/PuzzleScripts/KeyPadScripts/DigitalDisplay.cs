@@ -13,7 +13,11 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject puzzleComplete;
     [SerializeField] GameObject puzzleNotComplete;
-    
+
+    public bool playAnim;
+    public bool isCorrect;
+    public bool isWrong;
+
     [SerializeField] bool safe;
 
     [SerializeField]
@@ -149,9 +153,13 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
+        playAnim = true;
+
         if (codeSequence == correctCombi)
         {
             Debug.Log("Correct");
+            isCorrect = true;
+            isWrong = false;
             script.canClose = false;
             characters[0].sprite = correct[0];
             characters[1].sprite = correct[1];
@@ -163,6 +171,8 @@ public class DigitalDisplay : MonoBehaviour
 
         else
         {
+            isCorrect = false;
+            isWrong = true;
             Debug.Log("Wrong");
             wrongInputAudio.Play();
             StartCoroutine(Wrong());
