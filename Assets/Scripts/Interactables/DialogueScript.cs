@@ -44,6 +44,7 @@ public class DialogueScript : MonoBehaviour
     
 
     private AudioSource audioSource;
+    private AudioSource _talking;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
 
@@ -51,6 +52,7 @@ public class DialogueScript : MonoBehaviour
     {
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
+        _talking = GetComponent<AudioSource>();
         audioSource = this.gameObject.AddComponent<AudioSource>();
 
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
@@ -110,6 +112,7 @@ public class DialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
+        _talking.Play();
         AzriPreview.sprite = AzriReactions[index];
         foreach(char letter in dialogue[index].ToCharArray())
         {

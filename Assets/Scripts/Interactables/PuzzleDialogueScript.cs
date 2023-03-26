@@ -34,6 +34,8 @@ public class PuzzleDialogueScript : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
 
+    public AudioSource _talking;
+
     pausemenu pause;
 
     [SerializeField] private bool showAfterDialogue;
@@ -53,6 +55,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     private void Awake()
     {
         azriPreview = azriDisplay.GetComponent<Image>();
+        _talking = GetComponent<AudioSource>();
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -214,6 +217,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
+        _talking.Play();
         azriPreview.sprite = azriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {
