@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,16 +50,20 @@ public class NpcDialogue : MonoBehaviour
 
     [SerializeField] private bool hasCompletedLine = false;
     [SerializeField] bool SetActiveAfterFinished;
-    [SerializeField]private bool completeLineNow = false;
+    [SerializeField] private bool completeLineNow = false;
 
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
+    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    [SerializeField] private int azriTalkingIndex = 0;
     [SerializeField] private bool stopAudioSource;
 
     [Range(1.0f, 4.0f)]
     [SerializeField] private float delayGhostTalking = 2f;    // The value that waits for 'delayGhostTalking' seconds before ghost talks again
     [SerializeField] private bool startAudio = false;   // Need a bool so that run coroutine once only
     IEnumerator ghostTalking;   // Keeps a reference of the ghost talking, so to stop audio later on
+    IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
+    
     private void Awake()
     {
         wordSpeed = 0.1f;
@@ -66,11 +71,15 @@ public class NpcDialogue : MonoBehaviour
         if (!audioSource)
         {
             audioSource = gameObject.GetComponent<AudioSource>();
-            if(!audioSource)
+            if (!audioSource)
+            {
                 audioSource = gameObject.AddComponent<AudioSource>();
+            }
         }
         if (audioSource.clip == null)
+        {
             audioSource.clip = dialogueTypingSoundClip;
+        }
 
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
@@ -79,18 +88,19 @@ public class NpcDialogue : MonoBehaviour
     {
 
     }
-   
+
     // Update is called once per frame
     void Update()
     {
         SkipLine();
-        PlayTalkingSound();
+        if (playerIsClose)
+            PlayTalkingSound();
 
         if (doneTalk)
         {
             Z.SetActive(false);
         }
-     
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused && !doneTalk)
         {
             Debug.Log("Interact");
@@ -159,7 +169,7 @@ public class NpcDialogue : MonoBehaviour
         completeLineNow = false;
     }
 
-    // Let ghost talk only when it is ghost's turn
+    // Play audio based on who is talking
     private void PlayTalkingSound()
     {
         if (dialoguePanel.activeSelf == true)
@@ -168,14 +178,22 @@ public class NpcDialogue : MonoBehaviour
             {
                 // Play Ghost talk sound
                 startAudio = true;
+
                 ghostTalking = CryingGhostTalking();
                 StartCoroutine(ghostTalking);
+
+                if (azriTalking != null)
+                    StopCoroutine(azriTalking);
             }
-            else if (nameOfPerson[index] == "Azri" && ghostTalking != null && startAudio == true)
+            else if (nameOfPerson[index] == "Azri" && startAudio == true)
             {
                 // Stop ghost talk sound
                 startAudio = false;
-                StopCoroutine(ghostTalking);
+                if (ghostTalking != null)
+                    StopCoroutine(ghostTalking);
+
+                azriTalking = AzriTalking();
+                StartCoroutine(azriTalking);
             }
         }
         else
@@ -185,17 +203,36 @@ public class NpcDialogue : MonoBehaviour
                 startAudio = false;
                 StopCoroutine(ghostTalking);
             }
+            if (azriTalking != null)
+            {
+                StopCoroutine(azriTalking);
+            }
         }
     }
 
     // "Loop" ghost talking but with a delay variable
     IEnumerator CryingGhostTalking()
     {
+        audioSource.clip = dialogueTypingSoundClip;
         while (true)
         {
             audioSource.Play();
             yield return new WaitForSeconds(audioSource.clip.length + delayGhostTalking);
         }
+    }
+    // "Loop" azri talking but with a delay variable
+    IEnumerator AzriTalking()
+    {
+        audioSource.clip = azriAudioClips[azriTalkingIndex];
+        azriTalkingIndex = (azriTalkingIndex + 1 > azriAudioClips.Count - 1) ? 0 : azriTalkingIndex + 1;
+
+        audioSource.PlayOneShot(audioSource.clip);
+        yield return new WaitForSeconds(audioSource.clip.length + 1);
+        //while (true)
+        //{
+        //    audioSource.Play();
+        //    yield return new WaitForSeconds(audioSource.clip.length + 1);
+        //}
     }
     private void SkipLine()
     {

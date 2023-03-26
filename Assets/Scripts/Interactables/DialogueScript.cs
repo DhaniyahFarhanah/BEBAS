@@ -47,6 +47,9 @@ public class DialogueScript : MonoBehaviour
     private AudioSource _talking;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
+    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    [SerializeField] private int azriTalkingIndex = 0;
+    IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
 
     private void Awake()
     {
@@ -63,6 +66,9 @@ public class DialogueScript : MonoBehaviour
     {
 
         SkipLine();
+        if (playerIsClose)
+            PlayTalkingSound();
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
             Z.GetComponent<PlayAudio>().Play();
@@ -139,6 +145,40 @@ public class DialogueScript : MonoBehaviour
             completeLineNow = true;
     }
 
+    // Play audio based on who is talking
+    private void PlayTalkingSound()
+    {
+        if (dialoguePanel.activeSelf == true)
+        {
+            if (azriTalking == null)
+            {
+                azriTalking = AzriTalking();
+                StartCoroutine(azriTalking);
+            }
+        }
+        else
+        {
+            if (azriTalking != null)
+            {
+                StopCoroutine(azriTalking);
+                azriTalking = null;
+            }
+        }
+    }
+    // "Loop" ghost talking but with a delay variable
+    IEnumerator AzriTalking()
+    {
+        audioSource.clip = azriAudioClips[azriTalkingIndex];
+        while (true)
+        {
+            audioSource.PlayOneShot(audioSource.clip);
+
+            azriTalkingIndex = (azriTalkingIndex + 1 > azriAudioClips.Count - 1) ? 0 : azriTalkingIndex + 1;
+            audioSource.clip = azriAudioClips[azriTalkingIndex];
+            yield return new WaitForSeconds(audioSource.clip.length + 5);
+
+        }
+    }
     private void SetWordSpeed(float newSpeed)
     {
         currentWordSpeed = newSpeed;

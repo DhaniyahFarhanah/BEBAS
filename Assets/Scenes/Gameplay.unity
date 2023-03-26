@@ -235,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3455326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.31, y: -17.649, z: 10.2042885}
+  m_LocalPosition: {x: 7.4, y: -17.649, z: 10.2042885}
   m_LocalScale: {x: 1.444599, y: 1.444599, z: 1.444599}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -284,8 +284,13 @@ MonoBehaviour:
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
   walkingSoundClip: {fileID: 0}
-  stopAudioSource: 1
+  stopAudioSource: 0
   interactable: 1
+  azriAudioClips:
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
+  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
+  - {fileID: 8300000, guid: 8d90fbdbeda07984bab28dbeac1621df, type: 3}
+  azriTalkingIndex: 0
   playOnce: 1
 --- !u!61 &3455329
 BoxCollider2D:
@@ -1830,6 +1835,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!1 &63610677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2429,13 @@ MonoBehaviour:
   SetActiveAfterFinished: 0
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 1
+  stopAudioSource: 0
+  azriAudioClips:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
+  - {fileID: 8300000, guid: f60c221602fe8e944987bb69aef3953b, type: 3}
+  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
+  azriTalkingIndex: 0
 --- !u!61 &68857675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7524,6 +7537,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &212779248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10176,6 +10191,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!114 &280512282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12577,6 +12594,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &331680357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14602,6 +14621,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &371450021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18312,6 +18333,8 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &440907374
 BoxCollider2D:
@@ -19598,6 +19621,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 463082762}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!82 &463082762
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20082,6 +20107,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &476937920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21950,7 +21977,7 @@ MonoBehaviour:
   HUD: {fileID: 1983761776}
   zoomSize: 3.63
   zoomSpeed: 0.1
-  spawnZoomSpeed: 0.005
+  spawnZoomSpeed: 1
   setY: 0.2
   isSpawn: 0
 --- !u!114 &519420034
@@ -28677,6 +28704,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &629461073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29643,6 +29672,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &647433660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31621,6 +31652,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!114 &686868418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33441,7 +33474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.37, y: 46.8, z: 0}
+  m_LocalPosition: {x: 9.1, y: 24.7, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -36211,6 +36244,8 @@ MonoBehaviour:
   SetActiveAfterFinished: 1
   completeLineNow: 0
   dialogueTypingSoundClip: {fileID: 8300000, guid: c5243bf32a0a8e24baab34e56796a34b, type: 3}
+  azriAudioClips: []
+  azriTalkingIndex: 0
   stopAudioSource: 0
   delayGhostTalking: 4
   startAudio: 0
@@ -40014,6 +40049,8 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
   playOnce: 1
 --- !u!61 &845652109
 BoxCollider2D:
@@ -44543,6 +44580,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!1 &911893410
 GameObject:
   m_ObjectHideFlags: 0
@@ -46375,6 +46414,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &941033702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49129,6 +49170,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!212 &983097321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -54320,6 +54363,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &1067737194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55911,6 +55956,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!114 &1097775323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59682,6 +59729,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!114 &1185719508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69300,6 +69349,11 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  azriAudioClips:
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
+  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
+  - {fileID: 8300000, guid: 8d90fbdbeda07984bab28dbeac1621df, type: 3}
+  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &1341492795
 BoxCollider2D:
@@ -70100,6 +70154,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &1348985878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74893,6 +74949,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &1454913257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76090,6 +76148,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!82 &1477316126
 AudioSource:
   m_ObjectHideFlags: 0
@@ -85574,7 +85634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652560248
 Transform:
   m_ObjectHideFlags: 0
@@ -87656,6 +87716,8 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
   playOnce: 0
 --- !u!82 &1703884383
 AudioSource:
@@ -88562,6 +88624,12 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips:
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
+  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
+  azriTalkingIndex: 0
 --- !u!114 &1715592028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92760,6 +92828,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &1803070720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98917,6 +98987,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!61 &1927825449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100998,6 +101070,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!1 &1980379766
 GameObject:
   m_ObjectHideFlags: 0
@@ -102581,6 +102655,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!1 &2010105665
 GameObject:
   m_ObjectHideFlags: 0
@@ -103294,6 +103370,8 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!82 &2026420708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -104403,6 +104481,8 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &2042510828
 BoxCollider2D:
@@ -104683,9 +104763,15 @@ MonoBehaviour:
   SetActiveAfterFinished: 1
   completeLineNow: 0
   dialogueTypingSoundClip: {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  azriAudioClips:
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
+  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
+  azriTalkingIndex: 0
   stopAudioSource: 0
   delayGhostTalking: 2
-  startAudio: 0
+  startAudio: 1
 --- !u!82 &2045772593
 AudioSource:
   m_ObjectHideFlags: 0
@@ -105121,6 +105207,8 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  azriAudioClips: []
+  azriTalkingIndex: 0
 --- !u!1 &2053044668
 GameObject:
   m_ObjectHideFlags: 0
