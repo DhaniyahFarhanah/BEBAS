@@ -39,7 +39,10 @@ public class PlayerStateManager : MonoBehaviour
     public AudioClip OutdoorWalkClip;
     public AudioClip IndoorWalkClip;
     public AudioClip crouchSoundClip;
+    public AudioClip crouchRunSoundCLip;
     public AudioClip fastPant;
+    public AudioClip ventNormalSound;
+    public AudioClip ventRunSound;
 
     public AudioSource walkingSound;
     public AudioSource closeEyesAmbience;

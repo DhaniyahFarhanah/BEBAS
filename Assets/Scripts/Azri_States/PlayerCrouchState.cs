@@ -30,10 +30,29 @@ public class PlayerCrouchState : PlayerBaseState
         {
             if (player.isRun)
             {
+                if (player.isInVent)
+                {
+                    player.walkingSound.clip = player.ventRunSound;
+                }
+                else
+                {
+                    player.walkingSound.clip = player.crouchRunSoundCLip;
+                }
+
                 player.charSpeed = 5f;
             }
             else
             {
+
+                if (player.isInVent)
+                {
+                    player.walkingSound.clip = player.ventNormalSound;
+                }
+                else
+                {
+                    player.walkingSound.clip = player.crouchSoundClip;
+                }
+
                 player.charSpeed = 3f;
             }
         }

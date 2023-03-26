@@ -32834,8 +32834,11 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: 24151cb584d5f4ef89c34106b7bb98f8, type: 3}
   OutdoorWalkClip: {fileID: 8300000, guid: f7e3d5f748d606f4f86dee8874518fd5, type: 3}
   IndoorWalkClip: {fileID: 8300000, guid: 7e1f3197756677f40960dc5a6f84303e, type: 3}
-  crouchSoundClip: {fileID: 0}
+  crouchSoundClip: {fileID: 8300000, guid: bc8cf9f20aafb114f92cfb0655e72601, type: 3}
+  crouchRunSoundCLip: {fileID: 8300000, guid: d3ea5f6f1fcb2bc4db9570f748248d53, type: 3}
   fastPant: {fileID: 8300000, guid: b8cb99eed5c0ce34dbdf1792a8a2b9c2, type: 3}
+  ventNormalSound: {fileID: 8300000, guid: c7a7a7058bde1af40ac02df31caf9e36, type: 3}
+  ventRunSound: {fileID: 8300000, guid: d5850810c59724b7fab8db3b071973f2, type: 3}
   walkingSound: {fileID: 705463113}
   closeEyesAmbience: {fileID: 705463116}
   breathingSound: {fileID: 705463115}
@@ -33462,7 +33465,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b8cb99eed5c0ce34dbdf1792a8a2b9c2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 42463c8ab7a722247863d87534937f20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.217
   m_Pitch: 1
