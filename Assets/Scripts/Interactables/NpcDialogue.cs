@@ -227,12 +227,7 @@ public class NpcDialogue : MonoBehaviour
         azriTalkingIndex = (azriTalkingIndex + 1 > azriAudioClips.Count - 1) ? 0 : azriTalkingIndex + 1;
 
         audioSource.PlayOneShot(audioSource.clip);
-        yield return new WaitForSeconds(audioSource.clip.length + 1);
-        //while (true)
-        //{
-        //    audioSource.Play();
-        //    yield return new WaitForSeconds(audioSource.clip.length + 1);
-        //}
+        yield return new WaitForSeconds(audioSource.clip.length + 1f);
     }
     private void SkipLine()
     {

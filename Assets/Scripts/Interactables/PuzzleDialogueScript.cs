@@ -224,7 +224,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
             azriTalkingIndex = (azriTalkingIndex + 1 > azriAudioClips.Count - 1) ? 0 : azriTalkingIndex + 1;
             audioSource.clip = azriAudioClips[azriTalkingIndex];
-            yield return new WaitForSeconds(audioSource.clip.length + 5);
+            yield return new WaitForSeconds(audioSource.clip.length + 2.5f);
 
         }
     }
