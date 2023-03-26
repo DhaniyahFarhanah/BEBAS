@@ -93,8 +93,8 @@ public class NpcDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-        if (playerIsClose)
-            PlayTalkingSound();
+        
+        PlayTalkingSound();
 
         if (doneTalk)
         {
@@ -172,7 +172,7 @@ public class NpcDialogue : MonoBehaviour
     // Play audio based on who is talking
     private void PlayTalkingSound()
     {
-        if (dialoguePanel.activeSelf == true)
+        if (dialoguePanel.activeSelf == true && playerIsClose)
         {
             if (nameOfPerson[index] != "Azri" && startAudio == false)
             {

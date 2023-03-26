@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 3455330}
   - component: {fileID: 3455329}
   - component: {fileID: 3455328}
-  - component: {fileID: 3455331}
   m_Layer: 0
   m_Name: Keypad
   m_TagString: Untagged
@@ -235,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3455326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.4, y: -17.649, z: 10.2042885}
+  m_LocalPosition: {x: 30.23, y: -17.649, z: 10.2042885}
   m_LocalScale: {x: 1.444599, y: 1.444599, z: 1.444599}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -279,7 +278,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
@@ -370,102 +368,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &3455331
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3455326}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 12a9d978d8cceae4fabc54208c31f00d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &6399465
 GameObject:
   m_ObjectHideFlags: 0
@@ -18326,7 +18228,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
@@ -33474,7 +33375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1, y: 24.7, z: 0}
+  m_LocalPosition: {x: 15.19, y: -11.2, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -40042,7 +39943,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 1
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
@@ -69342,7 +69242,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 0
   showAfterDialogueIndex: 0
   puzzleCompleted: 0
@@ -74949,7 +74848,11 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
+  azriAudioClips:
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
+  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   azriTalkingIndex: 0
 --- !u!61 &1454913257
 BoxCollider2D:
@@ -87709,7 +87612,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 0
   showAfterDialogueIndex: 3
   puzzleCompleted: 0
@@ -88476,7 +88378,6 @@ GameObject:
   - component: {fileID: 1715592026}
   - component: {fileID: 1715592027}
   - component: {fileID: 1715592028}
-  - component: {fileID: 1715592029}
   m_Layer: 0
   m_Name: boltcutters
   m_TagString: reqItem
@@ -88622,8 +88523,8 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
-  stopAudioSource: 1
+  dialogueTypingSoundClip: {fileID: 0}
+  stopAudioSource: 0
   azriAudioClips:
   - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
   - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
@@ -88644,102 +88545,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasBoltcutter: {fileID: 1676085652}
   noBoltcutter: {fileID: 285658766}
---- !u!82 &1715592029
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715592023}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 12a9d978d8cceae4fabc54208c31f00d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1718578006
 GameObject:
   m_ObjectHideFlags: 0
@@ -92699,7 +92504,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 12a9d978d8cceae4fabc54208c31f00d, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -104474,7 +104279,6 @@ MonoBehaviour:
   currentWordSpeed: 0
   playerIsClose: 0
   start: 1
-  _talking: {fileID: 0}
   showAfterDialogue: 1
   showAfterDialogueIndex: 4
   puzzleCompleted: 0

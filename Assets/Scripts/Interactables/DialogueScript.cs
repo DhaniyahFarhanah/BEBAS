@@ -44,7 +44,7 @@ public class DialogueScript : MonoBehaviour
     
 
     private AudioSource audioSource;
-    private AudioSource _talking;
+    
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
     [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
@@ -55,9 +55,11 @@ public class DialogueScript : MonoBehaviour
     {
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
-        _talking = GetComponent<AudioSource>();
-        audioSource = this.gameObject.AddComponent<AudioSource>();
-
+        
+        if (audioSource == null)
+            audioSource = this.gameObject.AddComponent<AudioSource>();
+        else
+            audioSource = this.gameObject.GetComponent<AudioSource>();
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
 
@@ -66,8 +68,8 @@ public class DialogueScript : MonoBehaviour
     {
 
         SkipLine();
-        if (playerIsClose)
-            PlayTalkingSound();
+        
+        PlayTalkingSound();
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
@@ -118,7 +120,7 @@ public class DialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        _talking.Play();
+        //_talking.Play();
         AzriPreview.sprite = AzriReactions[index];
         foreach(char letter in dialogue[index].ToCharArray())
         {
@@ -126,11 +128,11 @@ public class DialogueScript : MonoBehaviour
 
             hasCompletedLine = false;
             dialogueText.text += letter;
-            if (stopAudioSource)
-            {
-                audioSource.Stop();
-            }
-            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            //if (stopAudioSource)
+            //{
+            //    audioSource.Stop();
+            //}
+            //audioSource.PlayOneShot(dialogueTypingSoundClip);
             if (completeLineNow)
                 SetWordSpeed(0); // 0 means v fast
             else
@@ -148,7 +150,7 @@ public class DialogueScript : MonoBehaviour
     // Play audio based on who is talking
     private void PlayTalkingSound()
     {
-        if (dialoguePanel.activeSelf == true)
+        if (dialoguePanel.activeSelf == true && playerIsClose)
         {
             if (azriTalking == null)
             {

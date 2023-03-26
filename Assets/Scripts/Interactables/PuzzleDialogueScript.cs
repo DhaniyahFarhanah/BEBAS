@@ -35,7 +35,6 @@ public class PuzzleDialogueScript : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
 
-    public AudioSource _talking;
 
     pausemenu pause;
 
@@ -59,7 +58,6 @@ public class PuzzleDialogueScript : MonoBehaviour
     private void Awake()
     {
         azriPreview = azriDisplay.GetComponent<Image>();
-        _talking = GetComponent<AudioSource>();
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -94,8 +92,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     void Update()
     {
         SkipLine();
-        if (playerIsClose)
-            PlayTalkingSound();
+        PlayTalkingSound();
         // Otherwise player can keep on pressing and can hear that it is typing
 
         if (puzzle.activeSelf == true)
@@ -200,7 +197,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     // Play audio based on who is talking
     private void PlayTalkingSound()
     {
-        if (dialoguePanel.activeSelf == true)
+        if (dialoguePanel.activeSelf == true && playerIsClose)
         {
             if (azriTalking == null)
             {
@@ -256,7 +253,6 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        _talking.Play();
         azriPreview.sprite = azriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {
@@ -321,13 +317,13 @@ public class PuzzleDialogueScript : MonoBehaviour
     IEnumerator SwitchPuzzleImmediate()
     {
         puzzle.SetActive(true);
-        player.SetActive(false);
+        //player.SetActive(false);
         yield return null;
     }
     IEnumerator SwitchPuzzleScene()
     {
         puzzle.SetActive(true);
-        player.SetActive(false);
+        //player.SetActive(false);
         yield return null;
 
     }

@@ -72,8 +72,7 @@ public class EventDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-        if (playerIsClose)
-            PlayTalkingSound();
+        PlayTalkingSound();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
 
@@ -160,7 +159,7 @@ public class EventDialogue : MonoBehaviour
     // Play audio based on who is talking
     private void PlayTalkingSound()
     {
-        if (dialoguePanel.activeSelf == true)
+        if (dialoguePanel.activeSelf == true && playerIsClose)
         {
             if (azriTalking == null)
             {
