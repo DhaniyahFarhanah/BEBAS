@@ -1995,6 +1995,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!1 &55179406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2862,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
+  dialogueAppearedBefore: 0
 --- !u!61 &68857675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17254,6 +17256,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &371450021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22801,6 +22804,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 463082762}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!82 &463082762
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23296,6 +23300,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &476937920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25767,6 +25772,78 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &525699126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525699127}
+  - component: {fileID: 525699129}
+  - component: {fileID: 525699128}
+  m_Layer: 0
+  m_Name: SetCheckpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525699127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525699126}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.29, y: 32.28, z: 8.775688}
+  m_LocalScale: {x: 3.7713583, y: 3.7713583, z: 3.7713583}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 918576238}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &525699128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525699126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &525699129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525699126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b7759808fb29a4da86a86fa02cb51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerManager: {fileID: 474014572}
 --- !u!1 &527229036
 GameObject:
   m_ObjectHideFlags: 0
@@ -32425,6 +32502,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &629461073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33395,6 +33473,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &647433660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37496,7 +37575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.7, y: -12.3, z: 0}
+  m_LocalPosition: {x: -1.89, y: 23.7, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -39607,6 +39686,7 @@ MonoBehaviour:
   - {fileID: 1315403710}
   - {fileID: 845985776}
   curWayPointIndex: 0
+  lorePaperDialogue: {fileID: 463082761}
 --- !u!95 &721185906
 Animator:
   serializedVersion: 5
@@ -50190,6 +50270,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!1 &911893410
 GameObject:
   m_ObjectHideFlags: 0
@@ -50823,6 +50904,7 @@ Transform:
   - {fileID: 1975084429}
   - {fileID: 1271937756}
   - {fileID: 203545320}
+  - {fileID: 525699127}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52178,6 +52260,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &941033702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60995,6 +61078,7 @@ GameObject:
   - component: {fileID: 1067737192}
   - component: {fileID: 1067737194}
   - component: {fileID: 1067737193}
+  - component: {fileID: 1067737196}
   - component: {fileID: 1067737195}
   m_Layer: 0
   m_Name: possibleKeyPad?
@@ -61011,8 +61095,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067737191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70.84, y: -19.93, z: 0}
-  m_LocalScale: {x: 0.13875, y: 1, z: 1}
+  m_LocalPosition: {x: 69.07, y: -19.93, z: 0}
+  m_LocalScale: {x: 0.2023041, y: 3.4307, z: 3.4307}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346991876}
@@ -61067,6 +61151,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &1067737194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61108,6 +61193,18 @@ MonoBehaviour:
   Guard: {fileID: 2056149897}
   setActive: {fileID: 629461070}
   index: 1
+--- !u!114 &1067737196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067737191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea9e46cde5214340b3e001588d5fc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067791018
 GameObject:
   m_ObjectHideFlags: 0
@@ -77580,7 +77677,6 @@ GameObject:
   - component: {fileID: 1343623974}
   - component: {fileID: 1343623976}
   - component: {fileID: 1343623977}
-  - component: {fileID: 1343623978}
   m_Layer: 0
   m_Name: CryingGhost_LorePaper
   m_TagString: Untagged
@@ -77798,19 +77894,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1343623978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343623971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b7759808fb29a4da86a86fa02cb51f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerManager: {fileID: 474014572}
 --- !u!1 &1344009715
 GameObject:
   m_ObjectHideFlags: 0
@@ -78170,6 +78253,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &1348985878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83240,6 +83324,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!61 &1454913257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84595,6 +84680,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!82 &1477316126
 AudioSource:
   m_ObjectHideFlags: 0
@@ -94719,7 +94805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652560248
 Transform:
   m_ObjectHideFlags: 0
@@ -109152,6 +109238,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
+  dialogueAppearedBefore: 0
 --- !u!61 &1927825449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111503,6 +111590,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!1 &1980379766
 GameObject:
   m_ObjectHideFlags: 0
@@ -113382,6 +113470,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!1 &2010105665
 GameObject:
   m_ObjectHideFlags: 0
@@ -116134,6 +116223,7 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
+  dialogueAppearedBefore: 0
 --- !u!1 &2053044668
 GameObject:
   m_ObjectHideFlags: 0
