@@ -113683,7 +113683,7 @@ MonoBehaviour:
   PictureInDialogue: {fileID: 576505571}
   PictureTear: {fileID: 21300000, guid: dee7fe7eb5875924497f27bb70f9e9f2, type: 3}
   Picture: {fileID: 21300000, guid: 0de66ae433345674e9dff797ec1c79ef, type: 3}
-  tear: {fileID: 2026420708}
+  tear: {fileID: 2026420710}
   script: {fileID: 2026420707}
 --- !u!82 &2026420710
 AudioSource:
@@ -113695,8 +113695,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 573635c4257b4dc4ebcc44fae1d51e7a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
