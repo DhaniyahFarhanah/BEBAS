@@ -27,6 +27,7 @@ public class CryingGhostAgroScript : MonoBehaviour
     [SerializeField] int curWayPointIndex;
 
     [SerializeField] private EventDialogue lorePaperDialogue;
+    [SerializeField] private GameObject holdBreathInstruction;
     Rigidbody2D rb2d;
     CheckAgroCryingScript checkAgro;
     BoxCollider2D killer;
@@ -45,6 +46,8 @@ public class CryingGhostAgroScript : MonoBehaviour
         originalPos = this.transform.position;
         if (!lorePaperDialogue)
             lorePaperDialogue = GameObject.Find("DialogueForCryingGhost").GetComponent<EventDialogue>();
+        if (!holdBreathInstruction)
+            holdBreathInstruction = GameObject.Find("HoldBreathInstruction");
     }
     void Start()
     {
@@ -63,6 +66,7 @@ public class CryingGhostAgroScript : MonoBehaviour
                 this.transform.position = originalPos;
                 this.gameObject.SetActive(false);
                 lorePaperDialogue.dialogueAppearedBefore = false;   // Reset so that dialogue will trigger again
+                holdBreathInstruction.SetActive(false);
                 StopAllCoroutines();
                 FirstSpawn = true;
                 FirstRunIn = true;

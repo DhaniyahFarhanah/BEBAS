@@ -37575,7 +37575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.9, y: -11.9, z: 0}
+  m_LocalPosition: {x: -0.48, y: 23.98, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -39687,6 +39687,7 @@ MonoBehaviour:
   - {fileID: 845985776}
   curWayPointIndex: 0
   lorePaperDialogue: {fileID: 463082761}
+  holdBreathInstruction: {fileID: 1806823301}
 --- !u!95 &721185906
 Animator:
   serializedVersion: 5
@@ -94806,7 +94807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652560248
 Transform:
   m_ObjectHideFlags: 0
