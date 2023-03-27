@@ -201,6 +201,7 @@ public class EnemyAgro : MonoBehaviour
                 setCheckpoint.checkpointX = checkpointXset;
                 setCheckpoint.checkpointY = checkpointYset;
                 setCheckpoint.checkpointZ = checkpointZset;
+                Debug.Log("Set checkpoint from enemyagro.cs");
             }
 
 

@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class CryingGhostAgroScript : MonoBehaviour
@@ -28,11 +26,14 @@ public class CryingGhostAgroScript : MonoBehaviour
     Transform[] waypoints;
     [SerializeField] int curWayPointIndex;
 
+    [SerializeField] private EventDialogue lorePaperDialogue;
     Rigidbody2D rb2d;
     CheckAgroCryingScript checkAgro;
     BoxCollider2D killer;
     PlayerStateManager playerStateManager;
     SpriteRenderer SpriteRenderer;
+    Vector3 originalPos;
+    IEnumerator firstSpawnAgro;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -41,7 +42,9 @@ public class CryingGhostAgroScript : MonoBehaviour
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         checkAgro = agroBounds.GetComponent<CheckAgroCryingScript>();
         killer = gameObject.GetComponent<BoxCollider2D>();
-
+        originalPos = this.transform.position;
+        if (!lorePaperDialogue)
+            lorePaperDialogue = GameObject.Find("DialogueForCryingGhost").GetComponent<EventDialogue>();
     }
     void Start()
     {
@@ -52,41 +55,54 @@ public class CryingGhostAgroScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (FirstSpawn)
+        if (player.gameObject.activeSelf == false)
         {
-            if (!cryingSound.isPlaying)
+            Debug.Log("player is dead");
+            if(this.transform.position != originalPos)
             {
-                cryingSound.Play();
+                this.transform.position = originalPos;
+                this.gameObject.SetActive(false);
+                lorePaperDialogue.dialogueAppearedBefore = false;   // Reset so that dialogue will trigger again
+                StopAllCoroutines();
+                FirstSpawn = true;
+                FirstRunIn = true;
             }
-            StartCoroutine(FirstSpawnAgro());
         }
-        //distance to player
-        float dist2player = Vector2.Distance(transform.position, player.transform.position);
-
-        //the amount of conditition is longer than my will to live
-        if(dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn &&  playerStateManager.currentState != playerStateManager.deadState && !dialogueBox.activeInHierarchy)
+        else
         {
-            
-            killPlayer();
+
+            if (FirstSpawn)
+            {
+                if (!cryingSound.isPlaying)
+                {
+                    cryingSound.Play();
+                }
+                firstSpawnAgro = FirstSpawnAgro();
+                StartCoroutine(firstSpawnAgro);
+            }
+            //distance to player
+            float dist2player = Vector2.Distance(transform.position, player.transform.position);
+
+            //the amount of conditition is longer than my will to live
+            if (dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn && playerStateManager.currentState != playerStateManager.deadState && !dialogueBox.activeInHierarchy)
+            {
+
+                killPlayer();
+            }
+
+            else if (!FirstSpawn && !dialogueBox.activeInHierarchy)
+            {
+                Walk();
+            }
+
+
+            if (FirstRunIn && dist2player > 6.1f)
+            {
+                panicAfter.SetActive(true);
+                FirstRunIn = false;
+                killer.enabled = true;
+            }
         }
-
-        else if (!FirstSpawn && !dialogueBox.activeInHierarchy)
-        {
-            Walk();
-        }
-
-
-        if(FirstRunIn && dist2player > 6.1f)
-        {
-            panicAfter.SetActive(true);
-            FirstRunIn = false;
-            killer.enabled = true;
-        }
-
-        
-
-
 
     }
 
@@ -106,7 +122,7 @@ public class CryingGhostAgroScript : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, agroSpeed * Time.deltaTime);
 
 
-        
+
 
         //if on left of player, will move right
         if (transform.position.x < player.position.x)
@@ -114,7 +130,7 @@ public class CryingGhostAgroScript : MonoBehaviour
             SpriteRenderer.flipX = true;
             //the below is to make the child walk another direction but idk if that works or no
             //curWayPointIndex = 1;
-           
+
         }
 
         //if on right of player, will move left
@@ -122,7 +138,7 @@ public class CryingGhostAgroScript : MonoBehaviour
         {
             SpriteRenderer.flipX = false;
             //curWayPointIndex = 0;
-            
+
         }
 
     }
@@ -174,7 +190,7 @@ public class CryingGhostAgroScript : MonoBehaviour
 
         if (playerStateManager.currentState != playerStateManager.breathState)
         {
-            
+
             cryingSound.Stop();
             if (!agroSound.isPlaying)
             {

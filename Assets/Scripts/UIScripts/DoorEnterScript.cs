@@ -103,8 +103,7 @@ public class DoorEnterScript : MonoBehaviour
             }
 
             checkEnter = true;
-            playerManager.checkpointX = player.transform.position.x;
-            playerManager.checkpointY = player.transform.position.y;
+            
 
         }
         else

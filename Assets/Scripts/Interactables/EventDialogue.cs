@@ -224,7 +224,7 @@ public class EventDialogue : MonoBehaviour
         }
     }
 
-    private bool dialogueAppearedBefore = false;
+    public bool dialogueAppearedBefore = false;
     private void OnTriggerEnter2D(Collider2D interact)
     {
         if (interact.CompareTag("Player"))

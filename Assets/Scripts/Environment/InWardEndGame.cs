@@ -32,6 +32,7 @@ public class InWardEndGame : MonoBehaviour
             azriWardCheck.AzriInWard = true;
             FindObjectOfType<PlayerManager>().checkpointX = FindObjectOfType<PlayerStateManager>().transform.position.x;
             FindObjectOfType<PlayerManager>().checkpointY = FindObjectOfType<PlayerStateManager>().transform.position.y;
+            Debug.Log("Set checkpoint from inwardendgame.cs");
         }
     }
 }
