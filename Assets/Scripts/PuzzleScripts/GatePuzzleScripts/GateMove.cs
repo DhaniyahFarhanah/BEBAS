@@ -13,6 +13,11 @@ public class GateMove : MonoBehaviour
     public GameObject fenceOpen;
     public GameObject bolt;
 
+    public AudioSource gatesound;
+    bool playOncedone;
+    bool playOncetwo;
+
+
     public GameObject player;
     public GameObject gateClosed;
     public GameObject gateOpened;
@@ -67,8 +72,15 @@ public class GateMove : MonoBehaviour
 
     IEnumerator ReturnGameplayScene()
     {
+        
         yield return new WaitForSeconds(0.5f);
         animator.SetTrigger("Open");
+        if (!gatesound.isPlaying && !playOncetwo)
+        {
+            gatesound.Play();
+            playOncetwo = true;
+
+        }
         yield return new WaitForSeconds(1f);
         
         Puzzle.SetActive(false);

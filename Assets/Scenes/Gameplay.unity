@@ -270,16 +270,9 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   dialogue:
   - Oh! Got door here, must be the entrance.
   - Hmm, got a keypad here. But how to open ah?
@@ -2838,26 +2831,14 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 20d91490c050f5941bc80930d8d2b539, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   name: Azri
   dialogue:
   - Is that a guard?
@@ -15047,15 +15028,7 @@ MonoBehaviour:
   bagAudio: {fileID: 0}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -17261,26 +17234,9 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
   name: Azri
   dialogue:
   - There's nothing but wilderness out there.
@@ -22334,12 +22290,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 3
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.417}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -642.4, y: 272.01}
+  m_AnchoredPosition: {x: -614.439, y: 141.01001}
   m_SizeDelta: {x: 203.4659, y: 213.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450909467
@@ -22823,23 +22779,7 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -23326,23 +23266,12 @@ MonoBehaviour:
   azriReactionSounds:
   - {fileID: 0}
   - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
-  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
   - {fileID: 0}
   name: Azri
   dialogue:
@@ -31453,12 +31382,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 13
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 611, y: 268.22}
+  m_AnchoredPosition: {x: 638.96106, y: 137.22}
   m_SizeDelta: {x: 204.1863, y: 221.0564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617948978
@@ -32478,25 +32407,7 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   name: Azri
   dialogue:
@@ -33466,25 +33377,7 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
   name: Azri
   dialogue:
@@ -35540,14 +35433,7 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
@@ -37137,6 +37023,53 @@ MonoBehaviour:
   inventoryPanel: {fileID: 1850355189}
   addHeight: 180
   xWidth: 0
+--- !u!1 &703941010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703941011}
+  m_Layer: 0
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &703941011
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703941010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 450909466}
+  - {fileID: 1423787859}
+  - {fileID: 1213415626}
+  - {fileID: 1024093046}
+  - {fileID: 1950885178}
+  - {fileID: 1175467753}
+  - {fileID: 1446505759}
+  - {fileID: 1532386592}
+  - {fileID: 1854061688}
+  - {fileID: 1006999139}
+  - {fileID: 617948977}
+  m_Father: {fileID: 1469053497}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &705350054
 GameObject:
   m_ObjectHideFlags: 0
@@ -56794,12 +56727,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 12
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 586.5286, y: -239.77756}
+  m_AnchoredPosition: {x: 614.48956, y: -370.77756}
   m_SizeDelta: {x: 180.8973, y: 195.7307}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006999140
@@ -57931,12 +57864,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 6
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -435, y: 274.85}
+  m_AnchoredPosition: {x: -407.03897, y: 143.85}
   m_SizeDelta: {x: 188.9565, y: 197.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024093047
@@ -58833,6 +58766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030438899}
   - component: {fileID: 1030438900}
+  - component: {fileID: 1030438901}
   m_Layer: 0
   m_Name: Test
   m_TagString: Untagged
@@ -58853,7 +58787,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1310578834}
-  m_RootOrder: 14
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -58886,10 +58820,107 @@ MonoBehaviour:
   - {fileID: 617948973}
   fenceOpen: {fileID: 1839537591}
   bolt: {fileID: 1066331188}
+  gatesound: {fileID: 1030438901}
   player: {fileID: 705463099}
   gateClosed: {fileID: 1676085652}
   gateOpened: {fileID: 1772794264}
   Puzzle: {fileID: 1321091889}
+--- !u!82 &1030438901
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030438898}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 840f9a24d8a795c4fb4c125df6ad7433, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1031272468
 GameObject:
   m_ObjectHideFlags: 0
@@ -60804,7 +60835,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1310578834}
-  m_RootOrder: 15
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61014,8 +61045,11 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
-  azriTalk: {fileID: 0}
-  azriReactionSounds: []
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Eh? What is this number? 1942?
@@ -62699,14 +62733,7 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
@@ -66566,12 +66593,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 8
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 273.6}
+  m_AnchoredPosition: {x: 13.960999, y: 142.6}
   m_SizeDelta: {x: 203.7994, y: 216.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175467754
@@ -69359,12 +69386,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 5
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: -228.65}
+  m_AnchoredPosition: {x: -634.039, y: -359.65}
   m_SizeDelta: {x: 274.12, y: 217.9909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213415627
@@ -75046,17 +75073,6 @@ RectTransform:
   - {fileID: 720238226}
   - {fileID: 338965615}
   - {fileID: 1839537592}
-  - {fileID: 450909466}
-  - {fileID: 1423787859}
-  - {fileID: 1213415626}
-  - {fileID: 1024093046}
-  - {fileID: 1950885178}
-  - {fileID: 1175467753}
-  - {fileID: 1446505759}
-  - {fileID: 1532386592}
-  - {fileID: 1854061688}
-  - {fileID: 1006999139}
-  - {fileID: 617948977}
   - {fileID: 1030438899}
   - {fileID: 1066331189}
   m_Father: {fileID: 1321091890}
@@ -77301,15 +77317,7 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   dialogue:
   - I think I have to push this lever to switch on the lights.
@@ -80924,12 +80932,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 4
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -653.5999, y: 20.8801}
+  m_AnchoredPosition: {x: -625.6389, y: -110.1199}
   m_SizeDelta: {x: 199.5966, y: 241.8322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423787860
@@ -82396,12 +82404,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 9
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193.287, y: 273.6}
+  m_AnchoredPosition: {x: 221.24806, y: 142.6}
   m_SizeDelta: {x: 210.7654, y: 226.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446505760
@@ -83194,25 +83202,10 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   name: Azri
   dialogue:
@@ -83681,7 +83674,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 703941011}
   m_Father: {fileID: 1839537592}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87516,12 +87510,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 10
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 402, y: 268.22}
+  m_AnchoredPosition: {x: 429.96106, y: 137.22}
   m_SizeDelta: {x: 188.1522, y: 200.5367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532386593
@@ -97209,16 +97203,9 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   dialogue:
   - Eh should I break the law?
   - Desperate times calls for desperate measures.
@@ -97988,15 +97975,11 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -102456,15 +102439,9 @@ MonoBehaviour:
   bagAudio: {fileID: 0}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -105333,12 +105310,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 11
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601, y: 16.613}
+  m_AnchoredPosition: {x: 628.96106, y: -114.38706}
   m_SizeDelta: {x: 171.3232, y: 191.4027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854061689
@@ -109141,24 +109118,7 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   name: Azri
@@ -110680,12 +110640,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1310578834}
-  m_RootOrder: 7
+  m_Father: {fileID: 703941011}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: 274.85}
+  m_AnchoredPosition: {x: -197.039, y: 143.85}
   m_SizeDelta: {x: 204.3213, y: 213.7903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950885179
@@ -111511,26 +111471,8 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 20d91490c050f5941bc80930d8d2b539, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   name: Azri
   dialogue:
   - That was close!
@@ -115690,27 +115632,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a66040f9451f89a48b71b46eae716f56, type: 3}
   talk: {fileID: 918595598}
   voices:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 0}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 0}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   index: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
