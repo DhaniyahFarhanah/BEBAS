@@ -9260,15 +9260,9 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -9280,8 +9274,8 @@ MonoBehaviour:
   dialogue:
   - 'Eh? Another finger in this room. '
   - This looks like a ring finger...
-  - But that ghost is still in the room...
-  - I should KEEP MY EYES CLOSED if I want to leave this room alive...
+  - But that ghost is still in the room.
+  - I should keep my eyes closed if I want to leave this room alive...
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
@@ -12340,15 +12334,9 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -12359,7 +12347,7 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - This must be the final finger.
-  - It looks like a thumb...
+  - It looks like a thumb.
   - Now what?
   - She said there's a hidden room here...
   index: 0
@@ -37575,7 +37563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 74.73, y: -12.3, z: 0}
+  m_LocalPosition: {x: -12.2, y: -12.3, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -40355,16 +40343,16 @@ MonoBehaviour:
   dialogue:
   - '*Whispering to himself*'
   - Japanese scum...
-  - Um..hello?
-  - ...What? What happened?
+  - Uhm... Hello?
+  - What...? What happened?
   - Last I remembered, I was captured...
-  - And you!...You were there!
-  - You...promised brother.
-  - I-I'm sorry...but I don't know you.
+  - And you...! You were there!
+  - You... Promised brother.
+  - I-I'm sorry... But I don't know you.
   - YOU PROMISED! YOU PROMISED WE'D ESCAPE TOGETHER.
-  - ...The hospital...it's shaking...
-  - you..................promised.................
-  - look at what you've done
+  - The hospital... It's shaking...
+  - 'You........ Promised........ '
+  - Look at what you've done.
   - I need to get out of here!
   personShowcase:
   - {fileID: -215503001, guid: c5e934cb2dd505042a9f7fd6f47ab511, type: 3}
@@ -40398,11 +40386,11 @@ MonoBehaviour:
   voices:
   - {fileID: 0}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
   - {fileID: 0}
   - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
@@ -45452,15 +45440,8 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   dialogue:
   - A safe? It looks pretty old. But why does it have a keypad?
@@ -50234,26 +50215,9 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 8d90fbdbeda07984bab28dbeac1621df, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   name: Azri
   dialogue:
   - There's the next finger...
@@ -52226,25 +52190,6 @@ MonoBehaviour:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   name: Azri
   dialogue:
@@ -67230,15 +67175,8 @@ MonoBehaviour:
   bagAudio: {fileID: 249814944}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
@@ -78217,26 +78155,10 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   name: Azri
   dialogue:
   - Why are there so many thing hanging around ah?
@@ -113436,26 +113358,8 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
+  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   name: Azri
   dialogue:
   - Are those hands?!
@@ -114160,16 +114064,14 @@ MonoBehaviour:
   bagAudio: {fileID: 0}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
+  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 20d91490c050f5941bc80930d8d2b539, type: 3}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -114183,7 +114085,7 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   dialogue:
   - 'Who is this guy? '
-  - 'Hmm...Japanese name. And he looks like a war hero with all the medals '
+  - 'Hmm...Japanese name. He looks like a war hero with all the medals '
   - 'Could he be the director of the hospital? '
   - Wait...There's something behind it.
   - ...!
@@ -115438,21 +115340,15 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
+  - {fileID: 8300000, guid: aa26bb746053e9a4795cf2fd2bfccb46, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
   - {fileID: 0}
   dialogue:
-  - Oh god...I think I'm gonna be sick...
-  - Poor guy though...He must've been a prisoner of the war
+  - Oh god... I think I'm gonna be sick.
+  - Poor guy though... He must've been a prisoner of the war
   - Wait... Is this the "Uncle" the little girl was talking about?
-  - His fingers... Just like in my dream... It can't be
+  - His fingers... Just like in my dream... It can't be.
   index: 0
   hasCompletedLine: 0
   wordSpeed: 0.03
@@ -116189,25 +116085,7 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 20d91490c050f5941bc80930d8d2b539, type: 3}
   - {fileID: 0}
   name: Azri
   dialogue:
