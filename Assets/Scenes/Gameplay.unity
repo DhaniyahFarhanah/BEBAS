@@ -268,6 +268,18 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - Oh! Got door here, must be the entrance.
   - Hmm, got a keypad here. But how to open ah?
@@ -284,11 +296,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
-  azriAudioClips:
-  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
-  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
-  - {fileID: 8300000, guid: 8d90fbdbeda07984bab28dbeac1621df, type: 3}
-  azriTalkingIndex: 0
   playOnce: 1
 --- !u!61 &3455329
 BoxCollider2D:
@@ -1957,6 +1964,28 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - The door is locked
@@ -1973,8 +2002,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!1 &55179406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +2836,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Is that a guard?
@@ -2831,12 +2880,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
-  azriAudioClips:
-  - {fileID: 8300000, guid: adfd38bf67336a74597aa85d407c7d8b, type: 3}
-  - {fileID: 8300000, guid: f60c221602fe8e944987bb69aef3953b, type: 3}
-  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
-  - {fileID: 8300000, guid: b588831c5d1d7b04e8ee0c3c6ec9819b, type: 3}
-  azriTalkingIndex: 0
 --- !u!61 &68857675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9232,6 +9275,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 171506905}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -9252,8 +9307,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &212779248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12302,6 +12355,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1098170938}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -12322,8 +12387,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!114 &280512282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14982,6 +15045,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 331680358}
   HasItemAudio: 0
   bagAudio: {fileID: 0}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -14998,8 +15073,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &331680357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17186,6 +17259,28 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - There's nothing but wilderness out there.
@@ -17203,8 +17298,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &371450021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21297,6 +21390,18 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - There's a hidden door here.
   - It's covered in those weird papers
@@ -21313,8 +21418,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 0
   interactable: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &440907374
 BoxCollider2D:
@@ -22718,6 +22821,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - What was that!
@@ -22736,8 +22861,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 463082762}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!82 &463082762
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23199,6 +23322,28 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
+  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - '*Huff Huff Huff*'
@@ -23222,8 +23367,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &476937920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25092,7 +25235,7 @@ MonoBehaviour:
   HUD: {fileID: 1983761776}
   zoomSize: 3.63
   zoomSpeed: 0.1
-  spawnZoomSpeed: 1
+  spawnZoomSpeed: 0.005
   setY: 0.2
   isSpawn: 0
 --- !u!114 &519420034
@@ -32333,6 +32476,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Ok good I didn't get caught.
@@ -32349,8 +32514,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &629461073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33301,6 +33464,28 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Walao. It is so dark in here.
@@ -33317,8 +33502,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &647433660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35355,6 +35538,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 905830819}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -35373,8 +35568,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!114 &686868418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37370,7 +37563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.7, y: 67.8, z: 0}
+  m_LocalPosition: {x: -12.3, y: -12.3, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -40187,6 +40380,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a66040f9451f89a48b71b46eae716f56, type: 3}
   - {fileID: 21300000, guid: a66040f9451f89a48b71b46eae716f56, type: 3}
   - {fileID: 21300000, guid: 389eff7d8db2ed5478371f542b39d046, type: 3}
+  talk: {fileID: 918595598}
+  voices:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 8300000, guid: 0acd4aa4fc07a0e40be68d95c5ebd5d9, type: 3}
+  - {fileID: 0}
   index: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -40196,12 +40404,6 @@ MonoBehaviour:
   hasCompletedLine: 0
   SetActiveAfterFinished: 1
   completeLineNow: 0
-  dialogueTypingSoundClip: {fileID: 8300000, guid: c5243bf32a0a8e24baab34e56796a34b, type: 3}
-  azriAudioClips: []
-  azriTalkingIndex: 0
-  stopAudioSource: 0
-  delayGhostTalking: 4
-  startAudio: 0
 --- !u!114 &736857661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45234,6 +45436,18 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - A safe? It looks pretty old. But why does it have a keypad?
   - I wonder what the combination is...
@@ -45250,8 +45464,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
   playOnce: 1
 --- !u!61 &845652109
 BoxCollider2D:
@@ -50006,6 +50218,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - There's the next finger...
@@ -50023,8 +50257,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!1 &911893410
 GameObject:
   m_ObjectHideFlags: 0
@@ -50661,6 +50893,139 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &918595596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918595597}
+  - component: {fileID: 918595598}
+  m_Layer: 5
+  m_Name: Voice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &918595597
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918595596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1697471761}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 434, y: -214}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &918595598
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918595596}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &921791943
 GameObject:
   m_ObjectHideFlags: 0
@@ -51843,6 +52208,28 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Test
@@ -51858,8 +52245,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &941033702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55015,6 +55400,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 983097321}
   HasItemAudio: 0
   bagAudio: {fileID: 0}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -55031,8 +55428,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!212 &983097321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60619,6 +61014,8 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 0}
+  azriReactionSounds: []
   name: Azri
   dialogue:
   - Eh? What is this number? 1942?
@@ -60636,8 +61033,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &1067737194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62302,6 +62697,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 488777356}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -62320,8 +62727,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!114 &1097775323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66697,6 +67102,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 657883412}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -66715,8 +67132,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!114 &1185719508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76884,6 +77299,18 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - I think I have to push this lever to switch on the lights.
   - Got indicator around the 70-90 mark.
@@ -76899,11 +77326,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
-  azriAudioClips:
-  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
-  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
-  - {fileID: 8300000, guid: 8d90fbdbeda07984bab28dbeac1621df, type: 3}
-  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &1341492795
 BoxCollider2D:
@@ -77686,6 +78108,28 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Why are there so many thing hanging around ah?
@@ -77704,8 +78148,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &1348985878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82750,6 +83192,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - There...the lights are on
@@ -82769,12 +83233,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips:
-  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
-  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
-  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
-  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
-  azriTalkingIndex: 0
 --- !u!61 &1454913257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84086,6 +84544,28 @@ MonoBehaviour:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - This picture...It's the same guy as behind the portrait...
@@ -84107,8 +84587,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!82 &1477316126
 AudioSource:
   m_ObjectHideFlags: 0
@@ -96324,6 +96802,7 @@ RectTransform:
   - {fileID: 2135786964}
   - {fileID: 1257348941}
   - {fileID: 1217926584}
+  - {fileID: 918595597}
   m_Father: {fileID: 651111173}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96728,6 +97207,18 @@ MonoBehaviour:
   - {fileID: 497372390, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - Eh should I break the law?
   - Desperate times calls for desperate measures.
@@ -96744,8 +97235,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
   playOnce: 0
 --- !u!82 &1703884383
 AudioSource:
@@ -97015,6 +97504,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!82 &1707724463 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3968103646553213591, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+  m_PrefabInstance: {fileID: 3814229848283083339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1708663602
 GameObject:
   m_ObjectHideFlags: 0
@@ -97492,6 +97986,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1715592024}
   HasItemAudio: 0
   bagAudio: {fileID: 249814944}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -97516,12 +98022,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 0
-  azriAudioClips:
-  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
-  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
-  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
-  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
-  azriTalkingIndex: 0
 --- !u!114 &1715592028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101954,6 +102454,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1803070721}
   HasItemAudio: 0
   bagAudio: {fileID: 0}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -101974,8 +102486,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &1803070720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108629,6 +109139,28 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - 'Sial Lah! '
@@ -108646,8 +109178,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 0
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!61 &1927825449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110979,6 +111509,28 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - That was close!
@@ -110995,8 +111547,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!1 &1980379766
 GameObject:
   m_ObjectHideFlags: 0
@@ -112838,6 +113388,28 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Are those hands?!
@@ -112854,8 +113426,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!1 &2010105665
 GameObject:
   m_ObjectHideFlags: 0
@@ -113541,6 +114111,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   HasItemAudio: 0
   bagAudio: {fileID: 0}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   AzriPreview: {fileID: 1841857537}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriReactions:
@@ -113569,8 +114151,6 @@ MonoBehaviour:
   start: 1
   dialogueTypingSoundClip: {fileID: 0}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!82 &2026420708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -114809,6 +115389,18 @@ MonoBehaviour:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dialogue:
   - Oh god...I think I'm gonna be sick...
   - Poor guy though...He must've been a prisoner of the war
@@ -114826,8 +115418,6 @@ MonoBehaviour:
   walkingSoundClip: {fileID: 0}
   stopAudioSource: 1
   interactable: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
   playOnce: 0
 --- !u!61 &2042510828
 BoxCollider2D:
@@ -115098,6 +115688,30 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a66040f9451f89a48b71b46eae716f56, type: 3}
   - {fileID: 21300000, guid: 389eff7d8db2ed5478371f542b39d046, type: 3}
   - {fileID: 21300000, guid: a66040f9451f89a48b71b46eae716f56, type: 3}
+  talk: {fileID: 918595598}
+  voices:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
   index: 0
   newImage: {fileID: 21300000, guid: ba8ffa8ec12eca54eacbabbd6d22c077, type: 3}
   wordSpeed: 0.03
@@ -115107,16 +115721,6 @@ MonoBehaviour:
   hasCompletedLine: 0
   SetActiveAfterFinished: 1
   completeLineNow: 0
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 98f939ae9bc4a0748ad1b5c1b8ec9754, type: 3}
-  azriAudioClips:
-  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
-  - {fileID: 8300000, guid: 806ae0985442fde4e94ebfcfdce32f3c, type: 3}
-  - {fileID: 8300000, guid: 2a4024704ba4a4e4a9cbc4a1aff351e0, type: 3}
-  - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
-  azriTalkingIndex: 0
-  stopAudioSource: 0
-  delayGhostTalking: 2
-  startAudio: 1
 --- !u!82 &2045772593
 AudioSource:
   m_ObjectHideFlags: 0
@@ -115536,6 +116140,28 @@ MonoBehaviour:
   AzriReactions:
   - {fileID: -1711997405, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   - {fileID: 2000388633, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
+  azriTalk: {fileID: 1707724463}
+  azriReactionSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Siah lah... Why is the floor in this room so cold.
@@ -115552,8 +116178,6 @@ MonoBehaviour:
   triggerAudio: {fileID: 0}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 6fee46dcda0c44a7cb7b2ea3e5cb4529, type: 3}
   stopAudioSource: 1
-  azriAudioClips: []
-  azriTalkingIndex: 0
 --- !u!1 &2053044668
 GameObject:
   m_ObjectHideFlags: 0
@@ -120495,6 +121119,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3814229849169471993, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968103646553213591, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5157297047991031142, guid: a7e2d8be8eb1946eda72fafa7dca9900, type: 3}

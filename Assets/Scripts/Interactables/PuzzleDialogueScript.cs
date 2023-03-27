@@ -25,6 +25,11 @@ public class PuzzleDialogueScript : MonoBehaviour
     Image azriPreview;
     [SerializeField] Sprite AzriDefault;
 
+
+    //Azri speech
+    [SerializeField] AudioSource azriTalk;
+    [SerializeField] AudioClip[] azriReactionSounds;
+
     public string[] dialogue;
     [SerializeField] private int index;
     [SerializeField] private bool hasCompletedLine = false;
@@ -48,9 +53,9 @@ public class PuzzleDialogueScript : MonoBehaviour
     [SerializeField] private AudioClip walkingSoundClip;
     [SerializeField] private bool stopAudioSource;
     [SerializeField] private bool interactable;
-    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
-    [SerializeField] private int azriTalkingIndex = 0;
-    IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
+    //[SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    //[SerializeField] private int azriTalkingIndex = 0;
+    //IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
 
     [SerializeField] private bool playOnce;
     private bool played;
@@ -92,7 +97,7 @@ public class PuzzleDialogueScript : MonoBehaviour
     void Update()
     {
         SkipLine();
-        PlayTalkingSound();
+
         // Otherwise player can keep on pressing and can hear that it is typing
 
         if (puzzle.activeSelf == true)
@@ -195,6 +200,7 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     }
     // Play audio based on who is talking
+    /* this code crashes the game
     private void PlayTalkingSound()
     {
         if (dialoguePanel.activeSelf == true && playerIsClose)
@@ -227,7 +233,7 @@ public class PuzzleDialogueScript : MonoBehaviour
             yield return new WaitForSeconds(audioSource.clip.length + 2.5f);
 
         }
-    }
+    }*/
     /*private void ShowAfterPuzzleDialogue()
     {
         if (puzzleCompleted && !showingDialogueNow)
@@ -253,6 +259,17 @@ public class PuzzleDialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
+        if (!azriTalk.isPlaying)
+        {
+            if (azriReactionSounds[index] != null)
+            {
+                azriTalk.clip = azriReactionSounds[index];
+                azriTalk.Play();
+
+            }
+
+        }
+
         azriPreview.sprite = azriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {

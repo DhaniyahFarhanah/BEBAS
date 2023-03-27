@@ -36,6 +36,12 @@ public class NpcDialogue : MonoBehaviour
     public string[] dialogue;
     public Sprite[] personShowcase;
     public Sprite[] dialogueBoxImageArray;
+
+
+    // speech
+    [SerializeField] AudioSource talk;
+    [SerializeField] AudioClip[] voices;
+
     public int index;
 
     public Sprite newImage;
@@ -53,16 +59,16 @@ public class NpcDialogue : MonoBehaviour
     [SerializeField] private bool completeLineNow = false;
 
     private AudioSource audioSource;
-    [SerializeField] private AudioClip dialogueTypingSoundClip;
-    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
-    [SerializeField] private int azriTalkingIndex = 0;
-    [SerializeField] private bool stopAudioSource;
+    //[SerializeField] private AudioClip dialogueTypingSoundClip;
+    //[SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    //[SerializeField] private int azriTalkingIndex = 0;
+    //[SerializeField] private bool stopAudioSource;
 
-    [Range(1.0f, 4.0f)]
-    [SerializeField] private float delayGhostTalking = 2f;    // The value that waits for 'delayGhostTalking' seconds before ghost talks again
-    [SerializeField] private bool startAudio = false;   // Need a bool so that run coroutine once only
-    IEnumerator ghostTalking;   // Keeps a reference of the ghost talking, so to stop audio later on
-    IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
+    //[Range(1.0f, 4.0f)]
+    //[SerializeField] private float delayGhostTalking = 2f;    // The value that waits for 'delayGhostTalking' seconds before ghost talks again
+    //[SerializeField] private bool startAudio = false;   // Need a bool so that run coroutine once only
+    //IEnumerator ghostTalking;   // Keeps a reference of the ghost talking, so to stop audio later on
+    //IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
     
     private void Awake()
     {
@@ -76,10 +82,10 @@ public class NpcDialogue : MonoBehaviour
                 audioSource = gameObject.AddComponent<AudioSource>();
             }
         }
-        if (audioSource.clip == null)
-        {
-            audioSource.clip = dialogueTypingSoundClip;
-        }
+       // if (audioSource.clip == null)
+       // {
+       //     audioSource.clip = dialogueTypingSoundClip;
+       // }
 
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
@@ -94,7 +100,6 @@ public class NpcDialogue : MonoBehaviour
     {
         SkipLine();
         
-        PlayTalkingSound();
 
         if (doneTalk)
         {
@@ -142,6 +147,18 @@ public class NpcDialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
+        //plays if not playing. plays once
+        if (!talk.isPlaying)
+        {
+            if (voices[index] != null)
+            {
+                talk.clip = voices[index];
+                talk.Play();
+
+            }
+
+        }
+
         SpeechAssignment();
         foreach (char letter in dialogue[index].ToCharArray())
         {
@@ -169,7 +186,9 @@ public class NpcDialogue : MonoBehaviour
         completeLineNow = false;
     }
 
+    //this code crashes the game
     // Play audio based on who is talking
+    /*
     private void PlayTalkingSound()
     {
         if (dialoguePanel.activeSelf == true && playerIsClose)
@@ -228,7 +247,7 @@ public class NpcDialogue : MonoBehaviour
 
         audioSource.PlayOneShot(audioSource.clip);
         yield return new WaitForSeconds(audioSource.clip.length + 1f);
-    }
+    } */
     private void SkipLine()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !hasCompletedLine && !completeLineNow)

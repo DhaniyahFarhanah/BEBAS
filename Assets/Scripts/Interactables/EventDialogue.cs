@@ -25,7 +25,9 @@ public class EventDialogue : MonoBehaviour
     [SerializeField] Sprite AzriDefault;
     [SerializeField] Sprite[] AzriReactions;
 
-
+    //Azri speech
+    [SerializeField] AudioSource azriTalk;
+    [SerializeField] AudioClip[] azriReactionSounds;
     public new string name;
     public string[] dialogue;
     public int index;
@@ -50,8 +52,8 @@ public class EventDialogue : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
-    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
-    [SerializeField] private int azriTalkingIndex = 0;
+    //[SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    //[SerializeField] private int azriTalkingIndex = 0;
     IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
 
     private void Awake()
@@ -72,7 +74,7 @@ public class EventDialogue : MonoBehaviour
     void Update()
     {
         SkipLine();
-        PlayTalkingSound();
+       //PlayTalkingSound();
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
 
@@ -122,6 +124,16 @@ public class EventDialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
+        if (!azriTalk.isPlaying)
+        {
+            if (azriReactionSounds[index] != null)
+            {
+                azriTalk.clip = azriReactionSounds[index];
+                azriTalk.Play();
+
+            }
+
+        }
         AzriPreview.sprite = AzriReactions[index];
         foreach (char letter in dialogue[index].ToCharArray())
         {
@@ -156,8 +168,10 @@ public class EventDialogue : MonoBehaviour
         }
     }
 
+
+    //this code crashes the game
     // Play audio based on who is talking
-    private void PlayTalkingSound()
+    /*private void PlayTalkingSound()
     {
         if (dialoguePanel.activeSelf == true && playerIsClose)
         {
@@ -189,7 +203,8 @@ public class EventDialogue : MonoBehaviour
             yield return new WaitForSeconds(audioSource.clip.length + 2.5f);
             
         }
-    }
+    } */
+
     private void SetWordSpeed(float newSpeed)
     {
         currentWordSpeed = newSpeed;

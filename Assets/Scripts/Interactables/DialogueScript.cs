@@ -25,6 +25,10 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] AudioSource bagAudio;
     GameObject player;
 
+    //Azri speech
+    [SerializeField] AudioSource azriTalk;
+    [SerializeField] AudioClip[] azriReactionSounds;
+
     // Azri reactions
     [SerializeField] Image AzriPreview;
     [SerializeField] Sprite AzriDefault;
@@ -47,19 +51,19 @@ public class DialogueScript : MonoBehaviour
     
     [SerializeField] private AudioClip dialogueTypingSoundClip;
     [SerializeField] private bool stopAudioSource;
-    [SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
-    [SerializeField] private int azriTalkingIndex = 0;
-    IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
+    //[SerializeField] private List<AudioClip> azriAudioClips = new List<AudioClip>();
+    //[SerializeField] private int azriTalkingIndex = 0;
+    //IEnumerator azriTalking;   // Keeps a reference of the azri talking, so to stop audio later on
 
     private void Awake()
     {
         wordSpeed = 0.03f;
         currentWordSpeed = wordSpeed;
         
-        if (audioSource == null)
-            audioSource = this.gameObject.AddComponent<AudioSource>();
-        else
-            audioSource = this.gameObject.GetComponent<AudioSource>();
+        //if (audioSource == null)
+        //    audioSource = this.gameObject.AddComponent<AudioSource>();
+        //else
+        //    audioSource = this.gameObject.GetComponent<AudioSource>();
         pause = GameObject.FindGameObjectWithTag("menu").GetComponent<pausemenu>();
     }
 
@@ -69,7 +73,6 @@ public class DialogueScript : MonoBehaviour
 
         SkipLine();
         
-        PlayTalkingSound();
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && playerIsClose && start == true && !pause.isPaused)
         {
@@ -120,6 +123,16 @@ public class DialogueScript : MonoBehaviour
 
     IEnumerator Typing()
     {
+        if (!azriTalk.isPlaying)
+        {
+            if (azriReactionSounds[index] != null)
+            {
+                azriTalk.clip = azriReactionSounds[index];
+                azriTalk.Play();
+
+            }
+
+        }
         //_talking.Play();
         AzriPreview.sprite = AzriReactions[index];
         foreach(char letter in dialogue[index].ToCharArray())
@@ -148,7 +161,8 @@ public class DialogueScript : MonoBehaviour
     }
 
     // Play audio based on who is talking
-    private void PlayTalkingSound()
+    //this code crashes the game
+    /*private void PlayTalkingSound()
     {
         if (dialoguePanel.activeSelf == true && playerIsClose)
         {
@@ -165,7 +179,7 @@ public class DialogueScript : MonoBehaviour
                 StopCoroutine(azriTalking);
                 azriTalking = null;
             }
-        }
+        } 
     }
     // "Loop" ghost talking but with a delay variable
     IEnumerator AzriTalking()
@@ -180,7 +194,7 @@ public class DialogueScript : MonoBehaviour
             yield return new WaitForSeconds(audioSource.clip.length + 2.5f);
 
         }
-    }
+    }*/
     private void SetWordSpeed(float newSpeed)
     {
         currentWordSpeed = newSpeed;
