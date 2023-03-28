@@ -18,6 +18,7 @@ public class SecurityGuardMove : MonoBehaviour
     [SerializeField] AudioSource walking;
     [SerializeField] GameObject dialogue;
     [SerializeField] GameObject trigger;
+    [SerializeField] GameObject deathScreen;
 
     public Animator animator;
     Rigidbody rb;
@@ -66,7 +67,7 @@ public class SecurityGuardMove : MonoBehaviour
 
             animator.SetBool("isWalking", true);
 
-            if (patrolDestination == 0)
+            if (patrolDestination == 0 && !deathScreen.activeInHierarchy)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
 
@@ -79,7 +80,7 @@ public class SecurityGuardMove : MonoBehaviour
                 }
             }
 
-            if (patrolDestination == 1)
+            if (patrolDestination == 1 && !deathScreen.activeInHierarchy)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
 

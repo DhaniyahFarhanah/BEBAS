@@ -185,7 +185,7 @@ public class FuseBoxPuzzleScript : MonoBehaviour
 
     void SetBar()
     {
-        float barSlide = Mathf.SmoothDamp(statusBar.fillAmount, enteredValue / 100, ref currentVelocity, 100 * Time.deltaTime);
+        float barSlide = Mathf.SmoothDamp(statusBar.fillAmount, enteredValue / 100, ref currentVelocity, 50 * Time.deltaTime);
         statusBar.fillAmount = barSlide;
         
     }

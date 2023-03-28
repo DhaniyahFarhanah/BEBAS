@@ -2520,7 +2520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &63897805
 GameObject:
@@ -2711,7 +2711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!212 &68695445
 SpriteRenderer:
@@ -8425,7 +8425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!212 &203121652
 SpriteRenderer:
@@ -18999,7 +18999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &393374416
 GameObject:
@@ -24295,7 +24295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &497288460
 GameObject:
@@ -25977,7 +25977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &528476143
 GameObject:
@@ -39717,8 +39717,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 5
-  MaxDistance: 17
+  MinDistance: 8
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -40439,7 +40439,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d4e93e61fdba2124fb0415e73065ad4e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.48
-  m_Pitch: -3
+  m_Pitch: 0.09
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -50494,7 +50494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &914814053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71178,7 +71178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &1242472213
 GameObject:
@@ -104161,8 +104161,8 @@ MonoBehaviour:
   speed: 35
   path: {fileID: 223673200}
   wayPoints:
-  - {fileID: 1357824781}
   - {fileID: 451906084}
+  - {fileID: 1357824781}
   waitTime: 2
 --- !u!212 &1842368746
 SpriteRenderer:
@@ -104230,7 +104230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 1
+  waitTime: 0.5
   jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &1844310164
 GameObject:
@@ -115856,7 +115856,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3.1
+  MinDistance: 5
   MaxDistance: 10.41
   Pan2D: 0
   rolloffMode: 1
@@ -116490,6 +116490,7 @@ MonoBehaviour:
   walking: {fileID: 2056149906}
   dialogue: {fileID: 1307237298}
   trigger: {fileID: 1067737191}
+  deathScreen: {fileID: 0}
   animator: {fileID: 2056149902}
   isWaiting: 1
   myCollider: {fileID: 0}
