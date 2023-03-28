@@ -8,9 +8,7 @@ public class Load : MonoBehaviour
     //awake
     private void Awake()
     {
-        //set resolution
-        Screen.SetResolution(1920, 1080, false);
-
+     
         //init persistance objects
         InitObj();
 

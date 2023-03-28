@@ -2520,8 +2520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &63897805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,8 +2711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!212 &68695445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2836,10 +2836,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: 8122c51872d5d7e4880681434e10cad7, type: 3}
   - {fileID: 8300000, guid: 20d91490c050f5941bc80930d8d2b539, type: 3}
-  - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Is that a guard?
@@ -8425,8 +8425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!212 &203121652
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11814,7 +11814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf45fb71fdc99142988e98636188a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioToBePlayed: {fileID: 0}
+  audioToBePlayed: {fileID: 269476220}
   objToPlaySound: {fileID: 151925034}
   stopWhenInactive: 0
 --- !u!1 &271185232
@@ -12206,8 +12206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -801.99304, y: 235}
-  m_SizeDelta: {x: 1583.5825, y: 133.3787}
+  m_AnchoredPosition: {x: -801.99, y: 236}
+  m_SizeDelta: {x: 1583.6, y: 135.38}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &275174482
 MonoBehaviour:
@@ -17226,7 +17226,7 @@ MonoBehaviour:
   azriReactionSounds:
   - {fileID: 8300000, guid: 8e8df12ec82815044a9b8f4b561c4744, type: 3}
   - {fileID: 0}
-  - {fileID: 8300000, guid: 1614250300410254c9cca65d2e581184, type: 3}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - There's nothing but wilderness out there.
@@ -18999,8 +18999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &393374416
 GameObject:
   m_ObjectHideFlags: 0
@@ -24295,8 +24295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &497288460
 GameObject:
   m_ObjectHideFlags: 0
@@ -25977,8 +25977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &528476143
 GameObject:
   m_ObjectHideFlags: 0
@@ -37564,7 +37564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.56, y: -12.53, z: 0}
+  m_LocalPosition: {x: -12.3, y: -12.53, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -64919,7 +64919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1140023200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71163,8 +71163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &1242472213
 GameObject:
   m_ObjectHideFlags: 0
@@ -95895,6 +95895,8 @@ MonoBehaviour:
   - {fileID: 706324618}
   - {fileID: 1078070978}
   - {fileID: 1462566237}
+  - {fileID: 1446944946}
+  - {fileID: 866504778}
 --- !u!114 &1677214680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104213,8 +104215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareHud: {fileID: 1073506355}
   type: 5
-  waitTime: 0.5
-  jumpscareSound: {fileID: 0}
+  waitTime: 1
+  jumpscareSound: {fileID: 8300000, guid: 2dee0557b6e2cf347ab97b7b5999fd8b, type: 3}
 --- !u!1 &1844310164
 GameObject:
   m_ObjectHideFlags: 0
