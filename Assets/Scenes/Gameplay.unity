@@ -32474,6 +32474,7 @@ MonoBehaviour:
   azriReactionSounds:
   - {fileID: 8300000, guid: 96bf526c84b34884fbbb10798d3581ab, type: 3}
   - {fileID: 0}
+  - {fileID: 0}
   name: Azri
   dialogue:
   - Ok good I didn't get caught.
@@ -37563,7 +37564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705463099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.2, y: -12.3, z: 0}
+  m_LocalPosition: {x: 35.56, y: -12.53, z: 0}
   m_LocalScale: {x: 0.54919964, y: 0.54919964, z: 0.54919964}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -61024,7 +61025,6 @@ GameObject:
   - component: {fileID: 1067737192}
   - component: {fileID: 1067737194}
   - component: {fileID: 1067737193}
-  - component: {fileID: 1067737196}
   - component: {fileID: 1067737195}
   m_Layer: 0
   m_Name: possibleKeyPad?
@@ -61139,19 +61139,6 @@ MonoBehaviour:
   Guard: {fileID: 2056149897}
   setActive: {fileID: 629461070}
   index: 1
---- !u!114 &1067737196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067737191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea9e46cde5214340b3e001588d5fc28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerKeypad: {fileID: 629461070}
 --- !u!1 &1067791018
 GameObject:
   m_ObjectHideFlags: 0
@@ -94729,7 +94716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1652560248
 Transform:
   m_ObjectHideFlags: 0
