@@ -149,6 +149,15 @@ public class EnemyAgro : MonoBehaviour
 
     void CheckWall()
     {
+        if (!GroaningSound.isPlaying)
+        {
+            GroaningSound.Play();
+        }
+        if (!MovementSound.isPlaying)
+        {
+            MovementSound.Play();
+        }
+
         distToWaypoint = Vector2.Distance(transform.position, Waypoints[nextWayPoint].transform.position);
 
         transform.position = Vector2.MoveTowards(transform.position, Waypoints[nextWayPoint].transform.position, movespeed * Time.deltaTime);
