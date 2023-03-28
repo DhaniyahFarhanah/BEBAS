@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ClickToSkipAnim : MonoBehaviour
 {
+    //Script done by Dhaniyah Farhanah Binte Yusoff
+
     //gameobjects
     [SerializeField] GameObject digipenLogo;
     [SerializeField] GameObject spookyookyLogo;
@@ -15,9 +17,12 @@ public class ClickToSkipAnim : MonoBehaviour
 
     //animators
     Animator digipenSpookyAnim;
+    Animator spookyAnim;
     Animator copyrightAnim;
     Animator TriggerAnim;
     Animator headphoneAnim;
+
+    [SerializeField] float waitTime;
 
     scenetransition load;
 
@@ -29,6 +34,7 @@ public class ClickToSkipAnim : MonoBehaviour
         copyrightAnim = copyrightText.GetComponent<Animator>();
         TriggerAnim = triggerWarning.GetComponent<Animator>();
         headphoneAnim = headphoneNotice.GetComponent<Animator>();
+        spookyAnim = spookyookyLogo.GetComponent<Animator>();
         load = Loader.GetComponent<scenetransition>();
     }
 
@@ -36,18 +42,30 @@ public class ClickToSkipAnim : MonoBehaviour
     void Start()
     {
         click = 0;
+        StartCoroutine(waitforclick());
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayAnim();
+
+        if(click == 3)
+        {
+            waitTime = 3f;
+        }
+        else if (click == 4)
+        {
+            waitTime = 2f;
+        }
+       
     }
 
     public void addClick()
     {
         click++;
     }
+
     void PlayAnim()
     {
         switch (click)
@@ -65,11 +83,50 @@ public class ClickToSkipAnim : MonoBehaviour
                 digipenLogo.SetActive(false);
                 spookyookyLogo.SetActive(true);
                 digipenSpookyAnim.SetBool("isDigipen", false);
-                digipenSpookyAnim.SetBool("isSpooky", true);
+                spookyAnim.SetBool("isSpooky", true);
+                break;
+
+            case 3:
+                copyrightAnim.SetTrigger("Gone");
+                spookyAnim.SetTrigger("Gone");
+                break;
+
+            case 4:
+                spookyookyLogo.SetActive(false);
+                triggerWarning.SetActive(true);
+                break;
+
+            case 5:
+                TriggerAnim.SetTrigger("Gone");
+                break;
+
+            case 6:
+                triggerWarning.SetActive(false);
+                headphoneNotice.SetActive(true);
+                break;
+
+            case 7:
+                headphoneAnim.SetTrigger("Gone");
+                break;
+
+            case 8:
+
+                Loader.SetActive(true);
+                load.LoadNextLevel();
                 break;
 
         }
     }
 
+    IEnumerator waitforclick()
+    {
+       
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            click = click + 1;
+        }
+        
+    }
   
 }
