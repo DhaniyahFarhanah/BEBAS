@@ -5,6 +5,8 @@ using UnityEngine;
 public class handZoom : MonoBehaviour
 {
     Animator handAnim;
+    [SerializeField] AudioSource woosh;
+    bool playOnce;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,12 @@ public class handZoom : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            if (!playOnce)
+            {
+                woosh.Play();
+                playOnce = true;
+            }
+           
             handAnim.SetBool("Start", true);
         }
     }
