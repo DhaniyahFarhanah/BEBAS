@@ -10,6 +10,8 @@ public class ChaseCutsceneScript : MonoBehaviour
     [SerializeField] GameObject NoAgro;
     [SerializeField] GameObject player;
 
+    bool flipOnce;
+
     SpriteRenderer playerSR;
     Animator environmentAnimator;
     [SerializeField] bool StartRun;
@@ -60,9 +62,10 @@ public class ChaseCutsceneScript : MonoBehaviour
 
     void SetActives()
     {
-        if(playerSR.flipX == false)
+        if(playerSR.flipX == false && !flipOnce)
         {
             playerSR.flipX = true;
+            flipOnce = true;
         }
         ghostDialogue.enabled = false;
         NoAgro.SetActive(false);   
