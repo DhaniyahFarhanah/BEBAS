@@ -6977,7 +6977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151925034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.91, y: 7.04, z: 0}
+  m_LocalPosition: {x: -12.51, y: 10.46, z: 0}
   m_LocalScale: {x: 0.46920368, y: 0.53632534, z: 0.32045817}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7025,7 +7025,7 @@ SpriteRenderer:
   m_SortingLayerID: -102276525
   m_SortingLayer: 11
   m_SortingOrder: 0
-  m_Sprite: {fileID: 527549127, guid: 66cebabce3e0315488dd3abfe415cb3b, type: 3}
+  m_Sprite: {fileID: 1906680867, guid: 263c8ce20cae9154e8d852c4aed25378, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -44776,7 +44776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &828359968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -116490,7 +116490,7 @@ MonoBehaviour:
   walking: {fileID: 2056149906}
   dialogue: {fileID: 1307237298}
   trigger: {fileID: 1067737191}
-  deathScreen: {fileID: 0}
+  deathScreen: {fileID: 1315879309}
   animator: {fileID: 2056149902}
   isWaiting: 1
   myCollider: {fileID: 0}
