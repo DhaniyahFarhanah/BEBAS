@@ -39,6 +39,14 @@ public class SecurityGuardMove : MonoBehaviour
     }
     void Update()
     {
+        if (deathScreen.activeInHierarchy)
+        {
+            walking.enabled = false;
+        }
+        else
+        {
+            walking.enabled = true;
+        }
 
         if (reachedclue && trigger.activeInHierarchy)
         {
@@ -67,7 +75,7 @@ public class SecurityGuardMove : MonoBehaviour
 
             animator.SetBool("isWalking", true);
 
-            if (patrolDestination == 0 && !deathScreen.activeInHierarchy)
+            if (patrolDestination == 0)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
 
@@ -80,7 +88,7 @@ public class SecurityGuardMove : MonoBehaviour
                 }
             }
 
-            if (patrolDestination == 1 && !deathScreen.activeInHierarchy)
+            if (patrolDestination == 1 )
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
 
