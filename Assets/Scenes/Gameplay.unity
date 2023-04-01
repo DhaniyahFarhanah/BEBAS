@@ -10352,7 +10352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &224319054
 RectTransform:
   m_ObjectHideFlags: 0
@@ -86896,7 +86896,7 @@ MonoBehaviour:
   m_text: "Press \"W\" to Enter Doors\nPress \"A\" to Move Left\nPress \"D\" to Move
     Right\nPress \"S\" to Crouch\n\nPress \"Space\" to Hold Breath\nPress \"Left
     Shift\" to Close Eyes\n\n\n        & Right Click to Interact\n\n\n\nPress \"P\"
-    to pause\nPress \"I\" for inventory"
+    to pause"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a0b756063109a414087867a4e5e03340, type: 2}
   m_sharedMaterial: {fileID: -8668283257443211166, guid: a0b756063109a414087867a4e5e03340, type: 2}
@@ -86923,7 +86923,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.15
+  m_fontSize: 42.75
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -90897,7 +90897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1579788264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99778,7 +99778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5137322cc977efa4087a716a92da4997, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef82c050ad7084acba5f9ff3b0c237f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
