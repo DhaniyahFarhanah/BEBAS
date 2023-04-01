@@ -31,6 +31,8 @@ public class FollowPlayerScript : MonoBehaviour
     private Vector3 startPos;
     private bool respawning;
 
+
+    private float ogRespawnTiming;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +40,7 @@ public class FollowPlayerScript : MonoBehaviour
         playerTransform = player.GetComponent<Transform>();
         animator = gameObject.GetComponent<Animator>();
         state = player.GetComponent<PlayerStateManager>();
+        ogRespawnTiming = timeToWaitAfterRespawn;
     }
     void Start()
     {
@@ -56,19 +59,24 @@ public class FollowPlayerScript : MonoBehaviour
     }
     private void ResetGhost()
     {
-        transform.position = startPos;
-        StartCoroutine(Wait());
-    }
-    private IEnumerator Wait()
-    {
         respawning = true;
-        yield return new WaitForSeconds(timeToWaitAfterRespawn);
-        respawning = false;
+        transform.position = startPos;
     }
     // Update is called once per frame
     void Update()
     {
-        if (respawning) return;
+        if (respawning)
+        {
+            rb.velocity = Vector2.zero;
+            animator.SetInteger("Status", 1);
+            timeToWaitAfterRespawn -= Time.deltaTime;
+            if(timeToWaitAfterRespawn <= 0)
+            {
+                respawning = false;
+                timeToWaitAfterRespawn = ogRespawnTiming;
+            }
+            return;
+        }
         if(rb.velocity == new Vector2(-moveSpeed, 0))
         {
             if (!shacklesound.isPlaying)

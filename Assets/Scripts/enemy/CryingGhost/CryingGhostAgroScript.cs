@@ -89,11 +89,10 @@ public class CryingGhostAgroScript : MonoBehaviour
             }
             //distance to player
             float dist2player = Vector2.Distance(transform.position, player.transform.position);
-
+            Debug.Log(dist2player + "tesrted");
             //the amount of conditition is longer than my will to live
-            if (dist2player < agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && !FirstSpawn && playerStateManager.currentState != playerStateManager.deadState && !dialogueBox.activeInHierarchy)
+            if (dist2player <= agroRange && playerStateManager.currentState != playerStateManager.breathState && !checkAgro.justEntered && playerStateManager.currentState != playerStateManager.deadState && !dialogueBox.activeInHierarchy)
             {
-
                 killPlayer();
             }
 
