@@ -60,7 +60,7 @@ public class CryingGhostAgroScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.gameObject.activeSelf == false && killedPlayerScript.KilledPlayer)
+        if (player.gameObject.activeSelf == false && killedPlayerScript.KilledPlayer && FirstRunIn)
         {
             Debug.Log("player is dead");
             if(this.transform.position != originalPos)
@@ -70,7 +70,6 @@ public class CryingGhostAgroScript : MonoBehaviour
                 holdBreathInstruction.SetActive(false);
                 StopAllCoroutines();
                 FirstSpawn = true;
-                FirstRunIn = true;
                 this.gameObject.SetActive(false);
             }
         }
@@ -86,18 +85,11 @@ public class CryingGhostAgroScript : MonoBehaviour
             
         }
 
-        else {
+        else
+        {
             killedPlayerScript.KilledPlayer = false;
 
-            if (FirstSpawn)
-            {
-                if (!cryingSound.isPlaying)
-                {
-                    cryingSound.Play();
-                }
-                firstSpawnAgro = FirstSpawnAgro();
-                StartCoroutine(firstSpawnAgro);
-            }
+            
             //distance to player
             float dist2player = Vector2.Distance(transform.position, player.transform.position);
             Debug.Log(dist2player + "tesrted");
