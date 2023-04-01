@@ -69,6 +69,7 @@ public class KeyholeCanUnlock : MonoBehaviour
          
             keyhole.sprite = KeyisInside;
 
+            StartCoroutine(keyTurnAuto());
             
         }
 
@@ -113,6 +114,12 @@ public class KeyholeCanUnlock : MonoBehaviour
         eyeshow = false;
     }
 
+    IEnumerator keyTurnAuto()
+    {
+        yield return new WaitForSeconds(0.5f);
+        clickIndex = clickIndex+ 1;
+    }
+
     IEnumerator UnlockDoor()
     {
         keyhole.sprite = KeyTurn;
@@ -130,5 +137,6 @@ public class KeyholeCanUnlock : MonoBehaviour
         doorOutsideOpened.SetActive(true);
         thisPuzzle.SetActive(false);
     }
+
 
 }

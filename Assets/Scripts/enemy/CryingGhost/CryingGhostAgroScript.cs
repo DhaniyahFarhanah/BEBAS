@@ -74,8 +74,19 @@ public class CryingGhostAgroScript : MonoBehaviour
                 this.gameObject.SetActive(false);
             }
         }
-        else
+        else if (FirstSpawn)
         {
+            
+                if (!cryingSound.isPlaying)
+                {
+                    cryingSound.Play();
+                }
+                firstSpawnAgro = FirstSpawnAgro();
+                StartCoroutine(firstSpawnAgro);
+            
+        }
+
+        else {
             killedPlayerScript.KilledPlayer = false;
 
             if (FirstSpawn)

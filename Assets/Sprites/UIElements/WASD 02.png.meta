@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 9c266cf8ec29dc245a7089eac4f5f8ce
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WASD 02_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 907
+        width: 132
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146a2a58426e1c340a786d513f43b345
+      internalID: -306558718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_1
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 906
+        width: 131
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d178c772f5710004393b07768a831e00
+      internalID: -1919665423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_2
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 911
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e679a18cbe82843ad1ec731addb7d6
+      internalID: 2061723879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_3
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 903
+        width: 103
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3828b6333257c4a8a0581cda6fc0f0
+      internalID: 2118523217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_18
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 754
+        width: 102
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eaf9b9e3cb3ea4ab05eee7eb303f5a
+      internalID: -383126794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_19
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 754
+        width: 102
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef0cbb245f10cb4cb33a44a727d279d
+      internalID: 1695353489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_20
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 597
+        width: 102
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b7130235b968e44becb82aa95ad58f
+      internalID: 1610054407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_21
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 610
+        width: 417
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8c762a54ebf4449a0cada4b4784a09
+      internalID: -140578048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_22
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 598
+        width: 101
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da79c6cbdbbfe74e970416a9b9f5b85
+      internalID: 1585029948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_23
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 606
+        width: 416
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852eb8b60477aa24797ef207ae8b6c4b
+      internalID: 474391145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_36
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 602
+        width: 409
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c825c987f5800b745a544977647d3e9f
+      internalID: 1116187164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_49
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 434
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6872ec035c22245acd3125efeb67ce
+      internalID: -1052053608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_50
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 431
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b90dd1db52ec947827ca1ccfc1163b
+      internalID: 1448320828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_51
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 231
+        width: 185
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2c1089be2d77e4e872c9ea17ae790f
+      internalID: 283845736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_52
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 231
+        width: 283
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392c8d8eb8b70d9478aafa564c47ee23
+      internalID: -104515061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_53
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 241
+        width: 178
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac634393e98a08446b157e7cc52e01c3
+      internalID: 1505948046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_54
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 240
+        width: 284
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cafe0afd7091348bf9072e1cc781a1
+      internalID: 725423144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_97
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 47
+        width: 367
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf13db2b15f915448b98877e9e10a80
+      internalID: -1092124819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_98
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 48
+        width: 373
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278a693e9d4b3a64fb1cb0e9d4cacd94
+      internalID: 787964517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_99
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 62
+        width: 59
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0fffb441af0ad4eb3bfce6d0b560aa
+      internalID: 1036964065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_100
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 62
+        width: 59
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc83e0f2f1bbe8c4cbf5cd42036f4d87
+      internalID: -679296352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WASD 02_101
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 92
+        width: 280
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1664cb816712141a97b433098606a9
+      internalID: -1078667581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WASD 02_99: 1036964065
+      WASD 02_95: 891779038
+      WASD 02_22: 1585029948
+      WASD 02_104: 2038844011
+      WASD 02_24: -641049421
+      WASD 02_73: -367147582
+      WASD 02_71: 1189328879
+      WASD 02_15: -934569253
+      WASD 02_111: -1939764444
+      WASD 02_113: -1820961760
+      WASD 02_80: -1855529726
+      WASD 02_117: 2092132651
+      WASD 02_61: 901960745
+      WASD 02_23: 474391145
+      WASD 02_6: 2114051496
+      WASD 02_21: -140578048
+      WASD 02_48: 865339675
+      WASD 02_77: -1079902595
+      WASD 02_41: -1354634679
+      WASD 02_10: -1645369312
+      WASD 02_37: -1589680338
+      WASD 02_122: -2070649696
+      WASD 02_14: -718927237
+      WASD 02_40: -1029691279
+      WASD 02_91: -697124822
+      WASD 02_103: -795161508
+      WASD 02_63: -1136983952
+      WASD 02_55: -710713640
+      WASD 02_72: -911659977
+      WASD 02_43: 679199534
+      WASD 02_27: 2028507732
+      WASD 02_114: -494889822
+      WASD 02_60: 346742904
+      WASD 02_58: 1160958481
+      WASD 02_5: -636682124
+      WASD 02_47: 155612506
+      WASD 02_66: 80709595
+      WASD 02_59: 1149321438
+      WASD 02_68: 804763437
+      WASD 02_16: -1061831808
+      WASD 02_88: -454137693
+      WASD 02_50: 1448320828
+      WASD 02_51: 283845736
+      WASD 02_64: -1905402644
+      WASD 02_90: 799208413
+      WASD 02_101: -1078667581
+      WASD 02_100: -679296352
+      WASD 02_29: -812240034
+      WASD 02_120: -1522726478
+      WASD 02_1: -1919665423
+      WASD 02_85: 1159080254
+      WASD 02_4: -693889595
+      WASD 02_93: -2118948813
+      WASD 02_44: -1072742218
+      WASD 02_42: 1910790349
+      WASD 02_52: -104515061
+      WASD 02_109: 1316435677
+      WASD 02_76: 857622758
+      WASD 02_57: -1782610418
+      WASD 02_106: 29107237
+      WASD 02_33: 1776664475
+      WASD 02_92: -810874252
+      WASD 02_125: 94419357
+      WASD 02_19: 1695353489
+      WASD 02_83: 648295698
+      WASD 02_56: -1567253829
+      WASD 02_9: 299765141
+      WASD 02_79: -427116457
+      WASD 02_89: 1555129213
+      WASD 02_2: 2061723879
+      WASD 02_32: -789006541
+      WASD 02_35: 2100113381
+      WASD 02_69: 2001056717
+      WASD 02_96: 1048439266
+      WASD 02_121: 2139563593
+      WASD 02_87: -667842272
+      WASD 02_30: -1344041434
+      WASD 02_25: 1970997444
+      WASD 02_67: 218613289
+      WASD 02_0: -306558718
+      WASD 02_82: -257744371
+      WASD 02_98: 787964517
+      WASD 02_74: 1263625603
+      WASD 02_3: 2118523217
+      WASD 02_34: 1052766067
+      WASD 02_78: 1239121437
+      WASD 02_115: -1809861786
+      WASD 02_7: -1072914152
+      WASD 02_108: -729117184
+      WASD 02_54: 725423144
+      WASD 02_116: -746442384
+      WASD 02_39: 2024303365
+      WASD 02_81: 1942268502
+      WASD 02_31: 638138726
+      WASD 02_70: 1352248532
+      WASD 02_12: 1199860370
+      WASD 02_28: 804581405
+      WASD 02_94: 1459234242
+      WASD 02_110: 265398628
+      WASD 02_102: -1654848647
+      WASD 02_84: 64249955
+      WASD 02_118: 1981792943
+      WASD 02_62: -1942837476
+      WASD 02_86: 800242862
+      WASD 02_107: -1719548115
+      WASD 02_17: 1943066575
+      WASD 02_124: 661449845
+      WASD 02_38: -266400598
+      WASD 02_45: 952881873
+      WASD 02_105: -2123783269
+      WASD 02_112: 1040118268
+      WASD 02_13: -851422682
+      WASD 02_20: 1610054407
+      WASD 02_36: 1116187164
+      WASD 02_49: -1052053608
+      WASD 02_97: -1092124819
+      WASD 02_119: -1118524181
+      WASD 02_53: 1505948046
+      WASD 02_18: -383126794
+      WASD 02_65: 42596551
+      WASD 02_123: 1038402786
+      WASD 02_75: -742128650
+      WASD 02_8: -575950716
+      WASD 02_46: 1769592439
+      WASD 02_26: -2118467185
+      WASD 02_11: -1245657808
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
