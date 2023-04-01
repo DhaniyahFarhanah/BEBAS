@@ -11,6 +11,7 @@ public class CameraZoom : MonoBehaviour
     private Camera cam;
     public GameObject player;
 
+    [SerializeField] GameObject StartTransition;
     public GameObject spawnDialogue;
     public GameObject dialoguePanel;
     public GameObject moveInstructions;
@@ -121,6 +122,7 @@ public class CameraZoom : MonoBehaviour
     IEnumerator WaitforZoomSpawn()
     {
         yield return new WaitForSeconds(2f);
+        StartTransition.SetActive(false);
         spawnDialogue.SetActive(true);
         spawnZoomOut();
     }

@@ -99,7 +99,7 @@ public class EnemyAgro : MonoBehaviour
                 anim.SetTrigger("Triggered");
             }*/
 
-            if (dist2player < 4)
+            if (dist2player < 5)
             {
                 //if (startToCrawl == null)
                 //{
@@ -211,6 +211,9 @@ public class EnemyAgro : MonoBehaviour
                 setCheckpoint.checkpointY = checkpointYset;
                 setCheckpoint.checkpointZ = checkpointZset;
                 Debug.Log("Set checkpoint from enemyagro.cs");
+                Vector3 currRot = transform.eulerAngles;
+                currRot.z = 0;
+                spriteRenderer.flipX = true;
             }
 
 

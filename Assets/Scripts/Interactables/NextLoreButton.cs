@@ -5,6 +5,7 @@ using UnityEngine;
 public class NextLoreButton : MonoBehaviour
 {
     [SerializeField] GameObject[] lorePages;
+    [SerializeField] GameObject[] overlays;
     [SerializeField] GameObject nextButton;
     [SerializeField] GameObject prevButton;
 
@@ -58,6 +59,7 @@ public class NextLoreButton : MonoBehaviour
 
         for (int i = 0; i < lorePages.Length; i++)
         {
+
             if (i == loretobeactiveIndex)
             {
                 lorePages[i].SetActive(true);
