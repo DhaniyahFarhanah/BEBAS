@@ -49,6 +49,7 @@ public class CryingGhostAgroScript : MonoBehaviour
             lorePaperDialogue = GameObject.Find("DialogueForCryingGhost").GetComponent<EventDialogue>();
         if (!holdBreathInstruction)
             holdBreathInstruction = GameObject.Find("HoldBreathInstruction");
+        killedPlayerScript = GetComponent<SetJumpscare>();
     }
     void Start()
     {
