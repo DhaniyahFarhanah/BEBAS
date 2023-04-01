@@ -35,6 +35,7 @@ public class CryingGhostAgroScript : MonoBehaviour
     SpriteRenderer SpriteRenderer;
     Vector3 originalPos;
     IEnumerator firstSpawnAgro;
+    SetJumpscare killedPlayerScript;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -58,22 +59,23 @@ public class CryingGhostAgroScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.gameObject.activeSelf == false)
+        if (player.gameObject.activeSelf == false && killedPlayerScript.KilledPlayer)
         {
             Debug.Log("player is dead");
             if(this.transform.position != originalPos)
             {
                 this.transform.position = originalPos;
-                this.gameObject.SetActive(false);
                 lorePaperDialogue.dialogueAppearedBefore = false;   // Reset so that dialogue will trigger again
                 holdBreathInstruction.SetActive(false);
                 StopAllCoroutines();
                 FirstSpawn = true;
                 FirstRunIn = true;
+                this.gameObject.SetActive(false);
             }
         }
         else
         {
+            killedPlayerScript.KilledPlayer = false;
 
             if (FirstSpawn)
             {

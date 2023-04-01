@@ -11,6 +11,7 @@ public class SetJumpscare: MonoBehaviour
     [SerializeField] float waitTime;
     [SerializeField] AudioClip jumpscareSound;
 
+    public bool KilledPlayer;
     PlayJumpscareOnDeath jumpscare;
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class SetJumpscare: MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            KilledPlayer = true;
             jumpscare.AnimIndex = type;
             jumpscare.jumpscareWaitSeconds = waitTime;
             jumpscare.jumpscareSound = jumpscareSound;

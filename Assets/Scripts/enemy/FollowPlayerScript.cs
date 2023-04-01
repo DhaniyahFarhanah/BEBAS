@@ -17,6 +17,7 @@ public class FollowPlayerScript : MonoBehaviour
     [SerializeField] bool isWaiting;
     [SerializeField] AudioSource shacklesound;
     [SerializeField] AudioSource rawrXD;
+    public float timeToWaitAfterRespawn;
     public bool AzriInWard;
     public bool isKilled;
 
@@ -28,6 +29,7 @@ public class FollowPlayerScript : MonoBehaviour
 
 
     private Vector3 startPos;
+    private bool respawning;
 
     private void Awake()
     {
@@ -55,10 +57,18 @@ public class FollowPlayerScript : MonoBehaviour
     private void ResetGhost()
     {
         transform.position = startPos;
+        StartCoroutine(Wait());
+    }
+    private IEnumerator Wait()
+    {
+        respawning = true;
+        yield return new WaitForSeconds(timeToWaitAfterRespawn);
+        respawning = false;
     }
     // Update is called once per frame
     void Update()
     {
+        if (respawning) return;
         if(rb.velocity == new Vector2(-moveSpeed, 0))
         {
             if (!shacklesound.isPlaying)

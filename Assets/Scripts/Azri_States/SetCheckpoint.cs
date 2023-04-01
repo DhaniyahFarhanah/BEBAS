@@ -23,8 +23,8 @@ public class SetCheckpoint : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerManager.checkpointX = this.transform.position.x;
-        playerManager.checkpointY = this.transform.position.y;
-
+            playerManager.checkpointX = this.transform.position.x;
+            playerManager.checkpointY = this.transform.position.y;
+            Debug.Log("Hi");
     }
 }
