@@ -9,6 +9,7 @@ public class ChaseCutsceneScript : MonoBehaviour
     [SerializeField] GameObject npcDialoguepanel;
     [SerializeField] GameObject NoAgro;
     [SerializeField] GameObject player;
+    [SerializeField] AudioSource rubble;
 
     bool flipOnce;
 
@@ -50,11 +51,16 @@ public class ChaseCutsceneScript : MonoBehaviour
         if(ghostDialogue.index == 9)
         {
             environmentAnimator.SetBool("Shake",true);
+            if (!rubble.isPlaying)
+            {
+                rubble.Play();
+            }
         }
 
         if(ghostDialogue.index == 12)
         {
             StartRun = true;
+            rubble.Stop();
         }
 
 

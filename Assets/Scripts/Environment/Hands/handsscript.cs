@@ -11,6 +11,7 @@ public class handsscript : MonoBehaviour
 
     public GameObject path;
     public Transform[] wayPoints;
+    [SerializeField] AudioSource whoosh;
     int pointIndex;
     int pointCount;
     int direction = 1;
@@ -39,6 +40,12 @@ public class handsscript : MonoBehaviour
     {
         if (!isWaiting) {
             var step = speed * Time.deltaTime;
+            if (!whoosh.isPlaying)
+            {
+                whoosh.Play();
+            }
+          
+
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 
             if (transform.position == targetPos)

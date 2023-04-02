@@ -70,6 +70,7 @@ public class CryingGhostAgroScript : MonoBehaviour
                 holdBreathInstruction.SetActive(false);
                 StopAllCoroutines();
                 FirstSpawn = true;
+                lorePaperDialogue.audioPlayOnce = false;
                 this.gameObject.SetActive(false);
             }
         }

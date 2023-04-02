@@ -620,8 +620,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The War was hell. The Japanese kidnapped and tortured us. One day we escaped
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a0b756063109a414087867a4e5e03340, type: 2}
-  m_sharedMaterial: {fileID: -8668283257443211166, guid: a0b756063109a414087867a4e5e03340, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbf99b4e888353e41b4dfaa766439957, type: 2}
+  m_sharedMaterial: {fileID: -6823401718912213674, guid: dbf99b4e888353e41b4dfaa766439957, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -925,7 +925,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.03137255, g: 0.027450982, b: 0.03137255, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

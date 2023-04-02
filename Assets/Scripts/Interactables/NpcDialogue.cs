@@ -147,6 +147,8 @@ public class NpcDialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
+        talk.Stop();
+        talk.clip = voices[index];
         //plays if not playing. plays once
         if (!talk.isPlaying)
         {

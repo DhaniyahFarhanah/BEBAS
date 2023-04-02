@@ -39,7 +39,7 @@ public class EventDialogue : MonoBehaviour
     public bool playerIsClose;
     public bool start = true;
     public bool hasAudioTrigger;
-    bool audioPlayOnce;
+    public bool audioPlayOnce;
 
     pausemenu pause;
 

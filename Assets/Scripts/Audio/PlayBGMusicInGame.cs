@@ -36,7 +36,9 @@ public class PlayBGMusicInGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pause.activeInHierarchy || jumpscare.activeInHierarchy)
+        CheckConditions();
+
+        if (pause.activeInHierarchy || jumpscare.activeInHierarchy)
         {
             BGMsource.Stop();
         }
@@ -47,8 +49,6 @@ public class PlayBGMusicInGame : MonoBehaviour
                 BGMsource.Play();
             }
         }
-
-        CheckConditions();
 
         if (isOutside)
         {
@@ -61,6 +61,7 @@ public class PlayBGMusicInGame : MonoBehaviour
         else if (isEndGame)
         {
             BGMsource.clip = EndGameChaseBGM;
+            Debug.Log("playing endgame music");
         }
     }
 
@@ -71,9 +72,10 @@ public class PlayBGMusicInGame : MonoBehaviour
             isEndGame = true;
             isOutside = false;
             isInside = false;
+
         }
 
-        if (inside.inWard)
+        else if (inside.inWard)
         {
             isEndGame = false;
             isOutside = false;

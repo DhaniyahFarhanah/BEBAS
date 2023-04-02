@@ -58,6 +58,14 @@ public class ClickToSkipAnim : MonoBehaviour
         {
             waitTime = 2f;
         }
+        else if (click == 5)
+        {
+            waitTime = 4f;
+        }
+        else
+        {
+            waitTime = 2f;
+        }
        
     }
 
