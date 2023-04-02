@@ -6,6 +6,7 @@ public class handZoom : MonoBehaviour
 {
     Animator handAnim;
     [SerializeField] AudioSource woosh;
+    [SerializeField] GameObject panel;
     bool playOnce;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class handZoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !panel.activeInHierarchy)
         {
             if (!playOnce)
             {

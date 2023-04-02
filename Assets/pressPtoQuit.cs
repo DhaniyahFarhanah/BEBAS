@@ -5,6 +5,7 @@ using UnityEngine;
 public class pressPtoQuit : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField] GameObject panel;
     void Start()
     {
         
@@ -13,9 +14,25 @@ public class pressPtoQuit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            panel.SetActive(true);
+            Debug.Log("esc is pressed");
         }
+       
     }
+
+    public void QuitGame()
+    {
+
+        Application.Quit();
+     
+    }
+    
+    public void ClosePanel()
+    {
+        panel.SetActive(false);
+    }
+
+   
 }

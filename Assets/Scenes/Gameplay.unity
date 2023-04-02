@@ -4290,6 +4290,7 @@ GameObject:
   - component: {fileID: 81684141}
   - component: {fileID: 81684140}
   - component: {fileID: 81684139}
+  - component: {fileID: 81684145}
   - component: {fileID: 81684143}
   - component: {fileID: 81684144}
   m_Layer: 0
@@ -4437,7 +4438,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4538,6 +4539,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &81684145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81684137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 81684143}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &81699121
 GameObject:
   m_ObjectHideFlags: 0
@@ -6260,6 +6275,7 @@ GameObject:
   - component: {fileID: 112027264}
   - component: {fileID: 112027263}
   - component: {fileID: 112027262}
+  - component: {fileID: 112027268}
   - component: {fileID: 112027266}
   - component: {fileID: 112027267}
   m_Layer: 0
@@ -6407,7 +6423,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6508,6 +6524,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &112027268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112027260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 112027266}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &112710791
 GameObject:
   m_ObjectHideFlags: 0
@@ -18422,6 +18452,7 @@ GameObject:
   - component: {fileID: 351911678}
   - component: {fileID: 351911677}
   - component: {fileID: 351911676}
+  - component: {fileID: 351911682}
   - component: {fileID: 351911680}
   - component: {fileID: 351911681}
   m_Layer: 0
@@ -18569,7 +18600,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -18670,6 +18701,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &351911682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351911674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 351911680}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &353576215
 GameObject:
   m_ObjectHideFlags: 0
@@ -24341,14 +24386,7 @@ MonoBehaviour:
   AzriDefault: {fileID: 104883729, guid: 7baa3a10eb0227a4cb222783d1d337af, type: 3}
   azriTalk: {fileID: 1707724463}
   azriReactionSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8c27661369cb11f4195b9e4919e3480c, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   dialogue:
@@ -29900,7 +29938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc3e937b0c7fd1b4c8569e0da9d5a7eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f31230aedc5e51a48bbf0fca60192db0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -33843,6 +33881,7 @@ GameObject:
   - component: {fileID: 589228750}
   - component: {fileID: 589228751}
   - component: {fileID: 589228752}
+  - component: {fileID: 589228755}
   - component: {fileID: 589228753}
   - component: {fileID: 589228754}
   m_Layer: 0
@@ -33990,7 +34029,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -34091,6 +34130,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &589228755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589228747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 589228753}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &590073171
 GameObject:
   m_ObjectHideFlags: 0
@@ -34782,7 +34835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &609032133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36299,7 +36352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629461070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.54, y: -19.42, z: 0}
+  m_LocalPosition: {x: 34.33, y: -19.42, z: 0}
   m_LocalScale: {x: 0.13875, y: 8.59375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36369,7 +36422,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.168315, y: 0.09984183}
+  m_Offset: {x: -14.568162, y: 0.09984183}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -36380,7 +36433,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.673788, y: 0.80031633}
+  m_Size: {x: 1.874094, y: 0.80031633}
   m_EdgeRadius: 0
 --- !u!1 &630100626
 GameObject:
@@ -36932,6 +36985,7 @@ GameObject:
   - component: {fileID: 646916379}
   - component: {fileID: 646916378}
   - component: {fileID: 646916377}
+  - component: {fileID: 646916383}
   - component: {fileID: 646916381}
   - component: {fileID: 646916382}
   m_Layer: 0
@@ -37079,7 +37133,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -37180,6 +37234,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &646916383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646916375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 646916381}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &647025169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3807872872151619327, guid: fb5b0d349b0bd4479a1b91af5f7be48f, type: 3}
@@ -57638,7 +57706,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3170092782925ee48abf87fe89a3fd2c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.53
+  m_Volume: 0.299
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -57647,7 +57715,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 8
-  MaxDistance: 20
+  MaxDistance: 16
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -79320,6 +79388,7 @@ GameObject:
   - component: {fileID: 1254035311}
   - component: {fileID: 1254035310}
   - component: {fileID: 1254035309}
+  - component: {fileID: 1254035315}
   - component: {fileID: 1254035313}
   - component: {fileID: 1254035314}
   m_Layer: 0
@@ -79467,7 +79536,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -79568,6 +79637,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &1254035315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254035307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1254035313}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &1255108631
 GameObject:
   m_ObjectHideFlags: 0
@@ -87080,7 +87163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8b74d8aae512f4b4e966e53609516dd7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 484e358d62406634cb1f114dba880ca3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -101102,6 +101185,7 @@ GameObject:
   - component: {fileID: 1603675163}
   - component: {fileID: 1603675162}
   - component: {fileID: 1603675161}
+  - component: {fileID: 1603675167}
   - component: {fileID: 1603675165}
   - component: {fileID: 1603675166}
   m_Layer: 0
@@ -101249,7 +101333,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8c79eb3e984b486080234751d29e76b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.745
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -101350,6 +101434,20 @@ MonoBehaviour:
   waitTime: 3
   jumpscareSound: {fileID: 8300000, guid: 0fc5365baa2eb45e5b30934b7cc74577, type: 3}
   KilledPlayer: 0
+--- !u!114 &1603675167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603675159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c1837f122f494e86e83828f36b5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1603675165}
+  gameOver: {fileID: 1073506355}
 --- !u!1 &1603715960
 GameObject:
   m_ObjectHideFlags: 0
