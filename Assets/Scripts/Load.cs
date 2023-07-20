@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Load : MonoBehaviour
 {
-
+    [SerializeField] Animator handAnim;
     //awake
     private void Awake()
     {
-        //set resolution
-        Screen.SetResolution(1920, 1080, false);
-
+     
         //init persistance objects
         InitObj();
 
@@ -28,6 +26,7 @@ public class Load : MonoBehaviour
     {
         //delay
         yield return new WaitForSeconds(3);
+        handAnim.SetBool("Start", true);
 
         //load main menu scene
         StateManager.Instance.SwitchSceneTo("Gameplay_Alpha");
@@ -35,7 +34,7 @@ public class Load : MonoBehaviour
     
     public void startTransition()
     {
-        StartCoroutine("LoadApp");
+        StartCoroutine(LoadApp());
     }
 
     //init objects that persist trhoughout scenes

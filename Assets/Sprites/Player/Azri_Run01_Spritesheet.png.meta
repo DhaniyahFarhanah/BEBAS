@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 2057f839d4f75c8448f802deb1348cce
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142b9a374f78cb54aae8b1b9107d1d08
+      internalID: -1032495358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c002340946d553f4baf407856433c0a6
+      internalID: -1877149615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ca1f25fd1651e4185c97008c5b7df4
+      internalID: 206126289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 5250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7e077c6ba51bf4393980d4b490ed29
+      internalID: -1916236013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 5250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e57aecc41c0074085d49e4e0ac4cea
+      internalID: -714316874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fae8d93a329d4b45b78a07d9a36d6a6
+      internalID: 1690116068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4000
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ed161369c5c6c4abfece3c68fe1e3f
+      internalID: 358172862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4000
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a495f3eb0ce1cf4d99c505981abcd04
+      internalID: -1385195016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4000
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b043da1653cc2489f2e0a3176a6604
+      internalID: 1583630778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4000
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc78cb5035f2554da9889961343800e
+      internalID: 937325246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1f8bb8471e55048bc5fe17929551d4
+      internalID: -273876261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2750
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cecef18797175448d5ce22fe07766b
+      internalID: 1405753642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2750
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89d29e8cb0b9764cbc13514522242bf
+      internalID: 185334217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2750
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161aa195f8080d740aa98b7336e4da61
+      internalID: 1727458161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2750
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b626ab4cb4b524f937e3061dd734aa
+      internalID: 641909775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a83fa23eea1384988c03747a34bbb7
+      internalID: -1146966274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c1936c4b6e1054a9d678859b5e47bc
+      internalID: -654552871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1500
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe9e4ff728f57848b6eac01d8823c3a
+      internalID: 1598795789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1500
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d2c161949d83f45af9d5fa95460267
+      internalID: -1089012058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1500
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c032571086c1e64a906ebf9921cc2d5
+      internalID: 1028583739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbed4975db9444548bf09ea3f31d8363
+      internalID: -1019181815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76588b882ada0db4c94fbf1d59577d30
+      internalID: 1654799504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2b8b71958631546ba04ee32a7c051c
+      internalID: -2139818855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azri_Run01_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 250
+        width: 1200
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4d3b87683663b4bade847c5cd915fa
+      internalID: 628513580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Azri_Run01_Spritesheet_11: 1405753642
+      Azri_Run01_Spritesheet_18: -1089012058
+      Azri_Run01_Spritesheet_8: 1583630778
+      Azri_Run01_Spritesheet_21: 1654799504
+      Azri_Run01_Spritesheet_12: 185334217
+      Azri_Run01_Spritesheet_14: 641909775
+      Azri_Run01_Spritesheet_3: -1916236013
+      Azri_Run01_Spritesheet_15: -1146966274
+      Azri_Run01_Spritesheet_10: -273876261
+      Azri_Run01_Spritesheet_0: -1032495358
+      Azri_Run01_Spritesheet_6: 358172862
+      Azri_Run01_Spritesheet_13: 1727458161
+      Azri_Run01_Spritesheet_2: 206126289
+      Azri_Run01_Spritesheet_5: 1690116068
+      Azri_Run01_Spritesheet_20: -1019181815
+      Azri_Run01_Spritesheet_17: 1598795789
+      Azri_Run01_Spritesheet_1: -1877149615
+      Azri_Run01_Spritesheet_23: 628513580
+      Azri_Run01_Spritesheet_4: -714316874
+      Azri_Run01_Spritesheet_19: 1028583739
+      Azri_Run01_Spritesheet_16: -654552871
+      Azri_Run01_Spritesheet_7: -1385195016
+      Azri_Run01_Spritesheet_22: -2139818855
+      Azri_Run01_Spritesheet_9: 937325246
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

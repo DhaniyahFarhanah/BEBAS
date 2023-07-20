@@ -1,0 +1,1367 @@
+fileFormatVersion: 2
+guid: d41771c20a7de96488cccb2d6d17ab1e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3b8b25d8d9a8c40945574b2495429a
+      internalID: -1161899602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14eaaa954eb869147b9725a2f77f725e
+      internalID: -277069115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f315150ac600f3047b1861fc7f4158db
+      internalID: -1168353821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076b542f68c224f44944993ddfeb5b11
+      internalID: -1852678689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e73ad64c05f8b4aa2a12ce493da0c5
+      internalID: 925510340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19c12bd9c164ec47b0d991c2ac28e86
+      internalID: -699592854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8ead3217bb3454d85bd5bfe1ef9020
+      internalID: -1867925460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 942
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c38ae692a254c44aa3e34a38403066
+      internalID: 1148963703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57b7049daf85a44bbeb346d69e0a20b
+      internalID: 768051966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907aee678bb4e274182fc2cae31f5ff6
+      internalID: -60108042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfeeb712972a1645bfe4af7eab18901
+      internalID: 2096665843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c5234fcf6b3784aa403016266ba84d
+      internalID: -824160613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf777797233b624ebf2400077f2b722
+      internalID: 393609140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c42a2688ca9e624eb7f5f946a86b8d2
+      internalID: 2018537043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21f0847f1018fd4cb24cd975288ec2c
+      internalID: 343456505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 785
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de5973fbca2f364092b1d54d3accc37
+      internalID: -2143386102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1837d97e4c0509842b76a1e98d06e3ef
+      internalID: 91333379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ffc8ced0023c844a512d0ae8c80d3b
+      internalID: 1916200009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6334291455ee10f4d8721e898e7810a5
+      internalID: 1594134162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8d24cf0f3b7104db3e7038e85b65f7
+      internalID: -1047815119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db47a2ae584d06a4d8f41999fa8fe45e
+      internalID: -525054014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd41dfe5a8c5e34c9412a6728d02c79
+      internalID: -2122876201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5361a6584084b5b49ab8cf1f8e1796f1
+      internalID: -2035160752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 628
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835490f8536f4ae43ae77990a0223ee9
+      internalID: 1649613096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3471d6f6c32c0d41b51b6dc9d065de4
+      internalID: -103314492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38625f6b38d59f04fad1548577737be7
+      internalID: 569016136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ee89a746191824dbabbd94879c5c55
+      internalID: 1535950675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91942314287b5424db6b77f97d4d6f0c
+      internalID: -1926497863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072a2424612589e4fb058031c861f08f
+      internalID: -1779521391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fafaaf2de7b73428eabf96c302a8ea
+      internalID: -375199706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bc3eaa8185008459106beeb5bc664f
+      internalID: -71462462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 471
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e6a1fa549cd48408e02297504184b9
+      internalID: 675929050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96f617f4145ab844a35b3d941fbc9fe
+      internalID: 1636432487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693da84b592a3644e970072d49f263c4
+      internalID: -1430354359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caab27facac8161499fb50d23a7de2a3
+      internalID: -822563946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a81645748809c245b938ce610c31271
+      internalID: -444937329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44081d15416e8746955f4a5643258d2
+      internalID: 770905035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0ce3a793fc7b34ab83136ac99f5867
+      internalID: 1893542154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec689cd8b46bf6e47977d054d0bc1e9a
+      internalID: 210959547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 314
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243cc43da455ca04f8475fd62618e1fb
+      internalID: -1012636111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aac8c1a2416e2741ba82b27c5cfefc6
+      internalID: -977966017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e30f7530b68c2b499bbeed3b1a30319
+      internalID: 1129472059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297930d9478b394e80de5ecbde52c13
+      internalID: -932184354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1505e698cf7d164ba2cb07388851cf9
+      internalID: -1137367416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b782d04b0021b54c85eac92c3dfaa68
+      internalID: -1634850273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097759f0ea2646743993758adf9dcb71
+      internalID: -1444543348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad1272ab6edd148a9a7668700eef5a
+      internalID: -359705814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 157
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0c47ada9a6bc8489882c7e0ae860e6
+      internalID: -433920338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a5eedb4cd68bb4e8093406b7e30014
+      internalID: 1343526630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae76e6ca0ec66714d88a6328b6a21151
+      internalID: 1062801472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f910059fbc5d4c837c942db2bdcf7
+      internalID: -1358896758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12134fdc64abf4419e366677ed337ee
+      internalID: -1158613913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cef0ff7a4559f4faa6df796ffc51ae
+      internalID: 1322151788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f15283255fe024bae9a37652737690
+      internalID: 483587073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719b44a46ca173e4b819aaec1089cb52
+      internalID: 900299675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeCursor_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c8d97f87f2e2e4eb89789959a89154
+      internalID: -1238958176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EyeCursor_Spritesheet_14: 343456505
+      EyeCursor_Spritesheet_42: -932184354
+      EyeCursor_Spritesheet_11: -824160613
+      EyeCursor_Spritesheet_20: -525054014
+      EyeCursor_Spritesheet_25: 569016136
+      EyeCursor_Spritesheet_17: 1916200009
+      EyeCursor_Spritesheet_53: 483587073
+      EyeCursor_Spritesheet_16: 91333379
+      EyeCursor_Spritesheet_9: -60108042
+      EyeCursor_Spritesheet_50: -1358896758
+      EyeCursor_Spritesheet_29: -375199706
+      EyeCursor_Spritesheet_32: 1636432487
+      EyeCursor_Spritesheet_35: -444937329
+      EyeCursor_Spritesheet_31: 675929050
+      EyeCursor_Spritesheet_39: -1012636111
+      EyeCursor_Spritesheet_13: 2018537043
+      EyeCursor_Spritesheet_23: 1649613096
+      EyeCursor_Spritesheet_27: -1926497863
+      EyeCursor_Spritesheet_0: -1161899602
+      EyeCursor_Spritesheet_3: -1852678689
+      EyeCursor_Spritesheet_36: 770905035
+      EyeCursor_Spritesheet_44: -1634850273
+      EyeCursor_Spritesheet_34: -822563946
+      EyeCursor_Spritesheet_48: 1343526630
+      EyeCursor_Spritesheet_24: -103314492
+      EyeCursor_Spritesheet_51: -1158613913
+      EyeCursor_Spritesheet_18: 1594134162
+      EyeCursor_Spritesheet_5: -699592854
+      EyeCursor_Spritesheet_55: -1238958176
+      EyeCursor_Spritesheet_22: -2035160752
+      EyeCursor_Spritesheet_54: 900299675
+      EyeCursor_Spritesheet_4: 925510340
+      EyeCursor_Spritesheet_49: 1062801472
+      EyeCursor_Spritesheet_52: 1322151788
+      EyeCursor_Spritesheet_26: 1535950675
+      EyeCursor_Spritesheet_21: -2122876201
+      EyeCursor_Spritesheet_37: 1893542154
+      EyeCursor_Spritesheet_41: 1129472059
+      EyeCursor_Spritesheet_1: -277069115
+      EyeCursor_Spritesheet_6: -1867925460
+      EyeCursor_Spritesheet_10: 2096665843
+      EyeCursor_Spritesheet_7: 1148963703
+      EyeCursor_Spritesheet_33: -1430354359
+      EyeCursor_Spritesheet_38: 210959547
+      EyeCursor_Spritesheet_2: -1168353821
+      EyeCursor_Spritesheet_47: -433920338
+      EyeCursor_Spritesheet_28: -1779521391
+      EyeCursor_Spritesheet_43: -1137367416
+      EyeCursor_Spritesheet_15: -2143386102
+      EyeCursor_Spritesheet_12: 393609140
+      EyeCursor_Spritesheet_30: -71462462
+      EyeCursor_Spritesheet_46: -359705814
+      EyeCursor_Spritesheet_8: 768051966
+      EyeCursor_Spritesheet_40: -977966017
+      EyeCursor_Spritesheet_19: -1047815119
+      EyeCursor_Spritesheet_45: -1444543348
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

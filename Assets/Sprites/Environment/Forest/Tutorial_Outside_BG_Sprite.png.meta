@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: dc3ffe4fe0d14fe4c817a5c5850bad88
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 7583
+        width: 495
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf0d6fd784b7be48b27b6d578176fc9
+      internalID: -1822381327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 7566
+        width: 460
+        height: 682
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f327bf54a12244391f7e950c04f6cf
+      internalID: 2083988746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 7583
+        width: 564
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f0e5f76179bfe41bbad86ceff79efc
+      internalID: -161190786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 7566
+        width: 460
+        height: 682
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6b69439dc712b429528b39e2bedb32
+      internalID: 472235700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 7551
+        width: 395
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f20dcf6f5c49b9469f9a39dbc849624
+      internalID: -2095082118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6734
+        width: 6995
+        height: 754
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca12823f52201a143b53659646931a36
+      internalID: -692644582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 5707
+        width: 5576
+        height: 957
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9e79d9d87933a46aa5c28bf3b4c4b8
+      internalID: -1201379040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5150
+        width: 5893
+        height: 537
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39fa6bd1d98e8941b5f3e607fd5fc13
+      internalID: 503184521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 5148
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0012418e7a2957740b89dbef3c16289d
+      internalID: -542057332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 5140
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a52c39b83090f24e892a6c196c87310
+      internalID: 767339110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 4296
+        width: 5104
+        height: 777
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78a4ae2816172249b0572c6ecb4c08f
+      internalID: -1995596886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 4106
+        width: 881
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3842f479f4a3a64e96a4ea295685423
+      internalID: -1997183878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 5988
+        y: 4106
+        width: 522
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8f583a87e579c4fb78759ab0c0e528
+      internalID: 1429344447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 4109
+        width: 579
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96046476663061b40a1d4f94a4cccf9e
+      internalID: -1515438079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 7129
+        y: 4089
+        width: 687
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158ae143470379f43a9641c62f4c93fd
+      internalID: 378572940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 7856
+        y: 4096
+        width: 183
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71997db7e3e0984e930cb8f10c82282
+      internalID: -908127242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 8229
+        y: 4099
+        width: 199
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a3e20e6cd7fcc47b232617e391fff1
+      internalID: 1636274483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 4106
+        width: 128
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c55ec6c89980a54ea82c572d55914af
+      internalID: 1456257581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 8561
+        y: 4091
+        width: 1134
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56746f1ef969b414e8da95b46353fd78
+      internalID: 1516409278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 9697
+        y: 4106
+        width: 535
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac950222437a144be747946e5c3cb0
+      internalID: 1240246026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2078
+        width: 782
+        height: 704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd41b6d0c3250f4a8ce905547694960
+      internalID: -964453212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1509
+        width: 754
+        height: 644
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b2cb9c840af9547919126905bdb7b4
+      internalID: -681916898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 2113
+        width: 163
+        height: 1119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1ecd13b9e147e46bcb8f770054297d
+      internalID: -1821352933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 1531
+        width: 287
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67814c4bfc3e2dc4d99c92740c5d8c0d
+      internalID: -1146128352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 1531
+        width: 655
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172185d93c688d044affab490730f1fe
+      internalID: 1752952362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 1781
+        width: 655
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527db95cca9e9a44abc7a5f1744b4799
+      internalID: -2035472656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 1534
+        width: 4619
+        height: 2400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69150322bf86aa045ac76fe7cfe8b78e
+      internalID: -737180216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1726
+        width: 452
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94a933e16c06e748a9d3b289ee19083
+      internalID: -1913594722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1726
+        width: 452
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6179b547978d14b937622cec4a4ad0
+      internalID: 1930375219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1916
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02d74268964c6441b1c89113b104ff1
+      internalID: 2027842533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1499
+        width: 624
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ed2c0be3ad5214b90ebdcd744789a2
+      internalID: 841189800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 4374
+        y: 1621
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4808070827896b4bb0e26b67160d9e6
+      internalID: 1823307538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 7664
+        y: 1501
+        width: 2463
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b52c79fa75e274f92f7ab58e4be688
+      internalID: -216861028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_44
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1489
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ad16a54d5836f40b65eb70f21dc9eb
+      internalID: -602911609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 7637
+        y: 1511
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e98deac303a97d47afdde2c9ba30a43
+      internalID: 972666268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1072
+        width: 10232
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2a391012aa6c54dbb0feed6b29509d
+      internalID: 293440262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Outside_BG_Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 10232
+        height: 939
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886513fa44d75ad45a9c5a730e8863dc
+      internalID: 78712869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tutorial_Outside_BG_Sprite_19: -542057332
+      Tutorial_Outside_BG_Sprite_1: 784755394
+      Tutorial_Outside_BG_Sprite_45: 972666268
+      Tutorial_Outside_BG_Sprite_16: -692644582
+      Tutorial_Outside_BG_Sprite_46: 293440262
+      Tutorial_Outside_BG_Sprite_47: 78712869
+      Tutorial_Outside_BG_Sprite_10: -434683075
+      Tutorial_Outside_BG_Sprite_15: -581186936
+      Tutorial_Outside_BG_Sprite_31: -964453212
+      Tutorial_Outside_BG_Sprite_3: -161190786
+      Tutorial_Outside_BG_Sprite_39: 1930375219
+      Tutorial_Outside_BG_Sprite_43: -216861028
+      Tutorial_Outside_BG_Sprite_30: 1240246026
+      Tutorial_Outside_BG_Sprite_40: 2027842533
+      Tutorial_Outside_BG_Sprite_21: -1995596886
+      Tutorial_Outside_BG_Sprite_34: -1146128352
+      Tutorial_Outside_BG_Sprite_44: -602911609
+      Tutorial_Outside_BG_Sprite_26: -908127242
+      Tutorial_Outside_BG_Sprite_35: 1752952362
+      Tutorial_Outside_BG_Sprite_12: -1919418526
+      Tutorial_Outside_BG_Sprite_41: 841189800
+      Tutorial_Outside_BG_Sprite_22: -1997183878
+      Tutorial_Outside_BG_Sprite_14: 1117148968
+      Tutorial_Outside_BG_Sprite_36: -2035472656
+      Tutorial_Outside_BG_Sprite_5: 472235700
+      Tutorial_Outside_BG_Sprite_28: 1456257581
+      Tutorial_Outside_BG_Sprite_25: 378572940
+      Tutorial_Outside_BG_Sprite_17: -1201379040
+      Tutorial_Outside_BG_Sprite_13: -584044356
+      Tutorial_Outside_BG_Sprite_11: 1835843114
+      Tutorial_Outside_BG_Sprite_29: 1516409278
+      Tutorial_Outside_BG_Sprite_2: 2083988746
+      Tutorial_Outside_BG_Sprite_6: -2095082118
+      Tutorial_Outside_BG_Sprite_23: 1429344447
+      Tutorial_Outside_BG_Sprite_24: -1515438079
+      Tutorial_Outside_BG_Sprite_27: 1636274483
+      Tutorial_Outside_BG_Sprite_4: 778917646
+      Tutorial_Outside_BG_Sprite_8: -2095697081
+      Tutorial_Outside_BG_Sprite_7: 367622475
+      Tutorial_Outside_BG_Sprite_9: -46182983
+      Tutorial_Outside_BG_Sprite_37: -737180216
+      Tutorial_Outside_BG_Sprite_38: -1913594722
+      Tutorial_Outside_BG_Sprite_20: 767339110
+      Tutorial_Outside_BG_Sprite_32: -681916898
+      Tutorial_Outside_BG_Sprite_33: -1821352933
+      Tutorial_Outside_BG_Sprite_0: -1822381327
+      Tutorial_Outside_BG_Sprite_18: 503184521
+      Tutorial_Outside_BG_Sprite_42: 1823307538
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

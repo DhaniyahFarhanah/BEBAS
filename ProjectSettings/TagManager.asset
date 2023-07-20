@@ -3,12 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - closeEyesGhost
+  - holdBreathGhost
+  - crouchGhost
+  - ground
+  - loreItem
+  - Obstacle
+  - reqItem
+  - menu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Dialogue
   - Water
   - UI
   - 
@@ -41,24 +49,42 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: BackgroundAtmosphere
     uniqueID: 226270367
+    locked: 0
+  - name: FurtherBackground
+    uniqueID: 867651305
     locked: 0
   - name: Background Assets
     uniqueID: 3610882879
     locked: 0
-  - name: Interactable Items
+  - name: MoreBackground
     uniqueID: 3629908271
+    locked: 0
+  - name: Flooring
+    uniqueID: 351255253
     locked: 0
   - name: Background Front
     uniqueID: 2177618239
     locked: 0
-  - name: Flooring
-    uniqueID: 351255253
+  - name: Interactable Items
+    uniqueID: 717323485
+    locked: 0
+  - name: Ghosts
+    uniqueID: 3159109609
     locked: 0
   - name: Player
     uniqueID: 2618662941
     locked: 0
   - name: Foreground
     uniqueID: 3284961539
+    locked: 0
+  - name: BlackBars
+    uniqueID: 4192690771
+    locked: 0
+  - name: Foreground2
+    uniqueID: 375073371
+    locked: 0
+  - name: Indicator
+    uniqueID: 4016394557
     locked: 0
